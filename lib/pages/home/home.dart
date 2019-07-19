@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/pages/home/floor.dart';
 import 'package:learn_flutter/pages/home/header.dart';
 import 'package:learn_flutter/pages/home/swipper_image.dart';
@@ -48,7 +49,9 @@ class MyHomePageState extends State<MyHomePage> {
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Fluttertoast.showToast(msg: 'you click me',);
+          },
           child: Center(
             child: Icon(Icons.add),
           ),
@@ -61,7 +64,6 @@ class MyHomePageState extends State<MyHomePage> {
           onTap: (event) {
             this.setState(() {
               currentIndex = event;
-              print('test');
             });
           },
           currentIndex: currentIndex,
