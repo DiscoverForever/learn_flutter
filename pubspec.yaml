@@ -25,6 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   # 轮播插件
   flutter_swiper: ^1.1.6
+  # toast
+  fluttertoast: ^2.1.1
   # 网络请求
   dio: ^2.1.13
   # webview
