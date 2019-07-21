@@ -1,21 +1,31 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
+import 'package:learn_flutter/api/api.dart';
 
 class RequestUtil {
   static Dio _dio;
+
   static Dio getInstance() {
     if (_dio == null) {
       BaseOptions options = new BaseOptions(
-        baseUrl: 'https://www.easy-mock.com/mock/5d305b107d6f934a01998c0b',
+        baseUrl: Api.baseUrl,
         connectTimeout: 5000,
         receiveTimeout: 3000,
       );
       _dio = new Dio(options);
       _dio.interceptors.add(InterceptorsWrapper(onRequest: (RequestOptions options) {
-        print(options);
+        print('=============================request============================');
+        print('url:${options.uri}');
+        print('method ${options.method}');
+        print('headers:${options.headers}');
+        print('data:\n${options.data}');
+        print('queryParameters:\n${options.queryParameters}');
         return options;
       }, onResponse: (Response response) {
+        print('=============================response============================');
+        print('url:${response.request.uri}');
+        print('response:${response.data}');
         return response;
       }, onError: (DioError e) {
         return e;

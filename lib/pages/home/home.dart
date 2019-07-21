@@ -9,7 +9,9 @@ import 'package:learn_flutter/pages/home/header.dart';
 import 'package:learn_flutter/pages/home/item_list.dart';
 import 'package:learn_flutter/pages/home/swipper_image.dart';
 import 'package:learn_flutter/utils/request_util.dart';
-import 'package:learn_flutter/bean/floor_model_entity.dart';
+import 'package:learn_flutter/bean/floor_model/floor_model_entity.dart';
+import 'package:learn_flutter/bean/entity_factory.dart';
+import 'package:learn_flutter/api/api.dart';
 import 'item.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -20,18 +22,26 @@ class MyHomePage extends StatefulWidget {
 class MyHomePageState extends State<MyHomePage> {
   int currentIndex = 0;
   List<FloorModelResultContentData> floorList = [];
+
   @override
   initState() {
     super.initState();
-    getFloorList();
+    this.getFloorList();
+    this.getInitData();
   }
 
   getFloorList() async {
-    var res = await RequestUtil.getInstance().post('/client.action%3FfunctionId%3DnewAppCenterInfo');
-    setState(() {
-      var floor = FloorModelEntity.fromJson(res.data);
-      floorList = floor.result.content.data;
+    print(Api.appCenterInfo);
+    var response = await RequestUtil.getInstance().post(Api.appCenterInfo);
+    this.setState(() {
+      var res = EntityFactory.generateOBJ<FloorModelEntity>(response.data);
+      floorList = res.result.content.data;
     });
+  }
+
+  /// 获取初始化数据
+  getInitData() async {
+    var response = await RequestUtil.getInstance().post(Api.home);
   }
 
   @override
@@ -54,8 +64,19 @@ class MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       children: <Widget>[
                         SwipperImage(),
-                        Floor(
-                          floorList: floorList,
+                        Container(
+                          height: 150,
+                          child: PageView(
+                            scrollDirection: Axis.horizontal,
+                            children: <Widget>[
+                              Floor(
+                                floorList: floorList.length >= 10 ? floorList.getRange(0, 10)?.toList(): [],
+                              ),
+                              Floor(
+                                floorList: floorList.length >= 20 ? floorList.getRange(10, 20)?.toList(): [],
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),

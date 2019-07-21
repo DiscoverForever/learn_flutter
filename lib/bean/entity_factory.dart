@@ -1,4 +1,4 @@
-import 'package:learn_flutter/bean/floor_model_entity.dart';
+import 'package:learn_flutter/bean/floor_model/floor_model_entity.dart';
 
 class EntityFactory {
   static T generateOBJ<T>(json) {
