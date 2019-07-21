@@ -19,7 +19,7 @@ class MyHomePage extends StatefulWidget {
 
 class MyHomePageState extends State<MyHomePage> {
   int currentIndex = 0;
-  List<dynamic> floorList = [];
+  List<FloorModelResultContentData> floorList = [];
   @override
   initState() {
     super.initState();
