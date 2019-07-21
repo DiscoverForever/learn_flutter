@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/bean/floor_model/floor_model_entity.dart';
+import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
+
 class Floor extends StatefulWidget {
   List<FloorModelResultContentData> floorList;
   Floor({Key key, @required this.floorList}) : super(key: key);
@@ -21,8 +22,8 @@ class _FloorState extends State<Floor> {
             child: Image.network(floor.icon),
           ),
           Container(
-            height: 18,
-            margin: EdgeInsets.only(top: 6),
+            height: 20,
+            margin: EdgeInsets.only(top: 5),
             child: Center(
               child: Text(
                 floor.name,
@@ -38,7 +39,15 @@ class _FloorState extends State<Floor> {
     return Center(
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: 150,
+        height: 145,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage(
+              'https://m.360buyimg.com/mobilecms/s1125x435_jfs/t1/69613/13/4742/97849/5d2ef146Eaf504529/35e8041bf0dac25d.jpg.dpg.webp',
+            ),
+            fit: BoxFit.fitWidth,
+          ),
+        ),
         child: GridView.count(
           mainAxisSpacing: 3,
           crossAxisSpacing: 3,

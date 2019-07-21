@@ -9,9 +9,10 @@ import 'package:learn_flutter/pages/home/header.dart';
 import 'package:learn_flutter/pages/home/item_list.dart';
 import 'package:learn_flutter/pages/home/swipper_image.dart';
 import 'package:learn_flutter/utils/request_util.dart';
-import 'package:learn_flutter/bean/floor_model/floor_model_entity.dart';
+import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
 import 'package:learn_flutter/bean/entity_factory.dart';
 import 'package:learn_flutter/api/api.dart';
+import 'ad.dart';
 import 'item.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -64,19 +65,30 @@ class MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       children: <Widget>[
                         SwipperImage(),
+                        // Image.network('https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/57927/10/5246/102061/5d2ef10bEf2debf2e/93d987f05fa960ea.jpg.dpg.webp'),
                         Container(
-                          height: 150,
+                          height: 145,
                           child: PageView(
                             scrollDirection: Axis.horizontal,
                             children: <Widget>[
                               Floor(
-                                floorList: floorList.length >= 10 ? floorList.getRange(0, 10)?.toList(): [],
+                                floorList: floorList.length >= 10
+                                    ? floorList.getRange(0, 10)?.toList()
+                                    : [],
                               ),
                               Floor(
-                                floorList: floorList.length >= 20 ? floorList.getRange(10, 20)?.toList(): [],
+                                floorList: floorList.length >= 20
+                                    ? floorList.getRange(10, 20)?.toList()
+                                    : [],
                               ),
                             ],
                           ),
+                        ),
+                        Ad(
+                          bgImage:
+                              'https://m.360buyimg.com/mobilecms/jfs/t1/55537/13/5336/79992/5d2eeea7E5b9166b0/57bda184a914540a.jpg!q70.jpg.dpg.webp',
+                          jumpUrl:
+                              'https://pro.m.jd.com/mall/active/EenpY3YPwqzMVxgzmvrmiPxXZfD/index.html',
                         ),
                       ],
                     ),
