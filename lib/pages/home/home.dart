@@ -2,11 +2,15 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/pages/home/floor.dart';
 import 'package:learn_flutter/pages/home/header.dart';
+import 'package:learn_flutter/pages/home/item_list.dart';
 import 'package:learn_flutter/pages/home/swipper_image.dart';
 import 'package:learn_flutter/utils/request_util.dart';
+import 'package:learn_flutter/bean/floor_model_entity.dart';
+import 'item.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -23,9 +27,10 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   getFloorList() async {
-    var res = await RequestUtil.getInstance().post('/client.action');
+    var res = await RequestUtil.getInstance().post('/client.action%3FfunctionId%3DnewAppCenterInfo');
     setState(() {
-      floorList = res.data['result']['content']['data'];
+      var floor = FloorModelEntity.fromJson(res.data);
+      floorList = floor.result.content.data;
     });
   }
 
@@ -42,22 +47,55 @@ class MyHomePageState extends State<MyHomePage> {
               color: Colors.red,
             ),
             Header(),
-            SwipperImage(),
-            Floor(
-              floorList: floorList,
-            ),
+            Expanded(
+              child: CustomScrollView(
+                slivers: <Widget>[
+                  SliverToBoxAdapter(
+                    child: Column(
+                      children: <Widget>[
+                        SwipperImage(),
+                        Floor(
+                          floorList: floorList,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SliverPadding(
+                    sliver: SliverGrid(
+                      //Grid
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2, //Grid按两列显示
+                        mainAxisSpacing: 10.0,
+                        crossAxisSpacing: 10.0,
+                        // childAspectRatio: 4.0,
+                      ),
+                      delegate: SliverChildBuilderDelegate(
+                        (BuildContext context, int index) {
+                          //创建子widget
+                          return Item();
+                        },
+                        childCount: 30,
+                      ),
+                    ),
+                    padding: EdgeInsets.all(10),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            Fluttertoast.showToast(msg: 'you click me',);
+            Fluttertoast.showToast(
+              msg: 'you click me',
+            );
           },
           child: Center(
             child: Icon(Icons.add),
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.white,
           selectedItemColor: Colors.red,
           unselectedItemColor: Colors.grey,
           showUnselectedLabels: true,
@@ -67,6 +105,7 @@ class MyHomePageState extends State<MyHomePage> {
             });
           },
           currentIndex: currentIndex,
+          type: BottomNavigationBarType.fixed,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),

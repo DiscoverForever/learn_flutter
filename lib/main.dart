@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:learn_flutter/pages/home/home.dart';
+import 'package:learn_flutter/pages/home/scroll.dart';
 import 'package:learn_flutter/pages/login/login.dart';
 import 'package:learn_flutter/pages/movie/movie.dart';
 
