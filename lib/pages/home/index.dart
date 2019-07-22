@@ -12,14 +12,19 @@ class Index extends StatefulWidget {
 class IndexState extends State<Index> {
   int currentIndex = 0;
   Widget currentView;
+  Map<int, Widget> pageMap = {
+    0: MyHomePage(),
+    1: Category(),
+    2: null,
+    3: null,
+    4: null
+  };
   List<FloorModelResultContentData> floorList = [];
 
   @override
   initState() {
     super.initState();
-    this.setState(() {
-      this.togglePage();
-    });
+    this.setState(() {});
   }
 
   togglePage() {
@@ -37,7 +42,7 @@ class IndexState extends State<Index> {
       case 4:
         break;
       default:
-      this.currentView = MyHomePage();
+        this.currentView = MyHomePage();
     }
   }
 
@@ -47,7 +52,7 @@ class IndexState extends State<Index> {
         // appBar: AppBar(
         //   title: Text(''),
         // ),
-        body: currentView,
+        body: pageMap[this.currentIndex],
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Fluttertoast.showToast(
@@ -66,7 +71,6 @@ class IndexState extends State<Index> {
           onTap: (event) {
             this.setState(() {
               this.currentIndex = event;
-              this.togglePage();
             });
           },
           currentIndex: currentIndex,

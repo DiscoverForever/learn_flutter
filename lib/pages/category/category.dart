@@ -8,7 +8,7 @@ class CategoryState extends State<Category> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(''),
+      child: Text('category'),
     );
   }
 }
