@@ -27,25 +27,6 @@ class IndexState extends State<Index> {
     this.setState(() {});
   }
 
-  togglePage() {
-    switch (this.currentIndex) {
-      case 0:
-        this.currentView = MyHomePage();
-        break;
-      case 1:
-        this.currentView = Category();
-        break;
-      case 2:
-        break;
-      case 3:
-        break;
-      case 4:
-        break;
-      default:
-        this.currentView = MyHomePage();
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
