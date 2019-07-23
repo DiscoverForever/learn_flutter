@@ -11,7 +11,7 @@ class RequestUtil {
       BaseOptions options = new BaseOptions(
         baseUrl: Api.baseUrl,
         connectTimeout: 5000,
-        receiveTimeout: 3000,
+        receiveTimeout: 10000,
       );
       _dio = new Dio(options);
       _dio.interceptors.add(InterceptorsWrapper(onRequest: (RequestOptions options) {
