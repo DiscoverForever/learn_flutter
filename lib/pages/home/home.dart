@@ -60,7 +60,7 @@ class MyHomePageState extends State<MyHomePage> {
               SliverToBoxAdapter(
                 child: Column(
                   children: <Widget>[
-                    SwipperImage(),
+                    SwipperImage(width: double.infinity, swipperOptionsList: [ SwipperOptions(jumpUrl: '', imageUrl: 'https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/72564/34/4860/101165/5d317307E04c602ce/66000ea7bf6545b3.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp') ],),
                     // Image.network('https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/57927/10/5246/102061/5d2ef10bEf2debf2e/93d987f05fa960ea.jpg.dpg.webp'),
                     Container(
                       height: 145,

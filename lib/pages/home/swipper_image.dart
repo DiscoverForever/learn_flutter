@@ -1,15 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
+class SwipperOptions {
+  // final double height;
+  // final double width;
+  final String imageUrl;
+  final String jumpUrl;
+  SwipperOptions({ @required this.imageUrl, @required this.jumpUrl });
+}
+
 class SwipperImage extends StatelessWidget {
+  final double height;
+  final double width;
+  final List<SwipperOptions> swipperOptionsList;
+  SwipperImage({ Key key, @required this.swipperOptionsList, this.height = 180, this.width = 100 }): super(key: key);
+
   @override
   Widget build(BuildContext context) {
+    print(double.infinity);
     return Container(
-      height: 180,
-      width: double.infinity,
+      height: this.height,
+      width: this.width,
       child: Swiper(
         scrollDirection: Axis.horizontal,
-        itemCount: 4,
+        itemCount: this.swipperOptionsList.length,
         autoplay: true,
         // layout: SwiperLayout.DEFAULT,
         loop: true,
@@ -21,7 +35,7 @@ class SwipperImage extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
-                  'http://m.360buyimg.com/mobilecms/s750x366_jfs/t1/73882/21/1179/95457/5cf63648E9b3220e4/3a9cfd61213976f1.jpg!cr_1125x549_0_72!q70.jpg.dpg',
+                  this.swipperOptionsList[index].imageUrl
                 ),
                 fit: BoxFit.fill,
               ),
