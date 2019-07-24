@@ -31,14 +31,14 @@ dependencies:
   dio: ^2.1.13
   # webview
   flutter_webview_plugin: ^0.3.5
-  json_annotation: ^0.2.3
+  json_annotation: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   # json generator
-  build_runner: ^0.9.0
-  json_serializable: ^0.5.4
+  build_runner: ^1.0.0
+  json_serializable: ^2.0.0
 
 
 # For information on the generic Dart part of this file, see the
