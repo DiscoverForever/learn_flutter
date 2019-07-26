@@ -1,9 +1,11 @@
-import 'package:json_annotation/json_annotation.dart';
-
+import 'package:json_annotation/json_annotation.dart'; 
+  
 part 'welcome_home.g.dart';
 
+
 @JsonSerializable()
-class WelcomeHome extends Object {
+  class WelcomeHome extends Object {
+
   @JsonKey(name: 'naviVer')
   String naviVer;
 
@@ -103,50 +105,18 @@ class WelcomeHome extends Object {
   @JsonKey(name: 'webViewFloorList')
   List<WebViewFloorList> webViewFloorList;
 
-  WelcomeHome(
-    this.naviVer,
-    this.toTopBtnImg,
-    this.configDisplayVersion,
-    this.userCategory,
-    this.executeTime,
-    this.topBgImgBig,
-    this.personalSourceValue,
-    this.popMessage,
-    this.searchBgColor,
-    this.displayVersion,
-    this.tagAnimations,
-    this.showLightIcon,
-    this.canBeDefault,
-    this.loginText,
-    this.floorList,
-    this.toBottomBtnImg,
-    this.cycNum,
-    this.useNewBrands,
-    this.alignedCurrentTime,
-    this.cycFirstTimeStamp,
-    this.searchBgImg,
-    this.code,
-    this.appCenterAnimations,
-    this.skinSwitch,
-    this.lottieCartoonList,
-    this.topIconText,
-    this.useComponentImg,
-    this.topBgImgBigColor,
-    this.appCenterCartoonSwitch,
-    this.topBgImg,
-    this.recommendAB,
-    this.lazy,
-    this.webViewFloorList,
-  );
+  WelcomeHome(this.naviVer,this.toTopBtnImg,this.configDisplayVersion,this.userCategory,this.executeTime,this.topBgImgBig,this.personalSourceValue,this.popMessage,this.searchBgColor,this.displayVersion,this.tagAnimations,this.showLightIcon,this.canBeDefault,this.loginText,this.floorList,this.toBottomBtnImg,this.cycNum,this.useNewBrands,this.alignedCurrentTime,this.cycFirstTimeStamp,this.searchBgImg,this.code,this.appCenterAnimations,this.skinSwitch,this.lottieCartoonList,this.topIconText,this.useComponentImg,this.topBgImgBigColor,this.appCenterCartoonSwitch,this.topBgImg,this.recommendAB,this.lazy,this.webViewFloorList,);
 
-  factory WelcomeHome.fromJson(Map<String, dynamic> srcJson) =>
-      _$WelcomeHomeFromJson(srcJson);
+  factory WelcomeHome.fromJson(Map<String, dynamic> srcJson) => _$WelcomeHomeFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$WelcomeHomeToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class FloorList extends Object {
+  class FloorList extends Object {
+
   @JsonKey(name: 'curve')
   int curve;
 
@@ -171,25 +141,18 @@ class FloorList extends Object {
   @JsonKey(name: 'slipTime')
   int slipTime;
 
-  FloorList(
-    this.curve,
-    this.content,
-    this.bottomMargin,
-    this.isNewStyle,
-    this.showName,
-    this.isShadow,
-    this.type,
-    this.slipTime,
-  );
+  FloorList(this.curve,this.content,this.bottomMargin,this.isNewStyle,this.showName,this.isShadow,this.type,this.slipTime,);
 
-  factory FloorList.fromJson(Map<String, dynamic> srcJson) =>
-      _$FloorListFromJson(srcJson);
+  factory FloorList.fromJson(Map<String, dynamic> srcJson) => _$FloorListFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$FloorListToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class Content extends Object {
+  class Content extends Object {
+
   @JsonKey(name: 'extension_id')
   String extensionId;
 
@@ -223,28 +186,18 @@ class Content extends Object {
   @JsonKey(name: 'jump')
   Jump jump;
 
-  Content(
-    this.extensionId,
-    this.activityId,
-    this.sortno,
-    this.abt,
-    this.title,
-    this.wareDisplayType,
-    this.horizontalImag,
-    this.sourceTag,
-    this.exposalUrl,
-    this.clickUrl,
-    this.jump,
-  );
+  Content(this.extensionId,this.activityId,this.sortno,this.abt,this.title,this.wareDisplayType,this.horizontalImag,this.sourceTag,this.exposalUrl,this.clickUrl,this.jump,);
 
-  factory Content.fromJson(Map<String, dynamic> srcJson) =>
-      _$ContentFromJson(srcJson);
+  factory Content.fromJson(Map<String, dynamic> srcJson) => _$ContentFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$ContentToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class Jump extends Object {
+  class Jump extends Object {
+
   @JsonKey(name: 'des')
   String des;
 
@@ -254,35 +207,33 @@ class Jump extends Object {
   @JsonKey(name: 'srv')
   String srv;
 
-  Jump(
-    this.des,
-    this.params,
-    this.srv,
-  );
+  Jump(this.des,this.params,this.srv,);
 
-  factory Jump.fromJson(Map<String, dynamic> srcJson) =>
-      _$JumpFromJson(srcJson);
+  factory Jump.fromJson(Map<String, dynamic> srcJson) => _$JumpFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$JumpToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class Params extends Object {
+  class Params extends Object {
+
   @JsonKey(name: 'url')
   String url;
 
-  Params(
-    this.url,
-  );
+  Params(this.url,);
 
-  factory Params.fromJson(Map<String, dynamic> srcJson) =>
-      _$ParamsFromJson(srcJson);
+  factory Params.fromJson(Map<String, dynamic> srcJson) => _$ParamsFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$ParamsToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class WebViewFloorList extends Object {
+  class WebViewFloorList extends Object {
+
   @JsonKey(name: 'curve')
   int curve;
 
@@ -379,78 +330,48 @@ class WebViewFloorList extends Object {
   @JsonKey(name: 'bottomColor')
   String bottomColor;
 
-  WebViewFloorList(
-    this.curve,
-    this.showTimes,
-    this.logoImage,
-    this.cornerDegree,
-    this.passthrough,
-    this.marginHorizontal,
-    this.type,
-    this.rightCorner,
-    this.floorId,
-    this.showName,
-    this.moduleFunction,
-    this.floorOrder,
-    this.head,
-    this.resultHeight,
-    this.rightCornerImg,
-    this.bottomMargin,
-    this.sourceValue,
-    this.textColor,
-    this.marginTop,
-    this.bottomMarginWidth,
-    this.headType,
-    this.bottomMarginColor,
-    this.jump,
-    this.marginColor,
-    this.rightCornerColor,
-    this.innnerInterval,
-    this.webViewList,
-    this.refreshHeight,
-    this.verticalInterval,
-    this.animationTime,
-    this.tips,
-    this.bottomColor,
-  );
+  WebViewFloorList(this.curve,this.showTimes,this.logoImage,this.cornerDegree,this.passthrough,this.marginHorizontal,this.type,this.rightCorner,this.floorId,this.showName,this.moduleFunction,this.floorOrder,this.head,this.resultHeight,this.rightCornerImg,this.bottomMargin,this.sourceValue,this.textColor,this.marginTop,this.bottomMarginWidth,this.headType,this.bottomMarginColor,this.jump,this.marginColor,this.rightCornerColor,this.innnerInterval,this.webViewList,this.refreshHeight,this.verticalInterval,this.animationTime,this.tips,this.bottomColor,);
 
-  factory WebViewFloorList.fromJson(Map<String, dynamic> srcJson) =>
-      _$WebViewFloorListFromJson(srcJson);
+  factory WebViewFloorList.fromJson(Map<String, dynamic> srcJson) => _$WebViewFloorListFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$WebViewFloorListToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class Jump extends Object {
+  class Jump extends Object {
+
   @JsonKey(name: 'params')
   Params params;
 
   @JsonKey(name: 'srv')
   int srv;
 
-  Jump(
-    this.params,
-    this.srv,
-  );
+  Jump(this.params,this.srv,);
 
-  factory Jump.fromJson(Map<String, dynamic> srcJson) =>
-      _$JumpFromJson(srcJson);
+  factory Jump.fromJson(Map<String, dynamic> srcJson) => _$JumpFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$JumpToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class Params extends Object {
+  class Params extends Object {
+
   Params();
 
-  factory Params.fromJson(Map<String, dynamic> srcJson) =>
-      _$ParamsFromJson(srcJson);
+  factory Params.fromJson(Map<String, dynamic> srcJson) => _$ParamsFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$ParamsToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class WebViewList extends Object {
+  class WebViewList extends Object {
+
   @JsonKey(name: 'img')
   String img;
 
@@ -463,21 +384,18 @@ class WebViewList extends Object {
   @JsonKey(name: 'jump')
   Jump jump;
 
-  WebViewList(
-    this.img,
-    this.expo,
-    this.wordsColor,
-    this.jump,
-  );
+  WebViewList(this.img,this.expo,this.wordsColor,this.jump,);
 
-  factory WebViewList.fromJson(Map<String, dynamic> srcJson) =>
-      _$WebViewListFromJson(srcJson);
+  factory WebViewList.fromJson(Map<String, dynamic> srcJson) => _$WebViewListFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$WebViewListToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class Jump extends Object {
+  class Jump extends Object {
+
   @JsonKey(name: 'des')
   String des;
 
@@ -490,44 +408,42 @@ class Jump extends Object {
   @JsonKey(name: 'srv')
   int srv;
 
-  Jump(
-    this.des,
-    this.shareInfo,
-    this.params,
-    this.srv,
-  );
+  Jump(this.des,this.shareInfo,this.params,this.srv,);
 
-  factory Jump.fromJson(Map<String, dynamic> srcJson) =>
-      _$JumpFromJson(srcJson);
+  factory Jump.fromJson(Map<String, dynamic> srcJson) => _$JumpFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$JumpToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class ShareInfo extends Object {
+  class ShareInfo extends Object {
+
   ShareInfo();
 
-  factory ShareInfo.fromJson(Map<String, dynamic> srcJson) =>
-      _$ShareInfoFromJson(srcJson);
+  factory ShareInfo.fromJson(Map<String, dynamic> srcJson) => _$ShareInfoFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$ShareInfoToJson(this);
+
 }
 
+  
 @JsonSerializable()
-class Params extends Object {
+  class Params extends Object {
+
   @JsonKey(name: 'needLogin')
   String needLogin;
 
   @JsonKey(name: 'url')
   String url;
 
-  Params(
-    this.needLogin,
-    this.url,
-  );
+  Params(this.needLogin,this.url,);
 
-  factory Params.fromJson(Map<String, dynamic> srcJson) =>
-      _$ParamsFromJson(srcJson);
+  factory Params.fromJson(Map<String, dynamic> srcJson) => _$ParamsFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$ParamsToJson(this);
+
 }
+
+  
