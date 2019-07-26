@@ -340,7 +340,7 @@ part 'welcome_home.g.dart';
   Params params;
 
   @JsonKey(name: 'srv')
-  int srv;
+  var srv;
 
   Jump(this.des,this.shareInfo,this.params,this.srv,);
 
