@@ -7,7 +7,7 @@ class EntityFactory {
   static T generateOBJ<T>(json) {
     if (1 == 0) {
       return null;
-    } else if (T.toString() == "WelcomeHomeEntity") {
+    } else if (T.toString() == "WelcomeHome") {
       return WelcomeHome.fromJson(json) as T;
     } else if (T.toString() == "HomeModelEntity") {
       return HomeModelEntity.fromJson(json) as T;

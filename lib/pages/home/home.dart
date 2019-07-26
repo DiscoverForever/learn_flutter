@@ -44,8 +44,8 @@ class MyHomePageState extends State<MyHomePage> {
   /// 获取初始化数据
   getInitData() async {
     var response = await RequestUtil.getInstance().post(Api.home);
-    // var data = EntityFactory.generateOBJ(response.data);
-    // print(data);
+    var data = EntityFactory.generateOBJ<WelcomeHome>(response.data);
+    print(data.floorList);
   }
 
   @override

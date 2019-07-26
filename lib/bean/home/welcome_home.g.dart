@@ -249,7 +249,7 @@ Jump _$JumpFromJson(Map<String, dynamic> json) {
       json['params'] == null
           ? null
           : Params.fromJson(json['params'] as Map<String, dynamic>),
-      json['srv'] as int);
+      json['srv'] as dynamic);
 }
 
 Map<String, dynamic> _$JumpToJson(Jump instance) => <String, dynamic>{
