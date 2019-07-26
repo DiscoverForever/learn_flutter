@@ -125,7 +125,9 @@ Content _$ContentFromJson(Map<String, dynamic> json) {
       json['sourceTag'] as String,
       json['exposalUrl'] as String,
       json['clickUrl'] as String,
-      json['jump']);
+      json['jump'] == null
+          ? null
+          : Jump.fromJson(json['jump'] as Map<String, dynamic>));
 }
 
 Map<String, dynamic> _$ContentToJson(Content instance) => <String, dynamic>{
@@ -141,23 +143,6 @@ Map<String, dynamic> _$ContentToJson(Content instance) => <String, dynamic>{
       'clickUrl': instance.clickUrl,
       'jump': instance.jump
     };
-
-Jump _$JumpFromJson(Map<String, dynamic> json) {
-  return Jump(json['des'] as String, json['params'], json['srv'] as String);
-}
-
-Map<String, dynamic> _$JumpToJson(Jump instance) => <String, dynamic>{
-      'des': instance.des,
-      'params': instance.params,
-      'srv': instance.srv
-    };
-
-Params _$ParamsFromJson(Map<String, dynamic> json) {
-  return Params(json['url'] as String);
-}
-
-Map<String, dynamic> _$ParamsToJson(Params instance) =>
-    <String, dynamic>{'url': instance.url};
 
 WebViewFloorList _$WebViewFloorListFromJson(Map<String, dynamic> json) {
   return WebViewFloorList(
@@ -183,7 +168,9 @@ WebViewFloorList _$WebViewFloorListFromJson(Map<String, dynamic> json) {
       json['bottomMarginWidth'] as int,
       json['headType'] as int,
       json['bottomMarginColor'] as String,
-      json['jump'],
+      json['jump'] == null
+          ? null
+          : Jump.fromJson(json['jump'] as Map<String, dynamic>),
       json['marginColor'] as String,
       json['rightCornerColor'] as String,
       json['innnerInterval'] as int,
@@ -235,22 +222,14 @@ Map<String, dynamic> _$WebViewFloorListToJson(WebViewFloorList instance) =>
       'bottomColor': instance.bottomColor
     };
 
-Jump _$JumpFromJson(Map<String, dynamic> json) {
-  return Jump(json['params'], json['srv'] as int);
-}
-
-Map<String, dynamic> _$JumpToJson(Jump instance) =>
-    <String, dynamic>{'params': instance.params, 'srv': instance.srv};
-
-Params _$ParamsFromJson(Map<String, dynamic> json) {
-  return Params();
-}
-
-Map<String, dynamic> _$ParamsToJson(Params instance) => <String, dynamic>{};
-
 WebViewList _$WebViewListFromJson(Map<String, dynamic> json) {
-  return WebViewList(json['img'] as String, json['expo'] as String,
-      json['wordsColor'] as String, json['jump']);
+  return WebViewList(
+      json['img'] as String,
+      json['expo'] as String,
+      json['wordsColor'] as String,
+      json['jump'] == null
+          ? null
+          : Jump.fromJson(json['jump'] as Map<String, dynamic>));
 }
 
 Map<String, dynamic> _$WebViewListToJson(WebViewList instance) =>
@@ -267,7 +246,9 @@ Jump _$JumpFromJson(Map<String, dynamic> json) {
       json['shareInfo'] == null
           ? null
           : ShareInfo.fromJson(json['shareInfo'] as Map<String, dynamic>),
-      json['params'],
+      json['params'] == null
+          ? null
+          : Params.fromJson(json['params'] as Map<String, dynamic>),
       json['srv'] as int);
 }
 

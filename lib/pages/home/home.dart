@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:learn_flutter/bean/home/welcome_home_entity.dart';
+import 'package:learn_flutter/bean/home/welcome_home.dart';
 import 'package:learn_flutter/pages/home/floor.dart';
 import 'package:learn_flutter/pages/home/header.dart';
 import 'package:learn_flutter/pages/home/item_list.dart';

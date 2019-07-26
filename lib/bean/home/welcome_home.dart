@@ -196,42 +196,6 @@ part 'welcome_home.g.dart';
 
   
 @JsonSerializable()
-  class Jump extends Object {
-
-  @JsonKey(name: 'des')
-  String des;
-
-  @JsonKey(name: 'params')
-  Params params;
-
-  @JsonKey(name: 'srv')
-  String srv;
-
-  Jump(this.des,this.params,this.srv,);
-
-  factory Jump.fromJson(Map<String, dynamic> srcJson) => _$JumpFromJson(srcJson);
-
-  Map<String, dynamic> toJson() => _$JumpToJson(this);
-
-}
-
-  
-@JsonSerializable()
-  class Params extends Object {
-
-  @JsonKey(name: 'url')
-  String url;
-
-  Params(this.url,);
-
-  factory Params.fromJson(Map<String, dynamic> srcJson) => _$ParamsFromJson(srcJson);
-
-  Map<String, dynamic> toJson() => _$ParamsToJson(this);
-
-}
-
-  
-@JsonSerializable()
   class WebViewFloorList extends Object {
 
   @JsonKey(name: 'curve')
@@ -335,36 +299,6 @@ part 'welcome_home.g.dart';
   factory WebViewFloorList.fromJson(Map<String, dynamic> srcJson) => _$WebViewFloorListFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$WebViewFloorListToJson(this);
-
-}
-
-  
-@JsonSerializable()
-  class Jump extends Object {
-
-  @JsonKey(name: 'params')
-  Params params;
-
-  @JsonKey(name: 'srv')
-  int srv;
-
-  Jump(this.params,this.srv,);
-
-  factory Jump.fromJson(Map<String, dynamic> srcJson) => _$JumpFromJson(srcJson);
-
-  Map<String, dynamic> toJson() => _$JumpToJson(this);
-
-}
-
-  
-@JsonSerializable()
-  class Params extends Object {
-
-  Params();
-
-  factory Params.fromJson(Map<String, dynamic> srcJson) => _$ParamsFromJson(srcJson);
-
-  Map<String, dynamic> toJson() => _$ParamsToJson(this);
 
 }
 

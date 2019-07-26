@@ -296,7 +296,7 @@ class HomeModelWebviewfloorlistWebviewlistJump {
 class HomeModelWebviewfloorlistWebviewlistJumpShareinfo {
 
 
-	HomeModelWebviewfloorlistWebviewlistJumpShareinfo({});
+	HomeModelWebviewfloorlistWebviewlistJumpShareinfo();
 
 	HomeModelWebviewfloorlistWebviewlistJumpShareinfo.fromJson(Map<String, dynamic> json) {
 	}
@@ -350,7 +350,7 @@ class HomeModelWebviewfloorlistJump {
 class HomeModelWebviewfloorlistJumpParams {
 
 
-	HomeModelWebviewfloorlistJumpParams({});
+	HomeModelWebviewfloorlistJumpParams();
 
 	HomeModelWebviewfloorlistJumpParams.fromJson(Map<String, dynamic> json) {
 	}
@@ -547,7 +547,7 @@ class HomeModelFloorlistMorejump {
 class HomeModelFloorlistMorejumpParams {
 
 
-	HomeModelFloorlistMorejumpParams({});
+	HomeModelFloorlistMorejumpParams();
 
 	HomeModelFloorlistMorejumpParams.fromJson(Map<String, dynamic> json) {
 	}
