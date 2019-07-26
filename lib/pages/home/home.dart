@@ -4,6 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:learn_flutter/bean/home/welcome_home_entity.dart';
 import 'package:learn_flutter/pages/home/floor.dart';
 import 'package:learn_flutter/pages/home/header.dart';
 import 'package:learn_flutter/pages/home/item_list.dart';
@@ -43,6 +44,8 @@ class MyHomePageState extends State<MyHomePage> {
   /// 获取初始化数据
   getInitData() async {
     var response = await RequestUtil.getInstance().post(Api.home);
+    // var data = EntityFactory.generateOBJ(response.data);
+    // print(data);
   }
 
   @override
