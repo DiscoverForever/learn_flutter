@@ -8,6 +8,7 @@ import 'package:learn_flutter/bean/home/welcome_home.dart';
 import 'package:learn_flutter/pages/home/floor.dart';
 import 'package:learn_flutter/pages/home/header.dart';
 import 'package:learn_flutter/pages/home/item_list.dart';
+import 'package:learn_flutter/pages/home/sliver_header.dart';
 import 'package:learn_flutter/pages/home/swipper_image.dart';
 import 'package:learn_flutter/utils/request_util.dart';
 import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
@@ -66,16 +67,13 @@ class MyHomePageState extends State<MyHomePage> {
         Expanded(
           child: CustomScrollView(
             slivers: <Widget>[
+              SliverHeader(),
               SliverToBoxAdapter(
                 child: Column(
                   children: <Widget>[
                     Container(
                       child: Column(
                         children: <Widget>[
-                          Container(
-                            height: 48,
-                          ),
-                          Header(),
                           SwipperImage(
                             width: MediaQuery.of(context).size.width,
                             backgroundImageUrl: this.swipperBgImageUrl,

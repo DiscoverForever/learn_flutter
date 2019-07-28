@@ -37,7 +37,7 @@ class SwipperImage extends StatelessWidget {
                 image: NetworkImage(
                   this.swipperOptionsList[index].imageUrl
                 ),
-                fit: BoxFit.fill,
+                fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.all(Radius.circular(6))
             ),
