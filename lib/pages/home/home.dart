@@ -24,7 +24,9 @@ class MyHomePage extends StatefulWidget {
 class MyHomePageState extends State<MyHomePage> {
   int currentIndex = 0;
   List<FloorModelResultContentData> floorList = [];
-
+  List<SwipperOptions> swipperOptionsList = [];
+  String swipperBgImageUrl =
+      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564260778041&di=035a5d4a7d370268e316035730a25a58&imgtype=0&src=http%3A%2F%2Fcdn.lizhi.fm%2Fradio_cover%2F2014%2F06%2F18%2F12383567000424964.jpg';
   @override
   initState() {
     super.initState();
@@ -33,7 +35,6 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   getFloorList() async {
-    print(Api.appCenterInfo);
     var response = await RequestUtil.getInstance().post(Api.appCenterInfo);
     this.setState(() {
       var res = EntityFactory.generateOBJ<FloorModelEntity>(response.data);
@@ -45,25 +46,50 @@ class MyHomePageState extends State<MyHomePage> {
   getInitData() async {
     var response = await RequestUtil.getInstance().post(Api.home);
     var data = EntityFactory.generateOBJ<WelcomeHome>(response.data);
-    print(data.floorList);
+    this.setState(() {
+      var swipperList =
+          data.floorList[0]?.content != null ? data.floorList[0]?.content : [];
+      var list = (swipperList as List).map((val) {
+        return SwipperOptions(
+            imageUrl: val['horizontalImag'],
+            jumpUrl: val['jump']['params']['url']);
+      });
+      this.swipperBgImageUrl = data.topBgImgBig;
+      this.swipperOptionsList = list.toList();
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Container(
-          height: 48,
-          color: Colors.red,
-        ),
-        Header(),
         Expanded(
           child: CustomScrollView(
             slivers: <Widget>[
               SliverToBoxAdapter(
                 child: Column(
                   children: <Widget>[
-                    SwipperImage(width: double.infinity, swipperOptionsList: [ SwipperOptions(jumpUrl: '', imageUrl: 'https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/72564/34/4860/101165/5d317307E04c602ce/66000ea7bf6545b3.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp') ],),
+                    Container(
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            height: 48,
+                          ),
+                          Header(),
+                          SwipperImage(
+                            width: MediaQuery.of(context).size.width,
+                            backgroundImageUrl: this.swipperBgImageUrl,
+                            swipperOptionsList: this.swipperOptionsList,
+                          ),
+                        ],
+                      ),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(this.swipperBgImageUrl),
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
                     // Image.network('https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/57927/10/5246/102061/5d2ef10bEf2debf2e/93d987f05fa960ea.jpg.dpg.webp'),
                     Container(
                       height: 145,

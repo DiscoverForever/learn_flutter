@@ -121,7 +121,7 @@ part 'welcome_home.g.dart';
   int curve;
 
   @JsonKey(name: 'content')
-  List<Content> content;
+  dynamic content;
 
   @JsonKey(name: 'bottomMargin')
   int bottomMargin;

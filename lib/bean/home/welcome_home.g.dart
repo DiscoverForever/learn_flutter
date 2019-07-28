@@ -90,10 +90,7 @@ Map<String, dynamic> _$WelcomeHomeToJson(WelcomeHome instance) =>
 FloorList _$FloorListFromJson(Map<String, dynamic> json) {
   return FloorList(
       json['curve'] as int,
-      (json['content'] as List)
-          ?.map((e) =>
-              e == null ? null : Content.fromJson(e as Map<String, dynamic>))
-          ?.toList(),
+      json['content'],
       json['bottomMargin'] as int,
       json['isNewStyle'] as int,
       json['showName'] as String,
@@ -249,7 +246,7 @@ Jump _$JumpFromJson(Map<String, dynamic> json) {
       json['params'] == null
           ? null
           : Params.fromJson(json['params'] as Map<String, dynamic>),
-      json['srv'] as dynamic);
+      json['srv']);
 }
 
 Map<String, dynamic> _$JumpToJson(Jump instance) => <String, dynamic>{
