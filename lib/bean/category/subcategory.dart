@@ -1,113 +1,116 @@
-class Subcategory {
+import 'package:json_annotation/json_annotation.dart';
+
+part 'subcategory.g.dart';
+
+@JsonSerializable()
+class Subcategory extends Object {
+  @JsonKey(name: 'code')
   String code;
+
+  @JsonKey(name: 'data')
   List<Data> data;
-  String reshowInterval;
 
-  Subcategory({this.code, this.data, this.reshowInterval});
+  Subcategory(
+    this.code,
+    this.data,
+  );
 
-  Subcategory.fromJson(Map<String, dynamic> json) {
-    code = json['code'];
-    if (json['data'] != null) {
-      data = new List<Data>();
-      json['data'].forEach((v) {
-        data.add(new Data.fromJson(v));
-      });
-    }
-    reshowInterval = json['reshowInterval'];
-  }
+  factory Subcategory.fromJson(Map<String, dynamic> srcJson) =>
+      _$SubcategoryFromJson(srcJson);
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['code'] = this.code;
-    if (this.data != null) {
-      data['data'] = this.data.map((v) => v.toJson()).toList();
-    }
-    data['reshowInterval'] = this.reshowInterval;
-    return data;
-  }
+  Map<String, dynamic> toJson() => _$SubcategoryToJson(this);
 }
 
-class Data {
+@JsonSerializable()
+class Data extends Object {
+  @JsonKey(name: 'isBook')
+  bool isBook;
+
+  @JsonKey(name: 'rankingFlag')
+  bool rankingFlag;
+
+  @JsonKey(name: 'catelogyList')
   List<CatelogyList> catelogyList;
-  bool hideClearIcon;
-  String name;
+
+  @JsonKey(name: 'columNum')
   int columNum;
+
+  @JsonKey(name: 'icon')
+  String icon;
+
+  @JsonKey(name: 'name')
+  String name;
+
+  @JsonKey(name: 'special_ui')
+  bool specialUi;
+
+  @JsonKey(name: 'cid')
   int cid;
 
   Data(
-      {this.catelogyList,
-      this.hideClearIcon,
-      this.name,
-      this.columNum,
-      this.cid});
+    this.isBook,
+    this.rankingFlag,
+    this.catelogyList,
+    this.columNum,
+    this.icon,
+    this.name,
+    this.specialUi,
+    this.cid,
+  );
 
-  Data.fromJson(Map<String, dynamic> json) {
-    if (json['catelogyList'] != null) {
-      catelogyList = new List<CatelogyList>();
-      json['catelogyList'].forEach((v) {
-        catelogyList.add(new CatelogyList.fromJson(v));
-      });
-    }
-    hideClearIcon = json['hideClearIcon'];
-    name = json['name'];
-    columNum = json['columNum'];
-    cid = json['cid'];
-  }
+  factory Data.fromJson(Map<String, dynamic> srcJson) =>
+      _$DataFromJson(srcJson);
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (this.catelogyList != null) {
-      data['catelogyList'] = this.catelogyList.map((v) => v.toJson()).toList();
-    }
-    data['hideClearIcon'] = this.hideClearIcon;
-    data['name'] = this.name;
-    data['columNum'] = this.columNum;
-    data['cid'] = this.cid;
-    return data;
-  }
+  Map<String, dynamic> toJson() => _$DataToJson(this);
 }
 
-class CatelogyList {
+@JsonSerializable()
+class CatelogyList extends Object {
+  @JsonKey(name: 'path')
   String path;
+
+  @JsonKey(name: 'isRealid')
   int isRealid;
+
+  @JsonKey(name: 'sortKey')
   String sortKey;
+
+  @JsonKey(name: 'isMerger')
   bool isMerger;
+
+  @JsonKey(name: 'icon')
   String icon;
+
+  @JsonKey(name: 'name')
   String name;
-  int columNum;
+
+  @JsonKey(name: 'virtualFlag')
+  int virtualFlag;
+
+  @JsonKey(name: 'isIndividual')
+  bool isIndividual;
+
+  @JsonKey(name: 'shopId')
+  String shopId;
+
+  @JsonKey(name: 'cid')
   int cid;
 
   CatelogyList(
-      {this.path,
-      this.isRealid,
-      this.sortKey,
-      this.isMerger,
-      this.icon,
-      this.name,
-      this.columNum,
-      this.cid});
+    this.path,
+    this.isRealid,
+    this.sortKey,
+    this.isMerger,
+    this.icon,
+    this.name,
+    this.virtualFlag,
+    this.isIndividual,
+    this.shopId,
+    this.cid,
+  );
 
-  CatelogyList.fromJson(Map<String, dynamic> json) {
-    path = json['path'];
-    isRealid = json['isRealid'];
-    sortKey = json['sortKey'];
-    isMerger = json['isMerger'];
-    icon = json['icon'];
-    name = json['name'];
-    columNum = json['columNum'];
-    cid = json['cid'];
-  }
+  factory CatelogyList.fromJson(Map<String, dynamic> srcJson) =>
+      _$CatelogyListFromJson(srcJson);
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['path'] = this.path;
-    data['isRealid'] = this.isRealid;
-    data['sortKey'] = this.sortKey;
-    data['isMerger'] = this.isMerger;
-    data['icon'] = this.icon;
-    data['name'] = this.name;
-    data['columNum'] = this.columNum;
-    data['cid'] = this.cid;
-    return data;
-  }
+  Map<String, dynamic> toJson() => _$CatelogyListToJson(this);
 }
