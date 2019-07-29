@@ -34,16 +34,16 @@ class IndexState extends State<Index> {
         //   title: Text(''),
         // ),
         body: pageMap[this.currentIndex],
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            Fluttertoast.showToast(
-              msg: 'you click me',
-            );
-          },
-          child: Center(
-            child: Icon(Icons.add),
-          ),
-        ),
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: () {
+        //     Fluttertoast.showToast(
+        //       msg: 'you click me',
+        //     );
+        //   },
+        //   child: Center(
+        //     child: Icon(Icons.add),
+        //   ),
+        // ),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
           selectedItemColor: Colors.red,
