@@ -39,7 +39,7 @@ class _FloorState extends State<Floor> {
     return Center(
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: 145,
+        height: 160,
         decoration: BoxDecoration(
           image: DecorationImage(
             image: NetworkImage(
