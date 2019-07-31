@@ -74,15 +74,19 @@ class WareInfo extends Object {
 
   @JsonKey(name: 'wname')
   String wname;
-
   @JsonKey(name: 'wareType')
   int wareType;
-
   @JsonKey(name: 'markType')
   int markType;
 
   @JsonKey(name: 'isMonetized')
   bool isMonetized;
+
+  @JsonKey(name: 'description')
+  String description;
+
+  @JsonKey(name: 'descriptionMore')
+  String descriptionMore;
 
   @JsonKey(name: 'imageurl')
   String imageurl;
@@ -138,6 +142,9 @@ class WareInfo extends Object {
   @JsonKey(name: 'opPrice')
   String opPrice;
 
+  @JsonKey(name: 'isOpenApp')
+  String isOpenApp;
+
   @JsonKey(name: 'interactive')
   String interactive;
 
@@ -146,6 +153,12 @@ class WareInfo extends Object {
 
   @JsonKey(name: 'seedIndex')
   String seedIndex;
+
+  @JsonKey(name: 'nonWareIcon')
+  String nonWareIcon;
+
+  @JsonKey(name: 'fontColor')
+  String fontColor;
 
   @JsonKey(name: 'client_exposal_url')
   String clientExposalUrl;
@@ -209,6 +222,11 @@ class WareInfo extends Object {
 
   @JsonKey(name: 'canAddCart')
   String canAddCart;
+  @JsonKey(name: 'subWareList')
+  List<Subware> subWareList;
+
+  @JsonKey(name: 'channelJumpUrl')
+  String channelJumpUrl;
 
   @JsonKey(name: 'couponSortType')
   int couponSortType;
@@ -273,8 +291,26 @@ class WareInfo extends Object {
   @JsonKey(name: 'isCoupon')
   String isCoupon;
 
+  @JsonKey(name: 'mergePicUrl')
+  String mergePicUrl;
+
+  @JsonKey(name: 'crownPicUrl')
+  String crownPicUrl;
+
+  @JsonKey(name: 'themeBgcolorStart')
+  String themeBgcolorStart;
+
+  @JsonKey(name: 'themeBgcolorEnd')
+  String themeBgcolorEnd;
+
+  @JsonKey(name: 'picNum')
+  String picNum;
+
   @JsonKey(name: 'spu')
   String spu;
+
+  @JsonKey(name: 'nonWareType')
+  String nonWareType;
 
   @JsonKey(name: 'jdShop')
   bool jdShop;
@@ -287,6 +323,8 @@ class WareInfo extends Object {
     this.wareType,
     this.markType,
     this.isMonetized,
+    this.description,
+    this.descriptionMore,
     this.imageurl,
     this.imageurlType,
     this.good,
@@ -305,9 +343,12 @@ class WareInfo extends Object {
     this.extensionId,
     this.samePicPid,
     this.opPrice,
+    this.isOpenApp,
     this.interactive,
     this.seedPage,
     this.seedIndex,
+    this.nonWareIcon,
+    this.fontColor,
     this.clientExposalUrl,
     this.clientClickUrl,
     this.canClipTitleImg,
@@ -329,6 +370,8 @@ class WareInfo extends Object {
     this.clickUrl,
     this.similarEnter,
     this.canAddCart,
+    this.subWareList,
+    this.channelJumpUrl,
     this.couponSortType,
     this.canNegFeedback,
     this.reqsig,
@@ -345,12 +388,19 @@ class WareInfo extends Object {
     this.sourceValue,
     this.sourceValueFeedback,
     this.sourceValueSimilar,
+    
     this.source,
     this.exposureSourceValue,
     this.expid,
     this.feedBackReason,
     this.isCoupon,
+    this.mergePicUrl,
+    this.crownPicUrl,
+    this.themeBgcolorStart,
+    this.themeBgcolorEnd,
+    this.picNum,
     this.spu,
+    this.nonWareType,
     this.jdShop,
   );
 
@@ -377,4 +427,27 @@ class FeedBackReason extends Object {
       _$FeedBackReasonFromJson(srcJson);
 
   Map<String, dynamic> toJson() => _$FeedBackReasonToJson(this);
+}
+
+@JsonSerializable()
+class Subware extends Object {
+  @JsonKey(name: 'wareId')
+  String wareId;
+
+  @JsonKey(name: 'imageUrl')
+  String imageUrl;
+
+  @JsonKey(name: 'pid')
+  String pid;
+
+  Subware(
+    this.wareId,
+    this.imageUrl,
+    this.pid,
+  );
+
+  factory Subware.fromJson(Map<String, dynamic> srcJson) =>
+      _$SubwareFromJson(srcJson);
+
+  Map<String, dynamic> toJson() => _$SubwareToJson(this);
 }

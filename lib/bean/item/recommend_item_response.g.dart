@@ -52,6 +52,8 @@ WareInfo _$WareInfoFromJson(Map<String, dynamic> json) {
       json['wareType'] as int,
       json['markType'] as int,
       json['isMonetized'] as bool,
+      json['description'] as String,
+      json['descriptionMore'] as String,
       json['imageurl'] as String,
       json['imageurlType'] as int,
       json['good'] as String,
@@ -70,9 +72,12 @@ WareInfo _$WareInfoFromJson(Map<String, dynamic> json) {
       json['extension_id'] as String,
       json['samePicPid'] as String,
       json['opPrice'] as String,
+      json['isOpenApp'] as String,
       json['interactive'] as String,
       json['seedPage'] as String,
       json['seedIndex'] as String,
+      json['nonWareIcon'] as String,
+      json['fontColor'] as String,
       json['client_exposal_url'] as String,
       json['client_click_url'] as String,
       json['canClipTitleImg'] as bool,
@@ -94,6 +99,11 @@ WareInfo _$WareInfoFromJson(Map<String, dynamic> json) {
       json['clickUrl'] as String,
       json['similarEnter'] as String,
       json['canAddCart'] as String,
+      (json['subWareList'] as List)
+          ?.map((e) =>
+              e == null ? null : Subware.fromJson(e as Map<String, dynamic>))
+          ?.toList(),
+      json['channelJumpUrl'] as String,
       json['couponSortType'] as int,
       json['canNegFeedback'] as String,
       json['reqsig'] as String,
@@ -119,7 +129,13 @@ WareInfo _$WareInfoFromJson(Map<String, dynamic> json) {
               : FeedBackReason.fromJson(e as Map<String, dynamic>))
           ?.toList(),
       json['isCoupon'] as String,
+      json['mergePicUrl'] as String,
+      json['crownPicUrl'] as String,
+      json['themeBgcolorStart'] as String,
+      json['themeBgcolorEnd'] as String,
+      json['picNum'] as String,
       json['spu'] as String,
+      json['nonWareType'] as String,
       json['jdShop'] as bool);
 }
 
@@ -131,6 +147,8 @@ Map<String, dynamic> _$WareInfoToJson(WareInfo instance) => <String, dynamic>{
       'wareType': instance.wareType,
       'markType': instance.markType,
       'isMonetized': instance.isMonetized,
+      'description': instance.description,
+      'descriptionMore': instance.descriptionMore,
       'imageurl': instance.imageurl,
       'imageurlType': instance.imageurlType,
       'good': instance.good,
@@ -149,9 +167,12 @@ Map<String, dynamic> _$WareInfoToJson(WareInfo instance) => <String, dynamic>{
       'extension_id': instance.extensionId,
       'samePicPid': instance.samePicPid,
       'opPrice': instance.opPrice,
+      'isOpenApp': instance.isOpenApp,
       'interactive': instance.interactive,
       'seedPage': instance.seedPage,
       'seedIndex': instance.seedIndex,
+      'nonWareIcon': instance.nonWareIcon,
+      'fontColor': instance.fontColor,
       'client_exposal_url': instance.clientExposalUrl,
       'client_click_url': instance.clientClickUrl,
       'canClipTitleImg': instance.canClipTitleImg,
@@ -173,6 +194,8 @@ Map<String, dynamic> _$WareInfoToJson(WareInfo instance) => <String, dynamic>{
       'clickUrl': instance.clickUrl,
       'similarEnter': instance.similarEnter,
       'canAddCart': instance.canAddCart,
+      'subWareList': instance.subWareList,
+      'channelJumpUrl': instance.channelJumpUrl,
       'couponSortType': instance.couponSortType,
       'canNegFeedback': instance.canNegFeedback,
       'reqsig': instance.reqsig,
@@ -194,7 +217,13 @@ Map<String, dynamic> _$WareInfoToJson(WareInfo instance) => <String, dynamic>{
       'expid': instance.expid,
       'feedBackReason': instance.feedBackReason,
       'isCoupon': instance.isCoupon,
+      'mergePicUrl': instance.mergePicUrl,
+      'crownPicUrl': instance.crownPicUrl,
+      'themeBgcolorStart': instance.themeBgcolorStart,
+      'themeBgcolorEnd': instance.themeBgcolorEnd,
+      'picNum': instance.picNum,
       'spu': instance.spu,
+      'nonWareType': instance.nonWareType,
       'jdShop': instance.jdShop
     };
 
@@ -204,3 +233,14 @@ FeedBackReason _$FeedBackReasonFromJson(Map<String, dynamic> json) {
 
 Map<String, dynamic> _$FeedBackReasonToJson(FeedBackReason instance) =>
     <String, dynamic>{'id': instance.id, 'name': instance.name};
+
+Subware _$SubwareFromJson(Map<String, dynamic> json) {
+  return Subware(json['wareId'] as String, json['imageUrl'] as String,
+      json['pid'] as String);
+}
+
+Map<String, dynamic> _$SubwareToJson(Subware instance) => <String, dynamic>{
+      'wareId': instance.wareId,
+      'imageUrl': instance.imageUrl,
+      'pid': instance.pid
+    };

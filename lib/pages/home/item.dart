@@ -22,8 +22,7 @@ class ItemState extends State<Item> {
             height: 185,
             width: double.infinity,
             child: Image.network(
-              widget.item.imageurl,
-              // widget.item.imageurl == null ? widget.item.imageurl : 'https://m.360buyimg.com/mobilecms/s714x714_jfs/t1/26917/29/8819/288174/5c791a3dE6face587/f71f688434d14789.jpg!q70.dpg.webp',
+              widget.item.itemType == 34 ? widget.item.subWareList[0].imageUrl : widget.item.imageurl,
               fit: BoxFit.fitHeight,
             ),
           ),
