@@ -54,9 +54,8 @@ class SliverHeaderState extends State<SliverHeader> {
             ),
           ),
         ),
-        
       ], //右侧的内容和点击事件啥的
-      elevation: 4, //阴影的高度
+      elevation: 0, //阴影的高度
       forceElevated: false, //是否显示阴影
       backgroundColor: Colors.red, //背景颜色
       brightness: Brightness.dark, //黑底白字，lignt 白底黑字
@@ -67,8 +66,8 @@ class SliverHeaderState extends State<SliverHeader> {
       ), //所有的icon的样式,不仅仅是左侧的，右侧的也会改变
       textTheme: TextTheme(), //字体样式
       primary: true, // appbar是否显示在屏幕的最上面，为false是显示在最上面，为true就显示在状态栏的下面
-      titleSpacing: 16, //标题两边的空白区域
-      expandedHeight: 120.0, //默认高度是状态栏和导航栏的高度，如果有滚动视差的话，要大于前两者的高度
+      titleSpacing: 0, //标题两边的空白区域
+      expandedHeight: 100.0, //默认高度是状态栏和导航栏的高度，如果有滚动视差的话，要大于前两者的高度
       floating: false, //滑动到最上面，再滑动是否隐藏导航栏的文字和标题等的具体内容，为true是隐藏，为false是不隐藏
       pinned: true, //是否固定导航栏，为true是固定，为false是不固定，往上滑，导航栏可以隐藏
       snap:
@@ -77,7 +76,6 @@ class SliverHeaderState extends State<SliverHeader> {
         title: Container(
           width: MediaQuery.of(context).size.width * 0.6,
           height: 30,
-          // margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.all(Radius.circular(50)),
@@ -85,24 +83,28 @@ class SliverHeaderState extends State<SliverHeader> {
           child: TextField(
             style: TextStyle(),
             decoration: InputDecoration(
-                labelText: '',
-                hintText: '请输入商品名称',
-                hintStyle: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 12,
-                  letterSpacing: 1,
-                ),
-                border: InputBorder.none,
-                // border: OutlineInputBorder(
-                //   borderRadius: BorderRadius.all(Radius.circular(20)),
-                // ),
-                prefixIcon: Icon(
-                  Icons.search,
-                  color: Colors.grey,
-                )),
+              contentPadding: EdgeInsets.only(top: 4),
+              hintText: '请输入商品名称',
+              hintStyle: TextStyle(
+                fontSize: 12,
+              ),
+              border: InputBorder.none,
+              // border: OutlineInputBorder(
+              //   borderRadius: BorderRadius.all(Radius.circular(20)),
+              // ),
+              prefixIcon: Icon(
+                Icons.search,
+                color: Colors.grey,
+              ),
+              suffixIcon: Icon(
+                Icons.camera_alt,
+                color: Colors.grey,
+              ),
+            ),
           ),
         ),
         centerTitle: true,
+        titlePadding: EdgeInsets.only(bottom: 11),
         collapseMode: CollapseMode.pin,
         background: Image.network(
           'https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/57927/10/5246/102061/5d2ef10bEf2debf2e/93d987f05fa960ea.jpg.dpg.webp',

@@ -4,4 +4,6 @@ class Api {
   static final String home = Uri.encodeComponent('client.action?functionId=welcomeHome');
   static final String subcategory = Uri.encodeComponent('client.action?functionId=commonCatalogs');
   static final String category = Uri.encodeComponent('category');
+  static final String subcateoryList = Uri.encodeComponent('client.action?functionId=newSubCatalog');
+  static final String swipperImageList = Uri.encodeComponent('client.action?functionId=getCmsPromotionsListByCatelogyID');
 }
