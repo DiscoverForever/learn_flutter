@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/bean/item/recommend_item_response.dart';
 
 class Item extends StatefulWidget {
+  final WareInfo item;
+  Item({ Key key, this.item}): super(key: key);
   @override
   State<StatefulWidget> createState() => ItemState();
 }
@@ -19,7 +22,8 @@ class ItemState extends State<Item> {
             height: 185,
             width: double.infinity,
             child: Image.network(
-              'http://img13.360buyimg.com/mobilecms/s372x372_jfs/t1/3405/18/3537/69901/5b997c0aE5dc8ed9f/a2c208410ae84d1f.jpg!q70.dpg.webp',
+              widget.item.imageurl,
+              // widget.item.imageurl == null ? widget.item.imageurl : 'https://m.360buyimg.com/mobilecms/s714x714_jfs/t1/26917/29/8819/288174/5c791a3dE6face587/f71f688434d14789.jpg!q70.dpg.webp',
               fit: BoxFit.fitHeight,
             ),
           ),
@@ -51,7 +55,7 @@ class ItemState extends State<Item> {
                     ),
                     Expanded(
                       child: Text(
-                        '来自加利福尼亚的iphone xs max 原产于美国的空气 原产于美国的空气 原产于美国的空气',
+                        widget.item.wname,
                         style: TextStyle(
                           fontSize: 10,
                           color: Colors.red,
@@ -69,7 +73,7 @@ class ItemState extends State<Item> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        '¥100',
+                        widget.item.itemType == 0 ? '¥${widget.item.jdPrice}' : '¥',
                         style: TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.w700,

@@ -4,6 +4,7 @@ import 'package:learn_flutter/bean/home/home_model_entity.dart';
 import 'package:learn_flutter/bean/category/category_entity.dart';
 import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
 import 'package:learn_flutter/bean/category/category_swipper_response.dart';
+import 'package:learn_flutter/bean/item/recommend_item_response.dart';
 
 class EntityFactory {
   static T generateOBJ<T>(json) {
@@ -19,6 +20,8 @@ class EntityFactory {
       return Subcategory.fromJson(json) as T;
     } else if (T.toString() == "CategorySwipperResonse") {
       return CategorySwipperResonse.fromJson(json) as T;
+    } else if (T.toString() == "RecommendItemResponse") {
+      return RecommendItemResponse.fromJson(json) as T;
     } else if (T.toString() == "FloorModelEntity") {
       return FloorModelEntity.fromJson(json) as T;
     } else {

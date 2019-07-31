@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/bean/home/welcome_home.dart';
+import 'package:learn_flutter/bean/item/recommend_item_response.dart';
 import 'package:learn_flutter/pages/home/floor.dart';
 import 'package:learn_flutter/pages/home/header.dart';
 import 'package:learn_flutter/pages/home/item_list.dart';
@@ -26,6 +27,7 @@ class MyHomePageState extends State<MyHomePage> {
   int currentIndex = 0;
   List<FloorModelResultContentData> floorList = [];
   List<SwipperOptions> swipperOptionsList = [];
+  List<WareInfo> itemList = [];
   String swipperBgImageUrl =
       'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564260778041&di=035a5d4a7d370268e316035730a25a58&imgtype=0&src=http%3A%2F%2Fcdn.lizhi.fm%2Fradio_cover%2F2014%2F06%2F18%2F12383567000424964.jpg';
   @override
@@ -64,7 +66,10 @@ class MyHomePageState extends State<MyHomePage> {
   /// 获取商品推荐列表
   getRecommendItemList() async {
     var res = await RequestUtil.getInstance().post(Api.recommendItemList);
-    print(res.data);
+    var data = EntityFactory.generateOBJ<RecommendItemResponse>(res.data);
+    this.setState(() {
+      this.itemList = data.wareInfoList;
+    });
   }
 
   @override
@@ -135,9 +140,9 @@ class MyHomePageState extends State<MyHomePage> {
                   delegate: SliverChildBuilderDelegate(
                     (BuildContext context, int index) {
                       //创建子widget
-                      return Item();
+                      return Item(item: this.itemList[index],);
                     },
-                    childCount: 30,
+                    childCount: this.itemList.length,
                   ),
                 ),
                 padding: EdgeInsets.all(10),
