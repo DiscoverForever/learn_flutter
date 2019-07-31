@@ -33,6 +33,7 @@ class MyHomePageState extends State<MyHomePage> {
     super.initState();
     this.getFloorList();
     this.getInitData();
+    this.getRecommendItemList();
   }
 
   getFloorList() async {
@@ -58,6 +59,12 @@ class MyHomePageState extends State<MyHomePage> {
       this.swipperBgImageUrl = data.topBgImgBig;
       this.swipperOptionsList = list.toList();
     });
+  }
+
+  /// 获取商品推荐列表
+  getRecommendItemList() async {
+    var res = await RequestUtil.getInstance().post(Api.recommendItemList);
+    print(res.data);
   }
 
   @override
@@ -123,7 +130,7 @@ class MyHomePageState extends State<MyHomePage> {
                     crossAxisCount: 2, //Grid按两列显示
                     mainAxisSpacing: 10.0,
                     crossAxisSpacing: 10.0,
-                    // childAspectRatio: 4.0,
+                    childAspectRatio: 0.8,
                   ),
                   delegate: SliverChildBuilderDelegate(
                     (BuildContext context, int index) {
