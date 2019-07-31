@@ -30,37 +30,41 @@ class MasterCategoryState extends State<MasterCategory> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(children: <Widget>[
-        Container(
-          width: 120,
-          // color: Color(0xFFf8f8f8),
-          child: ListView.builder(
-            itemCount: this.category?.data?.category?.length == null
-                ? 0
-                : this.category.data.category.length,
-            itemBuilder: (BuildContext context, int index) {
-              return Center(
-                child: GestureDetector(
-                  child: Container(
-                    height: 40,
-                    color: this.activeIndex == index
-                        ? Colors.white
-                        : Color(0xFFf8f8f8),
-                    child: Center(
-                      child: Text(this.category.data.category[index].name),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            width: 120,
+            // color: Color(0xFFf8f8f8),
+            child: ListView.builder(
+              itemCount: this.category?.data?.category?.length == null
+                  ? 0
+                  : this.category.data.category.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Center(
+                  child: GestureDetector(
+                    child: Container(
+                      height: 40,
+                      color: this.activeIndex == index
+                          ? Colors.white
+                          : Color(0xFFf8f8f8),
+                      child: Center(
+                        child: Text(this.category.data.category[index].name),
+                      ),
                     ),
+                    onTap: () {
+                      this.setState(() {
+                        this.activeIndex = index;
+                      });
+                    },
                   ),
-                  onTap: () {
-                    this.setState(() {
-                      this.activeIndex = index;
-                    });
-                  },
-                ),
-              );
-            },
-          ),
-        )
-      ]),
+                );
+              },
+            ),
+          )
+        ],
+      ),
     );
   }
 }

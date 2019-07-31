@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:learn_flutter/pages/category/subcategory.dart';
 import 'package:learn_flutter/pages/category/master_category.dart';
+import 'package:learn_flutter/pages/category/subcategory_item.dart';
 
 class Category extends StatefulWidget {
   @override
@@ -34,22 +35,30 @@ class CategoryState extends State<Category> {
                 fontSize: 14,
               ),
               suffixIcon: Icon(Icons.camera_alt),
-              prefixIcon: Icon(Icons.search, color: Color(0xFF444444),),
+              prefixIcon: Icon(
+                Icons.search,
+                color: Color(0xFF444444),
+              ),
               border: InputBorder.none,
             ),
           ),
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.message, color: Color(0xFF595959),),
+            icon: Icon(
+              Icons.message,
+              color: Color(0xFF595959),
+            ),
             onPressed: () {},
           ),
         ],
       ),
-      body: Row(children: <Widget>[
-        MasterCategory(),
-        Subcategory(),
-      ]),
+      body: Row(
+        children: <Widget>[
+          MasterCategory(),
+          SubcategoryItem(),
+        ],
+      ),
     );
   }
 }

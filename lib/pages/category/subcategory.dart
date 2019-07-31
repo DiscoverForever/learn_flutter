@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:learn_flutter/api/api.dart';
 import 'package:learn_flutter/bean/category/category_swipper_response.dart';
 import 'package:learn_flutter/bean/entity_factory.dart';
+import 'package:learn_flutter/pages/category/subcategory_item.dart';
 import 'package:learn_flutter/pages/home/swipper_image.dart';
 import 'package:learn_flutter/utils/request_util.dart';
 import 'package:learn_flutter/bean/category/subcategory.dart' as SubcategoryLib;
@@ -24,6 +25,7 @@ class SubcategoryState extends State<Subcategory> {
     return Column(
       children: <Widget>[
           // SwipperImage(),
+          SubcategoryItem()
       ],
     );
   }
