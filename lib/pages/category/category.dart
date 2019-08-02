@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:learn_flutter/pages/category/subcategory.dart';
 import 'package:learn_flutter/pages/category/master_category.dart';
 import 'package:learn_flutter/pages/category/subcategory_item.dart';
 
@@ -55,7 +54,11 @@ class CategoryState extends State<Category> {
       ),
       body: Row(
         children: <Widget>[
-          MasterCategory(),
+          MasterCategory(
+            onChildClick: ({String id, String name}) {
+              print(id);
+            },
+          ),
           SubcategoryItem(),
         ],
       ),

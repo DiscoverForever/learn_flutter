@@ -6,6 +6,10 @@ import 'package:learn_flutter/bean/category/category_entity.dart'
     as CategoryBean;
 
 class MasterCategory extends StatefulWidget {
+  final Null Function({String id, String name}) onChildClick;
+
+  MasterCategory({ Key key, @required this.onChildClick }): super(key: key);
+
   @override
   State<StatefulWidget> createState() => MasterCategoryState();
 }
@@ -13,6 +17,7 @@ class MasterCategory extends StatefulWidget {
 class MasterCategoryState extends State<MasterCategory> {
   CategoryBean.CategoryEntity category;
   int activeIndex = 0;
+  
   @override
   void initState() {
     super.initState();
@@ -56,6 +61,7 @@ class MasterCategoryState extends State<MasterCategory> {
                     onTap: () {
                       this.setState(() {
                         this.activeIndex = index;
+                        widget.onChildClick(id: '1', name: '2');
                       });
                     },
                   ),
