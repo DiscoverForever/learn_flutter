@@ -8,7 +8,7 @@ class Subcategory extends Object {
   String code;
 
   @JsonKey(name: 'data')
-  List<Data> data;
+  List<CategoryWrap> data;
 
   Subcategory(
     this.code,
@@ -22,7 +22,7 @@ class Subcategory extends Object {
 }
 
 @JsonSerializable()
-class Data extends Object {
+class CategoryWrap extends Object {
   @JsonKey(name: 'isBook')
   bool isBook;
 
@@ -30,7 +30,7 @@ class Data extends Object {
   bool rankingFlag;
 
   @JsonKey(name: 'catelogyList')
-  List<CatelogyList> catelogyList;
+  List<Category> catelogyList;
 
   @JsonKey(name: 'columNum')
   int columNum;
@@ -47,7 +47,7 @@ class Data extends Object {
   @JsonKey(name: 'cid')
   int cid;
 
-  Data(
+  CategoryWrap(
     this.isBook,
     this.rankingFlag,
     this.catelogyList,
@@ -58,14 +58,14 @@ class Data extends Object {
     this.cid,
   );
 
-  factory Data.fromJson(Map<String, dynamic> srcJson) =>
-      _$DataFromJson(srcJson);
+  factory CategoryWrap.fromJson(Map<String, dynamic> srcJson) =>
+      _$CategoryWrapFromJson(srcJson);
 
-  Map<String, dynamic> toJson() => _$DataToJson(this);
+  Map<String, dynamic> toJson() => _$CategoryWrapToJson(this);
 }
 
 @JsonSerializable()
-class CatelogyList extends Object {
+class Category extends Object {
   @JsonKey(name: 'path')
   String path;
 
@@ -96,7 +96,7 @@ class CatelogyList extends Object {
   @JsonKey(name: 'cid')
   int cid;
 
-  CatelogyList(
+  Category(
     this.path,
     this.isRealid,
     this.sortKey,
@@ -109,8 +109,8 @@ class CatelogyList extends Object {
     this.cid,
   );
 
-  factory CatelogyList.fromJson(Map<String, dynamic> srcJson) =>
-      _$CatelogyListFromJson(srcJson);
+  factory Category.fromJson(Map<String, dynamic> srcJson) =>
+      _$CategoryFromJson(srcJson);
 
-  Map<String, dynamic> toJson() => _$CatelogyListToJson(this);
+  Map<String, dynamic> toJson() => _$CategoryToJson(this);
 }
