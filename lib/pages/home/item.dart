@@ -19,8 +19,6 @@ class ItemState extends State<Item> {
       child: Column(
         children: <Widget>[
           Container(
-            height: 185,
-            width: double.infinity,
             child: Image.network(
               widget.item.itemType == 34 ? widget.item.subWareList[0].imageUrl : widget.item.imageurl,
               fit: BoxFit.fitHeight,

@@ -135,7 +135,7 @@ class MyHomePageState extends State<MyHomePage> {
                     crossAxisCount: 2, //Grid按两列显示
                     mainAxisSpacing: 10.0,
                     crossAxisSpacing: 10.0,
-                    childAspectRatio: 0.8,
+                    childAspectRatio: 1/1.35,
                   ),
                   delegate: SliverChildBuilderDelegate(
                     (BuildContext context, int index) {
