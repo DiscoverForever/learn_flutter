@@ -12,6 +12,7 @@ class _State extends State<Mine> {
     return Scaffold(
       appBar: AppBar(
         title: Text("我的"),
+        centerTitle: true,
         leading: Icon(Icons.email),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.settings), onPressed: null),
