@@ -3,6 +3,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
 import 'package:learn_flutter/pages/category/category.dart';
 import 'package:learn_flutter/pages/home/home.dart';
+import 'package:learn_flutter/pages/mine/index.dart';
 
 class Index extends StatefulWidget {
   @override
@@ -17,7 +18,7 @@ class IndexState extends State<Index> {
     1: Category(),
     2: null,
     3: null,
-    4: null
+    4: Mine()
   };
   List<FloorModelResultContentData> floorList = [];
 

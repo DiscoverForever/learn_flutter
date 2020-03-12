@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:learn_flutter/pages/home/index.dart';
 import 'package:learn_flutter/pages/login/login.dart';
+import 'package:learn_flutter/pages/mine/index.dart';
 import 'package:learn_flutter/pages/movie/movie.dart';
 
 void main() => runApp(MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (BuildContext context) => Login(),
         '/movie': (BuildContext context) => Movie(),
+        '/mine': (BuildContext context) => Mine(),
         '/webview': (BuildContext context) => WebviewScaffold(
               url: (ModalRoute.of(context).settings.arguments
                   as Map<String, String>)['url'],
