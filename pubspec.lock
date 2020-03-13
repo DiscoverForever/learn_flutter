@@ -485,6 +485,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.14"
+  webview_flutter:
+    dependency: "direct main"
+    description:
+      name: webview_flutter
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.3.15+1"
   yaml:
     dependency: transitive
     description:
@@ -494,4 +501,4 @@ packages:
     version: "2.1.16"
 sdks:
   dart: ">=2.3.0 <3.0.0"
-  flutter: ">=0.1.4 <3.0.0"
+  flutter: ">=1.5.0 <2.0.0"

@@ -39,11 +39,15 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   getFloorList() async {
-    var response = await RequestUtil.getInstance().post(Api.appCenterInfo);
-    this.setState(() {
-      var res = EntityFactory.generateOBJ<FloorModelEntity>(response.data);
-      floorList = res.result.content.data;
-    });
+    try {
+      var response = await RequestUtil.getInstance().post(Api.appCenterInfo);
+      this.setState(() {
+        var res = EntityFactory.generateOBJ<FloorModelEntity>(response.data);
+        floorList = res.result.content.data;
+      });
+    } catch (e) {
+      Fluttertoast.showToast(msg: e.toString());
+    }
   }
 
   /// 获取初始化数据
@@ -67,6 +71,8 @@ class MyHomePageState extends State<MyHomePage> {
   getRecommendItemList() async {
     var res = await RequestUtil.getInstance().post(Api.recommendItemList);
     var data = EntityFactory.generateOBJ<RecommendItemResponse>(res.data);
+    print("data.wareInfoList");
+    print(data.wareInfoList);
     this.setState(() {
       this.itemList = data.wareInfoList;
     });
