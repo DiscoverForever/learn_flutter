@@ -6,6 +6,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white,
       child: Flex(direction: Axis.horizontal, children: <Widget>[
         Container(
           width: 50,

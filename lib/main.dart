@@ -15,13 +15,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: "PingFang",
       ),
       home: Index(),
       routes: {
         '/login': (BuildContext context) => Login(),
         '/movie': (BuildContext context) => Movie(),
         '/mine': (BuildContext context) => Mine(),
-        '/item_info': (BuildContext context) => ItemInfo(),
+        '/item_info': (BuildContext context) => ItemInfo(itemId: ModalRoute.of(context).settings.arguments,),
         '/webview': (BuildContext context) => WebviewScaffold(
               url: (ModalRoute.of(context).settings.arguments
                   as Map<String, String>)['url'],

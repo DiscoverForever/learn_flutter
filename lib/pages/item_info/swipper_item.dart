@@ -21,6 +21,7 @@ class SwipperItem extends StatelessWidget {
     return Container(
       height: this.height,
       width: this.width,
+      color: Colors.white,
       child: Swiper(
         scrollDirection: Axis.horizontal,
         itemCount: this.swipperOptionsList.length,
