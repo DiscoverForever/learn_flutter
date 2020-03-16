@@ -715,6 +715,29 @@
             "small": "https://m.360buyimg.com/mobilecms/s800x800_jfs/t1/100655/1/560/32736/5dafac77Ea480d26e/ba4fb479179a8e07.jpg!q70.dpg.webp"
           }
         ],
+        "jdSerPlusInfo": {
+					"jdSerPlusList": [
+						{
+							"scIconUrl": "https://img30.360buyimg.com/test/jfs/t17776/210/2003594126/2589/af1c7233/5ae2a05aN07067189.png",
+							"scId": 468,
+							"class": "com.jd.app.server.warecoresoa.domain.serplus.JdSerPlusInfo$JdSerPlusItem",
+							"scName": "特色服务",
+							"products": [
+								{
+									"itemIndex": 1,
+									"serviceSkuShortName": "数据恢复",
+									"serviceSkuAdWord": "恢复数据 恢复感情",
+									"class": "com.jd.app.server.warecoresoa.domain.serplus.JdSerPlusInfo$JdSerPlusProduct",
+									"serviceSku": "7093704",
+									"serviceSkuPrice": "39.00"
+								}
+							],
+							"scOrder": 2
+						}
+					],
+					"jdSerPlusUrl": "https://m-weixiu.jd.com/spbuy/getServicePlusInfo?pid=100009177424,1,72,2839,0,",
+					"jdSerPlusTitle": "京东服务+"
+				},
         "defineSkinChange": {
           "imageUrl": "https://m.360buyimg.com/cc/jfs/t1/89891/17/179/48419/5da87c96E86f1aad7/8404be9847e92c46.png",
           "infoBoxTextColor": "#FFFFFF",

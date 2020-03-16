@@ -94,6 +94,7 @@ class ItemInfoResponseFloorsData {
 	ItemInfoResponseFloorsDataDefineskinchange defineSkinChange;
 	bool supportSale;
 	ItemInfoResponseFloorsDataVideocontrol videoControl;
+	ItemInfoResponseFloorsDataJdserplusinfo jdSerPlusInfo;
 	bool abTest800;
 	int text1S;
 	ItemInfoResponseFloorsDataYuyueinfo yuyueInfo;
@@ -161,7 +162,7 @@ class ItemInfoResponseFloorsData {
 	bool appointAndPresaleOpen;
 	ItemInfoResponseFloorsDataShareimginfo shareImgInfo;
 
-	ItemInfoResponseFloorsData({this.fare, this.colorSizeInfo, this.specBuryPoint, this.isOpenCar, this.text2C, this.buried, this.serviceInfo, this.showAttention, this.promotionPoint, this.selectInfo, this.defineSkinChange, this.supportSale, this.videoControl, this.abTest800, this.text1S, this.yuyueInfo, this.isOpenNode, this.rankName, this.property, this.stock, this.selected, this.priceLabel, this.miaoshaInfo, this.yanBaoInfo, this.abTestInfo, this.eventId, this.shopInfo, this.ad, this.priceIcon, this.text1C, this.text3Bgc, this.text1B, this.flashInfo, this.isDesCbc, this.servIconRelation, this.imgInfo, this.preferentialGuide, this.isOpen, this.text3, this.slide, this.text1, this.text2, this.defaultAddr, this.suit, this.actions, this.recommendToast, this.tailIconH, this.bgc, this.threeDSwitch, this.jumpType, this.eventParam, this.rankType, this.cccKernel, this.unitedRank, this.recommend, this.title, this.jumpUrl, this.priceInfo, this.text3S, this.attentionInfo, this.showAttentionPriceFloor, this.weightInfo, this.buttonInfo, this.viewMore, this.isShowAR, this.text3C, this.pointInfo, this.isIcon, this.wareImage, this.wareInfo, this.promotionInfo, this.tabUrl, this.tailIcon, this.isOpenH5, this.text2S, this.trustworthy, this.bizList, this.appointAndPresaleOpen, this.shareImgInfo});
+	ItemInfoResponseFloorsData({this.fare, this.colorSizeInfo, this.specBuryPoint, this.isOpenCar, this.text2C, this.buried, this.serviceInfo, this.showAttention, this.promotionPoint, this.selectInfo, this.defineSkinChange, this.supportSale, this.videoControl, this.jdSerPlusInfo, this.abTest800, this.text1S, this.yuyueInfo, this.isOpenNode, this.rankName, this.property, this.stock, this.selected, this.priceLabel, this.miaoshaInfo, this.yanBaoInfo, this.abTestInfo, this.eventId, this.shopInfo, this.ad, this.priceIcon, this.text1C, this.text3Bgc, this.text1B, this.flashInfo, this.isDesCbc, this.servIconRelation, this.imgInfo, this.preferentialGuide, this.isOpen, this.text3, this.slide, this.text1, this.text2, this.defaultAddr, this.suit, this.actions, this.recommendToast, this.tailIconH, this.bgc, this.threeDSwitch, this.jumpType, this.eventParam, this.rankType, this.cccKernel, this.unitedRank, this.recommend, this.title, this.jumpUrl, this.priceInfo, this.text3S, this.attentionInfo, this.showAttentionPriceFloor, this.weightInfo, this.buttonInfo, this.viewMore, this.isShowAR, this.text3C, this.pointInfo, this.isIcon, this.wareImage, this.wareInfo, this.promotionInfo, this.tabUrl, this.tailIcon, this.isOpenH5, this.text2S, this.trustworthy, this.bizList, this.appointAndPresaleOpen, this.shareImgInfo});
 
 	ItemInfoResponseFloorsData.fromJson(Map<String, dynamic> json) {
 		fare = json['fare'];
@@ -177,6 +178,7 @@ class ItemInfoResponseFloorsData {
 		defineSkinChange = json['defineSkinChange'] != null ? new ItemInfoResponseFloorsDataDefineskinchange.fromJson(json['defineSkinChange']) : null;
 		supportSale = json['supportSale'];
 		videoControl = json['videoControl'] != null ? new ItemInfoResponseFloorsDataVideocontrol.fromJson(json['videoControl']) : null;
+		jdSerPlusInfo = json['jdSerPlusInfo'] != null ? new ItemInfoResponseFloorsDataJdserplusinfo.fromJson(json['jdSerPlusInfo']) : null;
 		abTest800 = json['abTest800'];
 		text1S = json['text1S'];
 		yuyueInfo = json['yuyueInfo'] != null ? new ItemInfoResponseFloorsDataYuyueinfo.fromJson(json['yuyueInfo']) : null;
@@ -281,6 +283,9 @@ class ItemInfoResponseFloorsData {
 		data['supportSale'] = this.supportSale;
 		if (this.videoControl != null) {
       data['videoControl'] = this.videoControl.toJson();
+    }
+		if (this.jdSerPlusInfo != null) {
+      data['jdSerPlusInfo'] = this.jdSerPlusInfo.toJson();
     }
 		data['abTest800'] = this.abTest800;
 		data['text1S'] = this.text1S;
@@ -737,6 +742,98 @@ class ItemInfoResponseFloorsDataVideocontrolMastervideoVideoshare {
 		data['class'] = this.xClass;
 		data['microBlog'] = this.microBlog;
 		data['url'] = this.url;
+		return data;
+	}
+}
+
+class ItemInfoResponseFloorsDataJdserplusinfo {
+	String jdSerPlusUrl;
+	List<ItemInfoResponseFloorsDataJdserplusinfoJdserpluslist> jdSerPlusList;
+	String jdSerPlusTitle;
+
+	ItemInfoResponseFloorsDataJdserplusinfo({this.jdSerPlusUrl, this.jdSerPlusList, this.jdSerPlusTitle});
+
+	ItemInfoResponseFloorsDataJdserplusinfo.fromJson(Map<String, dynamic> json) {
+		jdSerPlusUrl = json['jdSerPlusUrl'];
+		if (json['jdSerPlusList'] != null) {
+			jdSerPlusList = new List<ItemInfoResponseFloorsDataJdserplusinfoJdserpluslist>();(json['jdSerPlusList'] as List).forEach((v) { jdSerPlusList.add(new ItemInfoResponseFloorsDataJdserplusinfoJdserpluslist.fromJson(v)); });
+		}
+		jdSerPlusTitle = json['jdSerPlusTitle'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['jdSerPlusUrl'] = this.jdSerPlusUrl;
+		if (this.jdSerPlusList != null) {
+      data['jdSerPlusList'] =  this.jdSerPlusList.map((v) => v.toJson()).toList();
+    }
+		data['jdSerPlusTitle'] = this.jdSerPlusTitle;
+		return data;
+	}
+}
+
+class ItemInfoResponseFloorsDataJdserplusinfoJdserpluslist {
+	int scOrder;
+	String xClass;
+	String scIconUrl;
+	int scId;
+	String scName;
+	List<ItemInfoResponseFloorsDataJdserplusinfoJdserpluslistProduct> products;
+
+	ItemInfoResponseFloorsDataJdserplusinfoJdserpluslist({this.scOrder, this.xClass, this.scIconUrl, this.scId, this.scName, this.products});
+
+	ItemInfoResponseFloorsDataJdserplusinfoJdserpluslist.fromJson(Map<String, dynamic> json) {
+		scOrder = json['scOrder'];
+		xClass = json['class'];
+		scIconUrl = json['scIconUrl'];
+		scId = json['scId'];
+		scName = json['scName'];
+		if (json['products'] != null) {
+			products = new List<ItemInfoResponseFloorsDataJdserplusinfoJdserpluslistProduct>();(json['products'] as List).forEach((v) { products.add(new ItemInfoResponseFloorsDataJdserplusinfoJdserpluslistProduct.fromJson(v)); });
+		}
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['scOrder'] = this.scOrder;
+		data['class'] = this.xClass;
+		data['scIconUrl'] = this.scIconUrl;
+		data['scId'] = this.scId;
+		data['scName'] = this.scName;
+		if (this.products != null) {
+      data['products'] =  this.products.map((v) => v.toJson()).toList();
+    }
+		return data;
+	}
+}
+
+class ItemInfoResponseFloorsDataJdserplusinfoJdserpluslistProduct {
+	String serviceSkuAdWord;
+	String serviceSkuPrice;
+	String serviceSkuShortName;
+	int itemIndex;
+	String serviceSku;
+	String xClass;
+
+	ItemInfoResponseFloorsDataJdserplusinfoJdserpluslistProduct({this.serviceSkuAdWord, this.serviceSkuPrice, this.serviceSkuShortName, this.itemIndex, this.serviceSku, this.xClass});
+
+	ItemInfoResponseFloorsDataJdserplusinfoJdserpluslistProduct.fromJson(Map<String, dynamic> json) {
+		serviceSkuAdWord = json['serviceSkuAdWord'];
+		serviceSkuPrice = json['serviceSkuPrice'];
+		serviceSkuShortName = json['serviceSkuShortName'];
+		itemIndex = json['itemIndex'];
+		serviceSku = json['serviceSku'];
+		xClass = json['class'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['serviceSkuAdWord'] = this.serviceSkuAdWord;
+		data['serviceSkuPrice'] = this.serviceSkuPrice;
+		data['serviceSkuShortName'] = this.serviceSkuShortName;
+		data['itemIndex'] = this.itemIndex;
+		data['serviceSku'] = this.serviceSku;
+		data['class'] = this.xClass;
 		return data;
 	}
 }

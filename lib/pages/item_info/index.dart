@@ -89,7 +89,6 @@ class _ItemInfoState extends State<ItemInfo> with TickerProviderStateMixin {
                           ItemRank(
                             itemInfo: itemInfo,
                           ),
-                          Footer(),
                           // 商品详情
                           Container(
                             width: MediaQuery.of(context).size.width,
@@ -170,6 +169,12 @@ class _ItemInfoState extends State<ItemInfo> with TickerProviderStateMixin {
                       ],
                     ),
                   ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  
+                  child: Footer(),
                 ),
               ],
             ),

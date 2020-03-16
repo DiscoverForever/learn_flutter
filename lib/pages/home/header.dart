@@ -11,7 +11,10 @@ class Header extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Icon(Icons.accessibility, color: Colors.white,),
+          Icon(
+            Icons.accessibility,
+            color: Colors.white,
+          ),
           Expanded(
             flex: 1,
             child: Container(
@@ -25,21 +28,22 @@ class Header extends StatelessWidget {
               child: TextField(
                 style: TextStyle(),
                 decoration: InputDecoration(
-                    labelText: '',
-                    hintText: '请输入商品名称',
-                    hintStyle: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 12,
-                      letterSpacing: 1,
-                    ),
-                    border: InputBorder.none,
-                    // border: OutlineInputBorder(
-                    //   borderRadius: BorderRadius.all(Radius.circular(20)),
-                    // ),
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.grey,
-                    )),
+                  labelText: '',
+                  hintText: '请输入商品名称',
+                  hintStyle: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 12,
+                    letterSpacing: 1,
+                  ),
+                  border: InputBorder.none,
+                  // border: OutlineInputBorder(
+                  //   borderRadius: BorderRadius.all(Radius.circular(20)),
+                  // ),
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: Colors.grey,
+                  ),
+                ),
               ),
             ),
           ),
