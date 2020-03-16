@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
+import 'package:learn_flutter/pages/item_info/item_sku.dart';
 
 import 'card_item.dart';
 
@@ -22,6 +24,32 @@ class _ItemRankState extends State<ItemRank> {
       ),
       child: CardItem(
         padding: EdgeInsets.fromLTRB(10, 15, 10, 20),
+        onTap: () {
+          showCupertinoModalPopup(
+            context: context,
+            builder: (BuildContext context) {
+              return Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                  ),
+                  color: Colors.white,
+                ),
+                padding: EdgeInsets.all(15),
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * 0.8,
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height * 0.8,
+                  child: Scaffold(
+                      backgroundColor: Colors.white,
+                      body: ItemSku(item: widget.itemInfo?.floors[0]?.data)),
+                ),
+              );
+            },
+          );
+        },
         slot: Row(
           children: <Widget>[
             Icon(
@@ -32,7 +60,7 @@ class _ItemRankState extends State<ItemRank> {
               " 排行榜 ",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -40,7 +68,7 @@ class _ItemRankState extends State<ItemRank> {
               widget.itemInfo?.floors[0]?.data?.unitedRank?.desc,
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 16,
+                fontSize: 15,
               ),
             ),
           ],

@@ -19,7 +19,7 @@ class SliverHeaderState extends State<SliverHeader> {
     return SliverAppBar(
       leading: GestureDetector(
         // child: Icon(Icons.arrow_back),
-        onTap: () => Navigator.pop(context),
+        // onTap: () => Navigator.pop(context),
       ), //左侧按钮
       /**
        * 如果没有leading，automaticallyImplyLeading为true，就会默认返回箭头

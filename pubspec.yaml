@@ -83,5 +83,18 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  fonts:
+  - family: FlamanteRoma
+    fonts:
+    - asset: lib/assets/fonts/Flamante-Roma-Medium.ttf
+    - asset: lib/assets/fonts/Flamante-Roma-MediumItalic.ttf
+
+  - family: LatoBold
+    fonts:
+    - asset: lib/assets/fonts/Lato-Bold.ttf
+
+  - family: PingFang
+    fonts:
+    - asset: lib/assets/fonts/PingFang.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

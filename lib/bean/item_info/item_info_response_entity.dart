@@ -9,8 +9,8 @@ class ItemInfoResponseEntity {
 		code = json['code'];
 		if (json['floors'] != null) {
 			floors = new List<ItemInfoResponseFloor>();(json['floors'] as List).forEach((v) { floors.add(new ItemInfoResponseFloor.fromJson(v)); });
-			others = json['others'] != null ? new ItemInfoResponseOthers.fromJson(json['others']) : null;
 		}
+		others = json['others'] != null ? new ItemInfoResponseOthers.fromJson(json['others']) : null;
 	}
 
 	Map<String, dynamic> toJson() {
@@ -113,6 +113,7 @@ class ItemInfoResponseFloorsData {
 	String text1C;
 	String text3Bgc;
 	bool text1B;
+	ItemInfoResponseFloorsDataFlashinfo flashInfo;
 	bool isDesCbc;
 	List<ItemInfoResponseFloorsDataServiconrelation> servIconRelation;
 	List<ItemInfoResponseFloorsDataImginfo> imgInfo;
@@ -123,6 +124,7 @@ class ItemInfoResponseFloorsData {
 	String text1;
 	String text2;
 	ItemInfoResponseFloorsDataDefaultaddr defaultAddr;
+	ItemInfoResponseFloorsDataSuit suit;
 	ItemInfoResponseFloorsDataActions actions;
 	ItemInfoResponseFloorsDataRecommendtoast recommendToast;
 	int tailIconH;
@@ -140,6 +142,7 @@ class ItemInfoResponseFloorsData {
 	int text3S;
 	ItemInfoResponseFloorsDataAttentioninfo attentionInfo;
 	bool showAttentionPriceFloor;
+	ItemInfoResponseFloorsDataWeightinfo weightInfo;
 	ItemInfoResponseFloorsDataButtoninfo buttonInfo;
 	bool viewMore;
 	bool isShowAR;
@@ -158,7 +161,7 @@ class ItemInfoResponseFloorsData {
 	bool appointAndPresaleOpen;
 	ItemInfoResponseFloorsDataShareimginfo shareImgInfo;
 
-	ItemInfoResponseFloorsData({this.fare, this.colorSizeInfo, this.specBuryPoint, this.isOpenCar, this.text2C, this.buried, this.serviceInfo, this.showAttention, this.promotionPoint, this.selectInfo, this.defineSkinChange, this.supportSale, this.videoControl, this.abTest800, this.text1S, this.yuyueInfo, this.isOpenNode, this.rankName, this.property, this.stock, this.selected, this.priceLabel, this.miaoshaInfo, this.yanBaoInfo, this.abTestInfo, this.eventId, this.shopInfo, this.ad, this.priceIcon, this.text1C, this.text3Bgc, this.text1B, this.isDesCbc, this.servIconRelation, this.imgInfo, this.preferentialGuide, this.isOpen, this.text3, this.slide, this.text1, this.text2, this.defaultAddr, this.actions, this.recommendToast, this.tailIconH, this.bgc, this.threeDSwitch, this.jumpType, this.eventParam, this.rankType, this.cccKernel, this.unitedRank, this.recommend, this.title, this.jumpUrl, this.priceInfo, this.text3S, this.attentionInfo, this.showAttentionPriceFloor, this.buttonInfo, this.viewMore, this.isShowAR, this.text3C, this.pointInfo, this.isIcon, this.wareImage, this.wareInfo, this.promotionInfo, this.tabUrl, this.tailIcon, this.isOpenH5, this.text2S, this.trustworthy, this.bizList, this.appointAndPresaleOpen, this.shareImgInfo});
+	ItemInfoResponseFloorsData({this.fare, this.colorSizeInfo, this.specBuryPoint, this.isOpenCar, this.text2C, this.buried, this.serviceInfo, this.showAttention, this.promotionPoint, this.selectInfo, this.defineSkinChange, this.supportSale, this.videoControl, this.abTest800, this.text1S, this.yuyueInfo, this.isOpenNode, this.rankName, this.property, this.stock, this.selected, this.priceLabel, this.miaoshaInfo, this.yanBaoInfo, this.abTestInfo, this.eventId, this.shopInfo, this.ad, this.priceIcon, this.text1C, this.text3Bgc, this.text1B, this.flashInfo, this.isDesCbc, this.servIconRelation, this.imgInfo, this.preferentialGuide, this.isOpen, this.text3, this.slide, this.text1, this.text2, this.defaultAddr, this.suit, this.actions, this.recommendToast, this.tailIconH, this.bgc, this.threeDSwitch, this.jumpType, this.eventParam, this.rankType, this.cccKernel, this.unitedRank, this.recommend, this.title, this.jumpUrl, this.priceInfo, this.text3S, this.attentionInfo, this.showAttentionPriceFloor, this.weightInfo, this.buttonInfo, this.viewMore, this.isShowAR, this.text3C, this.pointInfo, this.isIcon, this.wareImage, this.wareInfo, this.promotionInfo, this.tabUrl, this.tailIcon, this.isOpenH5, this.text2S, this.trustworthy, this.bizList, this.appointAndPresaleOpen, this.shareImgInfo});
 
 	ItemInfoResponseFloorsData.fromJson(Map<String, dynamic> json) {
 		fare = json['fare'];
@@ -193,6 +196,7 @@ class ItemInfoResponseFloorsData {
 		text1C = json['text1C'];
 		text3Bgc = json['text3Bgc'];
 		text1B = json['text1B'];
+		flashInfo = json['flashInfo'] != null ? new ItemInfoResponseFloorsDataFlashinfo.fromJson(json['flashInfo']) : null;
 		isDesCbc = json['isDesCbc'];
 		if (json['servIconRelation'] != null) {
 			servIconRelation = new List<ItemInfoResponseFloorsDataServiconrelation>();(json['servIconRelation'] as List).forEach((v) { servIconRelation.add(new ItemInfoResponseFloorsDataServiconrelation.fromJson(v)); });
@@ -207,6 +211,7 @@ class ItemInfoResponseFloorsData {
 		text1 = json['text1'];
 		text2 = json['text2'];
 		defaultAddr = json['defaultAddr'] != null ? new ItemInfoResponseFloorsDataDefaultaddr.fromJson(json['defaultAddr']) : null;
+		suit = json['suit'] != null ? new ItemInfoResponseFloorsDataSuit.fromJson(json['suit']) : null;
 		actions = json['actions'] != null ? new ItemInfoResponseFloorsDataActions.fromJson(json['actions']) : null;
 		recommendToast = json['recommendToast'] != null ? new ItemInfoResponseFloorsDataRecommendtoast.fromJson(json['recommendToast']) : null;
 		tailIconH = json['tailIconH'];
@@ -226,6 +231,7 @@ class ItemInfoResponseFloorsData {
 		text3S = json['text3S'];
 		attentionInfo = json['attentionInfo'] != null ? new ItemInfoResponseFloorsDataAttentioninfo.fromJson(json['attentionInfo']) : null;
 		showAttentionPriceFloor = json['showAttentionPriceFloor'];
+		weightInfo = json['weightInfo'] != null ? new ItemInfoResponseFloorsDataWeightinfo.fromJson(json['weightInfo']) : null;
 		buttonInfo = json['buttonInfo'] != null ? new ItemInfoResponseFloorsDataButtoninfo.fromJson(json['buttonInfo']) : null;
 		viewMore = json['viewMore'];
 		isShowAR = json['isShowAR'];
@@ -311,6 +317,9 @@ class ItemInfoResponseFloorsData {
 		data['text1C'] = this.text1C;
 		data['text3Bgc'] = this.text3Bgc;
 		data['text1B'] = this.text1B;
+		if (this.flashInfo != null) {
+      data['flashInfo'] = this.flashInfo.toJson();
+    }
 		data['isDesCbc'] = this.isDesCbc;
 		if (this.servIconRelation != null) {
       data['servIconRelation'] =  this.servIconRelation.map((v) => v.toJson()).toList();
@@ -330,6 +339,9 @@ class ItemInfoResponseFloorsData {
 		data['text2'] = this.text2;
 		if (this.defaultAddr != null) {
       data['defaultAddr'] = this.defaultAddr.toJson();
+    }
+		if (this.suit != null) {
+      data['suit'] = this.suit.toJson();
     }
 		if (this.actions != null) {
       data['actions'] = this.actions.toJson();
@@ -362,6 +374,9 @@ class ItemInfoResponseFloorsData {
       data['attentionInfo'] = this.attentionInfo.toJson();
     }
 		data['showAttentionPriceFloor'] = this.showAttentionPriceFloor;
+		if (this.weightInfo != null) {
+      data['weightInfo'] = this.weightInfo.toJson();
+    }
 		if (this.buttonInfo != null) {
       data['buttonInfo'] = this.buttonInfo.toJson();
     }
@@ -1543,6 +1558,28 @@ class ItemInfoResponseFloorsDataPriceicon {
 	}
 }
 
+class ItemInfoResponseFloorsDataFlashinfo {
+	int cd;
+	int state;
+	String xClass;
+
+	ItemInfoResponseFloorsDataFlashinfo({this.cd, this.state, this.xClass});
+
+	ItemInfoResponseFloorsDataFlashinfo.fromJson(Map<String, dynamic> json) {
+		cd = json['cd'];
+		state = json['state'];
+		xClass = json['class'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['cd'] = this.cd;
+		data['state'] = this.state;
+		data['class'] = this.xClass;
+		return data;
+	}
+}
+
 class ItemInfoResponseFloorsDataServiconrelation {
 	String iconValue;
 	String iconType;
@@ -1958,6 +1995,119 @@ class ItemInfoResponseFloorsDataDefaultaddr {
 	}
 }
 
+class ItemInfoResponseFloorsDataSuit {
+	String discountMark;
+	int mainSkuId;
+	String domain;
+	String mainSkuName;
+	List<ItemInfoResponseFloorsDataSuitItemlist> itemList;
+	String mainSkuPicUrl;
+	String suitNumText;
+	String xClass;
+	String suitMark;
+
+	ItemInfoResponseFloorsDataSuit({this.discountMark, this.mainSkuId, this.domain, this.mainSkuName, this.itemList, this.mainSkuPicUrl, this.suitNumText, this.xClass, this.suitMark});
+
+	ItemInfoResponseFloorsDataSuit.fromJson(Map<String, dynamic> json) {
+		discountMark = json['discountMark'];
+		mainSkuId = json['mainSkuId'];
+		domain = json['domain'];
+		mainSkuName = json['mainSkuName'];
+		if (json['itemList'] != null) {
+			itemList = new List<ItemInfoResponseFloorsDataSuitItemlist>();(json['itemList'] as List).forEach((v) { itemList.add(new ItemInfoResponseFloorsDataSuitItemlist.fromJson(v)); });
+		}
+		mainSkuPicUrl = json['mainSkuPicUrl'];
+		suitNumText = json['suitNumText'];
+		xClass = json['class'];
+		suitMark = json['suitMark'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['discountMark'] = this.discountMark;
+		data['mainSkuId'] = this.mainSkuId;
+		data['domain'] = this.domain;
+		data['mainSkuName'] = this.mainSkuName;
+		if (this.itemList != null) {
+      data['itemList'] =  this.itemList.map((v) => v.toJson()).toList();
+    }
+		data['mainSkuPicUrl'] = this.mainSkuPicUrl;
+		data['suitNumText'] = this.suitNumText;
+		data['class'] = this.xClass;
+		data['suitMark'] = this.suitMark;
+		return data;
+	}
+}
+
+class ItemInfoResponseFloorsDataSuitItemlist {
+	int packId;
+	int originalSuitType;
+	String packType;
+	String packName;
+	String xClass;
+	List<ItemInfoResponseFloorsDataSuitItemlistProductlist> productList;
+	String packPrice;
+	String packListPrice;
+
+	ItemInfoResponseFloorsDataSuitItemlist({this.packId, this.originalSuitType, this.packType, this.packName, this.xClass, this.productList, this.packPrice, this.packListPrice});
+
+	ItemInfoResponseFloorsDataSuitItemlist.fromJson(Map<String, dynamic> json) {
+		packId = json['packId'];
+		originalSuitType = json['originalSuitType'];
+		packType = json['packType'];
+		packName = json['packName'];
+		xClass = json['class'];
+		if (json['productList'] != null) {
+			productList = new List<ItemInfoResponseFloorsDataSuitItemlistProductlist>();(json['productList'] as List).forEach((v) { productList.add(new ItemInfoResponseFloorsDataSuitItemlistProductlist.fromJson(v)); });
+		}
+		packPrice = json['packPrice'];
+		packListPrice = json['packListPrice'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['packId'] = this.packId;
+		data['originalSuitType'] = this.originalSuitType;
+		data['packType'] = this.packType;
+		data['packName'] = this.packName;
+		data['class'] = this.xClass;
+		if (this.productList != null) {
+      data['productList'] =  this.productList.map((v) => v.toJson()).toList();
+    }
+		data['packPrice'] = this.packPrice;
+		data['packListPrice'] = this.packListPrice;
+		return data;
+	}
+}
+
+class ItemInfoResponseFloorsDataSuitItemlistProductlist {
+	String skuName;
+	String name;
+	String skuPicUrl;
+	String xClass;
+	int skuId;
+
+	ItemInfoResponseFloorsDataSuitItemlistProductlist({this.skuName, this.name, this.skuPicUrl, this.xClass, this.skuId});
+
+	ItemInfoResponseFloorsDataSuitItemlistProductlist.fromJson(Map<String, dynamic> json) {
+		skuName = json['skuName'];
+		name = json['name'];
+		skuPicUrl = json['skuPicUrl'];
+		xClass = json['class'];
+		skuId = json['skuId'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['skuName'] = this.skuName;
+		data['name'] = this.name;
+		data['skuPicUrl'] = this.skuPicUrl;
+		data['class'] = this.xClass;
+		data['skuId'] = this.skuId;
+		return data;
+	}
+}
+
 class ItemInfoResponseFloorsDataActions {
 	List<ItemInfoResponseFloorsDataActionsBizact> bizActs;
 
@@ -2184,6 +2334,28 @@ class ItemInfoResponseFloorsDataAttentioninfo {
 		final Map<String, dynamic> data = new Map<String, dynamic>();
 		data['txt2'] = this.txt2;
 		data['txt1'] = this.txt1;
+		return data;
+	}
+}
+
+class ItemInfoResponseFloorsDataWeightinfo {
+	String title;
+	String xClass;
+	String content;
+
+	ItemInfoResponseFloorsDataWeightinfo({this.title, this.xClass, this.content});
+
+	ItemInfoResponseFloorsDataWeightinfo.fromJson(Map<String, dynamic> json) {
+		title = json['title'];
+		xClass = json['class'];
+		content = json['content'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['title'] = this.title;
+		data['class'] = this.xClass;
+		data['content'] = this.content;
 		return data;
 	}
 }
