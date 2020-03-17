@@ -37,14 +37,13 @@ class _ItemRankState extends State<ItemRank> {
                   color: Colors.white,
                 ),
                 padding: EdgeInsets.all(15),
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.8,
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height * 0.8,
-                  child: Scaffold(
-                      backgroundColor: Colors.white,
-                      body: ItemSku(item: widget.itemInfo?.floors[0]?.data)),
+                  child: Material(
+                    color: Colors.white,
+                    child: ItemSku(item: widget.itemInfo?.floors[0]?.data),
+                  ),
                 ),
               );
             },

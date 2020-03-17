@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
+import 'package:learn_flutter/pages/item_info/cholice_chip_select.dart';
 import 'package:learn_flutter/utils/color_util.dart';
 
 class ItemSku extends StatefulWidget {
@@ -20,8 +21,133 @@ class _ItemSkuState extends State<ItemSku> {
     this.setDefaultSelectButton();
   }
 
+  @override
+  Widget build(BuildContext context) {
+    return Stack(children: <Widget>[
+      Column(
+        children: <Widget>[
+          header(),
+          LimitedBox(
+            maxHeight: MediaQuery.of(context).size.height * 0.8 - 145,
+            child: SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  ...widget.item?.colorSizeInfo?.colorSize
+                      ?.asMap()
+                      ?.keys
+                      ?.map((index) {
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        skuItemHeader(
+                          label: widget
+                              .item?.colorSizeInfo?.colorSize[index]?.title,
+                        ),
+                        CholiceChipSelect(
+                          selectOptions: widget.item?.colorSizeInfo?.colorSize[index]?.buttons?.map((product) {
+                            return SelectOption(
+                              id: product?.no,
+                              label: product?.text,
+                            );
+                          })?.toList(),
+                        ),
+                      ],
+                    );
+                  }),
+                  skuItemHeader(
+                    label: "数量",
+                    rightAction: counter(defautValue: 1),
+                  ),
+                  skuItemHeader(label: widget?.item?.yanBaoInfo?.yanBaoTitle),
+                  ...widget.item?.yanBaoInfo?.yanBaoList?.map((warranty) {
+                    return Column(
+                      children: <Widget>[
+                        subHeader(
+                          leftIcon: Image.network(
+                            warranty?.imgurl,
+                            width: 15,
+                            height: 15,
+                          ),
+                          leftLabel: warranty?.sortName,
+                          rightIcon: Icon(
+                            Icons.info_outline,
+                            size: 15,
+                            color: Colors.red,
+                          ),
+                          rightLabel: "服务介绍",
+                          centerflexSlot: Text(""),
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: CholiceChipSelect(
+                            selectOptions:  warranty?.products?.map((product) {
+                              return SelectOption(
+                                id: product?.platformPid?.toString(),
+                                label: "${product?.sortName} | ${product?.sortName}",
+                              );
+                            })?.toList(),
+                          ),
+                        ),
+                      ],
+                    );
+                  }),
+                  skuItemHeader(
+                      label: widget?.item?.jdSerPlusInfo?.jdSerPlusTitle),
+                  ...widget.item?.jdSerPlusInfo?.jdSerPlusList?.map((warranty) {
+                    return Column(
+                      children: <Widget>[
+                        subHeader(
+                          leftIcon: Image.network(
+                            warranty?.scIconUrl,
+                            width: 15,
+                            height: 15,
+                          ),
+                          leftLabel: warranty?.scName,
+                          rightIcon: Icon(
+                            Icons.info_outline,
+                            size: 15,
+                            color: Colors.red,
+                          ),
+                          rightLabel: "服务介绍",
+                          centerflexSlot: Text(""),
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: CholiceChipSelect(
+                            selectOptions:  warranty?.products?.map((product) {
+                              return SelectOption(
+                                id: product?.serviceSku,
+                                label: "${product?.serviceSkuShortName} | ${product?.serviceSkuPrice}",
+                              );
+                            })?.toList(),
+                          ),
+                        ),
+                      ],
+                    );
+                  })
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+      Positioned(
+        top: 0,
+        right: 0,
+        child: close(onTap: () {
+          Navigator.of(context).pop();
+        }),
+      ),
+      Positioned(
+        bottom: 0,
+        right: 0,
+        child: footer(),
+      ),
+    ]);
+  }
+
   /*
-   * 设置默认选中规格按钮 
+   * 设置默认选中规��按钮 
    */
   setDefaultSelectButton() {
     _selectedButtonIdList =
@@ -30,219 +156,105 @@ class _ItemSkuState extends State<ItemSku> {
     })?.toList();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        header(),
-        LimitedBox(
-          maxHeight: MediaQuery.of(context).size.height - 270,
-          child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                ...widget.item?.colorSizeInfo?.colorSize
-                    ?.asMap()
-                    ?.keys
-                    ?.map((index) {
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      skuItemHeader(
-                        label:
-                            widget.item?.colorSizeInfo?.colorSize[index]?.title,
-                      ),
-                      Wrap(
-                        direction: Axis.horizontal,
-                        alignment: WrapAlignment.start,
-                        spacing: 10,
-                        runSpacing: 15,
-                        runAlignment: WrapAlignment.start,
-                        children: <Widget>[
-                          ...widget
-                              .item?.colorSizeInfo?.colorSize[index]?.buttons
-                              ?.map((button) {
-                            return customCholiceChip(
-                                text: button?.text,
-                                isSelected:
-                                    _selectedButtonIdList[index] == button?.no,
-                                onSelected: (isSelected) {
-                                  setState(() {
-                                    _selectedButtonIdList[index] = button?.no;
-                                  });
-                                });
-                          }),
-                        ],
-                      ),
-                    ],
-                  );
-                }),
-                skuItemHeader(
-                  label: "数量",
-                  rightAction: counter(defautValue: 1),
-                ),
-                skuItemHeader(label: widget?.item?.yanBaoInfo?.yanBaoTitle),
-                ...widget.item?.yanBaoInfo?.yanBaoList?.map((warranty) {
-                  return Column(
-                    children: <Widget>[
-                      subHeader(
-                        leftIcon: Image.network(
-                          warranty?.imgurl,
-                          width: 15,
-                          height: 15,
-                        ),
-                        leftLabel: warranty?.sortName,
-                        rightIcon: Icon(
-                          Icons.info_outline,
-                          size: 15,
-                          color: Colors.red,
-                        ),
-                        rightLabel: "服务介绍",
-                        centerflexSlot: Text(""),
-                      ),
-                      SizedBox(
-                        width: double.infinity,
-                        child: Wrap(
-                          direction: Axis.horizontal,
-                          alignment: WrapAlignment.start,
-                          spacing: 10,
-                          runSpacing: 15,
-                          runAlignment: WrapAlignment.start,
-                          children: <Widget>[
-                            ...warranty?.products?.map((product) {
-                              return customCholiceChip(
-                                  width:
-                                      (MediaQuery.of(context).size.width / 2) -
-                                          50,
-                                  text:
-                                      "${product?.sortName} | ${product?.price}",
-                                  isSelected: false,
-                                  onSelected: (isSelected) {
-                                    setState(() {});
-                                  });
-                            }),
-                          ],
-                        ),
-                      ),
-                    ],
-                  );
-                }),
-                skuItemHeader(
-                    label: widget?.item?.jdSerPlusInfo?.jdSerPlusTitle),
-                ...widget.item?.jdSerPlusInfo?.jdSerPlusList?.map((warranty) {
-                  return Column(
-                    children: <Widget>[
-                      subHeader(
-                        leftIcon: Image.network(
-                          warranty?.scIconUrl,
-                          width: 15,
-                          height: 15,
-                        ),
-                        leftLabel: warranty?.scName,
-                        rightIcon: Icon(
-                          Icons.info_outline,
-                          size: 15,
-                          color: Colors.red,
-                        ),
-                        rightLabel: "服务介绍",
-                        centerflexSlot: Text(""),
-                      ),
-                      SizedBox(
-                        width: double.infinity,
-                        child: Wrap(
-                          direction: Axis.horizontal,
-                          alignment: WrapAlignment.start,
-                          spacing: 10,
-                          runSpacing: 15,
-                          runAlignment: WrapAlignment.start,
-                          children: <Widget>[
-                            ...warranty?.products?.map((product) {
-                              return customCholiceChip(
-                                  width:
-                                      (MediaQuery.of(context).size.width / 2) -
-                                          50,
-                                  text:
-                                      "${product?.serviceSkuShortName} | ${product?.serviceSkuPrice}",
-                                  isSelected: false,
-                                  onSelected: (isSelected) {
-                                    setState(() {});
-                                  });
-                            }),
-                          ],
-                        ),
-                      ),
-                    ],
-                  );
-                })
-              ],
-            ),
+  /*
+   * 关闭按钮
+   */
+  close(
+      {double size = 20,
+      Color backgroundColor = const Color(0xFFF2F2F2),
+      Color iconColor = Colors.black,
+      Function onTap}) {
+    return GestureDetector(
+        child: Container(
+          width: size,
+          height: size,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: ColorUtil.hexToColor("#F2F2F2"),
+            borderRadius: BorderRadius.all(Radius.circular(size / 2)),
+          ),
+          child: Icon(
+            Icons.close,
+            color: Colors.black,
+            size: 15,
           ),
         ),
-      ],
-    );
+        onTap: onTap);
   }
 
   header() {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: <Widget>[
-        Container(
-          margin: EdgeInsets.fromLTRB(0, 10, 10, 0),
-          child: Image.network(
-            widget.item?.wareImage[0]?.small,
-            scale: 12,
-          ),
-        ),
-        Column(
-          children: <Widget>[
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                RichText(
-                  text: TextSpan(
-                      style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      text: widget.item?.priceLabel,
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: widget.item?.priceInfo?.jprice,
-                          style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ]),
-                ),
-                Row(
-                  children: <Widget>[
-                    Text(
-                      "${widget.item?.weightInfo?.title}:${widget.item?.weightInfo?.content}",
-                      style: TextStyle(
-                          color: ColorUtil.hexToColor("#999"),
-                          fontSize: 10,
-                          decoration: TextDecoration.none,
-                          fontWeight: FontWeight.normal),
-                    ),
-                    Text(
-                      // TODO skuID取交集 暂时默认第一个
-                      " 编号:${widget.item?.colorSizeInfo?.colorSize[0]?.buttons[0]?.skuList[0]}",
-                      style: TextStyle(
-                          color: ColorUtil.hexToColor("#999"),
-                          fontSize: 10,
-                          decoration: TextDecoration.none,
-                          fontWeight: FontWeight.normal),
-                    ),
-                  ],
-                ),
-              ],
+    return Container(
+      height: 80,
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.only(bottom: 10),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          GestureDetector(
+            child: Container(
+              margin: EdgeInsets.fromLTRB(0, 10, 10, 0),
+              child: Image.network(
+                widget.item?.wareImage[0]?.small,
+                scale: 12,
+              ),
             ),
-          ],
-        ),
-      ],
+            onTap: () {
+              Fluttertoast.showToast(msg: "heaer");
+            },
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  RichText(
+                    text: TextSpan(
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        text: widget.item?.priceLabel,
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: widget.item?.priceInfo?.jprice,
+                            style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ]),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        "${widget.item?.weightInfo?.title}:${widget.item?.weightInfo?.content}",
+                        style: TextStyle(
+                            color: ColorUtil.hexToColor("#999"),
+                            fontSize: 10,
+                            decoration: TextDecoration.none,
+                            fontWeight: FontWeight.normal),
+                      ),
+                      Text(
+                        // TODO skuID取交集 暂时默认第一个
+                        " 编号:${widget.item?.colorSizeInfo?.colorSize[0]?.buttons[0]?.skuList[0]}",
+                        style: TextStyle(
+                            color: ColorUtil.hexToColor("#999"),
+                            fontSize: 10,
+                            decoration: TextDecoration.none,
+                            fontWeight: FontWeight.normal),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 
@@ -293,43 +305,6 @@ class _ItemSkuState extends State<ItemSku> {
             ),
           ),
         ],
-      ),
-    );
-  }
-
-  customCholiceChip({
-    String text,
-    bool isSelected,
-    double width,
-    double height = 26,
-    void Function(bool) onSelected,
-  }) {
-    return SizedBox(
-      height: height,
-      child: ChoiceChip(
-        label: SizedBox(
-          width: width,
-          child: Text(
-            text,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 12,
-              color: isSelected ? Colors.red : Colors.black,
-            ),
-          ),
-        ),
-        padding: EdgeInsets.fromLTRB(5, 0, 5, 8),
-        pressElevation: 0,
-        selectedColor: ColorUtil.hexToColor("#F9EDEB"),
-        selected: isSelected,
-        backgroundColor: ColorUtil.hexToColor("#F2F2F2"),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          side: BorderSide(
-              color: isSelected ? Colors.red : Colors.transparent, width: 1),
-        ),
-        onSelected: onSelected,
-        // shape: BoxShape.circle,
       ),
     );
   }
@@ -406,6 +381,59 @@ class _ItemSkuState extends State<ItemSku> {
           ),
           Container(
             child: rightAction,
+          ),
+        ],
+      ),
+    );
+  }
+
+  footer() {
+    return Container(
+      width: MediaQuery.of(context).size.width - 30,
+      height: 65,
+      color: Colors.white,
+      child: Flex(
+        direction: Axis.horizontal,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.only(right: 10),
+              child: FlatButton(
+                onPressed: () {},
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0)),
+                child: Text(
+                  "加入购物车",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                color: ColorUtil.hexToColor("#EB532C"),
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.only(left: 10),
+              child: FlatButton(
+                onPressed: () {},
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0)),
+                child: Text(
+                  "立即购买",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                color: ColorUtil.hexToColor("#F4BC41"),
+              ),
+            ),
           ),
         ],
       ),
