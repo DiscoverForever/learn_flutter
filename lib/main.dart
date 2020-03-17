@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
         '/login': (BuildContext context) => Login(),
         '/movie': (BuildContext context) => Movie(),
         '/mine': (BuildContext context) => Mine(),
-        '/item_info': (BuildContext context) => ItemInfo(itemId: ModalRoute.of(context).settings.arguments,),
+        '/item_info': (BuildContext context) =>
+            ItemInfo(itemId: ModalRoute.of(context).settings.arguments),
         '/webview': (BuildContext context) => WebviewScaffold(
               url: (ModalRoute.of(context).settings.arguments
                   as Map<String, String>)['url'],
