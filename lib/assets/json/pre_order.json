@@ -1,0 +1,74 @@
+{
+  "isInternationalAndPresale": false,
+  "isInternational": false,
+  "decryptType": "2",
+  "giftBuy": false,
+  "cartAdd": {
+    "wareId": "100009177424",
+    "atmosphereList": [
+      {
+        "type": 4,
+        "showMsg": "入选『窄边框高清画质的强芯游戏手机榜』",
+        "necessaryKey": "5"
+      },
+      {
+        "type": 5,
+        "necessaryKey": "97%"
+      }
+    ],
+    "ybList": [
+      "42224921668",
+      "55150688951",
+      "42287734361"
+    ],
+    "giftItems": [],
+    "giftIds": [],
+    "jdHomeServiceList": [
+      "7093704"
+    ],
+    "wareNum": "1"
+  },
+  "isLastOrder": true,
+  "supportAllEncode": true,
+  "hasSelectedOTC": "0",
+  "isYYS": false,
+  "sourceType": 2,
+  "solidCard": false,
+  "hasDefaultAddress": true,
+  "addressTotalNum": 14,
+  "otcMergeSwitch": "1",
+  "OrderStr": {
+    "TownName": "",
+    "IdTown": 0,
+    "IdCity": 72,
+    "retTag": 2,
+    "CoordType": 2,
+    "addressDefault": true,
+    "CityName": "朝阳区",
+    "Name": "dgKtc+PasiOeSlpd3GKCAg==",
+    "CountryName": "四环到五环之间",
+    "Longitude": 1000,
+    "Mobile": "jpSOROauDsRjZ79onMcLig==",
+    "redpacket_channel": "JD",
+    "Id": 1028815253,
+    "TypeId": 1,
+    "ProvinceName": "北京",
+    "IdProvince": 1,
+    "IdArea": 2839,
+    "Latitude": 1000,
+    "Where": "ciU3AsIRXjmkZd1G8Xfr1YMklxcEtoMR1yAy7xsiYae14VI6Opp\/Vh+vO8vr4\/krCSacoRvUa0XoBLAOrX8FmQ==",
+    "tagSource": 1,
+    "addressDetail": "QIqVdWOsJo6FRYBEEvi48F81rEjS2tzc"
+  },
+  "isSupportAllInvoice": true,
+  "is170": "0",
+  "skuSource": 0,
+  "addressGlobal": true,
+  "supportApplePayType": "2",
+  "isRefreshOrder": false,
+  "AppKeplerParams": {
+    "channel": "",
+    "source": ""
+  },
+  "isPresale": false
+}
