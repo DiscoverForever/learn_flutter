@@ -50,6 +50,11 @@ class _ItemSkuState extends State<ItemSku> {
                               label: product?.text,
                             );
                           })?.toList(),
+                          selectedId: widget.item?.colorSizeInfo?.colorSize[index]?.buttons[0]?.no,
+                          onSelect: (selected, isSelected) {
+                            // Fluttertoast.showToast(msg: selected?.label);
+                            print(selected?.label);
+                          },
                         ),
                       ],
                     );

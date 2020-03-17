@@ -5,7 +5,7 @@ import 'package:learn_flutter/utils/color_util.dart';
 class CholiceChipSelect extends StatefulWidget {
   final List<SelectOption> selectOptions;
   String selectedId;
-  final Function(SelectOption option, bool isSelect) onSelect;
+  final void Function(SelectOption option, bool isSelect) onSelect;
   CholiceChipSelect({Key key, this.selectOptions, this.selectedId, this.onSelect}): super(key: key);
   @override
   _CholiceChipSelectState createState() => _CholiceChipSelectState();
