@@ -34,6 +34,7 @@ class _ItemInfoState extends State<ItemInfo> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    // TODO 可使用FutureBuilder实现
     return Scaffold(
       body: itemInfo == null
           ? Container(
@@ -189,11 +190,12 @@ class _ItemInfoState extends State<ItemInfo> with TickerProviderStateMixin {
     return EntityFactory.generateOBJ<ItemInfoResponseEntity>(res.data);
   }
 
-  initItemInfo(String itemId) async {
+  Future<ItemInfoResponseEntity> initItemInfo(String itemId) async {
     var _itemInfo = await this.getItemInfoById(itemId);
     this.setState(() {
       this.itemInfo = _itemInfo;
     });
+    return _itemInfo;
   }
 
   navigatorActionBar({IconData icon, double opacity = 1, Function onTap, double iconSize = 28}) {

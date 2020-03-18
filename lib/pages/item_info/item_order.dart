@@ -1,9 +1,11 @@
+import 'package:city_pickers/city_pickers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
 import 'package:learn_flutter/utils/color_util.dart';
 
 import 'card_item.dart';
+import 'item_sku.dart';
 
 class ItemOrder extends StatefulWidget {
   final ItemInfoResponseEntity itemInfo;
@@ -34,6 +36,32 @@ class _ItemOrderState extends State<ItemOrder> {
                 })?.join(","),
               ),
               suffixIcon: Icon(Icons.more_horiz),
+              onTap: () {
+                showCupertinoModalPopup(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          topRight: Radius.circular(10),
+                        ),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.all(15),
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width,
+                        height: MediaQuery.of(context).size.height * 0.8,
+                        child: Material(
+                          color: Colors.white,
+                          child:
+                              ItemSku(item: widget.itemInfo?.floors[0]?.data),
+                        ),
+                      ),
+                    );
+                  },
+                );
+              },
             ),
             CardItem(
               label: "送至",
@@ -64,6 +92,10 @@ class _ItemOrderState extends State<ItemOrder> {
                 ],
               ),
               suffixIcon: Icon(Icons.more_horiz),
+              onTap: () async {
+                var res = await CityPickers.showCityPicker(context: context);
+                print(res);
+              },
             ),
             CardItem(
               label: "运费",

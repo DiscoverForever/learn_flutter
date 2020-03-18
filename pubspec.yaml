@@ -34,7 +34,8 @@ dependencies:
   # webview
   webview_flutter: ^0.3.15
   json_annotation: ^2.0.0
-
+  # 城市选择器
+  city_pickers: ^0.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
