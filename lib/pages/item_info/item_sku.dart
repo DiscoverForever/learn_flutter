@@ -5,6 +5,8 @@ import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
 import 'package:learn_flutter/pages/item_info/cholice_chip_select.dart';
 import 'package:learn_flutter/utils/color_util.dart';
 
+import 'counter.dart';
+
 class ItemSku extends StatefulWidget {
   final ItemInfoResponseFloorsData item;
   ItemSku({Key key, @required this.item}) : super(key: key);
@@ -14,11 +16,14 @@ class ItemSku extends StatefulWidget {
 
 class _ItemSkuState extends State<ItemSku> {
   List<String> _selectedButtonIdList;
-
+  String currentSkuId;
+  List<List<String>> selectedSkuList;
   @override
   void initState() {
     super.initState();
     this.setDefaultSelectButton();
+    this.setDefaultSelectSku();
+    this.updateMatchedSku();
   }
 
   @override
@@ -44,16 +49,21 @@ class _ItemSkuState extends State<ItemSku> {
                               .item?.colorSizeInfo?.colorSize[index]?.title,
                         ),
                         CholiceChipSelect(
-                          selectOptions: widget.item?.colorSizeInfo?.colorSize[index]?.buttons?.map((product) {
+                          selectOptions: widget
+                              .item?.colorSizeInfo?.colorSize[index]?.buttons
+                              ?.map((product) {
                             return SelectOption(
                               id: product?.no,
                               label: product?.text,
+                              value: product?.skuList,
                             );
                           })?.toList(),
-                          selectedId: widget.item?.colorSizeInfo?.colorSize[index]?.buttons[0]?.no,
+                          selectedId: _selectedButtonIdList[index],
                           onSelect: (selected, isSelected) {
-                            // Fluttertoast.showToast(msg: selected?.label);
-                            print(selected?.label);
+                            _selectedButtonIdList[index] = selected?.id;
+                            selectedSkuList[index] =
+                                isSelected ? selected.value : [];
+                            updateMatchedSku();
                           },
                         ),
                       ],
@@ -61,7 +71,11 @@ class _ItemSkuState extends State<ItemSku> {
                   }),
                   skuItemHeader(
                     label: "数量",
-                    rightAction: counter(defautValue: 1),
+                    rightAction: Counter(
+                      defaultValue: 1,
+                      min: 1,
+                      max: 200,
+                    ),
                   ),
                   skuItemHeader(label: widget?.item?.yanBaoInfo?.yanBaoTitle),
                   ...widget.item?.yanBaoInfo?.yanBaoList?.map((warranty) {
@@ -85,10 +99,11 @@ class _ItemSkuState extends State<ItemSku> {
                         SizedBox(
                           width: double.infinity,
                           child: CholiceChipSelect(
-                            selectOptions:  warranty?.products?.map((product) {
+                            selectOptions: warranty?.products?.map((product) {
                               return SelectOption(
                                 id: product?.platformPid?.toString(),
-                                label: "${product?.sortName} | ${product?.sortName}",
+                                label:
+                                    "${product?.sortName} | ${product?.sortName}",
                               );
                             })?.toList(),
                           ),
@@ -119,10 +134,11 @@ class _ItemSkuState extends State<ItemSku> {
                         SizedBox(
                           width: double.infinity,
                           child: CholiceChipSelect(
-                            selectOptions:  warranty?.products?.map((product) {
+                            selectOptions: warranty?.products?.map((product) {
                               return SelectOption(
                                 id: product?.serviceSku,
-                                label: "${product?.serviceSkuShortName} | ${product?.serviceSkuPrice}",
+                                label:
+                                    "${product?.serviceSkuShortName} | ${product?.serviceSkuPrice}",
                               );
                             })?.toList(),
                           ),
@@ -152,13 +168,38 @@ class _ItemSkuState extends State<ItemSku> {
   }
 
   /*
-   * 设置默认选中规��按钮 
+   * 设置默认选中颜色尺码
+   */
+  setDefaultSelectSku() {
+    selectedSkuList = widget?.item?.colorSizeInfo?.colorSize?.map((colorSize) {
+      return colorSize?.buttons[0]?.skuList;
+    })?.toList();
+  }
+
+  /*
+   * 设置默认选中按钮 
    */
   setDefaultSelectButton() {
     _selectedButtonIdList =
         widget.item?.colorSizeInfo?.colorSize?.map((colorSize) {
       return colorSize?.buttons[0].no;
     })?.toList();
+  }
+
+  updateMatchedSku() {
+    setState(() {
+      currentSkuId = getMatchedSku();
+      print(currentSkuId);
+    });
+  }
+
+  /*
+   * 根据用户已选颜色尺码匹配出唯一sku
+   */
+  String getMatchedSku() {
+    return selectedSkuList.reduce((current, next) {
+      return current.toSet().intersection(next.toSet()).toList();
+    }).first;
   }
 
   /*
@@ -245,7 +286,7 @@ class _ItemSkuState extends State<ItemSku> {
                       ),
                       Text(
                         // TODO skuID取交集 暂时默认第一个
-                        " 编号:${widget.item?.colorSizeInfo?.colorSize[0]?.buttons[0]?.skuList[0]}",
+                        " 编号:${currentSkuId}",
                         style: TextStyle(
                             color: ColorUtil.hexToColor("#999"),
                             fontSize: 10,
@@ -311,57 +352,6 @@ class _ItemSkuState extends State<ItemSku> {
           ),
         ],
       ),
-    );
-  }
-
-  /*
-   * 计数器
-   */
-  counter({int defautValue = 1}) {
-    return Row(
-      children: <Widget>[
-        // Icon(Icons.add),
-        LimitedBox(
-          maxWidth: 140,
-          maxHeight: 25,
-          child: TextField(
-            keyboardType: TextInputType.number,
-            maxLines: 1,
-            onTap: () {},
-            textAlign: TextAlign.center,
-            controller: TextEditingController(text: "1"),
-            decoration: InputDecoration(
-              filled: true,
-              fillColor: ColorUtil.hexToColor("#F2F2F2"),
-              contentPadding: EdgeInsets.fromLTRB(2, 2, 2, 0),
-              border: InputBorder.none,
-              prefixIcon: Container(
-                width: 20,
-                alignment: Alignment.centerRight,
-                padding: EdgeInsets.only(right: 10),
-                color: Colors.white,
-                child: Icon(
-                  Icons.remove,
-                  size: 15,
-                  color: ColorUtil.hexToColor("#999999"),
-                ),
-              ),
-              suffixIcon: Container(
-                width: 20,
-                padding: EdgeInsets.only(left: 10),
-                alignment: Alignment.centerLeft,
-                color: Colors.white,
-                child: Icon(
-                  Icons.add,
-                  size: 15,
-                  color: ColorUtil.hexToColor("#999999"),
-                ),
-              ),
-            ),
-          ),
-        ),
-        // Icon(Icons.remove),
-      ],
     );
   }
 
