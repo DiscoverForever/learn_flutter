@@ -23,7 +23,7 @@ class _State extends State<Mine> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF2F2F2),
+      backgroundColor: Color(0xFFF6F6F6),
       body: Stack(
         children: <Widget>[
           FutureBuilder(
@@ -46,8 +46,8 @@ class _State extends State<Mine> {
                           orderList: snapshot.data.floors[0]?.data?.orderList,
                         ),
                         UserWallet(
-                          walletList: snapshot.data.floors[0]?.data?.walletList
-                        ),
+                            walletList:
+                                snapshot.data.floors[0]?.data?.walletList),
                       ],
                     ),
                   );
@@ -70,24 +70,25 @@ class _State extends State<Mine> {
                 ),
               ),
               centerTitle: true,
-              leading: Icon(
-                Icons.email,
-                color: Colors.white,
-                size: 20,
-              ),
+              // leading: Icon(
+              //   Icons.email,
+              //   color: Colors.white,
+              //   size: 20,
+              // ),
               actions: <Widget>[
-                IconButton(
-                  icon: Icon(
-                    Icons.settings,
-                    color: Colors.white,
-                    size: 20,
+                Container(
+                  alignment: Alignment.center,
+                  child: Text(
+                    "设置",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                    ),
                   ),
-                  onPressed: null,
-                  color: Colors.white,
                 ),
                 IconButton(
                   icon: Icon(
-                    Icons.chat,
+                    Icons.notifications,
                     color: Colors.white,
                     size: 20,
                   ),

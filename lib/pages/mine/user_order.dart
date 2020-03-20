@@ -9,7 +9,7 @@ class UserOrder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 90,
-      margin: EdgeInsets.only(top: 10),
+      margin: EdgeInsets.only(top: 5),
       padding: EdgeInsets.only(left: 10, right: 10),
       decoration: BoxDecoration(
         color: Colors.white,

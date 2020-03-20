@@ -60,7 +60,7 @@ class UserWallet extends StatelessWidget {
                             Text(
                               wallet.subtitle.value,
                               style: TextStyle(
-                                fontSize: 8,
+                                fontSize: 10,
                                 color:
                                     ColorUtil.hexToColor(wallet.subtitle.color),
                               ),
