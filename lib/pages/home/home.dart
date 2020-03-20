@@ -108,7 +108,7 @@ class MyHomePageState extends State<MyHomePage> {
                     ),
                     // Image.network('https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/57927/10/5246/102061/5d2ef10bEf2debf2e/93d987f05fa960ea.jpg.dpg.webp'),
                     Container(
-                      height: 160,
+                      height: 140,
                       child: PageView(
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[

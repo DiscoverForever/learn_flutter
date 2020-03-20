@@ -22,8 +22,8 @@ class _FloorState extends State<Floor> {
             child: Image.network(floor.icon),
           ),
           Container(
-            height: 20,
-            margin: EdgeInsets.only(top: 5),
+            height: 25,
+            // margin: EdgeInsets.only(top: 5),
             child: Center(
               child: Text(
                 floor.name,
@@ -39,7 +39,7 @@ class _FloorState extends State<Floor> {
     return Center(
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: 160,
+        height: 140,
         decoration: BoxDecoration(
           image: DecorationImage(
             image: NetworkImage(
