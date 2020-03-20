@@ -9,4 +9,5 @@ class Api {
   static final String swipperImageList = 'client.action?functionId=getCmsPromotionsListByCatelogyID';
   static final String recommendItemList = 'client.action?functionId=uniformRecommend';
   static const String ItemInfo = 'client.action?functionId=wareBusiness';
+  static const String UserInfo = 'client.action?functionId=personinfoBusiness';
 }

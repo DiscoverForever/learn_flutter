@@ -5,6 +5,7 @@ import 'package:learn_flutter/bean/category/category_entity.dart';
 import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
 import 'package:learn_flutter/bean/category/category_swipper_response.dart';
 import 'package:learn_flutter/bean/item/recommend_item_response.dart';
+import 'package:learn_flutter/bean/user/user_info_response_entity.dart';
 
 import 'item_info/item_info_response_entity.dart';
 
@@ -24,6 +25,8 @@ class EntityFactory {
       return RecommendItemResponse.fromJson(json) as T;
     } else if (T.toString() == "FloorModelEntity") {
       return FloorModelEntity.fromJson(json) as T;
+    } else if (T.toString() == "UserInfoResponseEntity") {
+      return UserInfoResponseEntity.fromJson(json) as T;
     } else if (T.toString() == "ItemInfoResponseEntity") {
       return ItemInfoResponseEntity.fromJson(json) as T;
     } else {

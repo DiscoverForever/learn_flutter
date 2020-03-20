@@ -1,4 +1,6 @@
 PODS:
+  - city_pickers (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - flutter_webview_plugin (0.0.1):
     - Flutter
@@ -8,12 +10,15 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - city_pickers (from `.symlinks/plugins/city_pickers/ios`)
   - Flutter (from `.symlinks/flutter/ios`)
   - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
 
 EXTERNAL SOURCES:
+  city_pickers:
+    :path: ".symlinks/plugins/city_pickers/ios"
   Flutter:
     :path: ".symlinks/flutter/ios"
   flutter_webview_plugin:
@@ -24,6 +29,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/webview_flutter/ios"
 
 SPEC CHECKSUMS:
+  city_pickers: b0370f4c35c201723b5b7fcce10ec29b59d5bc35
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
   fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
