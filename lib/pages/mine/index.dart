@@ -44,7 +44,7 @@ class _State extends State<Mine> with TickerProviderStateMixin {
                       print(notification.metrics.pixels);
                       var scrollY = notification.metrics.pixels;
                       if (scrollY > 0) {
-                        var opacity = scrollY / 100;
+                        var opacity = scrollY / 80;
                         setState(() {
                           appBarOpacity = opacity <= 1 ? opacity : 1;
                         });
@@ -94,13 +94,13 @@ class _State extends State<Mine> with TickerProviderStateMixin {
             width: MediaQuery.of(context).size.width,
             child: AppBar(
               title: Text(
-                appBarOpacity == 1 ? "我的" : "",
+                appBarOpacity >= 0.7 ? "我的" : "",
                 style: TextStyle(
                   color: Colors.black,
                 ),
               ),
               centerTitle: true,
-              leading: appBarOpacity == 1
+              leading: appBarOpacity >= 0.7
                   ? Container(
                       padding: EdgeInsets.all(12),
                       child: ClipOval(
