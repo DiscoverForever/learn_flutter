@@ -6,7 +6,6 @@ import 'package:learn_flutter/bean/user/user_info_response_entity.dart';
 import 'package:learn_flutter/pages/mine/user_card.dart';
 import 'package:learn_flutter/pages/mine/user_header.dart';
 import 'package:learn_flutter/pages/mine/user_order.dart';
-import 'package:learn_flutter/pages/mine/user_tools.dart';
 import 'package:learn_flutter/pages/mine/user_wallet.dart';
 import 'package:learn_flutter/utils/request_util.dart';
 
@@ -15,11 +14,13 @@ class Mine extends StatefulWidget {
   _State createState() => _State();
 }
 
-class _State extends State<Mine> {
+class _State extends State<Mine> with TickerProviderStateMixin {
+  double appBarOpacity = 0;
+  Future<UserInfoResponseEntity> userInfoFuture;
   @override
   void initState() {
     super.initState();
-    getUserInfo();
+    this.userInfoFuture = getUserInfo();
   }
 
   @override
@@ -29,7 +30,7 @@ class _State extends State<Mine> {
       body: Stack(
         children: <Widget>[
           FutureBuilder(
-            future: getUserInfo(),
+            future: userInfoFuture,
             builder: (BuildContext context,
                 AsyncSnapshot<UserInfoResponseEntity> snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
@@ -38,27 +39,46 @@ class _State extends State<Mine> {
                   return Text("Error: ${snapshot.error}");
                 } else {
                   // 请求成功，显示数据
-                  return SingleChildScrollView(
-                    child: Column(
-                      children: <Widget>[
-                        UserHeader(
-                          userInfo: snapshot.data.floors[0]?.data,
-                        ),
-                        UserOrder(
-                          orderList: snapshot.data.floors[0]?.data?.orderList,
-                        ),
-                        UserWallet(
-                          walletList: snapshot.data.floors[0]?.data?.walletList,
-                        ),
-                        UserCard(
-                          title: snapshot.data.floors[1]?.data?.extendInfo?.header?.labelName,
-                          tools: snapshot.data.floors[1]?.data?.nodes
-                        ),
-                        UserCard(
-                          title: snapshot.data.floors[0]?.data?.extendInfo?.header?.labelName,
-                          tools: snapshot.data.floors[0]?.data?.nodes,
-                        ),
-                      ],
+                  return NotificationListener<ScrollNotification>(
+                    onNotification: (ScrollNotification notification) {
+                      print(notification.metrics.pixels);
+                      var scrollY = notification.metrics.pixels;
+                      if (scrollY > 0) {
+                        var opacity = scrollY / 100;
+                        setState(() {
+                          appBarOpacity = opacity <= 1 ? opacity : 1;
+                        });
+                      } else if (scrollY < 0) {
+                        setState(() {
+                          appBarOpacity = 0;
+                        });
+                      }
+                      return false;
+                    },
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: <Widget>[
+                          UserHeader(
+                            userInfo: snapshot.data.floors[0]?.data,
+                          ),
+                          UserOrder(
+                            orderList: snapshot.data.floors[0]?.data?.orderList,
+                          ),
+                          UserWallet(
+                            walletList:
+                                snapshot.data.floors[0]?.data?.walletList,
+                          ),
+                          UserCard(
+                              title: snapshot.data.floors[1]?.data?.extendInfo
+                                  ?.header?.labelName,
+                              tools: snapshot.data.floors[1]?.data?.nodes),
+                          UserCard(
+                            title: snapshot.data.floors[0]?.data?.extendInfo
+                                ?.header?.labelName,
+                            tools: snapshot.data.floors[0]?.data?.nodes,
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 }
@@ -74,24 +94,29 @@ class _State extends State<Mine> {
             width: MediaQuery.of(context).size.width,
             child: AppBar(
               title: Text(
-                "我的",
+                appBarOpacity == 1 ? "我的" : "",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
               centerTitle: true,
-              // leading: Icon(
-              //   Icons.email,
-              //   color: Colors.white,
-              //   size: 20,
-              // ),
+              leading: appBarOpacity == 1
+                  ? Container(
+                      padding: EdgeInsets.all(12),
+                      child: ClipOval(
+                        child: Image.network(
+                          "https://storage.360buyimg.com/i.imageUpload/494dccc6eedad0a1b1a631353834363036343330373230_big.jpg",
+                        ),
+                      ),
+                    )
+                  : Container(),
               actions: <Widget>[
                 Container(
                   alignment: Alignment.center,
                   child: Text(
                     "设置",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: appBarOpacity == 1 ? Colors.black : Colors.white,
                       fontSize: 14,
                     ),
                   ),
@@ -99,13 +124,13 @@ class _State extends State<Mine> {
                 IconButton(
                   icon: Icon(
                     Icons.notifications,
-                    color: Colors.white,
+                    color: appBarOpacity == 1 ? Colors.black : Colors.white,
                     size: 20,
                   ),
                   onPressed: null,
                 )
               ],
-              backgroundColor: Colors.transparent,
+              backgroundColor: Color.fromRGBO(255, 255, 255, appBarOpacity),
               elevation: 0,
             ),
           ),

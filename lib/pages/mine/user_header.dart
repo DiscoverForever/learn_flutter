@@ -138,9 +138,16 @@ class UserHeader extends StatelessWidget {
   }
 
   avatar(String url) {
-    return SizedBox(
+    return Container(
       width: 60,
       height: 60,
+      decoration: BoxDecoration(
+        border: Border.all(
+          width: 2,
+          color: Colors.white,
+        ),
+        borderRadius: BorderRadius.all(Radius.circular(30)),
+      ),
       child: CircleAvatar(
         child: ClipOval(
           child: Image.network(
@@ -150,7 +157,7 @@ class UserHeader extends StatelessWidget {
             height: 60,
           ),
         ),
-        backgroundColor: Color(0xffff0000),
+        backgroundColor: Colors.white,
       ),
     );
   }
