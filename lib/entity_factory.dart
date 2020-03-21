@@ -1,4 +1,5 @@
 import 'package:learn_flutter/bean/home/home_model_entity.dart';
+import 'package:learn_flutter/bean/category/category_response_entity.dart';
 import 'package:learn_flutter/bean/category/category_entity.dart';
 import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
 import 'package:learn_flutter/bean/user/user_info_response_entity.dart';
@@ -10,6 +11,8 @@ class EntityFactory {
       return null;
     } else if (T.toString() == "HomeModelEntity") {
       return HomeModelEntity.fromJson(json) as T;
+    } else if (T.toString() == "CategoryResponseEntity") {
+      return CategoryResponseEntity.fromJson(json) as T;
     } else if (T.toString() == "CategoryEntity") {
       return CategoryEntity.fromJson(json) as T;
     } else if (T.toString() == "ItemInfoResponseEntity") {
