@@ -58,6 +58,7 @@ class _ItemInfoState extends State<ItemInfo> with TickerProviderStateMixin {
                         appBarOpacity = 0;
                       });
                     }
+                    return false;
                   },
                   child: SingleChildScrollView(
                     child: Container(
