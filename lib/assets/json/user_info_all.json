@@ -2,16 +2,12 @@
   "code": 0,
   "floors": [
     {
-      "bId": "recommendfloor_flo_445",
+      "bId": "eCustom_flo_341",
       "cf": {
         "bgc": "#ffffff",
-        "spl": "grey_strip_CH"
+        "spl": "empty"
       },
       "data": {
-        "title": {
-          "color": "#2e2e2e",
-          "value": "我的推荐"
-        },
         "cardsResetOrderInfo": [
           {
             "sort": 101,
@@ -47,7 +43,7 @@
             "pageLevel": "",
             "pagerParam": ""
           },
-          "headImg": "",
+          "headImg": "https://storage.360buyimg.com/i.imageUpload/494dccc6eedad0a1b1a631353834363036343330373230_big.jpg",
           "settingInfo": {
             "title": "设置",
             "buttonIcon": "https://img30.360buyimg.com/mobilecms/jfs/t21760/126/1156744913/3274/68306146/5b207488N8b3f4e54.png",
@@ -63,7 +59,19 @@
           "wendadongtai",
           "jinrongfuwu",
           "pluscard"
-        ],
+        ]
+      },
+      "mId": "basefloorinfo",
+      "refId": "basefloorinfo",
+      "sortId": 0
+    },
+    {
+      "bId": "userinfo_flo_340",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "empty"
+      },
+      "data": {
         "jingxiangCredit": [
           {
             "jumpInfo": {
@@ -78,7 +86,7 @@
               "pageId": "MyJD_Main",
               "pageLevel": "2"
             },
-            "encStr": "nTqenbnFVwcVdoOYObO8qEqF6XUIF9Ip0DLvmZQh69c=",
+            "encStr": "nTqenbnFVwcVdoOYObO8qOFydPcakV0YLxRIA9lyUB4=",
             "type": 1,
             "functionId": "huiyuandengji",
             "expoMta": {
@@ -198,7 +206,19 @@
           },
           "faceLoginImg": "https://m.360buyimg.com/mobilecms/jfs/t16384/38/216605903/10973/1dad1358/5a2e2656N0ef86340.png"
         },
-        "userType": 1,
+        "userType": 1
+      },
+      "mId": "userinfo",
+      "refId": "userimage",
+      "sortId": 1
+    },
+    {
+      "bId": "eCustom_flo_426",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
         "orderList": [
           {
             "darkImage": "https://img30.360buyimg.com/mobilecms/jfs/t1/91385/35/12254/647/5e44bb6eE26a6db54/1dc4b7453d2d41ef.png",
@@ -219,7 +239,7 @@
               "pageId": "MyJD_Main",
               "pageLevel": "2"
             },
-            "encStr": "hy8i+RodQM5GTz8iOeXB1voAB/gC3DOIBCgN+iMSG7A=",
+            "encStr": "hy8i+RodQM5GTz8iOeXB1qm2qML3ekgEQ0Wks/JfegA=",
             "safeImage": "https://m.360buyimg.com/mobilecms/jfs/t1/4472/25/3697/1672/5b9a1773E767c363f/aaf685ca17189011.png",
             "value": 0,
             "updateRedDotTime": 0,
@@ -249,7 +269,7 @@
               "pageId": "MyJD_Main",
               "pageLevel": "1"
             },
-            "encStr": "hy8i+RodQM5GTz8iOeXB1voAB/gC3DOIBCgN+iMSG7A=",
+            "encStr": "hy8i+RodQM5GTz8iOeXB1qm2qML3ekgEQ0Wks/JfegA=",
             "safeImage": "https://m.360buyimg.com/mobilecms/jfs/t1/2795/40/3661/2104/5b9a1781Eedb31834/5487d20e8949bfbf.png",
             "value": 0,
             "updateRedDotTime": 0,
@@ -279,7 +299,7 @@
               "color": "#2e2e2e",
               "value": "待评价"
             },
-            "encStr": "hy8i+RodQM5YofQ4VuQlcocqzWs6wL4Ubd5PvG/Qa78=",
+            "encStr": "hy8i+RodQM5YofQ4VuQlcq/fKE5Zyp0Nz+Yq4v+bnqk=",
             "safeImage": "https://m.360buyimg.com/mobilecms/jfs/t26503/280/1577060562/1946/49c963ef/5be54740N33b2f620.png",
             "value": 0,
             "subtitle": {
@@ -310,7 +330,7 @@
               "pageId": "MyJD_Main",
               "pageLevel": ""
             },
-            "encStr": "hy8i+RodQM5GTz8iOeXB1voAB/gC3DOIBCgN+iMSG7A=",
+            "encStr": "hy8i+RodQM5GTz8iOeXB1qm2qML3ekgEQ0Wks/JfegA=",
             "safeImage": "https://m.360buyimg.com/mobilecms/jfs/t1/2570/31/3667/2893/5b9a17a3Ead4a28bf/86bb18794adcc9b3.png",
             "value": 0,
             "updateRedDotTime": 0,
@@ -349,10 +369,24 @@
           }
         ],
         "expoMta": {
-          "eventParam": "",
-          "eventId": "MyJD_GameExpo",
-          "pageId": "MyJD_Main"
-        },
+          "pageParam": "none",
+          "eventParam": "Notpay#0_Notreceived#0_NotRaise#1_Repair#0",
+          "eventId": "MyJD_SubscriptExpo",
+          "pageId": "MyJD_Main",
+          "pageLevel": ""
+        }
+      },
+      "mId": "orderIdFloor",
+      "refId": "dingdanchaxun",
+      "sortId": 2
+    },
+    {
+      "bId": "eCustom_flo_439",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
         "walletList": [
           {
             "redDotType": 3,
@@ -372,7 +406,7 @@
               "color": "#2e2e2e",
               "value": "京豆"
             },
-            "encStr": "agaFT8RrRfhPX4ymclanighk0qteNYfkaVqsM5IgDJI4Q3X9Q6/LAA==",
+            "encStr": "agaFT8RrRfhPX4ymclanighk0qteNYfkoA0XIsxLktS25R7XdQnnSA==",
             "numContent": "0",
             "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t25051/305/1213279512/3175/9cb22766/5b8e516cNa483405a.png",
             "subtitle": {
@@ -408,7 +442,7 @@
               "color": "#2e2e2e",
               "value": "优惠券"
             },
-            "encStr": "agaFT8RrRfhPX4ymclanilTeD8C3RHpIsCk2Pf68hkcoeAwtIshi5A==",
+            "encStr": "agaFT8RrRfhPX4ymclanilTeD8C3RHpImWnNkomwgG1oAGBpAsWX0g==",
             "numContent": "0",
             "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t27877/47/344724202/2135/6a55e262/5b8e5175N397a6d22.png",
             "subtitle": {
@@ -444,7 +478,7 @@
               "color": "#2e2e2e",
               "value": "白条"
             },
-            "encStr": "agaFT8RrRfiVN68V1+mAu9IHpKzKoanh0s4h4iEzgWMownoVMfeU7Vq+48SZNopu",
+            "encStr": "agaFT8RrRfiVN68V1+mAu9IHpKzKoanh0aozzTDUhrKolgelcVN2w1ckoRW/SN/g",
             "supportHide": "1",
             "numContent": "0",
             "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t24820/92/1228875550/1996/4b342f13/5b8e51d9N7feec916.png",
@@ -452,7 +486,7 @@
               "color": "#848484",
               "value": "￥88无门槛券"
             },
-            "updateRedDotTime": 1584604173000,
+            "updateRedDotTime": 1584785420000,
             "contentType": 1,
             "functionId": "wodebaitiao",
             "expoMta": {
@@ -481,7 +515,7 @@
               "color": "#2e2e2e",
               "value": "金条借款"
             },
-            "encStr": "agaFT8RrRfiVN68V1+mAu9IHpKzKoanh0s4h4iEzgWMownoVMfeU7Vq+48SZNopu",
+            "encStr": "agaFT8RrRfiVN68V1+mAu9IHpKzKoanh0aozzTDUhrKolgelcVN2w1ckoRW/SN/g",
             "supportHide": "1",
             "numContent": "0",
             "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t27058/103/334406749/2197/b4f9d18e/5b8e528aN6d72358d.png",
@@ -533,40 +567,165 @@
               "pageLevel": ""
             }
           }
-        ],
+        ]
+      },
+      "mId": "walletIdFloor",
+      "refId": "wodeqianbao",
+      "sortId": 3
+    },
+    {
+      "bId": "gameInteractionModule_flo_490",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
         "extendInfo": {
-          "footer": {
-            "jumpUrl": "https://m.jr.jd.com/vip/jdjrservice/index.html",
-            "text": "查看更多"
-          },
           "header": {
             "labelColor": "#2E2D2D",
-            "rightIconText3": {
-              "text": "换一换",
+            "rightIconText4": {
+              "jumpInfo": {
+                "jumpType": 4,
+                "jumpUrl": "router://JDMyJdModule/goToGameEnterPage",
+                "needLogin": 1
+              },
+              "text": "查看更多",
               "clickMta": {
-                "eventParam": "1",
-                "eventId": "MyJD_Banking_Change",
-                "pageId": "MyJD_Main"
-              },
-              "param": {
-                "exchangeId": "jinrongfuwu"
-              },
-              "hasNext": true,
-              "iconUrl": "https://img30.360buyimg.com/mobilecms/jfs/t1/20904/35/5940/639/5c458919E6af8906b/a2e8da74593587c1.png",
-              "tipMta": {
                 "eventParam": "",
-                "eventId": "MyJD_Banking_NocontentExpo",
-                "pageId": "MyJD_Main"
-              },
-              "functionId": "exchangeCardInfo",
-              "tip": "暂无更多内容哦",
-              "expoMta": {
-                "eventParam": "1",
-                "eventId": "MyJD_Banking_ChangeExpo",
+                "eventId": "MyJD_GameMore",
                 "pageId": "MyJD_Main"
               }
             },
-            "labelName": "金融服务"
+            "labelName": "游戏与互动"
+          }
+        },
+        "nodes": [
+          {
+            "redDotType": 0,
+            "jumpInfo": {
+              "jumpType": 2,
+              "jumpUrl": "openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"farmgame\"}",
+              "needLogin": 0
+            },
+            "subTitle": "0元领一箱水果",
+            "title": "东东农场",
+            "clickMta": {
+              "eventParam": "",
+              "eventId": "MyJD_Game",
+              "pageId": "MyJD_Main"
+            },
+            "bubbleImage": "",
+            "imageType": 0,
+            "imageUrl": "https://img30.360buyimg.com/mobilecms/jfs/t1/53543/16/13749/7237/5da81595E43db3c7c/ed58f6567abd93cc.png",
+            "redDotTimeStamp": 1583461948359,
+            "playTimes": -1,
+            "functionId": "biz1"
+          },
+          {
+            "redDotType": 0,
+            "jumpInfo": {
+              "jumpType": 1,
+              "jumpUrl": "https://funearth.m.jd.com/babelDiy/bbbb/8zF4D6VX5RhsBFxkmLV7WXNk6iQ/index.html?channel=22",
+              "needLogin": 0
+            },
+            "subTitle": "万元奖金可提现",
+            "title": "赚30元",
+            "clickMta": {
+              "eventParam": "",
+              "eventId": "MyJD_Game",
+              "pageId": "MyJD_Main"
+            },
+            "bubbleImage": "",
+            "imageType": 0,
+            "imageUrl": "https://img30.360buyimg.com/mobilecms/jfs/t1/107097/18/154/6235/5da81896E6c64d671/a736b2ea0c7c30ca.png",
+            "redDotTimeStamp": 1583461948359,
+            "playTimes": -1,
+            "functionId": "biz2"
+          },
+          {
+            "redDotType": 0,
+            "jumpInfo": {
+              "jumpType": 1,
+              "jumpUrl": "https://bean.m.jd.com/plantBean/index.action?source=wojing",
+              "needLogin": 0
+            },
+            "subTitle": "瓜分亿万京豆",
+            "title": "种豆得豆",
+            "clickMta": {
+              "eventParam": "",
+              "eventId": "MyJD_Game",
+              "pageId": "MyJD_Main"
+            },
+            "bubbleImage": "",
+            "imageType": 0,
+            "imageUrl": "https://img30.360buyimg.com/mobilecms/jfs/t1/100228/30/144/5490/5da81644E925f457d/a883a9a020c85cdf.png",
+            "redDotTimeStamp": 1583461948359,
+            "playTimes": -1,
+            "functionId": "biz3"
+          },
+          {
+            "redDotType": 0,
+            "jumpInfo": {
+              "jumpType": 1,
+              "jumpUrl": "https://jdjoy.jd.com/pet/index",
+              "needLogin": 0
+            },
+            "subTitle": "养狗兑壕礼",
+            "title": "宠汪汪",
+            "clickMta": {
+              "eventParam": "",
+              "eventId": "MyJD_Game",
+              "pageId": "MyJD_Main"
+            },
+            "bubbleImage": "",
+            "imageType": 0,
+            "imageUrl": "https://img30.360buyimg.com/mobilecms/jfs/t1/89700/2/1147/4596/5dbab80bE2b8298e2/d3ad0fb434b0dbb0.png",
+            "redDotTimeStamp": 1583461948359,
+            "playTimes": -1,
+            "functionId": "biz4"
+          }
+        ],
+        "expoMta": {
+          "eventParam": "",
+          "eventId": "MyJD_GameExpo",
+          "pageId": "MyJD_Main"
+        }
+      },
+      "mId": "gameInteractionModule",
+      "refId": "gameInteractionModule",
+      "sortId": 5
+    },
+    {
+      "bId": "multiBusinessModule_flo_398",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
+        "extendInfo": {
+          "header": {
+            "labelColor": "#2E2D2D",
+            "rightIconText4": {
+              "jumpInfo": {
+                "jumpType": 4,
+                "jumpUrl": "router://JDMyJdModule/showMyjdMoreActivityPage?position=wodeshiyong@@@1#13#100033-woJingBaiBao-909127#909127,wodeyunyingshang@@@1#13#100033-woJingBaiBao-909127#909127,chengweigongyingshang@@@1#13#100033-woJingBaiBao-909127#909127,jiayouka@@@1#13#100033-woJingBaiBao-909127#909127",
+                "needLogin": 1
+              },
+              "text": "查看更多",
+              "clickMta": {
+                "eventParam": "",
+                "eventId": "MyJD_ToolMore",
+                "pageId": "MyJD_Main"
+              }
+            },
+            "labelName": "工具与服务"
+          }
+        },
+        "maiDian": {
+          "moreActivity": {
+            "eventId": "MyJD_CommonfunctionExpo",
+            "pageId": "MyJD_Main",
+            "eventParam": "moreActivity-zhutihuanfu#3@@@1#13#100033-woJingBaiBao-909127#909127_moreActivity-xianzhiguanjia#4@@@1#13#100033-woJingBaiBao-909127#909127_moreActivity-yiyuan#5@@@1#13#100033-woJingBaiBao-909127#909127_moreActivity-wodepingou#6@@@1#13#100033-woJingBaiBao-909127#909127_moreActivity-huochepiao#7@@@1#13#100033-woJingBaiBao-909127#909127_moreActivity-jingdonghuiyuan#8@@@1#13#100033-woJingBaiBao-909127#909127"
           }
         },
         "nodes": [
@@ -794,21 +953,39 @@
             "showRedDot": 0,
             "functionId": "jingdonghuiyuan"
           }
-        ],
-        "maiDian": {
-          "noMoreSure": "MyJD_Banking_NoMore_Noway",
-          "more": "MyJD_Banking_More",
-          "notNow": "MyJD_Banking_NotNow",
-          "noMoreThink": "MyJD_Banking_NoMore_Think",
-          "noMore": "MyJD_Banking_NoMore",
-          "set": "MyJD_Banking_Set"
-        },
+        ]
+      },
+      "mId": "multiBusinessModule",
+      "refId": "gengduorukou",
+      "sortId": 6
+    },
+    {
+      "bId": "eCustom_flo_443",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "empty"
+      },
+      "data": {
         "enc": 2,
-        "attentionList": "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",
+        "attentionList": "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"
+      },
+      "mId": "attentionFloor",
+      "refId": "wodeguanzhu",
+      "sortId": 11
+    },
+    {
+      "bId": "commonBanner_flo_457",
+      "cf": {
+        "bgc": "#FFFFFF",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
         "commonInfo": {
-          "margin": "16",
-          "angle": "16",
-          "lableName": "金融卡片楼层"
+          "margin": "0",
+          "height": 104,
+          "alignStyle": 1,
+          "angle": "24",
+          "lableName": "我的京东-专属引导-7.5.2"
         },
         "banners": [
           {
@@ -823,13 +1000,56 @@
             "eventLevel": "",
             "orderGrade": ""
           }
-        ],
+        ]
+      },
+      "mId": "commonBanner",
+      "refId": "zhuanshuyindao",
+      "sortId": 16
+    },
+    {
+      "bId": "myownerfloor_wodezhuanshu_flo_396",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
         "text": "我的卡片",
         "iconUrl": "https://img30.360buyimg.com/mobilecms/jfs/t1/9802/30/13723/2153/5c46b3e5E5a8ce15b/0b148f62525d49a6.png",
-        "tips": "定制",
+        "tips": "定制"
+      },
+      "mId": "myownerfloor_wodezhuanshu",
+      "refId": "wodezhuanshu",
+      "sortId": 16
+    },
+    {
+      "bId": "npcard_quanyi_flo_318",
+      "cf": {
+        "bgc": "#FFFFFF",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
         "extraInfo": {
           "bid": "npcard_quanyi_flo_318",
           "mid": "npcard_quanyi"
+        },
+        "commonInfo": {
+          "margin": "16",
+          "angle": "16",
+          "lableName": "我京首页-我的权益"
+        },
+        "maiDian": {
+          "notNowParam": "npcard_quanyi_npcard_quanyi_flo_318_1-2",
+          "setParam": "npcard_quanyi_npcard_quanyi_flo_318_1-2",
+          "noMoreSure": "MyJD_bpCommonCard_NoMore_Noway",
+          "more": "MyJD_bpCommonCard_More",
+          "noMoreThink": "MyJD_bpCommonCard_NoMore_Think",
+          "noMoreSureParam": "npcard_quanyi_npcard_quanyi_flo_318_1-2",
+          "noMore": "MyJD_bpCommonCard_NoMore",
+          "set": "MyJD_bpCommonCard_Set",
+          "notNow": "MyJD_bpCommonCard_NotNow",
+          "noMoreParam": "npcard_quanyi_npcard_quanyi_flo_318_1-2",
+          "moreParam": "npcard_quanyi_npcard_quanyi_flo_318_1-2",
+          "noMoreThinkParam": "npcard_quanyi_npcard_quanyi_flo_318_1-2"
         },
         "bizData": {
           "plusInfo": {
@@ -921,238 +1141,203 @@
           },
           "style": "4"
         },
+        "extendInfo": {
+          "footer": {
+            "jumpUrl": "https://plus.m.jd.com/index",
+            "text": "去PLUS主页"
+          },
+          "header": {
+            "labelColor": "#2E2D2D",
+            "labelName": "PLUS会员专享"
+          }
+        }
+      },
+      "mId": "npcard_quanyi",
+      "refId": "pluscard",
+      "sortId": 17
+    },
+    {
+      "bId": "wendadongtai_flo_444",
+      "cf": {
+        "bgc": "#ffffff",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
         "questionImgUrl": "https://m.360buyimg.com/mobilecms/jfs/t3130/6/6916376063/724/8bdb4af/58afe03fNeefa2aa5.png",
         "myList": [
           {
-            "id": "39080834",
+            "id": "39216055",
             "userText": "向您提问",
-            "nickName": "l***n",
-            "questionContent": "伸缩杆装好后还可以拆下来吗？",
-            "skuId": "1336276",
-            "question": "0",
-            "wareImg": "https://img30.360buyimg.com/shaidan/s250x250_jfs/t10804/203/1143207895/156814/c23fc20e/59dd7777N3b2c4a42.jpg",
-            "letMeAnswerText": "我来回答",
-            "userImg": "https://img10.360buyimg.com/imagetools/jfs/t1/62024/28/3423/4136/5d19da36E2f2d8a8f/85d3ced5216db1d4.png",
-            "answerCountText": "共7条回答"
-          },
-          {
-            "id": "35658675",
-            "userText": "向您提问",
-            "nickName": "j***o",
-            "questionContent": "发胶好还是发蜡好用一些",
+            "nickName": "傅烙城",
+            "questionContent": "风好吃吗味道怎么样",
             "skuId": "5904827",
             "question": "0",
             "wareImg": "https://img30.360buyimg.com/shaidan/s250x250_jfs/t12955/272/1625686300/135087/d2c91ab0/5a24ffb0Nc6014525.jpg",
             "letMeAnswerText": "我来回答",
+            "userImg": "https://storage.360buyimg.com/i.imageUpload/6a645f3738393263383735386166376531353639313232363037353730_sma.jpg",
+            "answerCountText": ""
+          },
+          {
+            "id": "36546758",
+            "userText": "向您提问",
+            "nickName": "jd_159817znb",
+            "questionContent": "大家第一次拿到东西跟我一样不能用吗？是充完电之后才可以用是吗？",
+            "skuId": "57773241481",
+            "question": "0",
+            "wareImg": "https://img30.360buyimg.com/shaidan/s250x250_jfs/t1/89113/40/12283/171820/5e457166Eccfcf78d/274de37c52c03314.jpg",
+            "letMeAnswerText": "我来回答",
             "userImg": "https://img10.360buyimg.com/imagetools/jfs/t1/62024/28/3423/4136/5d19da36E2f2d8a8f/85d3ced5216db1d4.png",
-            "answerCountText": "共12条回答"
+            "answerCountText": "共2条回答"
           }
         ],
         "testId": "ABTest-10183-C-98#ABTest-10172-PR4-98",
         "answerImgUrl": "https://m.360buyimg.com/mobilecms/jfs/t3214/248/6939797311/861/d5ce9083/58afe02dN90dd02aa.png",
         "questionText": "查看更多",
         "strategyId": "C",
-        "testParam": "ABTest-10183-C-98#ABTest-10172-PR4-98_0_1336276-39080834-7#5904827-35658675-12",
-        "infoList": [
-          {
-            "detailUrl": "https://active.jd.com/forever/cashback/?channellv=jrfw",
-            "extra": {
-              "content": "去查看",
-              "type": 1
-            },
-            "data": {
-              "downData": [
-                "京东支付享优惠"
-              ],
-              "upData": [
-                "限时领金贴"
-              ]
-            },
-            "modeType": 2,
-            "oneCategory": "6@6M10@60",
-            "biz": {
-              "text": "金贴",
-              "bizImgUrl": "https://img12.360buyimg.com/jrpmobile/jfs/t15031/220/2228641301/505/fb73294d/5a7c499eN199e2eca.png?width=54&height=54"
-            },
-            "info": "W3siY2xpY2tGbGFnIjoxLCJkZWZhdWx0RmxhZyI6MSwiaWQiOiI2MCIsInR3b0NhdGVnb3J5Q29kZSI6IjZfMTAifSx7ImNsaWNrRmxhZyI6MCwiZGVmYXVsdEZsYWciOjEsImlkIjoiODkiLCJ0d29DYXRlZ29yeUNvZGUiOiI0XzEzIn1d"
+        "testParam": "ABTest-10183-C-98#ABTest-10172-PR4-98_0_5904827-39216055-0#57773241481-36546758-2",
+        "extendInfo": {
+          "footer": {
+            "text": "查看更多",
+            "jumpUrl": ""
           },
-          {
-            "detailUrl": "https://m.jr.jd.com/member/dailyAnswer/?channel=618push",
-            "extra": {
-              "content": "去查看",
-              "type": 1
+          "header": {
+            "labelColor": "#2E2D2D",
+            "rightIconText2": {
+              "text": "不再出现"
             },
-            "data": {
-              "downData": [
-                "每日答题赚50金币"
-              ],
-              "upData": [
-                "随机抽取888金币"
-              ]
+            "rightIconText1": {
+              "text": "暂不需要",
+              "param": {}
             },
-            "modeType": 2,
-            "oneCategory": "4@4M13@89",
-            "biz": {
-              "text": "每日答题",
-              "bizImgUrl": "https://img12.360buyimg.com/jrpmobile/jfs/t15982/331/1891645003/648/b2507e4d/5a685eadNa7fc59ef.png?width=54&height=54"
-            },
-            "info": "W3siY2xpY2tGbGFnIjowLCJkZWZhdWx0RmxhZyI6MSwiaWQiOiI2MCIsInR3b0NhdGVnb3J5Q29kZSI6IjZfMTAifSx7ImNsaWNrRmxhZyI6MSwiZGVmYXVsdEZsYWciOjEsImlkIjoiODkiLCJ0d29DYXRlZ29yeUNvZGUiOiI0XzEzIn1d"
+            "labelName": "我的问答"
           }
-        ]
+        }
       },
-      "mId": "recommendfloor",
-      "refId": "recommendfloor",
-      "sortId": 33
+      "mId": "wendadongtai",
+      "refId": "wendadongtai",
+      "sortId": 18
     },
     {
-      "bId": "gameInteractionModule_flo_490",
+      "bId": "npcard_jinrongfuwu_flo_251",
+      "cf": {
+        "bgc": "#FFFFFF",
+        "spl": "grey_strip_CH"
+      },
+      "data": {
+        "commonInfo": {
+          "margin": "16",
+          "angle": "16",
+          "lableName": "金融卡片楼层"
+        },
+        "infoList": [
+          {
+            "detailUrl": "https://m.jr.jd.com/mjractivity/rn/CarService/index.html?RN=CarService?From=czsy1",
+            "extra": {
+              "content": "点击查看",
+              "type": 1
+            },
+            "data": {
+              "downData": [
+                "添加爱车更省钱"
+              ],
+              "upData": [
+                "加油9折起"
+              ]
+            },
+            "modeType": 2,
+            "oneCategory": "1@1M7@15",
+            "biz": {
+              "text": "支付",
+              "bizImgUrl": "https://img12.360buyimg.com/jrpmobile/jfs/t14857/231/850979276/2372/fc53a77c/5a3a6173Nd1b5c38e.png?width=60&height=60"
+            },
+            "info": "W3siY2xpY2tGbGFnIjoxLCJkZWZhdWx0RmxhZyI6MSwiaWQiOiIxNSIsInR3b0NhdGVnb3J5Q29kZSI6IjFfNyJ9LHsiY2xpY2tGbGFnIjowLCJkZWZhdWx0RmxhZyI6MSwiaWQiOiI1MyIsInR3b0NhdGVnb3J5Q29kZSI6IjRfOCJ9XQ=="
+          },
+          {
+            "detailUrl": "https://m.jr.jd.com/integrate/getUp/html/index.html?app=jdsc&channel=sclc1",
+            "extra": {
+              "content": "去查看",
+              "type": 1
+            },
+            "data": {
+              "downData": [
+                "参加早起打卡，瓜分30万奖金"
+              ],
+              "upData": [
+                "你有一笔奖金 早起即可领取"
+              ]
+            },
+            "modeType": 2,
+            "oneCategory": "4@4M8@53",
+            "biz": {
+              "text": "小金库",
+              "bizImgUrl": "https://img12.360buyimg.com/jrpmobile/jfs/t18631/109/285358324/648/b2507e4d/5a685d53N36041a05.png?width=54&height=54"
+            },
+            "info": "W3siY2xpY2tGbGFnIjowLCJkZWZhdWx0RmxhZyI6MSwiaWQiOiIxNSIsInR3b0NhdGVnb3J5Q29kZSI6IjFfNyJ9LHsiY2xpY2tGbGFnIjoxLCJkZWZhdWx0RmxhZyI6MSwiaWQiOiI1MyIsInR3b0NhdGVnb3J5Q29kZSI6IjRfOCJ9XQ=="
+          }
+        ],
+        "maiDian": {
+          "noMoreSure": "MyJD_Banking_NoMore_Noway",
+          "more": "MyJD_Banking_More",
+          "notNow": "MyJD_Banking_NotNow",
+          "noMoreThink": "MyJD_Banking_NoMore_Think",
+          "noMore": "MyJD_Banking_NoMore",
+          "set": "MyJD_Banking_Set"
+        },
+        "extendInfo": {
+          "footer": {
+            "jumpUrl": "https://m.jr.jd.com/vip/jdjrservice/index.html",
+            "text": "查看更多"
+          },
+          "header": {
+            "labelColor": "#2E2D2D",
+            "rightIconText3": {
+              "text": "换一换",
+              "clickMta": {
+                "eventParam": "1",
+                "eventId": "MyJD_Banking_Change",
+                "pageId": "MyJD_Main"
+              },
+              "param": {
+                "exchangeId": "jinrongfuwu"
+              },
+              "hasNext": true,
+              "iconUrl": "https://img30.360buyimg.com/mobilecms/jfs/t1/20904/35/5940/639/5c458919E6af8906b/a2e8da74593587c1.png",
+              "tipMta": {
+                "eventParam": "",
+                "eventId": "MyJD_Banking_NocontentExpo",
+                "pageId": "MyJD_Main"
+              },
+              "functionId": "exchangeCardInfo",
+              "tip": "暂无更多内容哦",
+              "expoMta": {
+                "eventParam": "1",
+                "eventId": "MyJD_Banking_ChangeExpo",
+                "pageId": "MyJD_Main"
+              }
+            },
+            "labelName": "金融服务"
+          }
+        }
+      },
+      "mId": "npcard_jinrongfuwu",
+      "refId": "jinrongfuwu",
+      "sortId": 29
+    },
+    {
+      "bId": "recommendfloor_flo_445",
       "cf": {
         "bgc": "#ffffff",
         "spl": "grey_strip_CH"
       },
       "data": {
-        "extendInfo": {
-          "header": {
-            "labelColor": "#2E2D2D",
-            "rightIconText4": {
-              "jumpInfo": {
-                "jumpType": 4,
-                "jumpUrl": "router://JDMyJdModule/goToGameEnterPage",
-                "needLogin": 1
-              },
-              "text": "查看更多",
-              "clickMta": {
-                "eventParam": "",
-                "eventId": "MyJD_GameMore",
-                "pageId": "MyJD_Main"
-              }
-            },
-            "labelName": "游戏与互动"
-          }
-        },
-        "nodes": [
-          {
-            "redDotType": 0,
-            "jumpInfo": {
-              "jumpType": 2,
-              "jumpUrl": "openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"farmgame\"}",
-              "needLogin": 0
-            },
-            "subTitle": "0元领一箱水果",
-            "title": {
-              "value": "东东农场",
-              "color": "#000"
-            },
-            "clickMta": {
-              "eventParam": "",
-              "eventId": "MyJD_Game",
-              "pageId": "MyJD_Main"
-            },
-            "bubbleImage": "",
-            "imageType": 0,
-            "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t1/53543/16/13749/7237/5da81595E43db3c7c/ed58f6567abd93cc.png",
-            "redDotTimeStamp": 1583461948359,
-            "playTimes": -1,
-            "functionId": "biz1",
-            "subtitle": {
-              "color": "#848484",
-              "value": "0元领一箱水果"
-            }
-          },
-          {
-            "redDotType": 0,
-            "jumpInfo": {
-              "jumpType": 1,
-              "jumpUrl": "https://funearth.m.jd.com/babelDiy/bbbb/8zF4D6VX5RhsBFxkmLV7WXNk6iQ/index.html?channel=22",
-              "needLogin": 0
-            },
-            "subTitle": "万元奖金可提现",
-            "title": {
-              "value": "赚30元",
-              "color": "#000"
-            },
-            "clickMta": {
-              "eventParam": "",
-              "eventId": "MyJD_Game",
-              "pageId": "MyJD_Main"
-            },
-            "bubbleImage": "",
-            "imageType": 0,
-            "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t1/107097/18/154/6235/5da81896E6c64d671/a736b2ea0c7c30ca.png",
-            "redDotTimeStamp": 1583461948359,
-            "playTimes": -1,
-            "functionId": "biz2",
-            "subtitle": {
-              "color": "#848484",
-              "value": "万元奖金可提现"
-            }
-          },
-          {
-            "redDotType": 0,
-            "jumpInfo": {
-              "jumpType": 1,
-              "jumpUrl": "https://bean.m.jd.com/plantBean/index.action?source=wojing",
-              "needLogin": 0
-            },
-            "subTitle": "瓜分亿万京豆",
-            "title": {
-              "value": "种豆得豆",
-              "color": "#000"
-            },
-            "clickMta": {
-              "eventParam": "",
-              "eventId": "MyJD_Game",
-              "pageId": "MyJD_Main"
-            },
-            "bubbleImage": "",
-            "imageType": 0,
-            "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t1/100228/30/144/5490/5da81644E925f457d/a883a9a020c85cdf.png",
-            "redDotTimeStamp": 1583461948359,
-            "playTimes": -1,
-            "functionId": "biz3",
-            "subtitle": {
-              "color": "#848484",
-              "value": "瓜分亿万京豆"
-            }
-          },
-          {
-            "redDotType": 0,
-            "jumpInfo": {
-              "jumpType": 1,
-              "jumpUrl": "https://jdjoy.jd.com/pet/index",
-              "needLogin": 0
-            },
-            "subTitle": "养狗兑壕礼",
-            "title": {
-              "value": "宠汪汪",
-              "color": "#000"
-            },
-            "clickMta": {
-              "eventParam": "",
-              "eventId": "MyJD_Game",
-              "pageId": "MyJD_Main"
-            },
-            "bubbleImage": "",
-            "imageType": 0,
-            "safeImage": "https://img30.360buyimg.com/mobilecms/jfs/t1/89700/2/1147/4596/5dbab80bE2b8298e2/d3ad0fb434b0dbb0.png",
-            "redDotTimeStamp": 1583461948359,
-            "playTimes": -1,
-            "functionId": "biz4",
-            "subtitle": {
-              "color": "#848484",
-              "value": "养狗兑壕礼"
-            }
-          }
-        ],
-        "expoMta": {
-          "eventParam": "",
-          "eventId": "MyJD_GameExpo",
-          "pageId": "MyJD_Main"
+        "title": {
+          "color": "#2e2e2e",
+          "value": "我的推荐"
         }
       },
-      "mId": "gameInteractionModule",
-      "refId": "gameInteractionModule",
-      "sortId": 5
+      "mId": "recommendfloor",
+      "refId": "recommendfloor",
+      "sortId": 33
     }
   ],
   "others": {}

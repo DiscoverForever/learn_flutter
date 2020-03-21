@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter/api/api.dart';
 import 'package:learn_flutter/bean/entity_factory.dart';
 import 'package:learn_flutter/bean/user/user_info_response_entity.dart';
+import 'package:learn_flutter/pages/mine/user_card.dart';
 import 'package:learn_flutter/pages/mine/user_header.dart';
 import 'package:learn_flutter/pages/mine/user_order.dart';
+import 'package:learn_flutter/pages/mine/user_tools.dart';
 import 'package:learn_flutter/pages/mine/user_wallet.dart';
 import 'package:learn_flutter/utils/request_util.dart';
 
@@ -46,8 +48,16 @@ class _State extends State<Mine> {
                           orderList: snapshot.data.floors[0]?.data?.orderList,
                         ),
                         UserWallet(
-                            walletList:
-                                snapshot.data.floors[0]?.data?.walletList),
+                          walletList: snapshot.data.floors[0]?.data?.walletList,
+                        ),
+                        UserCard(
+                          title: snapshot.data.floors[1]?.data?.extendInfo?.header?.labelName,
+                          tools: snapshot.data.floors[1]?.data?.nodes
+                        ),
+                        UserCard(
+                          title: snapshot.data.floors[0]?.data?.extendInfo?.header?.labelName,
+                          tools: snapshot.data.floors[0]?.data?.nodes,
+                        ),
                       ],
                     ),
                   );
