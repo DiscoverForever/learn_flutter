@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:learn_flutter/bean/category/category_response_entity.dart';
 import 'package:learn_flutter/service/category_service.dart';
-import 'package:learn_flutter/bean/category/category_entity.dart'
-    as CategoryBean;
 
 class MasterCategory extends StatefulWidget {
-  final Null Function({String id, String name}) onChildClick;
+  final Null Function(int) onChildClick;
 
   MasterCategory({ Key key, @required this.onChildClick }): super(key: key);
 
@@ -15,7 +13,7 @@ class MasterCategory extends StatefulWidget {
 }
 
 class MasterCategoryState extends State<MasterCategory> {
-  CategoryBean.CategoryEntity category;
+  List<CategoryResponseCatelogylist> categoryList = [];
   int activeIndex = 0;
   
   @override
@@ -26,9 +24,9 @@ class MasterCategoryState extends State<MasterCategory> {
 
   // 获取分类
   getCategory() async {
-    var res = await CategoryService().getCategory();
+    var res = await CategoryService().getMasterCategory();
     this.setState(() {
-      this.category = res;
+      categoryList = res.catelogyList;
     });
   }
 
@@ -41,11 +39,8 @@ class MasterCategoryState extends State<MasterCategory> {
         children: <Widget>[
           Container(
             width: 120,
-            // color: Color(0xFFf8f8f8),
             child: ListView.builder(
-              itemCount: this.category?.data?.category?.length == null
-                  ? 0
-                  : this.category.data.category.length,
+              itemCount: categoryList.length,
               itemBuilder: (BuildContext context, int index) {
                 return Center(
                   child: GestureDetector(
@@ -55,13 +50,13 @@ class MasterCategoryState extends State<MasterCategory> {
                           ? Colors.white
                           : Color(0xFFf8f8f8),
                       child: Center(
-                        child: Text(this.category.data.category[index].name),
+                        child: Text(this.categoryList[index].name),
                       ),
                     ),
                     onTap: () {
                       this.setState(() {
                         this.activeIndex = index;
-                        widget.onChildClick(id: '1', name: '2');
+                        widget.onChildClick(this.categoryList[index].cid);
                       });
                     },
                   ),

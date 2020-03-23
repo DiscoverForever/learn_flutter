@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:learn_flutter/pages/category/master_category.dart';
+import 'package:learn_flutter/pages/category/subcategory.dart';
 import 'package:learn_flutter/pages/category/subcategory_item.dart';
+import 'package:learn_flutter/service/category_service.dart';
 
 class Category extends StatefulWidget {
   @override
@@ -9,6 +11,14 @@ class Category extends StatefulWidget {
 }
 
 class CategoryState extends State<Category> {
+  @override
+  void initState() {
+    super.initState();
+  }
+  getSubcategoryList(String categoryId) async {
+    var res = await CategoryService().getSubcategory(categoryId);
+    print(res);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,8 +65,8 @@ class CategoryState extends State<Category> {
       body: Row(
         children: <Widget>[
           MasterCategory(
-            onChildClick: ({String id, String name}) {
-              print(id);
+            onChildClick: (int id) {
+              getSubcategoryList(id.toString());
             },
           ),
           SubcategoryItem(),
