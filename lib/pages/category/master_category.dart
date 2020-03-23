@@ -42,29 +42,44 @@ class MasterCategoryState extends State<MasterCategory> {
             child: ListView.builder(
               itemCount: categoryList.length,
               itemBuilder: (BuildContext context, int index) {
-                return Center(
-                  child: GestureDetector(
-                    child: Container(
-                      height: 40,
-                      color: this.activeIndex == index
-                          ? Colors.white
-                          : Color(0xFFF1F2F3),
-                      child: Center(
-                        child: Text(
-                          this.categoryList[index].name,
-                          style: TextStyle(
-                            fontSize: 12,
+                return GestureDetector(
+                  child: Stack(
+                    children: <Widget>[
+                      Container(
+                        height: 40,
+                        color: this.activeIndex == index
+                            ? Color(0xFFFEFFFF)
+                            : Color(0xFFF1F2F3),
+                        child: Center(
+                          child: Text(
+                            this.categoryList[index].name,
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: this.activeIndex == index ? FontWeight.bold : FontWeight.normal,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    onTap: () {
-                      this.setState(() {
-                        this.activeIndex = index;
-                        widget.onChildClick(this.categoryList[index].cid);
-                      });
-                    },
+                      Positioned(
+                        top: 10,
+                        left: 0,
+                        child: Offstage(
+                          offstage: this.activeIndex != index,
+                          child: Container(
+                            width: 3,
+                            height: 20,
+                            color: Color(0xFFDA3E27),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
+                  onTap: () {
+                    this.setState(() {
+                      this.activeIndex = index;
+                      widget.onChildClick(this.categoryList[index].cid);
+                    });
+                  },
                 );
               },
             ),

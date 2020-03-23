@@ -22,9 +22,10 @@ class SubcategoryState extends State<Subcategory> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       width: MediaQuery.of(context).size.width - 80,
       height: MediaQuery.of(context).size.height - 150,
+      color: Color(0xFFFCFDFE),
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
