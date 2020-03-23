@@ -6,7 +6,7 @@ import 'package:learn_flutter/service/category_service.dart';
 class MasterCategory extends StatefulWidget {
   final Null Function(int) onChildClick;
 
-  MasterCategory({ Key key, @required this.onChildClick }): super(key: key);
+  MasterCategory({Key key, @required this.onChildClick}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => MasterCategoryState();
@@ -15,7 +15,7 @@ class MasterCategory extends StatefulWidget {
 class MasterCategoryState extends State<MasterCategory> {
   List<CategoryResponseCatelogylist> categoryList = [];
   int activeIndex = 0;
-  
+
   @override
   void initState() {
     super.initState();
@@ -38,7 +38,7 @@ class MasterCategoryState extends State<MasterCategory> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
-            width: 120,
+            width: 80,
             child: ListView.builder(
               itemCount: categoryList.length,
               itemBuilder: (BuildContext context, int index) {
@@ -48,9 +48,14 @@ class MasterCategoryState extends State<MasterCategory> {
                       height: 40,
                       color: this.activeIndex == index
                           ? Colors.white
-                          : Color(0xFFf8f8f8),
+                          : Color(0xFFF1F2F3),
                       child: Center(
-                        child: Text(this.categoryList[index].name),
+                        child: Text(
+                          this.categoryList[index].name,
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
                       ),
                     ),
                     onTap: () {

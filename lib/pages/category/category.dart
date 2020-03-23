@@ -15,10 +15,12 @@ class CategoryState extends State<Category> {
   void initState() {
     super.initState();
   }
+
   getSubcategoryList(String categoryId) async {
     var res = await CategoryService().getSubcategory(categoryId);
     print(res);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +71,7 @@ class CategoryState extends State<Category> {
               getSubcategoryList(id.toString());
             },
           ),
-          SubcategoryItem(),
+          Expanded(flex: 1, child: Subcategory()),
         ],
       ),
     );
