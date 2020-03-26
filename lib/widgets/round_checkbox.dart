@@ -13,6 +13,7 @@ class RoundCheckbox extends StatefulWidget {
   final double height;
   final double borderWidth;
   final double elevation;
+  final double checkSize;
   final Widget checkIcon;
 
   RoundCheckbox({
@@ -28,6 +29,7 @@ class RoundCheckbox extends StatefulWidget {
     this.activeBorderColor = const Color(0xFF333333),
     this.backgroundColor = const Color(0xFFFFFFFF),
     this.checkIcon,
+    this.checkSize = 14,
     this.elevation = 1,
   }) : super(key: key);
 
@@ -65,9 +67,9 @@ class _RoundCheckboxState extends State<RoundCheckbox> {
             ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black26,
+                color: Colors.black12,
                 offset: Offset(0, 0), //阴影xy轴偏移量
-                blurRadius: 5.0, //阴影模糊程度
+                blurRadius: 10.0, //阴影模糊程度
                 spreadRadius: widget.elevation, //阴影扩散程度
               )
             ],
@@ -77,7 +79,7 @@ class _RoundCheckboxState extends State<RoundCheckbox> {
                   ? Icon(
                       Icons.check,
                       color: widget.checkColor,
-                      size: widget.width,
+                      size: widget.checkSize,
                     )
                   : widget.checkIcon)
               : Container(),
