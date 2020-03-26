@@ -55,6 +55,7 @@ class _CounterState extends State<Counter> {
               controller: TextEditingController(text: value.toString()),
               style: TextStyle(
                 fontSize: 12,
+                fontWeight: FontWeight.bold,
               ),
               maxLength: 3,
               decoration: InputDecoration(
