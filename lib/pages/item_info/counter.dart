@@ -10,7 +10,7 @@ class Counter extends StatefulWidget {
   final int max;
   // 最小值
   final int min;
-  Counter({Key key, this.defaultValue, this.max, this.min }): super(key: key);
+  Counter({Key key, this.defaultValue = 0, this.max, this.min }): super(key: key);
   @override
   _CounterState createState() => _CounterState();
 }

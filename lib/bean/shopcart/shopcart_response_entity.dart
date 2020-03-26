@@ -1,0 +1,995 @@
+class ShopcartResponseEntity {
+	ShopcartResponseCartinfo cartInfo;
+	List<ShopcartResponseTabmanus> tabMenus;
+	String code;
+	String imageDomain;
+	int resultCode;
+	String userIdentity;
+
+	ShopcartResponseEntity({this.cartInfo, this.tabMenus, this.code, this.imageDomain, this.resultCode, this.userIdentity});
+
+	ShopcartResponseEntity.fromJson(Map<String, dynamic> json) {
+		cartInfo = json['cartInfo'] != null ? new ShopcartResponseCartinfo.fromJson(json['cartInfo']) : null;
+		if (json['tabMenus'] != null) {
+			tabMenus = new List<ShopcartResponseTabmanus>();(json['tabMenus'] as List).forEach((v) { tabMenus.add(new ShopcartResponseTabmanus.fromJson(v)); });
+		}
+		code = json['code'];
+		imageDomain = json['imageDomain'];
+		resultCode = json['resultCode'];
+		userIdentity = json['userIdentity'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		if (this.cartInfo != null) {
+      data['cartInfo'] = this.cartInfo.toJson();
+    }
+		if (this.tabMenus != null) {
+      data['tabMenus'] =  this.tabMenus.map((v) => v.toJson()).toList();
+    }
+		data['code'] = this.code;
+		data['imageDomain'] = this.imageDomain;
+		data['resultCode'] = this.resultCode;
+		data['userIdentity'] = this.userIdentity;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfo {
+	bool isEmpty;
+	double rePrice;
+	int checkedWareNum;
+	int cartAddClearGuide;
+	int cartNum;
+	int specialId;
+	int limitBookNum;
+	int isNoCheck;
+	int cartClearGuide;
+	Map<String, dynamic> abCards;
+	int limitWareNum;
+	String tip1;
+	String tip2;
+	List<ShopcartResponseCartinfoVendor> vendors;
+	int limitNotBookNum;
+	ShopcartResponseCartinfoCartnumgroup cartNumGroup;
+	int promotionSwitch;
+	int checkType;
+	bool cartClearShow;
+	String configVersion;
+	int num;
+	int limitCartNum;
+	int orderNumLimit;
+	List<Null> suits;
+	int promotionSavePrice;
+	List<Null> skus;
+	double price;
+	List<Null> gifts;
+	String priceShow;
+	int status;
+
+	ShopcartResponseCartinfo({this.isEmpty, this.rePrice, this.checkedWareNum, this.cartAddClearGuide, this.cartNum, this.specialId, this.limitBookNum, this.isNoCheck, this.cartClearGuide, this.abCards, this.limitWareNum, this.tip1, this.tip2, this.vendors, this.limitNotBookNum, this.cartNumGroup, this.promotionSwitch, this.checkType, this.cartClearShow, this.configVersion, this.num, this.limitCartNum, this.orderNumLimit, this.suits, this.promotionSavePrice, this.skus, this.price, this.gifts, this.priceShow, this.status});
+
+	ShopcartResponseCartinfo.fromJson(Map<String, dynamic> json) {
+		isEmpty = json['IsEmpty'];
+		rePrice = json['RePrice'];
+		checkedWareNum = json['checkedWareNum'];
+		cartAddClearGuide = json['cartAddClearGuide'];
+		cartNum = json['cartNum'];
+		specialId = json['specialId'];
+		limitBookNum = json['limitBookNum'];
+		isNoCheck = json['isNoCheck'];
+		cartClearGuide = json['cartClearGuide'];
+		abCards = json['abCards'];
+		limitWareNum = json['limitWareNum'];
+		tip1 = json['tip_1'];
+		tip2 = json['tip_2'];
+		if (json['vendors'] != null) {
+			vendors = new List<ShopcartResponseCartinfoVendor>();(json['vendors'] as List).forEach((v) { vendors.add(new ShopcartResponseCartinfoVendor.fromJson(v)); });
+		}
+		limitNotBookNum = json['limitNotBookNum'];
+		cartNumGroup = json['cartNumGroup'] != null ? new ShopcartResponseCartinfoCartnumgroup.fromJson(json['cartNumGroup']) : null;
+		promotionSwitch = json['promotionSwitch'];
+		checkType = json['checkType'];
+		cartClearShow = json['cartClearShow'];
+		configVersion = json['configVersion'];
+		num = json['Num'];
+		limitCartNum = json['limitCartNum'];
+		orderNumLimit = json['orderNumLimit'];
+		if (json['Suits'] != null) {
+			suits = new List<Null>();
+		}
+		promotionSavePrice = json['promotionSavePrice'];
+		if (json['Skus'] != null) {
+			skus = new List<Null>();
+		}
+		price = json['Price'];
+		if (json['Gifts'] != null) {
+			gifts = new List<Null>();
+		}
+		priceShow = json['PriceShow'];
+		status = json['status'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['IsEmpty'] = this.isEmpty;
+		data['RePrice'] = this.rePrice;
+		data['checkedWareNum'] = this.checkedWareNum;
+		data['cartAddClearGuide'] = this.cartAddClearGuide;
+		data['cartNum'] = this.cartNum;
+		data['specialId'] = this.specialId;
+		data['limitBookNum'] = this.limitBookNum;
+		data['isNoCheck'] = this.isNoCheck;
+		data['cartClearGuide'] = this.cartClearGuide;
+    data['abCards'] = this.abCards;
+		data['limitWareNum'] = this.limitWareNum;
+		data['tip_1'] = this.tip1;
+		data['tip_2'] = this.tip2;
+		if (this.vendors != null) {
+      data['vendors'] =  this.vendors.map((v) => v.toJson()).toList();
+    }
+		data['limitNotBookNum'] = this.limitNotBookNum;
+		if (this.cartNumGroup != null) {
+      data['cartNumGroup'] = this.cartNumGroup.toJson();
+    }
+		data['promotionSwitch'] = this.promotionSwitch;
+		data['checkType'] = this.checkType;
+		data['cartClearShow'] = this.cartClearShow;
+		data['configVersion'] = this.configVersion;
+		data['Num'] = this.num;
+		data['limitCartNum'] = this.limitCartNum;
+		data['orderNumLimit'] = this.orderNumLimit;
+		if (this.suits != null) {
+      data['Suits'] =  [];
+    }
+		data['promotionSavePrice'] = this.promotionSavePrice;
+		if (this.skus != null) {
+      data['Skus'] =  [];
+    }
+		data['Price'] = this.price;
+		if (this.gifts != null) {
+      data['Gifts'] =  [];
+    }
+		data['PriceShow'] = this.priceShow;
+		data['status'] = this.status;
+		return data;
+	}
+}
+
+
+class ShopcartResponseCartinfoVendor {
+	int vendorType;
+	int checkType;
+	List<ShopcartResponseCartinfoVendorsSorted> sorted;
+	ShopcartResponseCartinfoVendorsVendorlabels vendorLabels;
+	int isNoCheck;
+	int vendorId;
+	String shopName;
+	int shopId;
+	double vendorPrice;
+	int fareType;
+	int specialId;
+
+	ShopcartResponseCartinfoVendor({this.vendorType, this.checkType, this.sorted, this.vendorLabels, this.isNoCheck, this.vendorId, this.shopName, this.shopId, this.vendorPrice, this.fareType, this.specialId});
+
+	ShopcartResponseCartinfoVendor.fromJson(Map<String, dynamic> json) {
+		vendorType = json['vendorType'];
+		checkType = json['checkType'];
+		if (json['sorted'] != null) {
+			sorted = new List<ShopcartResponseCartinfoVendorsSorted>();(json['sorted'] as List).forEach((v) { sorted.add(new ShopcartResponseCartinfoVendorsSorted.fromJson(v)); });
+		}
+		vendorLabels = json['vendorLabels'] != null ? new ShopcartResponseCartinfoVendorsVendorlabels.fromJson(json['vendorLabels']) : null;
+		isNoCheck = json['isNoCheck'];
+		vendorId = json['vendorId'];
+		shopName = json['shopName'];
+		shopId = json['shopId'];
+		vendorPrice = json['vendorPrice'];
+		fareType = json['fareType'];
+		specialId = json['specialId'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['vendorType'] = this.vendorType;
+		data['checkType'] = this.checkType;
+		if (this.sorted != null) {
+      data['sorted'] =  this.sorted.map((v) => v.toJson()).toList();
+    }
+		if (this.vendorLabels != null) {
+      data['vendorLabels'] = this.vendorLabels.toJson();
+    }
+		data['isNoCheck'] = this.isNoCheck;
+		data['vendorId'] = this.vendorId;
+		data['shopName'] = this.shopName;
+		data['shopId'] = this.shopId;
+		data['vendorPrice'] = this.vendorPrice;
+		data['fareType'] = this.fareType;
+		data['specialId'] = this.specialId;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSorted {
+	int itemType;
+	ShopcartResponseCartinfoVendorsSortedItem item;
+
+	ShopcartResponseCartinfoVendorsSorted({this.itemType, this.item});
+
+	ShopcartResponseCartinfoVendorsSorted.fromJson(Map<String, dynamic> json) {
+		itemType = json['itemType'];
+		item = json['item'] != null ? new ShopcartResponseCartinfoVendorsSortedItem.fromJson(json['item']) : null;
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['itemType'] = this.itemType;
+		if (this.item != null) {
+      data['item'] = this.item.toJson();
+    }
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItem {
+	bool isReachCondition;
+	double rePrice;
+	double discount;
+	String suitLabel;
+	int fullRefundType;
+	String entryLabel;
+	int num;
+	List<Null> canSelectGifts;
+	String stillNeed;
+	int point;
+	double addMoney;
+	String promotionId;
+	String sTip;
+	String specialId;
+	int suitType;
+	double needMoney;
+	List<Null> skus;
+	int sType;
+	double price;
+	int checkType;
+	List<Null> gifts;
+	int id;
+	String priceShow;
+	List<ShopcartResponseCartinfoVendorsSortedItemItem> items;
+
+	ShopcartResponseCartinfoVendorsSortedItem({this.isReachCondition, this.rePrice, this.discount, this.suitLabel, this.fullRefundType, this.entryLabel, this.num, this.canSelectGifts, this.stillNeed, this.point, this.addMoney, this.promotionId, this.sTip, this.specialId, this.suitType, this.needMoney, this.skus, this.sType, this.price, this.checkType, this.gifts, this.id, this.priceShow, this.items});
+
+	ShopcartResponseCartinfoVendorsSortedItem.fromJson(Map<String, dynamic> json) {
+		isReachCondition = json['isReachCondition'];
+		rePrice = json['RePrice'];
+		discount = json['Discount'];
+		suitLabel = json['suitLabel'];
+		fullRefundType = json['fullRefundType'];
+		entryLabel = json['entryLabel'];
+		num = json['Num'];
+		if (json['CanSelectGifts'] != null) {
+			canSelectGifts = new List<Null>();
+		}
+		stillNeed = json['stillNeed'];
+		point = json['Point'];
+		addMoney = json['AddMoney'];
+		promotionId = json['promotionId'];
+		sTip = json['STip'];
+		specialId = json['specialId'];
+		suitType = json['suitType'];
+		needMoney = json['NeedMoney'];
+		if (json['Skus'] != null) {
+			skus = new List<Null>();
+		}
+		sType = json['SType'];
+		price = json['Price'];
+		checkType = json['CheckType'];
+		if (json['Gifts'] != null) {
+			gifts = new List<Null>();
+		}
+		id = json['Id'];
+		priceShow = json['PriceShow'];
+		if (json['items'] != null) {
+			items = new List<ShopcartResponseCartinfoVendorsSortedItemItem>();(json['items'] as List).forEach((v) { items.add(new ShopcartResponseCartinfoVendorsSortedItemItem.fromJson(v)); });
+		}
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['isReachCondition'] = this.isReachCondition;
+		data['RePrice'] = this.rePrice;
+		data['Discount'] = this.discount;
+		data['suitLabel'] = this.suitLabel;
+		data['fullRefundType'] = this.fullRefundType;
+		data['entryLabel'] = this.entryLabel;
+		data['Num'] = this.num;
+		if (this.canSelectGifts != null) {
+      data['CanSelectGifts'] =  [];
+    }
+		data['stillNeed'] = this.stillNeed;
+		data['Point'] = this.point;
+		data['AddMoney'] = this.addMoney;
+		data['promotionId'] = this.promotionId;
+		data['STip'] = this.sTip;
+		data['specialId'] = this.specialId;
+		data['suitType'] = this.suitType;
+		data['NeedMoney'] = this.needMoney;
+		if (this.skus != null) {
+      data['Skus'] =  [];
+    }
+		data['SType'] = this.sType;
+		data['Price'] = this.price;
+		data['CheckType'] = this.checkType;
+		if (this.gifts != null) {
+      data['Gifts'] =  [];
+    }
+		data['Id'] = this.id;
+		data['PriceShow'] = this.priceShow;
+		if (this.items != null) {
+      data['items'] =  this.items.map((v) => v.toJson()).toList();
+    }
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItem {
+	int itemType;
+	ShopcartResponseCartinfoVendorsSortedItemItemsItem item;
+
+	ShopcartResponseCartinfoVendorsSortedItemItem({this.itemType, this.item});
+
+	ShopcartResponseCartinfoVendorsSortedItemItem.fromJson(Map<String, dynamic> json) {
+		itemType = json['itemType'];
+		item = json['item'] != null ? new ShopcartResponseCartinfoVendorsSortedItemItemsItem.fromJson(json['item']) : null;
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['itemType'] = this.itemType;
+		if (this.item != null) {
+      data['item'] = this.item.toJson();
+    }
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItem {
+	double rePrice;
+	int vendorId;
+	int maxNum;
+	String imgUrl;
+	int overseaPurchase;
+	String name;
+	List<ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloor> extFloors;
+	bool isBook;
+	String stockState;
+	List<ShopcartResponseCartinfoVendorsSortedItemItemsItemCanselectpromotion> canSelectPromotions;
+	int giftsType;
+	int isNoCheck;
+	int remainNumInt;
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummary floorInfoSummary;
+	List<Null> tags;
+	int notComputeStock;
+	String remainNum;
+	int targetId;
+	String weight;
+	int stockCode;
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabels skuLabels;
+	int isProvideService;
+	double price;
+	String imageUrlRN;
+	List<Null> canSelectPrices;
+	int brandId;
+	List<ShopcartResponseCartinfoVendorsSortedItemItemsItemGift> gifts;
+	String menuRelationTag;
+	String id;
+	Map<String, dynamic> fields;
+	int cid;
+	double discount;
+	int delGiftFlag;
+	String giftPoolPromoId;
+	int idForOldVersion;
+	String specialId;
+	int firstCid;
+	String unitedText;
+	bool isYb;
+	int notComputeFreight;
+	int num;
+	String priceImg;
+	int secondCid;
+	int point;
+	int hasUnitedText;
+	int awardType;
+	int cardSpecialId;
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemPropertytags propertyTags;
+	int checkType;
+	String priceShow;
+	String priceRevert;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItem({this.rePrice, this.vendorId, this.maxNum, this.imgUrl, this.overseaPurchase, this.name, this.extFloors, this.isBook, this.stockState, this.canSelectPromotions, this.giftsType, this.isNoCheck, this.remainNumInt, this.floorInfoSummary, this.tags, this.notComputeStock, this.remainNum, this.targetId, this.weight, this.stockCode, this.skuLabels, this.isProvideService, this.price, this.imageUrlRN, this.canSelectPrices, this.brandId, this.gifts, this.menuRelationTag, this.id, this.fields, this.cid, this.discount, this.delGiftFlag, this.giftPoolPromoId, this.idForOldVersion, this.specialId, this.firstCid, this.unitedText, this.isYb, this.notComputeFreight, this.num, this.priceImg, this.secondCid, this.point, this.hasUnitedText, this.awardType, this.cardSpecialId, this.propertyTags, this.checkType, this.priceShow, this.priceRevert});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItem.fromJson(Map<String, dynamic> json) {
+		rePrice = json['RePrice'];
+		vendorId = json['vendorId'];
+		maxNum = json['maxNum'];
+		imgUrl = json['ImgUrl'];
+		overseaPurchase = json['overseaPurchase'];
+		name = json['Name'];
+		if (json['extFloors'] != null) {
+			extFloors = new List<ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloor>();(json['extFloors'] as List).forEach((v) { extFloors.add(new ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloor.fromJson(v)); });
+		}
+		isBook = json['isBook'];
+		stockState = json['stockState'];
+		if (json['canSelectPromotions'] != null) {
+			canSelectPromotions = new List<ShopcartResponseCartinfoVendorsSortedItemItemsItemCanselectpromotion>();(json['canSelectPromotions'] as List).forEach((v) { canSelectPromotions.add(new ShopcartResponseCartinfoVendorsSortedItemItemsItemCanselectpromotion.fromJson(v)); });
+		}
+		giftsType = json['giftsType'];
+		isNoCheck = json['isNoCheck'];
+		remainNumInt = json['remainNumInt'];
+		floorInfoSummary = json['floorInfoSummary'] != null ? new ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummary.fromJson(json['floorInfoSummary']) : null;
+		if (json['Tags'] != null) {
+			tags = new List<Null>();
+		}
+		notComputeStock = json['notComputeStock'];
+		remainNum = json['remainNum'];
+		targetId = json['targetId'];
+		weight = json['weight'];
+		stockCode = json['stockCode'];
+		skuLabels = json['skuLabels'] != null ? new ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabels.fromJson(json['skuLabels']) : null;
+		isProvideService = json['isProvideService'];
+		price = json['Price'];
+		imageUrlRN = json['ImageUrlRN'];
+		if (json['canSelectPrices'] != null) {
+			canSelectPrices = new List<Null>();
+		}
+		brandId = json['brandId'];
+		if (json['Gifts'] != null) {
+			gifts = new List<ShopcartResponseCartinfoVendorsSortedItemItemsItemGift>();(json['Gifts'] as List).forEach((v) { gifts.add(new ShopcartResponseCartinfoVendorsSortedItemItemsItemGift.fromJson(v)); });
+		}
+		menuRelationTag = json['menuRelationTag'];
+		id = json['Id'];
+		fields = json['fields'];
+		cid = json['cid'];
+		discount = json['Discount'];
+		delGiftFlag = json['delGiftFlag'];
+		giftPoolPromoId = json['giftPoolPromoId'];
+		idForOldVersion = json['IdForOldVersion'];
+		specialId = json['specialId'];
+		firstCid = json['firstCid'];
+		unitedText = json['unitedText'];
+		isYb = json['isYb'];
+		notComputeFreight = json['notComputeFreight'];
+		num = json['Num'];
+		priceImg = json['PriceImg'];
+		secondCid = json['secondCid'];
+		point = json['Point'];
+		hasUnitedText = json['hasUnitedText'];
+		awardType = json['AwardType'];
+		cardSpecialId = json['cardSpecialId'];
+		propertyTags = json['propertyTags'] != null ? new ShopcartResponseCartinfoVendorsSortedItemItemsItemPropertytags.fromJson(json['propertyTags']) : null;
+		checkType = json['CheckType'];
+		priceShow = json['PriceShow'];
+		priceRevert = json['priceRevert'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['RePrice'] = this.rePrice;
+		data['vendorId'] = this.vendorId;
+		data['maxNum'] = this.maxNum;
+		data['ImgUrl'] = this.imgUrl;
+		data['overseaPurchase'] = this.overseaPurchase;
+		data['Name'] = this.name;
+		if (this.extFloors != null) {
+      data['extFloors'] =  this.extFloors.map((v) => v.toJson()).toList();
+    }
+		data['isBook'] = this.isBook;
+		data['stockState'] = this.stockState;
+		if (this.canSelectPromotions != null) {
+      data['canSelectPromotions'] =  this.canSelectPromotions.map((v) => v.toJson()).toList();
+    }
+		data['giftsType'] = this.giftsType;
+		data['isNoCheck'] = this.isNoCheck;
+		data['remainNumInt'] = this.remainNumInt;
+		if (this.floorInfoSummary != null) {
+      data['floorInfoSummary'] = this.floorInfoSummary.toJson();
+    }
+		if (this.tags != null) {
+      data['Tags'] =  [];
+    }
+		data['notComputeStock'] = this.notComputeStock;
+		data['remainNum'] = this.remainNum;
+		data['targetId'] = this.targetId;
+		data['weight'] = this.weight;
+		data['stockCode'] = this.stockCode;
+		if (this.skuLabels != null) {
+      data['skuLabels'] = this.skuLabels.toJson();
+    }
+		data['isProvideService'] = this.isProvideService;
+		data['Price'] = this.price;
+		data['ImageUrlRN'] = this.imageUrlRN;
+		if (this.canSelectPrices != null) {
+      data['canSelectPrices'] =  [];
+    }
+		data['brandId'] = this.brandId;
+		if (this.gifts != null) {
+      data['Gifts'] =  this.gifts.map((v) => v.toJson()).toList();
+    }
+		data['menuRelationTag'] = this.menuRelationTag;
+		data['Id'] = this.id;
+    data['fields'] = this.fields;
+		data['cid'] = this.cid;
+		data['Discount'] = this.discount;
+		data['delGiftFlag'] = this.delGiftFlag;
+		data['giftPoolPromoId'] = this.giftPoolPromoId;
+		data['IdForOldVersion'] = this.idForOldVersion;
+		data['specialId'] = this.specialId;
+		data['firstCid'] = this.firstCid;
+		data['unitedText'] = this.unitedText;
+		data['isYb'] = this.isYb;
+		data['notComputeFreight'] = this.notComputeFreight;
+		data['Num'] = this.num;
+		data['PriceImg'] = this.priceImg;
+		data['secondCid'] = this.secondCid;
+		data['Point'] = this.point;
+		data['hasUnitedText'] = this.hasUnitedText;
+		data['AwardType'] = this.awardType;
+		data['cardSpecialId'] = this.cardSpecialId;
+		if (this.propertyTags != null) {
+      data['propertyTags'] = this.propertyTags.toJson();
+    }
+		data['CheckType'] = this.checkType;
+		data['PriceShow'] = this.priceShow;
+		data['priceRevert'] = this.priceRevert;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloor {
+	String floorType;
+	List<ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloorsFloor> floor;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloor({this.floorType, this.floor});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloor.fromJson(Map<String, dynamic> json) {
+		floorType = json['floorType'];
+		if (json['floor'] != null) {
+			floor = new List<ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloorsFloor>();(json['floor'] as List).forEach((v) { floor.add(new ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloorsFloor.fromJson(v)); });
+		}
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['floorType'] = this.floorType;
+		if (this.floor != null) {
+      data['floor'] =  this.floor.map((v) => v.toJson()).toList();
+    }
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloorsFloor {
+	int elemType;
+	int actionType;
+	String jumpUrl;
+	int isBg;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloorsFloor({this.elemType, this.actionType, this.jumpUrl, this.isBg});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemExtfloorsFloor.fromJson(Map<String, dynamic> json) {
+		elemType = json['elemType'];
+		actionType = json['actionType'];
+		jumpUrl = json['jumpUrl'];
+		isBg = json['isBg'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['elemType'] = this.elemType;
+		data['actionType'] = this.actionType;
+		data['jumpUrl'] = this.jumpUrl;
+		data['isBg'] = this.isBg;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemCanselectpromotion {
+	int checkType;
+	int id;
+	String title;
+	int type;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemCanselectpromotion({this.checkType, this.id, this.title, this.type});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemCanselectpromotion.fromJson(Map<String, dynamic> json) {
+		checkType = json['checkType'];
+		id = json['id'];
+		title = json['title'];
+		type = json['type'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['checkType'] = this.checkType;
+		data['id'] = this.id;
+		data['title'] = this.title;
+		data['type'] = this.type;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummary {
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummaryGifts gifts;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummary({this.gifts});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummary.fromJson(Map<String, dynamic> json) {
+		gifts = json['gifts'] != null ? new ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummaryGifts.fromJson(json['gifts']) : null;
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		if (this.gifts != null) {
+      data['gifts'] = this.gifts.toJson();
+    }
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummaryGifts {
+	int num;
+	int invalidNums;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummaryGifts({this.num, this.invalidNums});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemFloorinfosummaryGifts.fromJson(Map<String, dynamic> json) {
+		num = json['num'];
+		invalidNums = json['invalidNums'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['num'] = this.num;
+		data['invalidNums'] = this.invalidNums;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabels {
+	List<ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabelsPricetop> priceTop;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabels({this.priceTop});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabels.fromJson(Map<String, dynamic> json) {
+		if (json['priceTop'] != null) {
+			priceTop = new List<ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabelsPricetop>();(json['priceTop'] as List).forEach((v) { priceTop.add(new ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabelsPricetop.fromJson(v)); });
+		}
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		if (this.priceTop != null) {
+      data['priceTop'] =  this.priceTop.map((v) => v.toJson()).toList();
+    }
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabelsPricetop {
+	int s;
+	String t;
+	String u;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabelsPricetop({this.s, this.t, this.u});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabelsPricetop.fromJson(Map<String, dynamic> json) {
+		s = json['s'];
+		t = json['t'];
+		u = json['u'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['s'] = this.s;
+		data['t'] = this.t;
+		data['u'] = this.u;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemGift {
+	double discount;
+	double rePrice;
+	int vendorId;
+	int maxNum;
+	int idForOldVersion;
+	String imgUrl;
+	int overseaPurchase;
+	String name;
+	bool isBook;
+	String stockState;
+	List<Null> canSelectPromotions;
+	int firstCid;
+	int remainNumInt;
+	List<Null> tags;
+	int notComputeStock;
+	bool isYb;
+	String remainNum;
+	int notComputeFreight;
+	int targetId;
+	int num;
+	String priceImg;
+	int secondCid;
+	String weight;
+	int point;
+	int hasUnitedText;
+	int awardType;
+	int stockCode;
+	int cardSpecialId;
+	int isProvideService;
+	double price;
+	String imageUrlRN;
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemGiftsPropertytags propertyTags;
+	int checkType;
+	List<Null> canSelectPrices;
+	List<Null> gifts;
+	String id;
+	String priceShow;
+	String priceRevert;
+	int cid;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemGift({this.discount, this.rePrice, this.vendorId, this.maxNum, this.idForOldVersion, this.imgUrl, this.overseaPurchase, this.name, this.isBook, this.stockState, this.canSelectPromotions, this.firstCid, this.remainNumInt, this.tags, this.notComputeStock, this.isYb, this.remainNum, this.notComputeFreight, this.targetId, this.num, this.priceImg, this.secondCid, this.weight, this.point, this.hasUnitedText, this.awardType, this.stockCode, this.cardSpecialId, this.isProvideService, this.price, this.imageUrlRN, this.propertyTags, this.checkType, this.canSelectPrices, this.gifts, this.id, this.priceShow, this.priceRevert, this.cid});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemGift.fromJson(Map<String, dynamic> json) {
+		discount = json['Discount'];
+		rePrice = json['RePrice'];
+		vendorId = json['vendorId'];
+		maxNum = json['maxNum'];
+		idForOldVersion = json['IdForOldVersion'];
+		imgUrl = json['ImgUrl'];
+		overseaPurchase = json['overseaPurchase'];
+		name = json['Name'];
+		isBook = json['isBook'];
+		stockState = json['stockState'];
+		if (json['canSelectPromotions'] != null) {
+			canSelectPromotions = new List<Null>();
+		}
+		firstCid = json['firstCid'];
+		remainNumInt = json['remainNumInt'];
+		if (json['Tags'] != null) {
+			tags = new List<Null>();
+		}
+		notComputeStock = json['notComputeStock'];
+		isYb = json['isYb'];
+		remainNum = json['remainNum'];
+		notComputeFreight = json['notComputeFreight'];
+		targetId = json['targetId'];
+		num = json['Num'];
+		priceImg = json['PriceImg'];
+		secondCid = json['secondCid'];
+		weight = json['weight'];
+		point = json['Point'];
+		hasUnitedText = json['hasUnitedText'];
+		awardType = json['AwardType'];
+		stockCode = json['stockCode'];
+		cardSpecialId = json['cardSpecialId'];
+		isProvideService = json['isProvideService'];
+		price = json['Price'];
+		imageUrlRN = json['ImageUrlRN'];
+		propertyTags = json['propertyTags'] != null ? new ShopcartResponseCartinfoVendorsSortedItemItemsItemGiftsPropertytags.fromJson(json['propertyTags']) : null;
+		checkType = json['CheckType'];
+		if (json['canSelectPrices'] != null) {
+			canSelectPrices = new List<Null>();
+		}
+		if (json['Gifts'] != null) {
+			gifts = new List<Null>();
+		}
+		id = json['Id'];
+		priceShow = json['PriceShow'];
+		priceRevert = json['priceRevert'];
+		cid = json['cid'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['Discount'] = this.discount;
+		data['RePrice'] = this.rePrice;
+		data['vendorId'] = this.vendorId;
+		data['maxNum'] = this.maxNum;
+		data['IdForOldVersion'] = this.idForOldVersion;
+		data['ImgUrl'] = this.imgUrl;
+		data['overseaPurchase'] = this.overseaPurchase;
+		data['Name'] = this.name;
+		data['isBook'] = this.isBook;
+		data['stockState'] = this.stockState;
+		if (this.canSelectPromotions != null) {
+      data['canSelectPromotions'] =  [];
+    }
+		data['firstCid'] = this.firstCid;
+		data['remainNumInt'] = this.remainNumInt;
+		if (this.tags != null) {
+      data['Tags'] =  [];
+    }
+		data['notComputeStock'] = this.notComputeStock;
+		data['isYb'] = this.isYb;
+		data['remainNum'] = this.remainNum;
+		data['notComputeFreight'] = this.notComputeFreight;
+		data['targetId'] = this.targetId;
+		data['Num'] = this.num;
+		data['PriceImg'] = this.priceImg;
+		data['secondCid'] = this.secondCid;
+		data['weight'] = this.weight;
+		data['Point'] = this.point;
+		data['hasUnitedText'] = this.hasUnitedText;
+		data['AwardType'] = this.awardType;
+		data['stockCode'] = this.stockCode;
+		data['cardSpecialId'] = this.cardSpecialId;
+		data['isProvideService'] = this.isProvideService;
+		data['Price'] = this.price;
+		data['ImageUrlRN'] = this.imageUrlRN;
+		if (this.propertyTags != null) {
+      data['propertyTags'] = this.propertyTags.toJson();
+    }
+		data['CheckType'] = this.checkType;
+		if (this.canSelectPrices != null) {
+      data['canSelectPrices'] =  [];
+    }
+		if (this.gifts != null) {
+      data['Gifts'] =  [];
+    }
+		data['Id'] = this.id;
+		data['PriceShow'] = this.priceShow;
+		data['priceRevert'] = this.priceRevert;
+		data['cid'] = this.cid;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemGiftsPropertytags {
+
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemGiftsPropertytags();
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemGiftsPropertytags.fromJson(Map<String, dynamic> json) {
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		return data;
+	}
+}
+
+
+class ShopcartResponseCartinfoVendorsSortedItemItemsItemPropertytags {
+	String a;
+	String b;
+	String c;
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemPropertytags({this.a, this.b, this.c});
+
+	ShopcartResponseCartinfoVendorsSortedItemItemsItemPropertytags.fromJson(Map<String, dynamic> json) {
+		a = json['a'];
+		b = json['b'];
+		c = json['c'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['a'] = this.a;
+		data['b'] = this.b;
+		data['c'] = this.c;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsVendorlabels {
+	List<ShopcartResponseCartinfoVendorsVendorlabelsVendorhead> vendorHead;
+
+	ShopcartResponseCartinfoVendorsVendorlabels({this.vendorHead});
+
+	ShopcartResponseCartinfoVendorsVendorlabels.fromJson(Map<String, dynamic> json) {
+		if (json['vendorHead'] != null) {
+			vendorHead = new List<ShopcartResponseCartinfoVendorsVendorlabelsVendorhead>();(json['vendorHead'] as List).forEach((v) { vendorHead.add(new ShopcartResponseCartinfoVendorsVendorlabelsVendorhead.fromJson(v)); });
+		}
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		if (this.vendorHead != null) {
+      data['vendorHead'] =  this.vendorHead.map((v) => v.toJson()).toList();
+    }
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoVendorsVendorlabelsVendorhead {
+	String u;
+
+	ShopcartResponseCartinfoVendorsVendorlabelsVendorhead({this.u});
+
+	ShopcartResponseCartinfoVendorsVendorlabelsVendorhead.fromJson(Map<String, dynamic> json) {
+		u = json['u'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['u'] = this.u;
+		return data;
+	}
+}
+
+class ShopcartResponseCartinfoCartnumgroup {
+
+
+	ShopcartResponseCartinfoCartnumgroup();
+
+	ShopcartResponseCartinfoCartnumgroup.fromJson(Map<String, dynamic> json) {
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		return data;
+	}
+}
+
+class ShopcartResponseTabmanus {
+	String tabName;
+	String itemName;
+	int skuNums;
+	String menuValue;
+	List<ShopcartResponseTabmanusSubtab> subTab;
+	int otherSkuNums;
+
+	ShopcartResponseTabmanus({this.tabName, this.itemName, this.skuNums, this.menuValue, this.subTab, this.otherSkuNums});
+
+	ShopcartResponseTabmanus.fromJson(Map<String, dynamic> json) {
+		tabName = json['tabName'];
+		itemName = json['itemName'];
+		skuNums = json['skuNums'];
+		menuValue = json['menuValue'];
+		if (json['subTab'] != null) {
+			subTab = new List<ShopcartResponseTabmanusSubtab>();(json['subTab'] as List).forEach((v) { subTab.add(new ShopcartResponseTabmanusSubtab.fromJson(v)); });
+		}
+		otherSkuNums = json['otherSkuNums'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['tabName'] = this.tabName;
+		data['itemName'] = this.itemName;
+		data['skuNums'] = this.skuNums;
+		data['menuValue'] = this.menuValue;
+		if (this.subTab != null) {
+      data['subTab'] =  this.subTab.map((v) => v.toJson()).toList();
+    }
+		data['otherSkuNums'] = this.otherSkuNums;
+		return data;
+	}
+}
+
+class ShopcartResponseTabmanusSubtab {
+	String tabName;
+	String itemName;
+	int skuNums;
+	String menuValue;
+	int otherSkuNums;
+
+	ShopcartResponseTabmanusSubtab({this.tabName, this.itemName, this.skuNums, this.menuValue, this.otherSkuNums});
+
+	ShopcartResponseTabmanusSubtab.fromJson(Map<String, dynamic> json) {
+		tabName = json['tabName'];
+		itemName = json['itemName'];
+		skuNums = json['skuNums'];
+		menuValue = json['menuValue'];
+		otherSkuNums = json['otherSkuNums'];
+	}
+
+	Map<String, dynamic> toJson() {
+		final Map<String, dynamic> data = new Map<String, dynamic>();
+		data['tabName'] = this.tabName;
+		data['itemName'] = this.itemName;
+		data['skuNums'] = this.skuNums;
+		data['menuValue'] = this.menuValue;
+		data['otherSkuNums'] = this.otherSkuNums;
+		return data;
+	}
+}

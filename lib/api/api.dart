@@ -11,4 +11,5 @@ class Api {
   static const String ItemInfo = 'client.action?functionId=wareBusiness';
   static const String UserInfo = 'client.action?functionId=personinfoBusiness';
   static const String Category = '/client.action?functionId=entranceCatalog';
+  static const String Shopcart = '/client.action?functionId=cart';
 }

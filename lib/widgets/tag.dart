@@ -18,7 +18,7 @@ class Tag extends StatelessWidget {
       this.color = const Color(0xFFFFFFFF),
       this.radius = 20,
       this.padding = const EdgeInsets.fromLTRB(10, 0, 10, 0),
-      this.margin = const EdgeInsets.all(5),
+      this.margin = const EdgeInsets.all(0),
       this.height = 20,
       this.borderWidth = 1,
       this.borderColor = const Color(0xFF000000)})
@@ -35,7 +35,7 @@ class Tag extends StatelessWidget {
         borderRadius: BorderRadius.all(
           Radius.circular(radius),
         ),
-        border: Border.all(
+        border: borderWidth == 0 ? null : Border.all(
           width: borderWidth,
           color: borderColor,
         ),

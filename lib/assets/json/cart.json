@@ -1,0 +1,407 @@
+{
+	"cartInfo": {
+		"vendors": [
+			{
+				"vendorId": 8888,
+				"vendorType": 99,
+				"shopId": -1,
+				"shopName": "京东自营",
+				"vendorPrice": 0.1,
+				"specialId": 1,
+				"sorted": [
+					{
+						"itemType": 12,
+						"item": {
+							"items": [
+								{
+									"itemType": 1,
+									"item": {
+										"Tags": [],
+										"Discount": 500.1,
+										"IdForOldVersion": 100009177424,
+										"Point": 0,
+										"PriceImg": "",
+										"RePrice": 0.1,
+										"AwardType": 0,
+										"targetId": 0,
+										"isBook": false,
+										"isYb": false,
+										"Gifts": [
+											{
+												"Tags": [],
+												"Discount": 0.1,
+												"IdForOldVersion": 6177192,
+												"Point": 0,
+												"PriceImg": "",
+												"RePrice": 0.1,
+												"AwardType": 2,
+												"targetId": 0,
+												"isBook": false,
+												"isYb": false,
+												"Gifts": [],
+												"hasUnitedText": 0,
+												"stockState": "有货",
+												"remainNum": "",
+												"remainNumInt": -1,
+												"canSelectPromotions": [],
+												"propertyTags": {},
+												"cid": 982,
+												"firstCid": 652,
+												"secondCid": 981,
+												"stockCode": 0,
+												"weight": "0.01kg",
+												"maxNum": 200,
+												"cardSpecialId": 0,
+												"isProvideService": 0,
+												"overseaPurchase": 0,
+												"canSelectPrices": [],
+												"priceRevert": "0.00",
+												"vendorId": 0,
+												"notComputeStock": 0,
+												"notComputeFreight": 0,
+												"Id": "6177192",
+												"Name": "（惠）手机6个月碎屏保修服务",
+												"Num": 2,
+												"Price": 0.1,
+												"PriceShow": "￥0.00",
+												"ImgUrl": "jfs/t18925/34/231982088/208222/e84b186f/5a655f36Nab6aaf2c.jpg.dpg",
+												"ImageUrlRN": "jfs/t18925/34/231982088/208222/e84b186f/5a655f36Nab6aaf2c.jpg",
+												"CheckType": 0
+											},
+											{
+												"Tags": [],
+												"Discount": 0.1,
+												"RePrice": 0.1,
+												"AwardType": 99,
+												"targetId": 0,
+												"isBook": false,
+												"isYb": false,
+												"Gifts": [],
+												"hasUnitedText": 0,
+												"canSelectPromotions": [],
+												"stockCode": 0,
+												"cardSpecialId": 0,
+												"isProvideService": 0,
+												"overseaPurchase": 0,
+												"canSelectPrices": [],
+												"vendorId": 0,
+												"notComputeStock": 0,
+												"notComputeFreight": 0,
+												"Name": "体验卡免费领，多款APP免流，超大流量任性用，点击领取",
+												"Num": 1,
+												"Price": 0.1
+											}
+										],
+										"giftsType": 0,
+										"specialId": "65536",
+										"delGiftFlag": 1,
+										"menuRelationTag": "9987,6666",
+										"unitedText": "亮黑色，8GB+128GB",
+										"hasUnitedText": 0,
+										"stockState": "有货",
+										"remainNum": "",
+										"remainNumInt": -1,
+										"canSelectPromotions": [
+											{
+												"id": 50055782064,
+												"title": "购买1件可优惠换购热销商品",
+												"type": 10,
+												"checkType": 1
+											}
+										],
+										"propertyTags": {
+											"a": "亮黑色",
+											"b": "8GB+128GB",
+											"c": "选服务"
+										},
+										"cid": 655,
+										"firstCid": 9987,
+										"secondCid": 653,
+										"stockCode": 0,
+										"weight": "0.6kg",
+										"maxNum": 200,
+										"skuLabels": {
+											"priceTop": [
+												{
+													"u": "tab_var_071",
+													"t": "白条12期免息",
+													"s": 0
+												}
+											]
+										},
+										"cardSpecialId": 4,
+										"isProvideService": 0,
+										"overseaPurchase": 0,
+										"canSelectPrices": [],
+										"extFloors": [
+											{
+												"floorType": "1",
+												"floor": [
+													{
+														"elemType": 2,
+														"jumpUrl": "https://3c-peijian.jd.com/index?cid\u003d655\u0026sku\u003d100009177424",
+														"actionType": 1,
+														"isBg": 1
+													},
+													{
+														"elemType": 0,
+														"text": "推荐"
+													},
+													{
+														"elemType": 0,
+														"text": "为您精选品质配件"
+													},
+													{
+														"elemType": 0,
+														"text": "去选购"
+													},
+													{
+														"elemType": 1,
+														"imgUrl": "app://cart_extFloor_entrance_arrow"
+													}
+												]
+											}
+										],
+										"giftPoolPromoId": "200000264153",
+										"priceRevert": "4499.00",
+										"brandId": 8557,
+										"floorInfoSummary": {
+											"gifts": {
+												"num": 3,
+												"invalidNums": 0
+											}
+										},
+										"vendorId": 1000004259,
+										"notComputeStock": 0,
+										"notComputeFreight": 0,
+										"Id": "100009177424",
+										"Name": "华为 HUAWEI Mate 30 5G 麒麟990 4000万超感光徕卡影像双超级快充8GB+128GB亮黑色5G全网通游戏手机",
+										"Num": 2,
+										"Price": 4999.01,
+										"PriceShow": "￥4,499.00",
+										"ImgUrl": "jfs/t1/107643/28/10129/176301/5e79dd68Ed4f36ac9/43dd6e704502bab6.jpg.dpg",
+										"ImageUrlRN": "jfs/t1/107643/28/10129/176301/5e79dd68Ed4f36ac9/43dd6e704502bab6.jpg",
+										"CheckType": 0,
+										"isNoCheck": 0,
+										"fields": {}
+									}
+								}
+							],
+							"NeedMoney": 0.1,
+							"Num": 1,
+							"Skus": [],
+							"Gifts": [],
+							"RePrice": 0.1,
+							"Price": 8998.1,
+							"Discount": 0.1,
+							"Id": 50055782064,
+							"PriceShow": "￥0.00",
+							"Point": 0,
+							"AddMoney": 0.1,
+							"STip": "满1件可低价换购商品",
+							"SType": 16,
+							"CheckType": 0,
+							"CanSelectGifts": [],
+							"suitType": 10,
+							"promotionId": "50055782064",
+							"specialId": "0",
+							"isReachCondition": true,
+							"suitLabel": "换购",
+							"fullRefundType": 24,
+							"entryLabel": "去换购",
+							"stillNeed": "0"
+						}
+					},
+					{
+						"itemType": 12,
+						"item": {
+							"items": [
+								{
+									"itemType": 1,
+									"item": {
+										"Tags": [],
+										"Discount": 5.1,
+										"IdForOldVersion": 854802,
+										"Point": 0,
+										"PriceImg": "",
+										"RePrice": 0.1,
+										"AwardType": 0,
+										"targetId": 0,
+										"isBook": false,
+										"isYb": false,
+										"Gifts": [],
+										"specialId": "524288",
+										"menuRelationTag": "670,6666",
+										"unitedText": "商务时尚3.0，64GB",
+										"hasUnitedText": 0,
+										"stockState": "有货",
+										"remainNum": "",
+										"remainNumInt": -1,
+										"canSelectPromotions": [
+											{
+												"id": 50076588922,
+												"title": "购买1件可优惠换购热销商品",
+												"type": 10,
+												"checkType": 1
+											},
+											{
+												"id": 50066304879,
+												"title": "购买1件可优惠换购热销商品",
+												"type": 10,
+												"checkType": 0
+											}
+										],
+										"propertyTags": {
+											"a": "商务时尚3.0",
+											"b": "64GB",
+											"c": "选服务"
+										},
+										"cid": 694,
+										"firstCid": 670,
+										"secondCid": 686,
+										"stockCode": 0,
+										"weight": "0.02kg",
+										"maxNum": 200,
+										"skuLabels": {
+											"skuHead": [
+												{
+													"u": "tab_101"
+												}
+											]
+										},
+										"cardSpecialId": 0,
+										"isProvideService": 0,
+										"overseaPurchase": 0,
+										"canSelectPrices": [],
+										"priceRevert": "64.90",
+										"brandId": 9495,
+										"floorInfoSummary": {},
+										"vendorId": 1000000192,
+										"notComputeStock": 0,
+										"notComputeFreight": 0,
+										"Id": "854802",
+										"Name": "金士顿（Kingston）64GB USB3.0 U盘 DT100G3 黑色 滑盖设计 时尚便利",
+										"Num": 1,
+										"Price": 69.9,
+										"PriceShow": "￥64.90",
+										"ImgUrl": "jfs/t1/104290/34/13516/51141/5e59e238Efe5894cd/5eb3e657338d48f8.jpg.dpg",
+										"ImageUrlRN": "jfs/t1/104290/34/13516/51141/5e59e238Efe5894cd/5eb3e657338d48f8.jpg",
+										"CheckType": 0,
+										"isNoCheck": 0,
+										"fields": {}
+									}
+								}
+							],
+							"NeedMoney": 0.1,
+							"Num": 1,
+							"Skus": [],
+							"Gifts": [],
+							"RePrice": 0.1,
+							"Price": 64.9,
+							"Discount": 0.1,
+							"Id": 50076588922,
+							"PriceShow": "￥0.00",
+							"Point": 0,
+							"AddMoney": 0.1,
+							"STip": "满1件可低价换购商品",
+							"SType": 16,
+							"CheckType": 0,
+							"CanSelectGifts": [],
+							"suitType": 10,
+							"promotionId": "50076588922",
+							"specialId": "0",
+							"isReachCondition": true,
+							"suitLabel": "换购",
+							"fullRefundType": 24,
+							"entryLabel": "去换购",
+							"stillNeed": "0"
+						}
+					}
+				],
+				"fareType": 0,
+				"vendorLabels": {
+					"vendorHead": [
+						{
+							"u": "cart_001"
+						}
+					]
+				},
+				"checkType": 0,
+				"isNoCheck": 0
+			}
+		],
+		"specialId": 0,
+		"checkType": 0,
+		"isNoCheck": 0,
+		"status": 1,
+		"Num": 3,
+		"cartNum": 2,
+		"checkedWareNum": 0,
+		"limitCartNum": 50,
+		"limitWareNum": 1000,
+		"limitBookNum": 1000,
+		"limitNotBookNum": 200,
+		"RePrice": 0.1,
+		"Price": 0.1,
+		"IsEmpty": false,
+		"PriceShow": "￥0.00",
+		"Skus": [],
+		"Suits": [],
+		"Gifts": [],
+		"tip_1": "",
+		"tip_2": "",
+		"configVersion": "174",
+		"abCards": {},
+		"promotionSwitch": 0,
+		"promotionSavePrice": 0,
+		"cartClearGuide": 0,
+		"cartAddClearGuide": 0,
+		"cartClearShow": true,
+		"cartNumGroup": {},
+		"orderNumLimit": 110
+	},
+	"tabMenus": [
+		{
+			"tabName": "全部",
+			"skuNums": 2,
+			"otherSkuNums": 0
+		},
+		{
+			"tabName": "降价",
+			"skuNums": 0,
+			"menuValue": "8888",
+			"itemName": "降价商品",
+			"otherSkuNums": 2
+		},
+		{
+			"tabName": "常买",
+			"skuNums": 0,
+			"menuValue": "9999",
+			"itemName": "常买商品",
+			"otherSkuNums": 2
+		},
+		{
+			"tabName": "分类",
+			"subTab": [
+				{
+					"tabName": "手机通讯",
+					"skuNums": 1,
+					"menuValue": "9987",
+					"itemName": "手机通讯商品",
+					"otherSkuNums": 1
+				},
+				{
+					"tabName": "电脑、办公",
+					"skuNums": 1,
+					"menuValue": "670",
+					"itemName": "电脑、办公商品",
+					"otherSkuNums": 1
+				}
+			]
+		}
+	],
+	"code": "0",
+	"imageDomain": "https://m.360buyimg.com/mobilecms/s266x266_",
+	"resultCode": 0,
+	"userIdentity": "0"
+}
