@@ -88,6 +88,7 @@ class _ShopCartState extends State<ShopCart> with TickerProviderStateMixin {
                   Positioned(
                       top: 40,
                       left: 0,
+                      height: MediaQuery.of(context).size.height - 220,
                       child: SingleChildScrollView(
                         child: Column(
                           children: <Widget>[

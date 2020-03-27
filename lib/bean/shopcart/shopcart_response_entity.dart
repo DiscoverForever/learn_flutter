@@ -252,7 +252,7 @@ class ShopcartResponseCartinfoVendorsSortedItem {
 	double price;
 	int checkType;
 	List<Null> gifts;
-	int id;
+	dynamic id;
 	String priceShow;
 	List<ShopcartResponseCartinfoVendorsSortedItemItem> items;
 
@@ -404,6 +404,7 @@ class ShopcartResponseCartinfoVendorsSortedItemItemsItem {
 	int checkType;
 	String priceShow;
 	String priceRevert;
+	int secKillEndCountdown;
 
 	ShopcartResponseCartinfoVendorsSortedItemItemsItem({this.rePrice, this.vendorId, this.maxNum, this.imgUrl, this.overseaPurchase, this.name, this.extFloors, this.isBook, this.stockState, this.canSelectPromotions, this.giftsType, this.isNoCheck, this.remainNumInt, this.floorInfoSummary, this.tags, this.notComputeStock, this.remainNum, this.targetId, this.weight, this.stockCode, this.skuLabels, this.isProvideService, this.price, this.imageUrlRN, this.canSelectPrices, this.brandId, this.gifts, this.menuRelationTag, this.id, this.fields, this.cid, this.discount, this.delGiftFlag, this.giftPoolPromoId, this.idForOldVersion, this.specialId, this.firstCid, this.unitedText, this.isYb, this.notComputeFreight, this.num, this.priceImg, this.secondCid, this.point, this.hasUnitedText, this.awardType, this.cardSpecialId, this.propertyTags, this.checkType, this.priceShow, this.priceRevert});
 
@@ -469,6 +470,7 @@ class ShopcartResponseCartinfoVendorsSortedItemItemsItem {
 		checkType = json['CheckType'];
 		priceShow = json['PriceShow'];
 		priceRevert = json['priceRevert'];
+		secKillEndCountdown = json['secKillEndCountdown'];
 	}
 
 	Map<String, dynamic> toJson() {
@@ -540,6 +542,7 @@ class ShopcartResponseCartinfoVendorsSortedItemItemsItem {
 		data['CheckType'] = this.checkType;
 		data['PriceShow'] = this.priceShow;
 		data['priceRevert'] = this.priceRevert;
+		data['secKillEndCountdown'] = this.secKillEndCountdown;
 		return data;
 	}
 }
