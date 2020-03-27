@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Tag extends StatelessWidget {
-  final Text text;
+  final Widget text;
   final Alignment alignment;
   final Color color;
   final Color borderColor;
