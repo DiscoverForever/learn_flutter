@@ -204,7 +204,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
             alignment: Alignment.topCenter,
             margin: EdgeInsets.only(left: 0, right: 10),
             decoration: BoxDecoration(boxShadow: <BoxShadow>[
-              BoxShadow(color: Colors.black12, blurRadius: 30, spreadRadius: 3),
+              BoxShadow(color: Colors.black12, blurRadius: 10, spreadRadius: 1),
             ]),
             child: Image.network(
               "https://img30.360buyimg.com/test/${item.item.items[0]?.item?.imgUrl}",
