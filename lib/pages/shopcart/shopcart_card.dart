@@ -26,40 +26,55 @@ class _ShopcartCardState extends State<ShopcartCard> {
       ),
       child: Column(children: <Widget>[
         cardHeader(),
-        ...widget.vendor?.sorted?.map((item) {
-          return Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        ...widget.vendor?.sorted?.asMap()?.keys?.map((index) {
+          return Column(
             children: <Widget>[
-              Container(
-                alignment: Alignment.centerLeft,
-                margin: EdgeInsets.only(top: 80),
-                width: 30,
-                child: RoundCheckbox(
-                  value: isCheck,
-                  backgroundColor: Colors.white,
-                  activeColor: Color(0xFFE23C29),
-                  checkColor: Colors.white,
-                  activeBorderColor: Color(0xFFE23C29),
-                  onChanged: (status) {
-                    setState(() {
-                      isCheck = status;
-                    });
-                  },
-                ),
+              product(widget.vendor?.sorted[index]),
+              Offstage(
+                offstage: index == widget.vendor.sorted.length - 1,
+                child: Divider(),
               ),
-              Expanded(
-                flex: 1,
-                child: Column(
-                  children: <Widget>[
-                    cardSubheader(item),
-                    cardBody(item),
-                  ],
-                ),
-              )
             ],
           );
         })?.toList(),
       ]),
+    );
+  }
+
+  /*
+   * 商品 
+   */
+  product(ShopcartResponseCartinfoVendorsSorted sorted) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Container(
+          alignment: Alignment.centerLeft,
+          margin: EdgeInsets.only(top: 80),
+          width: 30,
+          child: RoundCheckbox(
+            value: isCheck,
+            backgroundColor: Colors.white,
+            activeColor: Color(0xFFE23C29),
+            checkColor: Colors.white,
+            activeBorderColor: Color(0xFFE23C29),
+            onChanged: (status) {
+              setState(() {
+                isCheck = status;
+              });
+            },
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Column(
+            children: <Widget>[
+              cardSubheader(sorted),
+              cardBody(sorted),
+            ],
+          ),
+        ),
+      ],
     );
   }
 
@@ -187,7 +202,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
               Container(
                 margin: EdgeInsets.only(left: 5),
                 child: Text(
-                  " 距离结束还有",
+                  " 距离活动结束时间结束还剩",
                   style: TextStyle(
                     fontSize: 12,
                   ),
@@ -205,11 +220,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
 
   cardBody(ShopcartResponseCartinfoVendorsSorted item) {
     return Container(
-      margin: EdgeInsets.only(top: 10, bottom: 20),
       padding: EdgeInsets.only(bottom: 20),
-      decoration: BoxDecoration(
-        border: Border(bottom: BorderSide(color: Color(0xFFF2F2F2))),
-      ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
