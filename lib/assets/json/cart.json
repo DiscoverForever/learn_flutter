@@ -12,221 +12,40 @@
 					{
 						"itemType": 12,
 						"item": {
-							"items": [
+							"items": [],
+							"NeedMoney": 0.1,
+							"Num": 2,
+							"Skus": [],
+							"Gifts": [
 								{
-									"itemType": 1,
-									"item": {
-										"Tags": [],
-										"Discount": 540.1,
-										"IdForOldVersion": 100006865194,
-										"Point": 0,
-										"YbSkus": [
-											{
-												"MainYbSku": {
-													"Tags": [],
-													"Discount": 0.1,
-													"IdForOldVersion": 42360186467,
-													"Point": 0,
-													"PriceImg": "",
-													"RePrice": 0.1,
-													"AwardType": 0,
-													"targetId": 0,
-													"isBook": false,
-													"isYb": false,
-													"Gifts": [],
-													"hasUnitedText": 0,
-													"canSelectPromotions": [],
-													"propertyTags": {
-														"a": "DNZJ010300M"
-													},
-													"cid": 12079,
-													"firstCid": 1672,
-													"secondCid": 2599,
-													"stockCode": 0,
-													"maxNum": 200,
-													"cardSpecialId": 0,
-													"isProvideService": 0,
-													"overseaPurchase": 0,
-													"canSelectPrices": [],
-													"priceRevert": "199.10",
-													"vendorId": 167694,
-													"notComputeStock": 0,
-													"notComputeFreight": 0,
-													"Id": "42360186467",
-													"Name": "全保修3年 电脑整机 DNZJ010300M",
-													"Num": 2,
-													"Price": 199.1,
-													"PriceShow": "￥199.10",
-													"ImgUrl": "jfs/t1/23928/23/8666/83310/5c778435E69f52950/459bdf352d442375.jpg.dpg",
-													"ImageUrlRN": "jfs/t1/23928/23/8666/83310/5c778435E69f52950/459bdf352d442375.jpg",
-													"CheckType": 1
-												},
-												"RWid": "100006865194",
-												"RSuitId": "50072737475"
-											},
-											{
-												"MainYbSku": {
-													"Tags": [],
-													"Discount": 0.1,
-													"IdForOldVersion": 66137727356,
-													"Point": 0,
-													"PriceImg": "",
-													"RePrice": 0.1,
-													"AwardType": 0,
-													"targetId": 0,
-													"isBook": false,
-													"isYb": false,
-													"Gifts": [],
-													"hasUnitedText": 0,
-													"canSelectPromotions": [],
-													"propertyTags": {
-														"a": "DNZJ080300M"
-													},
-													"cid": 12079,
-													"firstCid": 1672,
-													"secondCid": 2599,
-													"stockCode": 0,
-													"maxNum": 200,
-													"cardSpecialId": 0,
-													"isProvideService": 0,
-													"overseaPurchase": 0,
-													"canSelectPrices": [],
-													"priceRevert": "219.10",
-													"vendorId": 167694,
-													"notComputeStock": 0,
-													"notComputeFreight": 0,
-													"Id": "66137727356",
-													"Name": "电脑整机 主板硬盘保5年 DNZJ080300M",
-													"Num": 2,
-													"Price": 219.1,
-													"PriceShow": "￥219.10",
-													"ImgUrl": "jfs/t1/90700/23/15235/139626/5e7063e9Ea5fb2ef5/f7d8bf1da68f9da6.jpg.dpg",
-													"ImageUrlRN": "jfs/t1/90700/23/15235/139626/5e7063e9Ea5fb2ef5/f7d8bf1da68f9da6.jpg",
-													"CheckType": 1
-												},
-												"RWid": "100006865194",
-												"RSuitId": "50072737475"
-											}
-										],
-										"PriceImg": "",
-										"RePrice": 0.1,
-										"AwardType": 0,
-										"targetId": 0,
-										"isBook": false,
-										"isYb": false,
-										"Gifts": [],
-										"menuRelationTag": "670,6666",
-										"unitedText": "【九代i5/8G/双硬盘/独显】23.8",
-										"hasUnitedText": 0,
-										"stockState": "有货",
-										"remainNum": "",
-										"remainNumInt": -1,
-										"canSelectPromotions": [
-											{
-												"id": 50072737475,
-												"title": "购买1件可优惠换购热销商品",
-												"type": 10,
-												"checkType": 1
-											}
-										],
-										"propertyTags": {
-											"a": "【九代i5/8G/双硬盘/独显】23.8",
-											"c": "修改服务"
-										},
-										"cid": 12798,
-										"firstCid": 670,
-										"secondCid": 671,
-										"stockCode": 0,
-										"weight": "9.42kg",
-										"maxNum": 200,
-										"skuLabels": {
-											"skuHead": [
-												{
-													"u": "tab_149"
-												}
-											]
-										},
-										"cardSpecialId": 0,
-										"isProvideService": 0,
-										"overseaPurchase": 0,
-										"canSelectPrices": [],
-										"secKillEndCountdown": 75095,
-										"homeServiceInfo": [
-											{
-												"Tags": [],
-												"Discount": 0.1,
-												"IdForOldVersion": 6373854,
-												"Point": 0,
-												"PriceImg": "",
-												"RePrice": 0.1,
-												"AwardType": 0,
-												"targetId": 0,
-												"isBook": false,
-												"isYb": false,
-												"Gifts": [],
-												"hasUnitedText": 0,
-												"canSelectPromotions": [],
-												"propertyTags": {},
-												"cid": 16944,
-												"firstCid": 670,
-												"secondCid": 16943,
-												"stockCode": 0,
-												"maxNum": 200,
-												"cardSpecialId": 0,
-												"isProvideService": 0,
-												"overseaPurchase": 0,
-												"canSelectPrices": [],
-												"priceRevert": "99.10",
-												"vendorId": 0,
-												"notComputeStock": 0,
-												"notComputeFreight": 0,
-												"Id": "6373854",
-												"Name": "PC(一体机)上门安装检测服务 一体机服务",
-												"Num": 2,
-												"Price": 99.1,
-												"PriceShow": "￥99.10",
-												"ImgUrl": "jfs/t16678/258/2309382977/116878/22d973be/5af14dceN24826f95.jpg.dpg",
-												"ImageUrlRN": "jfs/t16678/258/2309382977/116878/22d973be/5af14dceN24826f95.jpg",
-												"CheckType": 1
-											}
-										],
-										"priceRevert": "4959.10",
-										"brandId": 8740,
-										"floorInfoSummary": {
-											"service": {
-												"price": "￥1,034.10",
-												"num": 6,
-												"invalidNums": 0
-											}
-										},
-										"vendorId": 1000000155,
-										"notComputeStock": 0,
-										"notComputeFreight": 0,
-										"Id": "100006865194",
-										"Name": "惠普（HP）战66 微边框商用一体机电脑23.8英寸(九代i5-9500T 8G 1T+256GSSD R535 2G独显 高色域 四年上门)",
-										"Num": 2,
-										"Price": 5499.1,
-										"PriceShow": "￥4,959.10",
-										"ImgUrl": "jfs/t1/98422/38/13456/161560/5e58f40dE6224808b/e8918993dda7c439.jpg.dpg",
-										"ImageUrlRN": "jfs/t1/98422/38/13456/161560/5e58f40dE6224808b/e8918993dda7c439.jpg",
-										"CheckType": 1,
-										"isNoCheck": 0,
-										"fields": {
-											"61": "1",
-											"62": "1"
-										}
-									}
+									"Tags": [],
+									"Discount": 0.0,
+									"RePrice": 0.0,
+									"AwardType": 99,
+									"targetId": 0,
+									"isBook": false,
+									"isYb": false,
+									"Gifts": [],
+									"hasUnitedText": 0,
+									"canSelectPromotions": [],
+									"stockCode": 0,
+									"cardSpecialId": 0,
+									"isProvideService": 0,
+									"overseaPurchase": 0,
+									"canSelectPrices": [],
+									"vendorId": 0,
+									"notComputeStock": 0,
+									"notComputeFreight": 0,
+									"Name": "体验卡免费领，多款APP免流，超大流量任性用，点击领取",
+									"Num": 1,
+									"Price": 0.0
 								}
 							],
-							"NeedMoney": 0.1,
-							"Num": 1,
-							"Skus": [],
-							"Gifts": [],
 							"RePrice": 0.1,
-							"Price": 9918.1,
-							"Discount": 0.1,
-							"Id": 50072737475,
-							"PriceShow": "￥9,918.10",
+							"Price": 5499.1,
+							"Discount": 540.1,
+							"Id": "100006865194",
+							"PriceShow": "￥4,959.10",
 							"Point": 0,
 							"AddMoney": 0.1,
 							"STip": "已满1件,可低价换购商品",
@@ -240,225 +59,15 @@
 							"suitLabel": "换购",
 							"fullRefundType": 24,
 							"entryLabel": "去换购",
-							"stillNeed": "0"
-						}
-					},
-					{
-						"itemType": 12,
-						"item": {
-							"items": [
+							"stillNeed": "0",
+							"Tags": [],
+							"IdForOldVersion": 100006865194,
+							"YbSkus": [
 								{
-									"itemType": 1,
-									"item": {
+									"MainYbSku": {
 										"Tags": [],
-										"Discount": 500.1,
-										"IdForOldVersion": 100009177424,
-										"Point": 0,
-										"PriceImg": "",
-										"RePrice": 0.1,
-										"AwardType": 0,
-										"targetId": 0,
-										"isBook": false,
-										"isYb": false,
-										"Gifts": [
-											{
-												"Tags": [],
-												"Discount": 0.1,
-												"IdForOldVersion": 6177192,
-												"Point": 0,
-												"PriceImg": "",
-												"RePrice": 0.1,
-												"AwardType": 2,
-												"targetId": 0,
-												"isBook": false,
-												"isYb": false,
-												"Gifts": [],
-												"hasUnitedText": 0,
-												"stockState": "有货",
-												"remainNum": "",
-												"remainNumInt": -1,
-												"canSelectPromotions": [],
-												"propertyTags": {},
-												"cid": 982,
-												"firstCid": 652,
-												"secondCid": 981,
-												"stockCode": 0,
-												"weight": "0.11kg",
-												"maxNum": 200,
-												"cardSpecialId": 0,
-												"isProvideService": 0,
-												"overseaPurchase": 0,
-												"canSelectPrices": [],
-												"priceRevert": "0.10",
-												"vendorId": 0,
-												"notComputeStock": 0,
-												"notComputeFreight": 0,
-												"Id": "6177192",
-												"Name": "（惠）手机6个月碎屏保修服务",
-												"Num": 2,
-												"Price": 0.1,
-												"PriceShow": "￥0.10",
-												"ImgUrl": "jfs/t18925/34/231982088/208222/e84b186f/5a655f36Nab6aaf2c.jpg.dpg",
-												"ImageUrlRN": "jfs/t18925/34/231982088/208222/e84b186f/5a655f36Nab6aaf2c.jpg",
-												"CheckType": 0
-											},
-											{
-												"Tags": [],
-												"Discount": 0.1,
-												"RePrice": 0.1,
-												"AwardType": 99,
-												"targetId": 0,
-												"isBook": false,
-												"isYb": false,
-												"Gifts": [],
-												"hasUnitedText": 0,
-												"canSelectPromotions": [],
-												"stockCode": 0,
-												"cardSpecialId": 0,
-												"isProvideService": 0,
-												"overseaPurchase": 0,
-												"canSelectPrices": [],
-												"vendorId": 0,
-												"notComputeStock": 0,
-												"notComputeFreight": 0,
-												"Name": "体验卡免费领，多款APP免流，超大流量任性用，点击领取",
-												"Num": 1,
-												"Price": 0.1
-											}
-										],
-										"giftsType": 0,
-										"specialId": "65536",
-										"delGiftFlag": 1,
-										"menuRelationTag": "9987,6666",
-										"unitedText": "亮黑色，8GB+128GB",
-										"hasUnitedText": 0,
-										"stockState": "有货",
-										"remainNum": "",
-										"remainNumInt": -1,
-										"canSelectPromotions": [
-											{
-												"id": 50055782064,
-												"title": "购买1件可优惠换购热销商品",
-												"type": 10,
-												"checkType": 1
-											}
-										],
-										"propertyTags": {
-											"a": "亮黑色",
-											"b": "8GB+128GB",
-											"c": "选服务"
-										},
-										"cid": 655,
-										"firstCid": 9987,
-										"secondCid": 653,
-										"stockCode": 0,
-										"weight": "0.6kg",
-										"maxNum": 200,
-										"skuLabels": {
-											"priceTop": [
-												{
-													"u": "tab_var_071",
-													"t": "白条24期免息",
-													"s": 0
-												}
-											]
-										},
-										"cardSpecialId": 4,
-										"isProvideService": 0,
-										"overseaPurchase": 0,
-										"canSelectPrices": [],
-										"extFloors": [
-											{
-												"floorType": "1",
-												"floor": [
-													{
-														"elemType": 2,
-														"jumpUrl": "https://3c-peijian.jd.com/index?cid=655&sku=100009177424",
-														"actionType": 1,
-														"isBg": 1
-													},
-													{
-														"elemType": 0,
-														"text": "推荐"
-													},
-													{
-														"elemType": 0,
-														"text": "为您精选品质配件"
-													},
-													{
-														"elemType": 0,
-														"text": "去选购"
-													},
-													{
-														"elemType": 1,
-														"imgUrl": "app://cart_extFloor_entrance_arrow"
-													}
-												]
-											}
-										],
-										"giftPoolPromoId": "200000264153",
-										"priceRevert": "4499.10",
-										"brandId": 8557,
-										"floorInfoSummary": {
-											"gifts": {
-												"num": 3,
-												"invalidNums": 0
-											}
-										},
-										"vendorId": 1000004259,
-										"notComputeStock": 0,
-										"notComputeFreight": 0,
-										"Id": "100009177424",
-										"Name": "华为 HUAWEI Mate 30 5G 麒麟990 4000万超感光徕卡影像双超级快充8GB+128GB亮黑色5G全网通游戏手机",
-										"Num": 2,
-										"Price": 4999.1,
-										"PriceShow": "￥4,499.10",
-										"ImgUrl": "jfs/t1/101935/8/16522/138326/5e7b3787Ef954e79e/b3330ff0f7793699.jpg.dpg",
-										"ImageUrlRN": "jfs/t1/101935/8/16522/138326/5e7b3787Ef954e79e/b3330ff0f7793699.jpg",
-										"CheckType": 0,
-										"isNoCheck": 0,
-										"fields": {
-											"61": "1",
-											"62": "1"
-										}
-									}
-								}
-							],
-							"NeedMoney": 0.1,
-							"Num": 1,
-							"Skus": [],
-							"Gifts": [],
-							"RePrice": 0.1,
-							"Price": 8998.1,
-							"Discount": 0.1,
-							"Id": 50055782064,
-							"PriceShow": "￥0.10",
-							"Point": 0,
-							"AddMoney": 0.1,
-							"STip": "满1件可低价换购商品",
-							"SType": 16,
-							"CheckType": 0,
-							"CanSelectGifts": [],
-							"suitType": 10,
-							"promotionId": "50055782064",
-							"specialId": "0",
-							"isReachCondition": true,
-							"suitLabel": "换购",
-							"fullRefundType": 24,
-							"entryLabel": "去换购",
-							"stillNeed": "0"
-						}
-					},
-					{
-						"itemType": 12,
-						"item": {
-							"items": [
-								{
-									"itemType": 1,
-									"item": {
-										"Tags": [],
-										"Discount": 7.1,
-										"IdForOldVersion": 854802,
+										"Discount": 0.1,
+										"IdForOldVersion": 42360186467,
 										"Point": 0,
 										"PriceImg": "",
 										"RePrice": 0.1,
@@ -467,96 +76,193 @@
 										"isBook": false,
 										"isYb": false,
 										"Gifts": [],
-										"specialId": "524288",
-										"menuRelationTag": "670,6666",
-										"unitedText": "商务时尚3.1，64GB",
 										"hasUnitedText": 0,
-										"stockState": "有货",
-										"remainNum": "",
-										"remainNumInt": -1,
-										"canSelectPromotions": [
-											{
-												"id": 50076588922,
-												"title": "购买1件可优惠换购热销商品",
-												"type": 10,
-												"checkType": 1
-											},
-											{
-												"id": 50066304879,
-												"title": "购买1件可优惠换购热销商品",
-												"type": 10,
-												"checkType": 0
-											}
-										],
+										"canSelectPromotions": [],
 										"propertyTags": {
-											"a": "商务时尚3.1",
-											"b": "64GB",
-											"c": "选服务"
+											"a": "【九代i5/8G/双硬盘/独显】23.8",
+											"b": "",
+											"c": "修改服务"
 										},
-										"cid": 694,
-										"firstCid": 670,
-										"secondCid": 686,
+										"cid": 12079,
+										"firstCid": 1672,
+										"secondCid": 2599,
 										"stockCode": 0,
-										"weight": "0.12kg",
 										"maxNum": 200,
-										"skuLabels": {
-											"skuHead": [
-												{
-													"u": "tab_101"
-												}
-											]
-										},
 										"cardSpecialId": 0,
 										"isProvideService": 0,
 										"overseaPurchase": 0,
 										"canSelectPrices": [],
-										"flashPurchaseEndTime": "03月29日 00:00",
-										"secKillEndCountdown": 17495,
-										"priceRevert": "62.90",
-										"brandId": 9495,
-										"floorInfoSummary": {},
-										"vendorId": 1000000192,
+										"priceRevert": "199.10",
+										"vendorId": 167694,
 										"notComputeStock": 0,
 										"notComputeFreight": 0,
-										"Id": "854802",
-										"Name": "金士顿（Kingston）64GB USB3.1 U盘 DT100G3 黑色 滑盖设计 时尚便利",
-										"Num": 1,
-										"Price": 69.9,
-										"PriceShow": "￥62.90",
-										"ImgUrl": "jfs/t1/104290/34/13516/51141/5e59e238Efe5894cd/5eb3e657338d48f8.jpg.dpg",
-										"ImageUrlRN": "jfs/t1/104290/34/13516/51141/5e59e238Efe5894cd/5eb3e657338d48f8.jpg",
-										"CheckType": 0,
-										"isNoCheck": 0,
-										"fields": {
-											"61": "0",
-											"62": "0"
-										}
-									}
+										"Id": "42360186467",
+										"Name": "全保修3年 电脑整机 DNZJ010300M",
+										"Num": 2,
+										"Price": 199.1,
+										"PriceShow": "￥199.10",
+										"ImgUrl": "jfs/t1/23928/23/8666/83310/5c778435E69f52950/459bdf352d442375.jpg.dpg",
+										"ImageUrlRN": "jfs/t1/23928/23/8666/83310/5c778435E69f52950/459bdf352d442375.jpg",
+										"CheckType": 1
+									},
+									"RWid": "100006865194",
+									"RSuitId": "50072737475"
+								},
+								{
+									"MainYbSku": {
+										"Tags": [],
+										"Discount": 0.1,
+										"IdForOldVersion": 66137727356,
+										"Point": 0,
+										"PriceImg": "",
+										"RePrice": 0.1,
+										"AwardType": 0,
+										"targetId": 0,
+										"isBook": false,
+										"isYb": false,
+										"Gifts": [],
+										"hasUnitedText": 0,
+										"canSelectPromotions": [],
+										"propertyTags": {
+											"a": "【九代i5/8G/双硬盘/独显】23.8",
+											"b": "",
+											"c": "修改服务"
+										},
+										"cid": 12079,
+										"firstCid": 1672,
+										"secondCid": 2599,
+										"stockCode": 0,
+										"maxNum": 200,
+										"cardSpecialId": 0,
+										"isProvideService": 0,
+										"overseaPurchase": 0,
+										"canSelectPrices": [],
+										"priceRevert": "219.10",
+										"vendorId": 167694,
+										"notComputeStock": 0,
+										"notComputeFreight": 0,
+										"Id": "66137727356",
+										"Name": "电脑整机 主板硬盘保5年 DNZJ080300M",
+										"Num": 2,
+										"Price": 219.1,
+										"PriceShow": "￥219.10",
+										"ImgUrl": "jfs/t1/90700/23/15235/139626/5e7063e9Ea5fb2ef5/f7d8bf1da68f9da6.jpg.dpg",
+										"ImageUrlRN": "jfs/t1/90700/23/15235/139626/5e7063e9Ea5fb2ef5/f7d8bf1da68f9da6.jpg",
+										"CheckType": 1
+									},
+									"RWid": "100006865194",
+									"RSuitId": "50072737475"
 								}
 							],
-							"NeedMoney": 0.1,
-							"Num": 1,
-							"Skus": [],
-							"Gifts": [],
-							"RePrice": 0.1,
-							"Price": 62.9,
-							"Discount": 0.1,
-							"Id": 50076588922,
-							"PriceShow": "￥0.10",
-							"Point": 0,
-							"AddMoney": 0.1,
-							"STip": "满1件可低价换购商品",
-							"SType": 16,
-							"CheckType": 0,
-							"CanSelectGifts": [],
-							"suitType": 10,
-							"promotionId": "50076588922",
-							"specialId": "0",
-							"isReachCondition": true,
-							"suitLabel": "换购",
-							"fullRefundType": 24,
-							"entryLabel": "去换购",
-							"stillNeed": "0"
+							"PriceImg": "",
+							"AwardType": 0,
+							"targetId": 0,
+							"isBook": false,
+							"isYb": false,
+							"menuRelationTag": "670,6666",
+							"unitedText": "【九代i5/8G/双硬盘/独显】23.8",
+							"hasUnitedText": 0,
+							"stockState": "有货",
+							"remainNum": "",
+							"remainNumInt": -1,
+							"canSelectPromotions": [
+								{
+									"id": 50072737475,
+									"title": "购买1件可优惠换购热销商品",
+									"type": 10,
+									"checkType": 1
+								}
+							],
+							"propertyTags": {
+								"a": "【九代i5/8G/双硬盘/独显】23.8",
+								"b": "",
+								"c": "修改服务"
+							},
+							"cid": 12798,
+							"firstCid": 670,
+							"secondCid": 671,
+							"stockCode": 0,
+							"weight": "9.42kg",
+							"maxNum": 200,
+							"skuLabels": {
+								"skuHead": [
+									{
+										"u": "tab_149"
+									}
+								],
+								"priceTop": [
+									{
+										"u": "tab_var_071",
+										"t": "白条24期免息",
+										"s": 0
+									}
+								]
+							},
+							"cardSpecialId": 0,
+							"isProvideService": 0,
+							"overseaPurchase": 0,
+							"canSelectPrices": [],
+							"secKillEndCountdown": 75095,
+							"homeServiceInfo": [
+								{
+									"Tags": [],
+									"Discount": 0.1,
+									"IdForOldVersion": 6373854,
+									"Point": 0,
+									"PriceImg": "",
+									"RePrice": 0.1,
+									"AwardType": 0,
+									"targetId": 0,
+									"isBook": false,
+									"isYb": false,
+									"Gifts": [],
+									"hasUnitedText": 0,
+									"canSelectPromotions": [],
+									"propertyTags": {
+										"a": "【九代i5/8G/双硬盘/独显】23.8",
+										"b": "",
+										"c": "修改服务"
+									},
+									"cid": 16944,
+									"firstCid": 670,
+									"secondCid": 16943,
+									"stockCode": 0,
+									"maxNum": 200,
+									"cardSpecialId": 0,
+									"isProvideService": 0,
+									"overseaPurchase": 0,
+									"canSelectPrices": [],
+									"priceRevert": "99.10",
+									"vendorId": 0,
+									"notComputeStock": 0,
+									"notComputeFreight": 0,
+									"Id": "6373854",
+									"Name": "PC(一体机)上门安装检测服务 一体机服务",
+									"Num": 2,
+									"Price": 99.1,
+									"PriceShow": "￥99.10",
+									"ImgUrl": "jfs/t16678/258/2309382977/116878/22d973be/5af14dceN24826f95.jpg.dpg",
+									"ImageUrlRN": "jfs/t16678/258/2309382977/116878/22d973be/5af14dceN24826f95.jpg",
+									"CheckType": 1
+								}
+							],
+							"priceRevert": "4959.10",
+							"brandId": 8740,
+							"floorInfoSummary": {
+								"service": {
+									"price": "￥1,034.10",
+									"num": 6,
+									"invalidNums": 0
+								}
+							},
+							"vendorId": 1000000155,
+							"notComputeStock": 0,
+							"notComputeFreight": 0,
+							"Name": "惠普（HP）战66 微边框商用一体机电脑23.8英寸(九代i5-9500T 8G 1T+256GSSD R535 2G独显 高色域 四年上门)",
+							"ImgUrl": "jfs/t1/98422/38/13456/161560/5e58f40dE6224808b/e8918993dda7c439.jpg.dpg",
+							"ImageUrlRN": "jfs/t1/98422/38/13456/161560/5e58f40dE6224808b/e8918993dda7c439.jpg",
+							"isNoCheck": 0,
+							"fields": {}
 						}
 					}
 				],
@@ -583,218 +289,6 @@
 				},
 				"checkType": 0,
 				"isNoCheck": 0
-			},
-			{
-				"vendorId": 10005026,
-				"vendorType": 0,
-				"shopId": 839743,
-				"shopName": "星云平板电脑专营店",
-				"vendorPrice": 8599.1,
-				"specialId": 0,
-				"sorted": [
-					{
-						"itemType": 1,
-						"item": {
-							"Tags": [],
-							"Discount": 400.1,
-							"IdForOldVersion": 31257774408,
-							"Point": 0,
-							"YbSkus": [
-								{
-									"MainYbSku": {
-										"Tags": [],
-										"Discount": 25.1,
-										"IdForOldVersion": 60466158086,
-										"Point": 0,
-										"PriceImg": "",
-										"RePrice": 0.1,
-										"AwardType": 0,
-										"targetId": 0,
-										"isBook": false,
-										"isYb": false,
-										"Gifts": [],
-										"hasUnitedText": 0,
-										"canSelectPromotions": [],
-										"propertyTags": {
-											"b": "高效"
-										},
-										"cid": 12079,
-										"firstCid": 1672,
-										"secondCid": 2599,
-										"stockCode": 0,
-										"maxNum": 200,
-										"cardSpecialId": 0,
-										"isProvideService": 0,
-										"overseaPurchase": 0,
-										"canSelectPrices": [],
-										"priceRevert": "59.10",
-										"vendorId": 167694,
-										"notComputeStock": 0,
-										"notComputeFreight": 0,
-										"Id": "60466158086",
-										"Name": "远程服务赠鼠标（新版） 高效",
-										"Num": 1,
-										"Price": 84.11,
-										"PriceShow": "￥59.10",
-										"ImgUrl": "jfs/t1/71803/26/13347/193916/5da80137E2085095f/7442bf3474fc754c.jpg.dpg",
-										"ImageUrlRN": "jfs/t1/71803/26/13347/193916/5da80137E2085095f/7442bf3474fc754c.jpg",
-										"CheckType": 1
-									},
-									"RWid": "31257774408",
-									"RSuitId": "null"
-								},
-								{
-									"MainYbSku": {
-										"Tags": [],
-										"Discount": 0.1,
-										"IdForOldVersion": 42358699514,
-										"Point": 0,
-										"PriceImg": "",
-										"RePrice": 0.1,
-										"AwardType": 0,
-										"targetId": 0,
-										"isBook": false,
-										"isYb": false,
-										"Gifts": [],
-										"hasUnitedText": 0,
-										"canSelectPromotions": [],
-										"propertyTags": {
-											"a": "DNZJ070300Q"
-										},
-										"cid": 12079,
-										"firstCid": 1672,
-										"secondCid": 2599,
-										"stockCode": 0,
-										"maxNum": 200,
-										"cardSpecialId": 0,
-										"isProvideService": 0,
-										"overseaPurchase": 0,
-										"canSelectPrices": [],
-										"priceRevert": "199.10",
-										"vendorId": 167694,
-										"notComputeStock": 0,
-										"notComputeFreight": 0,
-										"Id": "42358699514",
-										"Name": "整机保3年 电脑整机 DNZJ070300Q",
-										"Num": 1,
-										"Price": 199.1,
-										"PriceShow": "￥199.10",
-										"ImgUrl": "jfs/t1/16482/16/8645/81716/5c778492Eb68eaf9c/a49c6a3a808e95e0.jpg.dpg",
-										"ImageUrlRN": "jfs/t1/16482/16/8645/81716/5c778492Eb68eaf9c/a49c6a3a808e95e0.jpg",
-										"CheckType": 1
-									},
-									"RWid": "31257774408",
-									"RSuitId": "null"
-								},
-								{
-									"MainYbSku": {
-										"Tags": [],
-										"Discount": 0.1,
-										"IdForOldVersion": 42360186471,
-										"Point": 0,
-										"PriceImg": "",
-										"RePrice": 0.1,
-										"AwardType": 0,
-										"targetId": 0,
-										"isBook": false,
-										"isYb": false,
-										"Gifts": [],
-										"hasUnitedText": 0,
-										"canSelectPromotions": [],
-										"propertyTags": {
-											"a": "DNZJ010300Q"
-										},
-										"cid": 12079,
-										"firstCid": 1672,
-										"secondCid": 2599,
-										"stockCode": 0,
-										"maxNum": 200,
-										"cardSpecialId": 0,
-										"isProvideService": 0,
-										"overseaPurchase": 0,
-										"canSelectPrices": [],
-										"priceRevert": "399.10",
-										"vendorId": 167694,
-										"notComputeStock": 0,
-										"notComputeFreight": 0,
-										"Id": "42360186471",
-										"Name": "全保修3年 电脑整机 DNZJ010300Q",
-										"Num": 1,
-										"Price": 399.1,
-										"PriceShow": "￥399.10",
-										"ImgUrl": "jfs/t1/23928/23/8666/83310/5c778435E69f52950/459bdf352d442375.jpg.dpg",
-										"ImageUrlRN": "jfs/t1/23928/23/8666/83310/5c778435E69f52950/459bdf352d442375.jpg",
-										"CheckType": 1
-									},
-									"RWid": "31257774408",
-									"RSuitId": "null"
-								}
-							],
-							"PriceImg": "",
-							"RePrice": 0.1,
-							"AwardType": 0,
-							"targetId": 0,
-							"isBook": false,
-							"isYb": false,
-							"Gifts": [],
-							"menuRelationTag": "670,6666",
-							"unitedText": "玫瑰金，17款/Intel m3 处理器/256GB",
-							"hasUnitedText": 0,
-							"stockState": "有货",
-							"remainNum": "",
-							"remainNumInt": -1,
-							"canSelectPromotions": [],
-							"propertyTags": {
-								"a": "玫瑰金",
-								"b": "17款/Intel m3 处理器/256GB",
-								"c": "修改服务"
-							},
-							"cid": 672,
-							"firstCid": 670,
-							"secondCid": 671,
-							"stockCode": 0,
-							"maxNum": 200,
-							"cardSpecialId": 0,
-							"isProvideService": 0,
-							"overseaPurchase": 0,
-							"canSelectPrices": [],
-							"priceRevert": "8599.10",
-							"brandId": 158529,
-							"floorInfoSummary": {
-								"service": {
-									"price": "￥657.10",
-									"num": 3,
-									"invalidNums": 0
-								}
-							},
-							"vendorId": 10005026,
-							"notComputeStock": 0,
-							"notComputeFreight": 0,
-							"Id": "31257774408",
-							"Name": "苹果（Apple） MacBook 12英寸笔记本电脑 玫瑰金 17款/Intel m3 处理器/256GB",
-							"Num": 1,
-							"Price": 8999.1,
-							"PriceShow": "￥8,599.10",
-							"ImgUrl": "jfs/t1/90423/34/16563/120643/5e7c8704Ed018d8f7/5028dfe8d598746c.jpg.dpg",
-							"ImageUrlRN": "jfs/t1/90423/34/16563/120643/5e7c8704Ed018d8f7/5028dfe8d598746c.jpg",
-							"CheckType": 1,
-							"isNoCheck": 0,
-							"fields": {
-								"61": "1",
-								"62": "1"
-							}
-						}
-					}
-				],
-				"vendorLabels": {
-					"vendorHead": [
-						{
-							"u": "cart_002"
-						}
-					]
-				},
-				"checkType": 1,
-				"isNoCheck": 0
 			}
 		],
 		"specialId": 0,
@@ -818,66 +312,7 @@
 		"tip_1": "",
 		"tip_2": "",
 		"configVersion": "174",
-		"abCards": {
-			"1": "B",
-			"2": "A",
-			"3": "A",
-			"4": "B",
-			"5": "A",
-			"7": "B",
-			"8": "B",
-			"9": "B",
-			"10": "B",
-			"11": "B",
-			"12": "B",
-			"13": "B",
-			"14": "B",
-			"15": "B",
-			"16": "B",
-			"17": "A",
-			"18": "B",
-			"19": "B",
-			"20": "B",
-			"21": "A",
-			"22": "B",
-			"23": "B",
-			"24": "B",
-			"25": "B",
-			"26": "A",
-			"27": "B",
-			"28": "B",
-			"29": "A",
-			"30": "A",
-			"31": "B",
-			"32": "A",
-			"33": "B",
-			"34": "A",
-			"35": "B",
-			"36": "B",
-			"38": "B",
-			"39": "B",
-			"40": "B",
-			"41": "A",
-			"42": "A",
-			"43": "B",
-			"44": "A",
-			"45": "A",
-			"46": "B",
-			"47": "B",
-			"48": "B",
-			"49": "B",
-			"50": "B",
-			"51": "B",
-			"54": "B",
-			"55": "B",
-			"58": "B",
-			"59": "A",
-			"61": "A",
-			"62": "B",
-			"63": "B",
-			"64": "B",
-			"69": "A"
-		},
+		"abCards": {},
 		"promotionSwitch": 0,
 		"promotionSavePrice": 0,
 		"cartClearGuide": 0,
