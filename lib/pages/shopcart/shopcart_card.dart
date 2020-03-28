@@ -6,8 +6,8 @@ import 'package:learn_flutter/widgets/round_checkbox.dart';
 import 'package:learn_flutter/widgets/tag.dart';
 
 class ShopcartCard extends StatefulWidget {
-  final ShopcartResponseCartinfo cartInfo;
-  ShopcartCard({Key key, this.cartInfo}) : super(key: key);
+  final ShopcartResponseCartinfoVendor vendor;
+  ShopcartCard({Key key, this.vendor}) : super(key: key);
   @override
   _ShopcartCardState createState() => _ShopcartCardState();
 }
@@ -26,7 +26,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
       ),
       child: Column(children: <Widget>[
         cardHeader(),
-        ...widget.cartInfo.vendors[0]?.sorted?.map((item) {
+        ...widget.vendor?.sorted?.map((item) {
           return Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -86,7 +86,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
         ),
         Expanded(
           child: Text(
-            widget.cartInfo.vendors[0]?.shopName,
+            widget.vendor?.shopName,
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
@@ -96,7 +96,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
           children: <Widget>[
             Icon(Icons.info_outline, color: Color(0xFFECECEC), size: 16),
             Text(
-              widget.cartInfo.vendors[0]?.fareType == 0 ? "已免运费" : "",
+              widget.vendor?.fareType == 0 ? "已免运费" : "",
               style: TextStyle(
                 fontSize: 12,
               ),
@@ -109,46 +109,59 @@ class _ShopcartCardState extends State<ShopcartCard> {
 
   cardSubheader(ShopcartResponseCartinfoVendorsSorted item) {
     return Column(children: <Widget>[
-      Row(
-        children: <Widget>[
-          Tag(
-            height: 14,
-            padding: EdgeInsets.only(left: 1, right: 1),
-            margin: EdgeInsets.only(right: 5),
-            text: Text(
-              "换购",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 10,
-                height: 0.95,
-              ),
-            ),
-            color: Colors.red,
-            borderColor: Colors.red,
-            radius: 3,
-          ),
-          Expanded(
-            flex: 1,
-            child: Text(
-              item?.item?.sTip,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-            ),
-          ),
-          Container(
-            child: Row(
-              children: <Widget>[
-                Text(
-                  "去换购",
-                  style: TextStyle(fontSize: 12),
-                ),
-                Icon(Icons.keyboard_arrow_right, size: 15)
-              ],
-            ),
-          ),
-        ],
+      Offstage(
+        offstage: item?.item?.items == null,
+        child: secKill(item?.item?.items[0]?.item?.secKillEndCountdown),
       ),
-      secKill(item?.item?.items[0]?.item?.secKillEndCountdown),
+      Offstage(
+        offstage: item?.item?.sType != 16,
+        child: redemption(item?.item),
+      ),
     ]);
+  }
+
+  /*
+   * 换购
+   */
+  redemption(ShopcartResponseCartinfoVendorsSortedItem item) {
+    return Row(
+      children: <Widget>[
+        Tag(
+          height: 14,
+          padding: EdgeInsets.only(left: 1, right: 1),
+          margin: EdgeInsets.only(right: 5),
+          text: Text(
+            item.suitLabel,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 10,
+              height: 0.95,
+            ),
+          ),
+          color: Colors.red,
+          borderColor: Colors.red,
+          radius: 3,
+        ),
+        Expanded(
+          flex: 1,
+          child: Text(
+            item.sTip,
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+          ),
+        ),
+        Container(
+          child: Row(
+            children: <Widget>[
+              Text(
+                item.entryLabel,
+                style: TextStyle(fontSize: 12),
+              ),
+              Icon(Icons.keyboard_arrow_right, size: 15)
+            ],
+          ),
+        ),
+      ],
+    );
   }
 
   /*
@@ -300,7 +313,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
   }
 
   skuLabels(
-      List<ShopcartResponseCartinfoVendorsSortedItemItemsItemSkulabelsPricetop>
+      List<ShopcartResponseCartinfoVendorsSortedItemSkulabelsPricetop>
           skuLables) {
     return Wrap(
       spacing: 5,
@@ -321,7 +334,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
   /*
    * 配件赠品 
    */
-  gift(List<ShopcartResponseCartinfoVendorsSortedItemItemsItemGift> gifts) {
+  gift(List<ShopcartResponseCartinfoVendorsSortedItemGift> gifts) {
     return Offstage(
       offstage: gifts.isEmpty,
       child: Column(
