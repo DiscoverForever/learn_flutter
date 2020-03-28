@@ -92,9 +92,9 @@ class _ShopCartState extends State<ShopCart> with TickerProviderStateMixin {
                       child: SingleChildScrollView(
                         child: Column(
                           children: <Widget>[
-                            ShopcartCard(
-                              cartInfo: shopcartResponse.cartInfo,
-                            ),
+                            ...shopcartResponse.cartInfo.vendors.map((vendor) {
+                              return ShopcartCard(vendor: vendor);
+                            }).toList()
                           ],
                         ),
                       )),
