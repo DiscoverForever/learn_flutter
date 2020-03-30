@@ -26,9 +26,11 @@ class _CountdownState extends State<Countdown> {
 
   initTimmer() {
     countdownTimer = Timer.periodic(new Duration(seconds: 1), (timer) {
-      setState(() {
-        time--;
-      });
+      if (time > 0) {
+        setState(() {
+          time--;
+        });
+      }
     });
   }
 
