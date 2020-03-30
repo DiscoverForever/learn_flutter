@@ -4,7 +4,7 @@ import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
 import 'package:learn_flutter/utils/color_util.dart';
 
 class ItemTitle extends StatefulWidget {
-  ItemInfoResponseFloor item;
+  final ItemInfoResponseFloor item;
   ItemTitle({Key key, @required this.item}) : super(key: key);
   @override
   _ItemTitleState createState() => _ItemTitleState();
@@ -34,6 +34,7 @@ class _ItemTitleState extends State<ItemTitle> {
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
+                            height: 1.5,
                           ),
                         ),
                       ),
