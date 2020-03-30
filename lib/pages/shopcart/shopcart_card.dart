@@ -29,7 +29,8 @@ class _ShopcartCardState extends State<ShopcartCard> {
         ...widget.vendor?.sorted?.asMap()?.keys?.map((index) {
           return Column(
             children: <Widget>[
-              product(widget.vendor?.sorted[index]),
+              // itemType:1 商品
+              widget.vendor?.sorted[index]?.itemType == 1 ? product(widget.vendor?.sorted[index]) : product(widget.vendor?.sorted[index]?.item?.items[0], otherData: widget.vendor?.sorted[index]),
               Offstage(
                 offstage: index == widget.vendor.sorted.length - 1,
                 child: Divider(),
@@ -44,7 +45,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
   /*
    * 商品 
    */
-  product(ShopcartResponseCartinfoVendorsSorted sorted) {
+  product(ShopcartResponseCartinfoVendorsSorted sorted, { ShopcartResponseCartinfoVendorsSorted otherData }) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -69,7 +70,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
           flex: 1,
           child: Column(
             children: <Widget>[
-              cardSubheader(sorted),
+              cardSubheader(sorted, otherData: otherData),
               cardBody(sorted),
             ],
           ),
@@ -122,15 +123,15 @@ class _ShopcartCardState extends State<ShopcartCard> {
     );
   }
 
-  cardSubheader(ShopcartResponseCartinfoVendorsSorted item) {
+  cardSubheader(ShopcartResponseCartinfoVendorsSorted item, { ShopcartResponseCartinfoVendorsSorted otherData }) {
     return Column(children: <Widget>[
       Offstage(
-        offstage: item?.item?.items == null,
-        child: secKill(item?.item?.items[0]?.item?.secKillEndCountdown),
+        offstage: item?.item?.secKillEndCountdown == null,
+        child: secKill(item?.item?.secKillEndCountdown),
       ),
       Offstage(
-        offstage: item?.item?.sType != 16,
-        child: redemption(item?.item),
+        offstage: otherData?.item?.sType != 16,
+        child: redemption(otherData?.item),
       ),
     ]);
   }
@@ -139,6 +140,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
    * 换购
    */
   redemption(ShopcartResponseCartinfoVendorsSortedItem item) {
+    print(item?.suitLabel);
     return Container(
       margin: EdgeInsets.only(bottom: 10),
       child: Row(
@@ -148,7 +150,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
             padding: EdgeInsets.only(left: 1, right: 1),
             margin: EdgeInsets.only(right: 5),
             text: Text(
-              item.suitLabel,
+              item?.suitLabel == null ? "" : item?.suitLabel,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 10,
@@ -162,7 +164,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
           Expanded(
             flex: 1,
             child: Text(
-              item.sTip,
+              item?.sTip == null ? "" : item?.sTip,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
             ),
           ),
@@ -170,7 +172,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
             child: Row(
               children: <Widget>[
                 Text(
-                  item.entryLabel,
+                  item?.entryLabel == null ? "" : item?.entryLabel,
                   style: TextStyle(fontSize: 12),
                 ),
                 Icon(Icons.keyboard_arrow_right, size: 15)
@@ -238,7 +240,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
               ],
             ),
             child: Image.network(
-              "https://img30.360buyimg.com/test/${item.item.items[0]?.item?.imgUrl}",
+              "https://img30.360buyimg.com/test/${item?.item?.imgUrl}",
               width: 85,
               height: 85,
             ),
@@ -253,7 +255,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                     Container(
                       width: MediaQuery.of(context).size.width - 80 - 30 - 50,
                       child: Text(
-                        item?.item?.items[0]?.item?.name,
+                        item?.item?.name,
                         maxLines: 2,
                         softWrap: true,
                         overflow: TextOverflow.ellipsis,
@@ -275,7 +277,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                         LimitedBox(
                           maxWidth: 120,
                           child: Text(
-                            "${item?.item?.items[0]?.item?.propertyTags?.a}, ${item?.item?.items[0]?.item?.propertyTags?.b}, ",
+                            "${item?.item?.propertyTags?.a}, ${item?.item?.propertyTags?.b}, ",
                             maxLines: 1,
                             softWrap: false,
                             overflow: TextOverflow.ellipsis,
@@ -286,7 +288,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                           ),
                         ),
                         Text(
-                          "${item?.item?.items[0]?.item?.propertyTags?.c} ",
+                          "${item?.item?.propertyTags?.c} ",
                           style: TextStyle(fontSize: 12, color: Colors.black),
                         ),
                         Icon(Icons.keyboard_arrow_down, size: 12),
@@ -297,9 +299,9 @@ class _ShopcartCardState extends State<ShopcartCard> {
                   ),
                 ),
                 skuLabels(
-                    item?.item?.items[0]?.item?.skuLabels?.priceTop == null
+                    item?.item?.skuLabels?.priceTop == null
                         ? []
-                        : item?.item?.items[0]?.item?.skuLabels?.priceTop),
+                        : item?.item?.skuLabels?.priceTop),
                 Container(
                   margin: EdgeInsets.only(top: 10, bottom: 10),
                   child: Row(
@@ -315,7 +317,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                       //   ),
                       // ),
                       RichText(
-                        text: TextSpan(text: item?.item?.items[0]?.item?.priceShow?.substring(0, 1),
+                        text: TextSpan(text: item?.item?.priceShow?.substring(0, 1),
                         style: TextStyle(
                           color: Color(0xFFE33D42),
                           fontWeight: FontWeight.bold,
@@ -323,7 +325,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                         ),
                         children: <TextSpan>[
                           TextSpan(
-                            text: item?.item?.items[0]?.item?.priceShow?.substring(1, item?.item?.items[0]?.item?.priceShow?.indexOf(".")),
+                            text: item?.item?.priceShow?.substring(1, item?.item?.priceShow?.indexOf(".")),
                             style: TextStyle(
                               color: Color(0xFFE33D42),
                               fontSize: 18,
@@ -331,7 +333,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                             ),
                           ),
                           TextSpan(
-                            text: ".${item?.item?.items[0]?.item?.priceShow?.split('.')[1]}",
+                            text: ".${item?.item?.priceShow?.split('.')[1]}",
                             style: TextStyle(
                               color: Color(0xFFE33D42),
                               fontSize: 12,
@@ -346,7 +348,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                     ],
                   ),
                 ),
-                gift(item?.item?.items[0]?.item?.gifts),
+                gift(item?.item?.gifts),
               ],
             ),
           )
