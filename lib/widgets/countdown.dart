@@ -21,10 +21,11 @@ class _CountdownState extends State<Countdown> {
   void initState() {
     super.initState();
     time = widget.timeLeft;
-    initTimmer();
+    initTimer();
   }
 
-  initTimmer() {
+  initTimer() {
+    Timer
     countdownTimer = Timer.periodic(new Duration(seconds: 1), (timer) {
       if (time > 0) {
         setState(() {
