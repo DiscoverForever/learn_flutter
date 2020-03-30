@@ -139,43 +139,46 @@ class _ShopcartCardState extends State<ShopcartCard> {
    * 换购
    */
   redemption(ShopcartResponseCartinfoVendorsSortedItem item) {
-    return Row(
-      children: <Widget>[
-        Tag(
-          height: 14,
-          padding: EdgeInsets.only(left: 1, right: 1),
-          margin: EdgeInsets.only(right: 5),
-          text: Text(
-            item.suitLabel,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 10,
-              height: 0.95,
+    return Container(
+      margin: EdgeInsets.only(bottom: 10),
+      child: Row(
+        children: <Widget>[
+          Tag(
+            height: 14,
+            padding: EdgeInsets.only(left: 1, right: 1),
+            margin: EdgeInsets.only(right: 5),
+            text: Text(
+              item.suitLabel,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 10,
+                height: 0.95,
+              ),
+            ),
+            color: Colors.red,
+            borderColor: Colors.red,
+            radius: 3,
+          ),
+          Expanded(
+            flex: 1,
+            child: Text(
+              item.sTip,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
             ),
           ),
-          color: Colors.red,
-          borderColor: Colors.red,
-          radius: 3,
-        ),
-        Expanded(
-          flex: 1,
-          child: Text(
-            item.sTip,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+          Container(
+            child: Row(
+              children: <Widget>[
+                Text(
+                  item.entryLabel,
+                  style: TextStyle(fontSize: 12),
+                ),
+                Icon(Icons.keyboard_arrow_right, size: 15)
+              ],
+            ),
           ),
-        ),
-        Container(
-          child: Row(
-            children: <Widget>[
-              Text(
-                item.entryLabel,
-                style: TextStyle(fontSize: 12),
-              ),
-              Icon(Icons.keyboard_arrow_right, size: 15)
-            ],
-          ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 
@@ -184,7 +187,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
    */
   secKill(int secKillEndCountdown) {
     return Container(
-      margin: EdgeInsets.only(top: 5, bottom: 5),
+      margin: EdgeInsets.only(bottom: 5),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -227,9 +230,13 @@ class _ShopcartCardState extends State<ShopcartCard> {
           Container(
             alignment: Alignment.topCenter,
             margin: EdgeInsets.only(left: 0, right: 10),
-            decoration: BoxDecoration(boxShadow: <BoxShadow>[
-              BoxShadow(color: Colors.black12, blurRadius: 10, spreadRadius: 1),
-            ]),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                    color: Colors.black12, blurRadius: 10, spreadRadius: 1),
+              ],
+            ),
             child: Image.network(
               "https://img30.360buyimg.com/test/${item.item.items[0]?.item?.imgUrl}",
               width: 85,
@@ -299,13 +306,38 @@ class _ShopcartCardState extends State<ShopcartCard> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Text(
-                        "¥${item?.item?.items[0]?.item?.priceRevert}",
+                      // Text(
+                      //   "¥${item?.item?.items[0]?.item?.priceRevert}",
+                      //   style: TextStyle(
+                      //     color: Color(0xFFE33D42),
+                      //     fontWeight: FontWeight.w900,
+                      //     fontSize: 16,
+                      //   ),
+                      // ),
+                      RichText(
+                        text: TextSpan(text: item?.item?.items[0]?.item?.priceShow?.substring(0, 1),
                         style: TextStyle(
                           color: Color(0xFFE33D42),
-                          fontWeight: FontWeight.w900,
-                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12,
                         ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: item?.item?.items[0]?.item?.priceShow?.substring(1, item?.item?.items[0]?.item?.priceShow?.indexOf(".")),
+                            style: TextStyle(
+                              color: Color(0xFFE33D42),
+                              fontSize: 18,
+                              fontFamily: "Pingfang",
+                            ),
+                          ),
+                          TextSpan(
+                            text: ".${item?.item?.items[0]?.item?.priceShow?.split('.')[1]}",
+                            style: TextStyle(
+                              color: Color(0xFFE33D42),
+                              fontSize: 12,
+                            ),
+                          ),
+                        ]),
                       ),
                       Counter(
                         defaultValue: 1,
