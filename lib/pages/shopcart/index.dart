@@ -66,12 +66,12 @@ class _ShopCartState extends State<ShopCart> with TickerProviderStateMixin {
                         labelColor: Colors.black,
                         labelStyle: TextStyle(
                           color: Colors.black,
-                          fontFamily: "Pingfang",
+                          fontFamily: "PingFang",
                           fontWeight: FontWeight.bold,
                         ),
                         unselectedLabelStyle: TextStyle(
                           color: Colors.red,
-                          fontFamily: "Pingfang",
+                          fontFamily: "PingFang",
                         ),
                         indicatorSize: TabBarIndicatorSize.label,
                         indicatorColor: Colors.red,

@@ -74,7 +74,9 @@ class SliverHeaderState extends State<SliverHeader> {
             borderRadius: BorderRadius.all(Radius.circular(50)),
           ),
           child: TextField(
-            style: TextStyle(),
+            style: TextStyle(
+              fontFamily: "PingFang"
+            ),
             decoration: InputDecoration(
               hintText: '请输入商品名称',
               hintStyle: TextStyle(
