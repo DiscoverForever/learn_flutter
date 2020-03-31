@@ -28,8 +28,7 @@ class MyHomePageState extends State<MyHomePage> {
   List<FloorModelResultContentData> floorList = [];
   List<SwipperOptions> swipperOptionsList = [];
   List<WareInfo> itemList = [];
-  String swipperBgImageUrl =
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564260778041&di=035a5d4a7d370268e316035730a25a58&imgtype=0&src=http%3A%2F%2Fcdn.lizhi.fm%2Fradio_cover%2F2014%2F06%2F18%2F12383567000424964.jpg';
+  String swipperBgImageUrl = "";
   @override
   initState() {
     super.initState();
@@ -80,83 +79,86 @@ class MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Expanded(
-          child: CustomScrollView(
-            slivers: <Widget>[
-              SliverHeader(),
-              SliverToBoxAdapter(
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      child: Column(
-                        children: <Widget>[
-                          SwipperImage(
-                            width: MediaQuery.of(context).size.width,
-                            backgroundImageUrl: this.swipperBgImageUrl,
-                            swipperOptionsList: this.swipperOptionsList,
-                          ),
-                        ],
-                      ),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: NetworkImage(this.swipperBgImageUrl),
-                          fit: BoxFit.fill,
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: CustomScrollView(
+              slivers: <Widget>[
+                SliverHeader(),
+                SliverToBoxAdapter(
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        height: 200,
+                        alignment: Alignment.topCenter,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: NetworkImage(swipperBgImageUrl),
+                              fit: BoxFit.fitWidth,
+                              alignment: Alignment.bottomCenter),
+                        ),
+                        child: SwipperImage(
+                          width: MediaQuery.of(context).size.width,
+                          // backgroundImage: NetworkImage(swipperBgImageUrl),
+                          swipperOptionsList: swipperOptionsList,
                         ),
                       ),
-                    ),
-                    // Image.network('https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/57927/10/5246/102061/5d2ef10bEf2debf2e/93d987f05fa960ea.jpg.dpg.webp'),
-                    Container(
-                      height: 140,
-                      child: PageView(
-                        scrollDirection: Axis.horizontal,
-                        children: <Widget>[
-                          Floor(
-                            floorList: floorList.length >= 10
-                                ? floorList.getRange(0, 10)?.toList()
-                                : [],
-                          ),
-                          Floor(
-                            floorList: floorList.length >= 20
-                                ? floorList.getRange(10, 20)?.toList()
-                                : [],
-                          ),
-                        ],
+                      Container(
+                        height: 160,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                          image: NetworkImage(
+                              "https://m.360buyimg.com/mobilecms/s1125x435_jfs/t1/69613/13/4742/97849/5d2ef146Eaf504529/35e8041bf0dac25d.jpg.dpg.webp"),
+                          fit: BoxFit.fitWidth,
+                        )),
+                        child: PageView(
+                          scrollDirection: Axis.horizontal,
+                          children: <Widget>[
+                            Floor(
+                              floorList: floorList.length >= 10
+                                  ? floorList.getRange(0, 10)?.toList()
+                                  : [],
+                            ),
+                            Floor(
+                              floorList: floorList.length >= 20
+                                  ? floorList.getRange(10, 20)?.toList()
+                                  : [],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                    Ad(
-                      bgImage:
-                          'https://m.360buyimg.com/mobilecms/jfs/t1/55537/13/5336/79992/5d2eeea7E5b9166b0/57bda184a914540a.jpg!q70.jpg.dpg.webp',
-                      jumpUrl:
-                          'https://pro.m.jd.com/mall/active/EenpY3YPwqzMVxgzmvrmiPxXZfD/index.html',
-                    ),
-                  ],
-                ),
-              ),
-              SliverPadding(
-                sliver: SliverGrid(
-                  //Grid
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2, //Grid按两列显示
-                    mainAxisSpacing: 10.0,
-                    crossAxisSpacing: 10.0,
-                    childAspectRatio: 1/1.35,
-                  ),
-                  delegate: SliverChildBuilderDelegate(
-                    (BuildContext context, int index) {
-                      //创建子widget
-                      return Item(item: this.itemList[index],);
-                    },
-                    childCount: this.itemList.length,
+                      Image.network(
+                          "https://m.360buyimg.com/mobilecms/jfs/t1/55537/13/5336/79992/5d2eeea7E5b9166b0/57bda184a914540a.jpg!q70.jpg.dpg.webp"),
+                    ],
                   ),
                 ),
-                padding: EdgeInsets.all(10),
-              ),
-            ],
-          ),
-        )
-      ],
+                SliverPadding(
+                  sliver: SliverGrid(
+                    //Grid
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2, //Grid按两列显示
+                      mainAxisSpacing: 10.0,
+                      crossAxisSpacing: 10.0,
+                      childAspectRatio: 1 / 1.35,
+                    ),
+                    delegate: SliverChildBuilderDelegate(
+                      (BuildContext context, int index) {
+                        //创建子widget
+                        return Item(
+                          item: this.itemList[index],
+                        );
+                      },
+                      childCount: this.itemList.length,
+                    ),
+                  ),
+                  padding: EdgeInsets.all(10),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }

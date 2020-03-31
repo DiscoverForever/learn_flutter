@@ -36,28 +36,28 @@ class _FloorState extends State<Floor> {
         ],
       );
     });
-    return Center(
-      child: Container(
+    return Container(
         width: MediaQuery.of(context).size.width,
-        height: 140,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage(
-              'https://m.360buyimg.com/mobilecms/s1125x435_jfs/t1/69613/13/4742/97849/5d2ef146Eaf504529/35e8041bf0dac25d.jpg.dpg.webp',
-            ),
-            fit: BoxFit.fitWidth,
-          ),
-        ),
+        height: 160,
+        alignment: Alignment.center,
+        // TODO 背景图片
+        // decoration: BoxDecoration(
+        //   image: DecorationImage(
+        //     image: NetworkImage(
+        //       'https://m.360buyimg.com/mobilecms/s1125x435_jfs/t1/69613/13/4742/97849/5d2ef146Eaf504529/35e8041bf0dac25d.jpg.dpg.webp',
+        //     ),
+        //     fit: BoxFit.fitWidth,
+        //   ),
+        // ),
         child: GridView.count(
-          mainAxisSpacing: 3,
-          crossAxisSpacing: 3,
+          mainAxisSpacing: 0,
+          crossAxisSpacing: 0,
           crossAxisCount: 5,
           childAspectRatio: 1,
           padding: EdgeInsets.all(3),
           children: floors.toList(),
           physics: NeverScrollableScrollPhysics(),
         ),
-      ),
     );
   }
 }

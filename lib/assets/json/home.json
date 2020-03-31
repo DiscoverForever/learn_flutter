@@ -1,0 +1,1767 @@
+{
+  "naviVer": "1560873360000",
+  "toTopBtnImg": "https://m.360buyimg.com/mobilecms/jfs/t16789/324/2566217976/2179/58b27e89/5af962e6N61fbd832.png",
+  "configDisplayVersion": "8.0.0",
+  "userCategory": "67_null",
+  "executeTime": 258,
+  "topBgImgBig": "https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/57927/10/5246/102061/5d2ef10bEf2debf2e/93d987f05fa960ea.jpg.dpg.webp",
+  "personalSourceValue": "__1#11#nj-ai-channel-1_1#11#nj-ai-icon-1&&1#ABTest-10298-D-98_____________6866&&6753&&7172&&7089&&6864&&6978&&6754&&6868",
+  "popMessage": 1,
+  "searchBgColor": "",
+  "displayVersion": "8.0.0",
+  "tagAnimations": 1,
+  "showLightIcon": 0,
+  "canBeDefault": true,
+  "loginText": "登录开启品质生活",
+  "floorList": [
+    {
+      "curve": 0,
+      "content": [
+        {
+          "extension_id": "",
+          "activityId": 118637,
+          "sortno": 1,
+          "abt": "",
+          "title": "奥克斯超品日",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/63833/38/4785/97592/5d2fc7aeE58fb0765/50baf3707a5034dc.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "",
+          "clickUrl": "",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://pro.m.jd.com/mall/active/EenpY3YPwqzMVxgzmvrmiPxXZfD/index.html"
+            },
+            "srv": "C_98_0_118637___"
+          }
+        },
+        {
+          "extension_id": "{\"ad\":\"3618\",\"ch\":\"2\",\"shop\":\"1000003533\",\"ts\":\"1563699199\",\"uniqid\":\"{\\\"material_id\\\":\\\"632968547\\\",\\\"pos_id\\\":\\\"3618\\\",\\\"sid\\\":\\\"9dbd0d8b-deba-4f6a-bc0f-d550ead57177\\\"}\"}",
+          "activityId": 0,
+          "sortno": 2,
+          "abt": "1",
+          "title": "水之密语首焦(3).jpg",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/70900/26/4658/100539/5d2d6d2eE8970e5df/9d790b0173c1f6ec.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "https://im-x.jd.com/dsp/np?log=j-Sxq947n-7CWHSUwgCsh8V08S8blhEoURwYQYV3un9PG8DjE38Yj_IF9f7gCVs6WOPeQ-pFcB4ZiIsnKM4uH9E-gj8deEM522XPx0utQVrixHfX3VVDbEzp5SoTZK6a1VRcXfkAv0hoXlMPsIl19Vyo2i0jA08FDe4ZjgjSLEoZG9atCuosid_JTl62ll24jUIZ7l0884-xikBCeWwXmxlxObNZUh2xJ0eFjLYjJK-avpJtf4gib1kew5gPYszYQNYSK3y7bPm2dJEKfxPJgXqQ0rrbOVF7-PjkFlqX9Pmn9xCfcJHPM4jxpnIcRrBcwFQtqfYDndmDavznbeHf6djrl-n217wOnjtVT2dpzeW2TS_u_xyfV7BIBPIHfIqqz1xzCGAPtaNZY07UuaVOl_yeKs7vIhvVmIYzf7ljetRHXQ6FbU9_EDi0vxgA9jHzxcD271tYjPdb93QVzfa5GUs8hKv8rhlIRBss-1F0Y84IkIBrzHzsDkIT73iVB20sWUx6ibe4Eb2A9Q0lKP5xJ2Ku61S-S6viVAxN4gq4zF_ZJpn6sBYqL5JIXE2iE2SybwB4MHu43BhbnaneMbP_SsJyXAcA0xR4r3dgCac_M3Q&v=404&seq=1&rt=3",
+          "clickUrl": "https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9wcm8ubS5qZC5jb20vbWFsbC9hY3RpdmUvM2thUW9ldE01M2ZFa2JpcXNLczNnTXZKOHllTi9pbmRleC5odG1s&log=j-Sxq947n-7CWHSUwgCsh8V08S8blhEoURwYQYV3un9PG8DjE38Yj_IF9f7gCVs6WOPeQ-pFcB4ZiIsnKM4uH9E-gj8deEM522XPx0utQVrixHfX3VVDbEzp5SoTZK6a1VRcXfkAv0hoXlMPsIl19Vyo2i0jA08FDe4ZjgjSLEoZG9atCuosid_JTl62ll24SwL0RCfWSTDJhIdtS2TT2Wu50zT_bkAic8PE7yEzI2qk6KiQ9hFfNIp7y7nIyu4CMu3LQJ6DsBVvpINNJx93g-8SskBzwltVdrfrnzMu0o-7CUVmyrC0iflX1SGeVHfBa0TKCfVW4dfiqiffj0Qtn41QuizAla-DWhREAfJSnzniMlcZv8fz3iMaTU1zXC_DpTJociPQNGzTetaAMEvU_QiVFqWpD3wOq7w_nHVW6zacMFZxepkkj9VJFO45G60bFw7QNOl8KZTA_88LAZuUBD0C9Tdp8g68Ka8bLr5maxMIJTsH9QF--kfZmDpBJM2nx61W6KNUu0G7aoP0tf5gIlABKF6McdefqN8Doiv-dLVGRct9cBXt_cbL7qgocLCh4TjRkzNptqB-O8xdewJF38wNLFuPwbgYdJC9dWc3B_I&v=404&clicktype=1",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://pro.m.jd.com/mall/active/3kaQoetM53fEkbiqsKs3gMvJ8yeN/index.html"
+            },
+            "srv": "A_98_1_632968547___9dbd0d8b-deba-4f6a-bc0f-d550ead57177"
+          }
+        },
+        {
+          "extension_id": "{\"ad\":\"\",\"ch\":\"\",\"shop\":\"\",\"sku\":\"\",\"ts\":\"\",\"uniqid\":\"{\\\"material_id\\\":\\\"637047984\\\",\\\"pos_id\\\":\\\"3619\\\",\\\"sid\\\":\\\"8c98edfb-f562-43b2-9c42-e2f99811e0bd\\\"}\"}",
+          "activityId": 0,
+          "sortno": 3,
+          "abt": "1",
+          "title": "V-719-清凉夏日狂欢趴-福利大放送-762.jpg",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/45795/28/5469/355713/5d315351E912f00d5/098360914825f086.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "https://im-x.jd.com/dsp/np?log=bAHxH8X32xwKe_lLnkZ4EVHjt4E8Uq4AA-b12SbxqkxTc1aaSfVL7QSl9iBbkf9o846SdVIjXm-dZjMcsdDIitCnDdZZeXGm0KVyPFi9qgjyS482u2PRxljQzSUI41PTG7utHULrNmzC80WfPvABV-UUG8zjdGrcYX5iRW55wQ21EU0jxt6KmMjADBDMcSjKg-FkQv4vyFH5377DBsqd6MnVwIJCv1kL3Gk2exkT5nuRl82a44PLXoe2ZVbxwY0J9ZxHZPEvi_FujuK1LjD6rVPpfG30iJ7n1kmpu2nIauVw7OmsAwryrRFUNvxEhP_B7pRUBbKXXEHPs3GqRshFc125e5CA5bXeOvMeJUamtM0Ev1CBvLZd7LRG6dnX1aykBI7a7_O1RicGGzz0TyeEGj7kQ4r4gn6dBm7saCS8Xjvk0urEOpVrqfTOFjnnVPqJsQvWR2K94zd9vvV2C3THYqiBnDLcPnks08SbHAGvoJKxX96xCPfll4eXeoIxoWuu2bmdzMRBCX835jkKt-TXK_VqBHfcHoRu6jwQO5E8VB1P0LNZ4rWI4R4RUtuS707NjHDxtHuS_bEWugl97Emfvw&v=404&seq=1&rt=3",
+          "clickUrl": "https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9wcm8ubS5qZC5jb20vbWFsbC9hY3RpdmUvM3lpVkI2d1J4RFB2WDJBZ3pCTkM0S3pmVU5hdS9pbmRleC5odG1s&log=bAHxH8X32xwKe_lLnkZ4EVHjt4E8Uq4AA-b12SbxqkxTc1aaSfVL7QSl9iBbkf9o846SdVIjXm-dZjMcsdDIitCnDdZZeXGm0KVyPFi9qgjyS482u2PRxljQzSUI41PTG7utHULrNmzC80WfPvABV-UUG8zjdGrcYX5iRW55wQ0tm_MHNKnCPiayLLZ29iAPhjtQXJGDFZNAjslzlEXVVKVAwpV5VqIhYt9rpyqN8SW7r7CW8H8tOotMUGHam399j5Y0AWiV37w8NRMFqNbj6JIRB7ru-Qp_X2YPv1F7k8HJ0vwV-tc47a4HDA3UvPdP5wVYGAA2g7ZiBDp5yYaueUcJKOf7k-RhMkivrRI2NvmyBLjbEogO6f4YyG5d6CLVQrW8pnXgRL0YRGsUCzWJlut9CHv4_j5_FapRhzMJovQll_RSFSjvrtyY3dgj19zGEp-TzzC_OBwHm5hqHYA6IXQ6JJHtRhEfRN2DYpBOKs2R0B4ESQFIAehNJ9IPH85ueSeHf0l-dQZFNIYE6He8lrUuj0KAh7oEV3wxJhJpb3X2I2Vm2c1RnYtYbE3r0ptGoN_QlWhNHO8zkBKn_1DWYw&v=404&clicktype=1",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://pro.m.jd.com/mall/active/3yiVB6wRxDPvX2AgzBNC4KzfUNau/index.html"
+            },
+            "srv": "A_98_2_637047984___8c98edfb-f562-43b2-9c42-e2f99811e0bd"
+          }
+        },
+        {
+          "extension_id": "",
+          "activityId": 16778,
+          "sortno": 4,
+          "abt": "",
+          "title": "潮酷好物大放价",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/83486/33/4937/292340/5d31c142Efa3de60a/b3ffc95864af8935.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "",
+          "clickUrl": "",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://pro.m.jd.com/mall/active/HCJCJxJXkS2TbDCz1AzAwwpCSAV/index.html?innerAnchor=100000349372_7437710_100000400012_100003534811_7437786&focus=4"
+            },
+            "srv": "B_98_3_16778_100000349372_1#ABTest-10298-D-98#1431417#100000349372_"
+          }
+        },
+        {
+          "extension_id": "{\"ad\":\"3620\",\"ch\":\"2\",\"shop\":\"1000001811\",\"ts\":\"1563699199\",\"uniqid\":\"{\\\"material_id\\\":\\\"492393726\\\",\\\"pos_id\\\":\\\"3620\\\",\\\"sid\\\":\\\"0a957377-7e7b-4e93-9511-776cb1f7a6b9\\\"}\"}",
+          "activityId": 0,
+          "sortno": 5,
+          "abt": "1",
+          "title": "首焦设计规范模板1.jpg(1)",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/33606/36/12405/360866/5cefb77bE2b5669f1/d31ffd152aa23272.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "https://im-x.jd.com/dsp/np?log=-NvBkF29ftoV-VYgwdOfK3dIcIwBybDye_rtQAkb3ZqfdjLxOIGdoyXoHMKA0wo46n46hCuCf6Xy08oDAdg8b_RYYJrr3k42QvvlcJe5E6oxa25KDBL7txe9Xv-x-rYOanOL7N1hQu0_YpqO6zfE79ltkxPkApe2ovy-gHsZVoMyUCyqTY3jwLsj5TcIP5wEaXr66AsYtGpXnxMZszd9mWTrHacK76p46b4bpjGe3jhls1nUA6zrMIJZaZygICJXHiDsNW3az7ww-2weMuNtMQ5POioxUpwN3c2SgmN98PifCvFQpJEZZOLbRcO0rNULwgPEMzvqiFVBGvlKHxD9BpAg0Bdp8ucKmRfS9GJuFaOkCT3V1MEeCFuQghRHw0Y-gqVVxmA9-d_Nj6sz4CMuRJ8O7MdJ6P4Jvl9MFRW3sOBvsXx5tjtJaP7me7QQB4b3KE8gfZ_VL_xx7TsZtE8pOalpVkPZMAXldAWexD-IBLSxipaPy9_a2i43zCCDc0EpL8AnwwWPbqyE4UnNPS19iGZ-HSIwmaweweZyMCOLWVi4VzbtnSpbcQtsjYUYK6q5B0kdAZ1WFzL5YdBmEQRfpylcCEBiKYmWJIQ7qKusfdE&v=404&seq=1&rt=3",
+          "clickUrl": "https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9wcm8ubS5qZC5jb20vbWFsbC9hY3RpdmUvNFRFRnhWVkZRN1VqM2Q5dm52U0t1emduTFU4QS9pbmRleC5odG1s&log=-NvBkF29ftoV-VYgwdOfK3dIcIwBybDye_rtQAkb3ZqfdjLxOIGdoyXoHMKA0wo46n46hCuCf6Xy08oDAdg8b_RYYJrr3k42QvvlcJe5E6oxa25KDBL7txe9Xv-x-rYOanOL7N1hQu0_YpqO6zfE79ltkxPkApe2ovy-gHsZVoMyUCyqTY3jwLsj5TcIP5wEAuMQuhKrCKSiJuWFfZTICF3U7Cs3kKuyYjjkK9QZuko2HBGddbAtr2CbniU7nX-Vg8Xjq4G172Q9Q3aOV2S66nnwPQ4fpFyXo5yyjrsOOZnAODbSvwit81wO1Z7VslUq9BCJvCTfC9WNV-tyJ_IKBh-bowV-oQuQjJ6m_mqkLsatP5jZaTPGr0H_2OacznwDPu7EIWwTiUVDeiSmDYpttEwzwC-HEpjH5Gb5fZSRMhXPGOE4fMO-DA6PuGVA0DjjVvuXHzVhWlM9Ts3covZdRly1BF4O8KL40iuXgNfRl6vcN4Cs1YU9lgVWcZ4xaY_h3SzFm-7xp2ObJwIDrCcZFPtSn2oJiHmrDkZcV-b-plj4rJr7jshlCJbto3zjcGFnXmTH3DFOSMbl0nWSXy_myQ&v=404&clicktype=1",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://pro.m.jd.com/mall/active/4TEFxVVFQ7Uj3d9vnvSKuzgnLU8A/index.html"
+            },
+            "srv": "A_98_4_492393726___0a957377-7e7b-4e93-9511-776cb1f7a6b9"
+          }
+        },
+        {
+          "extension_id": "{\"ad\":\"3639\",\"ch\":\"2\",\"shop\":\"1000164941\",\"ts\":\"1563699199\",\"uniqid\":\"{\\\"material_id\\\":\\\"495371102\\\",\\\"pos_id\\\":\\\"3639\\\",\\\"sid\\\":\\\"0dee4222-76e2-44bb-b523-9ad9105ef559\\\"}\"}",
+          "activityId": 0,
+          "sortno": 6,
+          "abt": "1",
+          "title": "1125X762-3.jpg(1)(1)",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/84333/19/944/217823/5cf26a63E259758a5/58334aa262d22b47.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "https://im-x.jd.com/dsp/np?log=LzHGavibIsH5tt2UyYvP-Dl0W_LFxiJW-L9J3M9frldm9_mlNRZmtvxh2yrU-wZ23yvzD_D-n8qD9ftFiJB0BDCfPSz4XLhq9eVfQ1Mei6xC3t6wHWELYp1vS4PhXzVUBDjxWn5fbMUuJacvmUHgtpP6oVb5LLdQ9C2yc8qmU0CUK-yO145VknPbDV3fhgAohqeLeJZpzuttYV_CAUiG74oqyegtqQ86JBEAzzm6S6pcGICwFqSMzpRsVOIS_itHklM-gJmKP3Rq4sj3E11h7gYAAGAjNBOIu3HoHIDLy4ydcf2kKXaRmJ3XRUqKFYcz3QzggPF6J1YxJdzCxgY-H9PFl6ijvsjRwYzih53mtqm7B_PYXnQftfNout2jPa3zoHmWmEHGXZGiwW-75_VajJ6mzU65gbcpnCAkZfk6sFfJm2LRLN80ALkZcUGbW6OWnrKiJfKumI8wNeKgVQUheImHa1twGr7wvzdyZOYKTWy6IM67D_Mmz1U82Nt7CJyWndH2QDzC7hI_lnq_SJEZnEaX608b_o-NjEcwDjsVt0oSaWHn2d9P5vClxzf_9VkLndUxAeyMNtX5Ie5ANAq3LEG88StfqfQRc8h7yKnslzzKobgn-sVzM2JgtiCQUi39&v=404&seq=1&rt=3",
+          "clickUrl": "https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLm0uamQuY29tL3Byb2R1Y3QvMTAwMDAzMjQyMjk5Lmh0bWw&log=LzHGavibIsH5tt2UyYvP-Dl0W_LFxiJW-L9J3M9frldm9_mlNRZmtvxh2yrU-wZ23yvzD_D-n8qD9ftFiJB0BDCfPSz4XLhq9eVfQ1Mei6xC3t6wHWELYp1vS4PhXzVUBDjxWn5fbMUuJacvmUHgtpP6oVb5LLdQ9C2yc8qmU0CUK-yO145VknPbDV3fhgAo9NRoB4gtFA7qzm7imi8jUJSd226i2DAJO8WDxjFrFOso1Ek1CdikFgkPQiqOfFTE1h0zEAC-lLAojEE8vX2MEBi4E5iuYO6eHwikSkbHjvBWbxHvmUE-kILVBucfS2kAmS8ryLDKCU7daFTrcZXPB6rAnfcC1LPm78Pg_A8eja7LtvzVCEwjGtNGexk096qLiXkPp4SG0WuMY8BMUOjz-ZPbmMpr4_BhOhsKklcHvR8w6IrFpA7GeDiCPO61SajXOem4v4xzZkKCDxaI4Ndqp6X0HYlh4fE2wPenpC_ZnaC82vovn2tRQgXAy1MwZnFGpyNAEkk_HIN3-5W_i0GC-o-oXogjzzurutWyB30TMWk8g7LWCfSA-JBYQylNyAHkGakcJg-T0-DtUdjySJyNwLVqzW25XCB-VdHsMMVxwB0&v=404&clicktype=1",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://item.m.jd.com/product/100003242299.html"
+            },
+            "srv": "A_98_5_495371102___0dee4222-76e2-44bb-b523-9ad9105ef559"
+          }
+        },
+        {
+          "extension_id": "",
+          "activityId": 0,
+          "sortno": 7,
+          "abt": "",
+          "title": "",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/44828/35/4881/97244/5d274742Ec56069d2/af993944728da58f.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "https://im-x.jd.com/dsp/np?log=qLnsruJRZRrI-LudI4Tca_ZUdN4rz4tARfUhHtCKpNzbfTO6mI1vNY-oaGmT5rIKQuMdcLHU6VhU7K2e8XFU89g-BscNB8L_Bx13Ary3DT_VVGDmNG6jM0thqSRTGC58oLnUscDuebTrGU_t-TgpArUHMiwW9w9Y49lNUDuZtGMABrnZuHcma9dv0QzDCYI169JDHgjfM-7YnLuqjOauPrGcQZ3Paj4sZlc_w7YaIUTEcC2W4DlTTWSHKJrhgJ09a_FnxPE8JuabDQoXub3JOa3Uw2ltFejAAzb72nxLZWzxfgXdKHcyoUFrDYyGPbn2WXj0r8de0m3cB8Ah89n5-QwNsoTWiAUsJVYcvZXM-tJjQwYn6SIxbSOVOP-Rw5_DQdRHxVP3vRqh3zJ41V6vs154pg3slJvwqyDdg2Fe7ipCydHlcNZwUP5uEJoM_HNcP-OmEIstKXLG2gTF_NijQXt_bqnlKiA5reDh169HsvCaSU4GWaLNnHjCNfqI0YsFZ98TORcsBqe2x-HxJHMjIjPxs2NM0m-sGDOCLpzhaoXBZGPTt6Hzl8LcMBQ5MX-a&v=404&seq=1&rt=3",
+          "clickUrl": "https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9wcm8ubS5qZC5jb20vbWFsbC9hY3RpdmUvM3M0QTNkZnJUeTlLNkZUWFpXZDFVNjd4SjlWUi9pbmRleC5odG1s&log=qLnsruJRZRrI-LudI4Tca_ZUdN4rz4tARfUhHtCKpNzbfTO6mI1vNY-oaGmT5rIKQuMdcLHU6VhU7K2e8XFU89g-BscNB8L_Bx13Ary3DT_VVGDmNG6jM0thqSRTGC58oLnUscDuebTrGU_t-TgpArUHMiwW9w9Y49lNUDuZtGMABrnZuHcma9dv0QzDCYI1WdlA6sj0VKRPVv4qHis4yzIM2mSi49fH52E3w014JFZrIufEV1JSpG-LDXz3x_J7yY2rJj0JwfEq-YjB52L1wSKVyRqVUqluzcUKaLL5El9eaqOVTqFfUdcwiz8xaGMro2zmgptgLf_JJTpa3Sx_lhVV-7hLXo25XgWNBJKGCju8mDe45EQkmYRzefi52vfXg4pZxzwQKKB_H6ExyhAN1DaeWbpjxsyuEd2YwVhs2_oUxls500g-NL9X10q5Np3nh_ldF36DSbzyQuZctvHmqwmTru2zJe_w9v9n6Z5kGGT44wi1oGusWP3Wf5T5oTGCCIZmvhS4NYQRZW2Cz1AJiTYXMPa-Ji33JbkHANLMz-Vec8DvorHzkYvuP68V7EsFBE3uHX5jOUB_5gBh22oBxg&v=404&clicktype=1",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://pro.m.jd.com/mall/active/3s4A3dfrTy9K6FTXZWd1U67xJ9VR/index.html"
+            },
+            "srv": "E_98_6_0___919bf39c-68e1-4e85-9f24-dce50900946c"
+          }
+        },
+        {
+          "extension_id": "",
+          "activityId": 0,
+          "sortno": 8,
+          "abt": "",
+          "title": "",
+          "wareDisplayType": 0,
+          "horizontalImag": "https://m.360buyimg.com/mobilecms/s1242x762_jfs/t1/51567/1/5023/186638/5d2c4382E676647de/e7f52804c3445893.jpg!cr_1125x445_0_171!q70.jpg.dpg.webp",
+          "sourceTag": "",
+          "exposalUrl": "https://im-x.jd.com/dsp/np?log=tskmzGdyjbl2mG-D6Mu0X9QZEmi0aA9XytfTb7l98JV5JsNBHVKOJUCYu2m4idS6Bm87u4grwa0Pct2FJJahcN3yGRUFCflnZiLi2BoQ6bZXXNGHICX3Bu3QT1fqDnpGsqSz9hUFmIFEVtOgMU6dnnxOihnhHv3BZt5dspWVNNahG7q5o6HgWX-apS0T5ZEQKcDLb3o6Ha_8EnO_vFsKy20UDKyDlCVN7Qa9FoE_Fv6YcXY1FabQuyVuLFFSF0ZTQu-gfYUI5NPP5Oxs4QiqpkkboZhltSx277RCKA5UQ9MjMaZ8ahhjBRdGC4COfsorYvdyMF85i3QHU31EUGmiwcyThPl7bUPNQfz-Ve4Dm-6iHwlwO5Uc7Hvz01qqhz2JF-a0M_xSfV7TYWrqcAbH-j9xbin3qnv-wILGZw8AncCxia9jHjq9d9HtTJ3_MJuTP4oPcaBwHsXsClKsCYELIHFfsR8GVHVmMu03j18vX6Y07trcx-Fac6JyOvYVIqcvtxqs6zNXATemwxxFCitMsGTE-GqUrJfYXXLtAFlWaZ8&v=404&seq=1&rt=3",
+          "clickUrl": "https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9wcm8ubS5qZC5jb20vbWFsbC9hY3RpdmUveDdGS2tFZUt4TWNBRDY4NzZxVnc2blNqRWFuL2luZGV4Lmh0bWw&log=tskmzGdyjbl2mG-D6Mu0X9QZEmi0aA9XytfTb7l98JV5JsNBHVKOJUCYu2m4idS6Bm87u4grwa0Pct2FJJahcN3yGRUFCflnZiLi2BoQ6bZXXNGHICX3Bu3QT1fqDnpGsqSz9hUFmIFEVtOgMU6dnnxOihnhHv3BZt5dspWVNNakkwxRSwTikaSl2Epvds6yNoxmZOOrZpaJvlpGl5KK2Zo50cqFHo93b2AydufElteGZtSwIGjNCxgab77hplWa9znm50FoV5NjzHScOZLoSvKF4x0TbhMcy3ZD0ybF5CIoVfNr5U0xMpaXnJlkbYNuU0rtlXa1jt3-s1lkeFshbk57Z9RbamE5xQ98OkURjddLWk0WlAIdNeA8PAtHqq1IhCgBv6iDeqWvtupdgyN-q_rbUDrnItwUlrQENg1V7ffPFy5CHYcq4H2qex2KAqFkZftZzq_m4F4Q_w7XI29LggK08Zg3Ni48hXt2Zd6KK2roOnUvN3VnCcY22Etq__t8RoZtDSIBUY9yoI7lNK4YuGW1ThFHZN-FN2Mlk2x_PbudXUujtAENrIn5AP0s5tXU&v=404&clicktype=1",
+          "jump": {
+            "des": "m",
+            "params": {
+              "url": "https://pro.m.jd.com/mall/active/x7FKkEeKxMcAD6876qVw6nSjEan/index.html"
+            },
+            "srv": "E_98_7_0___ad6baef7-c8da-46a9-9061-55b17fa1ded7"
+          }
+        }
+      ],
+      "bottomMargin": 0,
+      "isNewStyle": 1,
+      "showName": "",
+      "isShadow": 0,
+      "type": "banner",
+      "slipTime": 4000
+    },
+    {
+      "bottomMargin": 0,
+      "curve": 0,
+      "textColor": "",
+      "logoImage": "",
+      "cornerDegree": "",
+      "marginTop": 0,
+      "img": "",
+      "headType": 0,
+      "marginHorizontal": 0,
+      "bottomMarginWidth": 2,
+      "bottomMarginColor": "",
+      "type": "saoasaoIcon",
+      "expo": "6866_2#1#1_0_375828_____375828_205_",
+      "rightCorner": "",
+      "jump": {
+        "des": "native_scan",
+        "params": {
+          "abTestUI": "1",
+          "merge": "on",
+          "abTestScanQuery": "1"
+        },
+        "srv": "6866_0_CMSSH375828_0_895147_0_1_1____________{\"position\":\"2#1#1\",\"style\":\"205\",\"sourceid\":\"375828\",\"moduleid\":\"375828\",\"sourcetype\":\"0\",\"floorid\":\"6866\"}"
+      },
+      "innnerInterval": 1,
+      "rightCornerColor": "",
+      "marginColor": "",
+      "floorId": 6866,
+      "showName": "7014扫啊扫",
+      "verticalInterval": 1,
+      "floorOrder": 2,
+      "head": 0,
+      "bottomColor": "",
+      "rightCornerImg": ""
+    },
+    {
+      "bottomMargin": 0,
+      "curve": 0,
+      "textColor": "",
+      "logoImage": "",
+      "cornerDegree": "",
+      "marginTop": 0,
+      "img": "https://m.360buyimg.com/mobilecms/jfs/t1/35378/7/15351/6745/5d319fa7E7c969fc1/f6ea1d0beac947f8.png!q70.jpg",
+      "headType": 0,
+      "marginHorizontal": 0,
+      "bottomMarginWidth": 2,
+      "bottomMarginColor": "",
+      "type": "searchIcon",
+      "expo": "6753_3#1#1_0_380847_____380847_204_",
+      "rightCorner": "",
+      "jump": {
+        "des": "m",
+        "params": {
+          "url": "https://h5.m.jd.com/babelDiy/Zeus/YrLEz9fozafjdkGffrvfL6qXXr5/index.html"
+        },
+        "srv": "6753_0_CMSSH380847_0_900999_0_1_1____________{\"position\":\"3#1#1\",\"style\":\"204\",\"sourceid\":\"380847\",\"moduleid\":\"380847\",\"sourcetype\":\"0\",\"floorid\":\"6753\"}"
+      },
+      "innnerInterval": 1,
+      "rightCornerColor": "",
+      "marginColor": "",
+      "floorId": 6753,
+      "showName": "默认",
+      "verticalInterval": 1,
+      "floorOrder": 3,
+      "head": 0,
+      "bottomColor": "",
+      "rightCornerImg": ""
+    },
+    {
+      "content": {
+        "fontColor": "#000000",
+        "time": 1563699199737,
+        "bgPic": "https://m.360buyimg.com/mobilecms/s1125x435_jfs/t1/69613/13/4742/97849/5d2ef146Eaf504529/35e8041bf0dac25d.jpg.dpg.webp",
+        "data": [
+          {
+            "id": 3,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t30289/283/1348233926/16023/cc0241da/5cdd3790Na77dd4f8.png",
+            "order": 1,
+            "channelId": 112,
+            "isSub": "0",
+            "name": "京东超市",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://h5.m.jd.com/rn/3LmeNuQDfT1nN8qZS4jZoZQMFeV7/index.html"
+              },
+              "srv": "1_京东超市_-100_1_-100_-100_112_0___"
+            }
+          },
+          {
+            "id": 96,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/68911/12/3048/5992/5d146286E5346937d/c58991519566ffbb.png",
+            "order": 2,
+            "channelId": 450,
+            "isSub": "0",
+            "name": "数码电器",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/8tHNdJLcqwqhkLNA8hqwNRaNu5f/index.html"
+              },
+              "srv": "2_数码电器_-100_1_-100_-100_450_0___323"
+            }
+          },
+          {
+            "id": 119,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/75806/13/3055/8211/5d146f23Ecdff2f73/f7bfcf76c4748c4f.png",
+            "order": 3,
+            "channelId": 497,
+            "isSub": "0",
+            "name": "潮流服饰",
+            "jump": {
+              "des": "guanzhu",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/4VZXv8gmfJtxNA8tNGnTXV8R4yvS/index.html?has_native=0&collectionId=497"
+              },
+              "srv": "3_潮流服饰_-100_1_-100_-100_497_0__67109888#64_327"
+            }
+          },
+          {
+            "id": 6,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/34827/29/1535/16082/5cb34c08Ecafdabe8/1167f7b8e48b5c0a.png",
+            "order": 4,
+            "channelId": 110,
+            "isSub": "0",
+            "name": "京东生鲜",
+            "jump": {
+              "des": "guanzhu",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/4P9a2T9osR9JvtzHVaYTPvsecRtg/index.html?collectionId=110"
+              },
+              "srv": "4_京东生鲜_-100_1_-100_-100_110_0___56"
+            }
+          },
+          {
+            "id": 38,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/29353/13/15563/16976/5cb07dedE6b00a3dd/78c74209a9735e59.png",
+            "order": 5,
+            "channelId": 363,
+            "isSub": "0",
+            "name": "京东到家",
+            "jump": {
+              "des": "jdreactcommon",
+              "params": {
+                "channel_name": "from_jdapp",
+                "modulename": "JDReactDaoJia",
+                "param": {
+                  "latitude": "",
+                  "longitude": ""
+                },
+                "appname": "JDReactDaoJia",
+                "ishidden": true,
+                "needLogin": "0",
+                "transparentenable": true
+              },
+              "srv": "5_京东到家_-100_1_-100_-100_363_0__8#_54"
+            }
+          },
+          {
+            "id": 8,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/79538/12/1761/15575/5d009ad5Ea38065d6/5d7588bce4fc1a89.png",
+            "order": 6,
+            "channelId": 314,
+            "isSub": "0",
+            "name": "生活服务",
+            "jump": {
+              "des": "jdreactcommon",
+              "params": {
+                "modulename": "JDReactRechargeModule",
+                "param": {
+                  "page": "home",
+                  "routeParams": {
+                    "showNewEdition": true
+                  }
+                },
+                "appname": "JDReactRechargeModule",
+                "ishidden": true,
+                "needLogin": "0"
+              },
+              "srv": "6_生活服务_-100_1_-100_-100_314_0___308"
+            }
+          },
+          {
+            "id": 9,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/33767/5/2998/15364/5cb34dedEbb99184e/829776ad810e0723.png",
+            "order": 7,
+            "channelId": 316,
+            "isSub": "0",
+            "name": "领京豆",
+            "jump": {
+              "des": "jdreactcommon",
+              "params": {
+                "modulename": "JDReactCollectJDBeans",
+                "param": {
+                  "page": "collectJDBeansHomePage",
+                  "source": "AppHome",
+                  "transparentenable": true
+                },
+                "appname": "JDReactCollectJDBeans",
+                "needLogin": "0"
+              },
+              "srv": "7_领京豆_-100_1_-100_-100_316_0___57"
+            }
+          },
+          {
+            "id": 10,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/36784/7/2435/4813/5cb88866E1e961d07/0e6a78c11b8d6662.png",
+            "order": 8,
+            "channelId": 317,
+            "isSub": "0",
+            "name": "领券",
+            "jump": {
+              "des": "couponcenter",
+              "params": {
+                "needLogin": "0"
+              },
+              "srv": "8_领券_-100_1_-100_-100_317_0___102"
+            }
+          },
+          {
+            "id": 39,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/20021/39/15411/14175/5cb07d9cE6eb7f03a/45faff1df7e3c7d6.png",
+            "order": 9,
+            "channelId": 325,
+            "isSub": "0",
+            "name": "借钱",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://u.jr.jd.com/growing/reMoney/home/?t=0&from=jdapp"
+              },
+              "srv": "9_借钱_-100_1_-100_-100_325_0__16384#_53"
+            }
+          },
+          {
+            "id": 123,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t9934/327/3206907429/7606/dc876649/5ce654ffN8d824b2f.png",
+            "order": 10,
+            "channelId": 356,
+            "isSub": "0",
+            "name": "PLUS会员",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://plus.m.jd.com/index"
+              },
+              "srv": "10_PLUS会员_-100_1_-100_-100_356_0__160#_52"
+            }
+          },
+          {
+            "id": 43,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t10744/288/3101843185/5846/bd7fdd16/5ce36519N4170ce85.png",
+            "order": 11,
+            "channelId": 331,
+            "isSub": "0",
+            "name": "海囤全球",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/3YvKJrc4e4WK7aZ46j3h5UMCvEn4/index.html"
+              },
+              "srv": "11_海囤全球_-100_2_-100_-100_331_0___"
+            }
+          },
+          {
+            "id": 26,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/30648/36/12894/4960/5cb8827fE0a562c81/5bb5afd0e4317232.png",
+            "order": 12,
+            "channelId": 16,
+            "isSub": "0",
+            "name": "京东拍卖",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://mauction.jd.com"
+              },
+              "srv": "12_京东拍卖_-100_2_-100_-100_16_0___75"
+            }
+          },
+          {
+            "id": 27,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/17649/23/15786/15347/5cb34f65E862b646d/cedde7a8b1e3868d.png",
+            "order": 13,
+            "channelId": 293,
+            "isSub": "0",
+            "name": "唯品会",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/2aiozXgZK1PUVZA37WNq62KLtjcC/index.html"
+              },
+              "srv": "13_唯品会_-100_2_-100_-100_293_0___61"
+            }
+          },
+          {
+            "id": 29,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/37412/5/978/15697/5cb3507eE67811324/f19ca214da7e4e18.png",
+            "order": 14,
+            "channelId": 359,
+            "isSub": "0",
+            "name": "沃尔玛",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/3d34Pm49obpjLEdhhagSZuM5QrwC/index.html"
+              },
+              "srv": "14_沃尔玛_-100_2_-100_-100_359_0___63"
+            }
+          },
+          {
+            "id": 47,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/36114/5/3485/5320/5cb882eaE02a36707/3c07900e143bd295.png",
+            "order": 15,
+            "channelId": 13,
+            "isSub": "0",
+            "name": "京东旅行",
+            "jump": {
+              "des": "guanzhu",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/4Fr34Vshk1ymvv9CBTysFkF36aYM/index.html?collectionId=13"
+              },
+              "srv": "15_京东旅行_-100_2_-100_-100_13_0___77"
+            }
+          },
+          {
+            "id": 46,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/19549/29/15056/4894/5cb88326Ed86b5a25/b40650fcb8acd843.png",
+            "order": 16,
+            "channelId": 324,
+            "isSub": "0",
+            "name": "看病购药",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://m.healthjd.com/?requestIsvToken=true&utm_source=appbaibaoxiang"
+              },
+              "srv": "16_看病购药_-100_2_-100_-100_324_0___78"
+            }
+          },
+          {
+            "id": 45,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/29968/5/15125/5240/5cb8836cEbd514804/280a04686edf2971.png",
+            "order": 17,
+            "channelId": 372,
+            "isSub": "0",
+            "name": "拍拍二手",
+            "jump": {
+              "des": "m",
+              "params": {
+                "needLogin": "0",
+                "url": "https://pro.m.jd.com/mall/active/LHGZv1DrGkva1jNpUkKFuNFN6oo/index.html"
+              },
+              "srv": "17_拍拍二手_-100_2_-100_-100_372_0___80"
+            }
+          },
+          {
+            "id": -100,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/31116/5/12933/5017/5cb88798E342b8e25/638e3dc9169643d8.png",
+            "order": 18,
+            "channelId": 259,
+            "isSub": "0",
+            "name": "女神范",
+            "jump": {
+              "des": "jdreactcommon",
+              "params": {
+                "modulename": "JDReactGoddessFan",
+                "channelId": "259",
+                "appname": "JDReactGoddessFan",
+                "needLogin": "0",
+                "transparentenable": true
+              },
+              "srv": "18_女神范_-100_2_-100_1#hannel-1-channel-1--ai-channel-1#12345_259_1___99"
+            }
+          },
+          {
+            "id": -100,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/37422/5/3686/5249/5cbb3ba9E32c8c786/b4e75e9725134559.png",
+            "order": 19,
+            "channelId": 242,
+            "isSub": "0",
+            "name": "京东京造",
+            "jump": {
+              "des": "jdreactcommon",
+              "params": {
+                "modulename": "JDReactJingZaoHome",
+                "appname": "JDReactJingZaoHome",
+                "needLogin": "0"
+              },
+              "srv": "19_京东京造_-100_2_-100_1#hannel-1-channel-1--ai-channel-1#12345_242_1___133"
+            }
+          },
+          {
+            "id": 13,
+            "icon": "https://m.360buyimg.com/mobilecms/jfs/t1/23184/23/15919/15754/5cb34f0dE10389c82/9b331ca4f02f3355.png",
+            "order": 100,
+            "channelId": 328,
+            "isSub": "0",
+            "name": "更多频道",
+            "jump": {
+              "des": "jdreactcommon",
+              "params": {
+                "modulename": "JDReactChannelCenter",
+                "param": {
+                  "displayVersion": "8.0.0"
+                },
+                "appname": "JDReactChannelCenter",
+                "ishidden": true,
+                "needLogin": "0"
+              },
+              "srv": "100_更多频道_-100_10_-100_-100_328_0___59"
+            }
+          }
+        ],
+        "lightColorSwitch": 0,
+        "notification": 0,
+        "involveSkin": 0,
+        "ynSpace": 2
+      },
+      "bgColor": "",
+      "bottomMargin": 20,
+      "isNewStyle": 2,
+      "showLines": 2,
+      "showName": "",
+      "marginTop": 0,
+      "showShadow": 0,
+      "bottomMarginColor": "#f5f5f5",
+      "type": "appcenter",
+      "needUpdate": 1
+    },
+    {
+      "bottomMargin": 0,
+      "curve": 0,
+      "textColor": "",
+      "logoImage": "",
+      "cornerDegree": "",
+      "marginTop": 0,
+      "headType": 0,
+      "marginHorizontal": 0,
+      "bottomMarginWidth": 2,
+      "bottomMarginColor": "",
+      "type": "hybrid",
+      "rightCorner": "",
+      "jump": {
+        "params": {},
+        "srv": 7172
+      },
+      "content": {
+        "subFloors": [
+          {
+            "realTpl": "06042",
+            "height": 200,
+            "data": [
+              {
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/jfs/t1/55537/13/5336/79992/5d2eeea7E5b9166b0/57bda184a914540a.jpg!q70.jpg.dpg.webp",
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7172_13#1#1_0_380813_____380813_06042_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "m",
+                  "params": {
+                    "url": "https://pro.m.jd.com/mall/active/EenpY3YPwqzMVxgzmvrmiPxXZfD/index.html"
+                  },
+                  "srv": "7172_0_CMSSH380813_0_900965_0_1_1____________{\"position\":\"13#1#1\",\"style\":\"06042\",\"sourceid\":\"380813\",\"moduleid\":\"380813\",\"sourcetype\":\"0\",\"floorid\":\"7172\"}"
+                },
+                "maintitleColor": "#000000",
+                "id": 380813,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "奥克斯超品日",
+                "imageType": 0,
+                "subtitle": "",
+                "moduleTitleColor": "#000000",
+                "labelWordsColor": "",
+                "subtitleColor": "",
+                "isHide": 0
+              }
+            ],
+            "tpl": "dynamic"
+          }
+        ],
+        "subFloorNum": 1
+      },
+      "innnerInterval": 1,
+      "rightCornerColor": "",
+      "marginColor": "",
+      "floorId": 7172,
+      "showName": "通栏",
+      "verticalInterval": 1,
+      "floorOrder": 13,
+      "head": 0,
+      "bottomColor": "",
+      "rightCornerImg": ""
+    },
+    {
+      "curve": 1,
+      "logoImage": "",
+      "cornerDegree": "12,12,0,0",
+      "marginHorizontal": 21,
+      "type": "hybrid",
+      "floorDisplayVersion": "8.0.0",
+      "rightCorner": "",
+      "floorId": 7089,
+      "showName": "8.0",
+      "floorOrder": 23,
+      "head": 0,
+      "rightCornerImg": "",
+      "bottomMargin": 4,
+      "textColor": "",
+      "marginTop": 10,
+      "bottomMarginWidth": 4,
+      "headType": 0,
+      "bottomMarginColor": "#f8f8f8",
+      "jump": {
+        "params": {},
+        "srv": 7089
+      },
+      "content": {
+        "subFloors": [
+          {
+            "realTpl": "06052",
+            "data": [
+              {
+                "rcJumpType": 0,
+                "rcSourceValue": "7089_0_CMSSH378873_0_6239_0_1_1____296________{\"position\":\"23#1#1\",\"style\":\"06052\",\"sourceid\":\"296\",\"biinfo\":\"2\",\"moduleid\":\"378873\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}_RIGHTCORNER_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794_null_miaosha",
+                "advert": {},
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/jfs/t24274/50/2104372822/10637/fb740c17/5b73d121N51e9280a.jpg!q70.jpg.dpg.webp",
+                "expo": "7089_23#1#1_0_378873__0___378873_06052_",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "限时疯狂秒",
+                "maintitleColor": "#000000,#000000",
+                "priceColor": "#000000",
+                "id": 378873,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "京东秒杀",
+                "moduleTitleColor": "",
+                "subtitleColor": "#222222",
+                "showNameImg": "",
+                "img2": "https://m.360buyimg.com/mobilecms/jfs/t23902/195/2097907226/35258/4b5b02db/5b73d1d7N985c6cdd.png!q70.jpg",
+                "labelAnimation": "",
+                "labelWords": "",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "miaosha",
+                  "params": {},
+                  "srv": "7089_0_CMSSH378873_0_6239_0_1_1____296________{\"position\":\"23#1#1\",\"style\":\"06052\",\"sourceid\":\"296\",\"biinfo\":\"2\",\"moduleid\":\"378873\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794"
+                },
+                "content": {
+                  "timeRemain": 4001,
+                  "message": "京东秒杀",
+                  "sourceValue": "1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794",
+                  "nextStartTime": 1563703200000,
+                  "scheme": "B",
+                  "overTime": true,
+                  "miaoshaAdvance": 48,
+                  "indexMiaoSha": [
+                    {
+                      "miaoShaPrice": "18866",
+                      "isNewGoods": 0,
+                      "skuType": [
+                        67,
+                        9999
+                      ],
+                      "jdPrice": "21988",
+                      "itemid": "7629614",
+                      "wareId": "7629614",
+                      "imageurl": "https://m.360buyimg.com/mobilecms/s300x300_jfs/t1/11563/29/3866/159586/5c2329c8E0f30ab16/059172d9637b2933.jpg!q70.jpg.dpg.webp",
+                      "jump": {
+                        "des": "seckill",
+                        "params": {
+                          "productId": "7629614_67#9999"
+                        },
+                        "srv": "{\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"period\":29,\"skuid\":\"7629614\"}"
+                      }
+                    },
+                    {
+                      "miaoShaPrice": "9377",
+                      "isNewGoods": 0,
+                      "skuType": [
+                        67,
+                        9999
+                      ],
+                      "jdPrice": "9999",
+                      "itemid": "100005854474",
+                      "wareId": "100005854474",
+                      "imageurl": "https://m.360buyimg.com/mobilecms/s300x300_jfs/t1/84183/11/4141/76417/5d247a56Edb6195a6/d911210fbf848ddd.jpg!q70.jpg.dpg.webp",
+                      "jump": {
+                        "des": "seckill",
+                        "params": {
+                          "productId": "100005854474_67#9999"
+                        },
+                        "srv": "{\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"period\":29,\"skuid\":\"100005854474\"}"
+                      }
+                    },
+                    {
+                      "miaoShaPrice": "39.9",
+                      "isNewGoods": 0,
+                      "skuType": [
+                        67,
+                        9999
+                      ],
+                      "jdPrice": "128",
+                      "itemid": "100002519305",
+                      "wareId": "100002519305",
+                      "imageurl": "https://m.360buyimg.com/mobilecms/s300x300_jfs/t1/36452/30/13528/370481/5d143e07Eef5ef0a6/fa161165a32af9cf.jpg!q70.jpg.dpg.webp",
+                      "jump": {
+                        "des": "seckill",
+                        "params": {
+                          "productId": "100002519305_67#9999"
+                        },
+                        "srv": "{\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"period\":29,\"skuid\":\"100002519305\"}"
+                      }
+                    }
+                  ],
+                  "operateWord": "限时疯狂秒",
+                  "name": "16点场",
+                  "algorithmFrom": "1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794",
+                  "nextMiaoshaKey": "201907210000:1800",
+                  "functionId": "indexMiaoShaArea"
+                },
+                "source": 9,
+                "imageType": 1,
+                "subtitle": "频道池秒杀",
+                "rcJumpUrl": "",
+                "rcJumpTo": "miaosha",
+                "isHide": 0
+              },
+              {
+                "img2": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t2602/207/2178598383/95036/8f7e2af4/575cf3f0N01993855.jpg!q70.jpg.dpg.webp",
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t21964/146/141441926/188626/a97c47cc/5afed61aNcaf9c908.png!q70.jpg",
+                "skuList": [
+                  "11381361057",
+                  "10076734491"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#1#2_6_33_11381361057#2525139#1#$10076734491#21510#2#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___380731_06052_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "#20DCA0,#33C3F0",
+                "jump": {
+                  "des": "worthbuy_list",
+                  "params": {
+                    "innerLink": "[{\"innerAnchor\":\"11381361057\",\"innerExtId\":\"2525139\"},{\"innerAnchor\":\"10076734491\",\"innerExtId\":\"21510\"}]",
+                    "channel": "home"
+                  },
+                  "srv": "7089_0_CMSSH380731_0_68_0_1_1___11381361057#2525139#1#$10076734491#21510#2#_33________{\"position\":\"23#1#2\",\"entryinfo\":\"11381361057#2525139#1#$10076734491#21510#2#\",\"style\":\"06052\",\"sourceid\":\"33\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"380731\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 380731,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "好物推荐",
+                "showName": "发现好货",
+                "imageType": 1,
+                "subtitle": "品质新生活",
+                "moduleTitleColor": "",
+                "subtitleColor": "#20DCA0,#33C3F0",
+                "isHide": 0
+              }
+            ],
+            "tpl": "06052"
+          },
+          {
+            "realTpl": "06013",
+            "data": [
+              {
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t21427/64/2130031567/505011/a55b6937/5b484d62N31261ee9.png!q70.jpg",
+                "skuList": [
+                  "13266989337"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#2#1_6_471_13266989337#1#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___380569_06013_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "miaosha",
+                  "params": {
+                    "secKillKeyTabType": "parity",
+                    "innerLink": "[{\"innerAnchor\":\"13266989337\"}]"
+                  },
+                  "srv": "7089_0_CMSSH380569_0_8478_0_1_1___13266989337#1#_471________{\"position\":\"23#2#1\",\"entryinfo\":\"13266989337#1#\",\"style\":\"06013\",\"sourceid\":\"471\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"380569\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 380569,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "特价秒杀",
+                "imageType": 1,
+                "subtitle": "9块9疯抢",
+                "moduleTitleColor": "",
+                "subtitleColor": "#FF7310,#FD4F13",
+                "isHide": 0
+              },
+              {
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t1/39700/20/9074/165913/5d0744f8E41d71672/d93e1c2422ff84c1.png!q70.jpg",
+                "skuList": [
+                  "50334890791"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#2#2_6_6_50334890791#1#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___378876_06013_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "miaosha",
+                  "params": {
+                    "secKillKeyTabIndex": "3",
+                    "innerLink": "[{\"innerAnchor\":\"50334890791\",\"innerExtId\":\"24246\"}]"
+                  },
+                  "srv": "7089_0_CMSSH378876_0_900_0_1_1___50334890791#1#_6________{\"position\":\"23#2#2\",\"entryinfo\":\"50334890791#1#\",\"style\":\"06013\",\"sourceid\":\"6\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"378876\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 378876,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "品类秒杀",
+                "imageType": 1,
+                "subtitle": "高效办公",
+                "moduleTitleColor": "",
+                "subtitleColor": "#FA454A,#FF447F",
+                "isHide": 0
+              },
+              {
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t1/15908/5/13908/501622/5ca22031Eb89b7d4c/b4b0892f3c5b3695.png!q70.jpg",
+                "skuList": [
+                  "44511831992"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#2#3_6_203_44511831992#1#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___378877_06013_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "jdreactcommon",
+                  "params": {
+                    "isCapture": "1",
+                    "modulename": "JDReactNewProduct",
+                    "channelflag": "1",
+                    "appname": "JDReactNewProduct",
+                    "innerLink": "[{\"innerAnchor\":\"44511831992\"}]",
+                    "transparentenable": true
+                  },
+                  "srv": "7089_0_CMSSH378877_0_8380_0_1_1___44511831992#1#_203________{\"position\":\"23#2#3\",\"entryinfo\":\"44511831992#1#\",\"style\":\"06013\",\"sourceid\":\"203\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"378877\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 378877,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "新品首发",
+                "imageType": 1,
+                "subtitle": "玩转小魔方",
+                "moduleTitleColor": "",
+                "subtitleColor": "#575BDB,#3F94FF",
+                "showNameImg": "https://m.360buyimg.com/mobilecms/jfs/t17716/117/906301595/4363/f13db2bd/5ab1f7a5Nba8833c2.png",
+                "isHide": 0
+              },
+              {
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t1/45576/23/1998/274288/5cfe1668Ed38dad2d/736fbb987008a3bf.png!q70.jpg",
+                "skuList": [
+                  "100003687193"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#2#4_6_77_100003687193#1#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___378878_06013_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "jdreactcommon",
+                  "params": {
+                    "modulename": "JDReactRankingList",
+                    "appname": "JDReactRankingList",
+                    "fromName": "HomeFloor",
+                    "innerLink": "[{\"innerAnchor\":\"100003687193\",\"innerExtId\":\"12345_12347\"}]"
+                  },
+                  "srv": "7089_0_CMSSH378878_0_5062_0_1_1___100003687193#1#_77________{\"position\":\"23#2#4\",\"entryinfo\":\"100003687193#1#\",\"style\":\"06013\",\"sourceid\":\"77\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"378878\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 378878,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "排行榜",
+                "imageType": 1,
+                "subtitle": "跟榜购好物",
+                "moduleTitleColor": "",
+                "subtitleColor": "#FF0088,#FF2D2D",
+                "isHide": 0
+              }
+            ],
+            "tpl": "06013"
+          },
+          {
+            "realTpl": "06011",
+            "data": [
+              {
+                "img2": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t21058/262/1728009782/766175/5ead8b73/5b3353dfN0ad993f1.png!q70.jpg",
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t21790/88/496450851/111737/73976c46/5b0f9ef2N34e50c14.png!q70.jpg",
+                "skuList": [
+                  "7545792",
+                  "11542708307"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#3#1_6_1_7545792#1#$11542708307#2#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___378879_06011_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "jdreactcommon",
+                  "params": {
+                    "modulename": "JDReactShanGou",
+                    "appname": "JDReactShanGou",
+                    "innerLink": "[{\"actId\":\"1907212266\",\"biTag\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"skuId\":\"7545792\"},{\"actId\":\"1907211223\",\"biTag\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"skuId\":\"11542708307\"}]"
+                  },
+                  "srv": "7089_0_CMSSH378879_0_6175_0_1_1___7545792#1#$11542708307#2#_1________{\"position\":\"23#3#1\",\"entryinfo\":\"7545792#1#$11542708307#2#\",\"style\":\"06011\",\"sourceid\":\"1\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"378879\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 378879,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "品牌闪购",
+                "imageType": 1,
+                "subtitle": "购大牌好物  ",
+                "moduleTitleColor": "",
+                "subtitleColor": "#9552EC,#532FF3",
+                "showNameImg": "https://m.360buyimg.com/mobilecms/jfs/t17269/146/284533185/8422/4084570c/5a694edfN11981de1.png",
+                "isHide": 0
+              },
+              {
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t18586/286/973900055/300171/6fb7fe65/5ab4e04aN45b404ca.jpg!q70.jpg.dpg.webp",
+                "skuList": [
+                  "3503744"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#3#2_6_310_3503744#1#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___378880_06011_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "videolife",
+                  "params": {
+                    "id": "1135",
+                    "innerLink": "[{\"innerAnchor\":\"3503744\",\"innerExtId\":\"153497423\"}]",
+                    "entrance": "1"
+                  },
+                  "srv": "7089_0_CMSSH378880_0_8195_0_1_1___3503744#1#_310________{\"position\":\"23#3#2\",\"entryinfo\":\"3503744#1#\",\"style\":\"06011\",\"sourceid\":\"310\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"378880\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 378880,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "京东视频",
+                "imageType": 1,
+                "subtitle": "来看个购",
+                "moduleTitleColor": "",
+                "subtitleColor": "#08A4D3,#06BCBE",
+                "isHide": 0
+              },
+              {
+                "labelAnimation": "",
+                "labelWords": "",
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/n1/s240x240_jfs/t1/22868/34/10502/81284/5c870a73Ebc9bbe6c/acb5137b385857e9.png!q70.jpg",
+                "skuList": [
+                  "100002349201"
+                ],
+                "fontBold": 1,
+                "fontSize": 1,
+                "expo": "7089_23#3#3_6_424_100002349201#1#_1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794___378881_06011_",
+                "rightCorner": "",
+                "hasMaskImg": 0,
+                "sloganColor": "",
+                "jump": {
+                  "des": "jdreactcommon",
+                  "params": {
+                    "modulename": "JDReactShopAround",
+                    "param": {
+                      "page": "shopAroundPage",
+                      "transparentenable": true
+                    },
+                    "appname": "JDReactShopAround",
+                    "ishidden": true,
+                    "innerLink": "[{\"innerAnchor\":\"100002349201\",\"shopId\":\"1000002349\"}]"
+                  },
+                  "srv": "7089_0_CMSSH378881_0_8448_0_1_1___100002349201#1#_424________{\"position\":\"23#3#3\",\"entryinfo\":\"100002349201#1#\",\"style\":\"06011\",\"sourceid\":\"424\",\"biinfo\":\"1#880528d55af4825d2dbc56034e8bdd63c7e238a0-D1@Lother@602,D1@Lnicegoods@306,D1@Lflash@405,D1@Lrank@503,D1@Lseckill@205-619350#1092794\",\"moduleid\":\"378881\",\"sourcetype\":\"6\",\"floorid\":\"7089\"}"
+                },
+                "maintitleColor": "#000000,#000000",
+                "id": 378881,
+                "content": {},
+                "mAnimation": 0,
+                "slogan": "",
+                "showName": "逛好店",
+                "imageType": 1,
+                "subtitle": "好店挖掘机",
+                "moduleTitleColor": "",
+                "subtitleColor": "#F35CFC,#EC30A6",
+                "isHide": 0
+              }
+            ],
+            "tpl": "06011"
+          }
+        ],
+        "subFloorNum": 3
+      },
+      "marginColor": "",
+      "rightCornerColor": "",
+      "innnerInterval": 1,
+      "verticalInterval": 1,
+      "bottomColor": "#f8f8f8"
+    },
+    {
+      "bottomMargin": 10,
+      "curve": 0,
+      "textColor": "",
+      "logoImage": "",
+      "cornerDegree": "0,0,12,12",
+      "marginTop": 0,
+      "headType": 0,
+      "marginHorizontal": 21,
+      "bottomMarginWidth": 2,
+      "bottomMarginColor": "#f5f5f5",
+      "type": "announcement",
+      "moreJump": {
+        "des": "expressNews",
+        "params": {},
+        "srv": "6864"
+      },
+      "rightCorner": "",
+      "jump": {
+        "params": {},
+        "srv": 6864
+      },
+      "content": {
+        "announcement": [
+          {
+            "content": "小米5500mAh大电池千元机真好，还配有18W快充！",
+            "slogan": "热门",
+            "expo": "6864_24#1#1_10_214284273____1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562_375811_24_",
+            "jump": {
+              "des": "expressNews",
+              "params": {
+                "id": "646",
+                "fromName": "Home",
+                "innerLink": "[{\"innerAnchor\":\"214284273\"},{\"innerAnchor\":\"213950426\"},{\"innerAnchor\":\"213951305\"},{\"innerAnchor\":\"214170575\"}]"
+              },
+              "srv": "6864_0_CMSSH375811_0__0_1_1___214284273#1_________{\"position\":\"24#1#1\",\"style\":\"24\",\"sourceid\":\"214284273\",\"modbiinfo\":\"1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562\",\"moduleid\":\"375811\",\"sourcetype\":\"10\",\"floorid\":\"6864\"}"
+            }
+          },
+          {
+            "content": "小米深夜曝光MIX 4！比6400万和100W还凶！",
+            "slogan": "HOT",
+            "expo": "6864_24#1#2_10_213950426____1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562_375810_24_",
+            "jump": {
+              "des": "expressNews",
+              "params": {
+                "id": "646",
+                "fromName": "Home",
+                "innerLink": "[{\"innerAnchor\":\"213950426\"},{\"innerAnchor\":\"214284273\"},{\"innerAnchor\":\"213951305\"},{\"innerAnchor\":\"214170575\"}]"
+              },
+              "srv": "6864_1_CMSSH375810_0__0_1_1___213950426#2_________{\"position\":\"24#1#2\",\"style\":\"24\",\"sourceid\":\"213950426\",\"modbiinfo\":\"1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562\",\"moduleid\":\"375810\",\"sourcetype\":\"10\",\"floorid\":\"6864\"}"
+            }
+          },
+          {
+            "content": "荣耀V20再刹车！128G+4000mAh突击至冰点！",
+            "slogan": "推荐",
+            "expo": "6864_24#1#3_10_213951305____1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562_375808_24_",
+            "jump": {
+              "des": "expressNews",
+              "params": {
+                "id": "646",
+                "fromName": "Home",
+                "innerLink": "[{\"innerAnchor\":\"213951305\"},{\"innerAnchor\":\"214284273\"},{\"innerAnchor\":\"213950426\"},{\"innerAnchor\":\"214170575\"}]"
+              },
+              "srv": "6864_2_CMSSH375808_0__0_1_1___213951305#3_________{\"position\":\"24#1#3\",\"style\":\"24\",\"sourceid\":\"213951305\",\"modbiinfo\":\"1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562\",\"moduleid\":\"375808\",\"sourcetype\":\"10\",\"floorid\":\"6864\"}"
+            }
+          },
+          {
+            "content": "快淘汰的苹果仍可升级iOS13，苹果不担心新机吗？",
+            "slogan": "最新",
+            "expo": "6864_24#1#4_10_214170575____1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562_375809_24_",
+            "jump": {
+              "des": "expressNews",
+              "params": {
+                "id": "646",
+                "fromName": "Home",
+                "innerLink": "[{\"innerAnchor\":\"214170575\"},{\"innerAnchor\":\"214284273\"},{\"innerAnchor\":\"213950426\"},{\"innerAnchor\":\"213951305\"}]"
+              },
+              "srv": "6864_3_CMSSH375809_0__0_1_1___214170575#4_________{\"position\":\"24#1#4\",\"style\":\"24\",\"sourceid\":\"214170575\",\"modbiinfo\":\"1#1#ABTest-10300-G1-87-ABTest-10381-F1-27-ABTest-10180-BLS1-29-ABTest-10174-RC3-60-ABTest-10356-L1-58-ABTest-10175-M1-77&P2&1&7d3949b327b54c9b8ec4a9945a94046e#782562\",\"moduleid\":\"375809\",\"sourcetype\":\"10\",\"floorid\":\"6864\"}"
+            }
+          }
+        ],
+        "rotate": 3,
+        "newStyle": 1,
+        "img": "https://m.360buyimg.com/mobilecms/jfs/t1/15274/1/8727/4361/5c794f5bE2731b25e/bc6bdcb80b5ad748.png"
+      },
+      "innnerInterval": 0,
+      "rightCornerColor": "",
+      "marginColor": "",
+      "floorId": 6864,
+      "showName": "快报",
+      "verticalInterval": 0,
+      "floorOrder": 24,
+      "head": 0,
+      "bottomColor": "",
+      "rightCornerImg": ""
+    },
+    {
+      "bottomMargin": 20,
+      "curve": 0,
+      "textColor": "",
+      "logoImage": "https://m.360buyimg.com/mobilecms/s1125x105_jfs/t30277/190/1520196319/9083/4c75791b/5ce3d564N2fc14612.png!q70.jpg",
+      "cornerDegree": "12,12,12,12",
+      "marginTop": 10,
+      "headType": 0,
+      "marginHorizontal": 21,
+      "bottomMarginWidth": 2,
+      "bottomMarginColor": "",
+      "type": "hybrid",
+      "rightCorner": "发现更多频道",
+      "jump": {
+        "des": "jdreactcommon",
+        "params": {
+          "modulename": "JDReactChannelCenter",
+          "param": {
+            "displayVersion": "8.0.0"
+          },
+          "appname": "JDReactChannelCenter",
+          "ishidden": true
+        },
+        "srv": 6978
+      },
+      "content": {
+        "subFloors": [
+          {
+            "realTpl": "06071",
+            "data": [
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/68834/22/3117/47210/5d15bc35E0350c074/e1f36e7ad95b74a7.png!q70.jpg",
+                "expo": "6978_31#1#1_6_505_____376835_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376835,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "赚现金",
+                "hotOrder": 1,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/81840/19/3119/5646/5d15bc4bEc19fe2fd/6e575327ee6f2489.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 505,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://funearth.m.jd.com/babelDiy/bbbb/8zF4D6VX5RhsBFxkmLV7WXNk6iQ/index.html?channel=20&collectionId=505"
+                  },
+                  "srv": "6978_0_CMSSH376835_0__0_1_1____________{\"position\":\"31#1#1\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"505\",\"moduleid\":\"376835\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/22386/8/9316/42861/5c7e2209E973f57a3/b2cebcb469c45779.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#2_6_259_____376836_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376836,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "女神范",
+                "hotOrder": 2,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/31116/5/12933/5017/5cb88798E342b8e25/638e3dc9169643d8.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 259,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "jdreactcommon",
+                  "params": {
+                    "modulename": "JDReactGoddessFan",
+                    "channelId": "259",
+                    "appname": "JDReactGoddessFan",
+                    "needLogin": "0",
+                    "transparentenable": true
+                  },
+                  "srv": "6978_1_CMSSH376836_0__0_1_1____________{\"position\":\"31#1#2\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"259\",\"moduleid\":\"376836\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/66209/5/1525/53359/5cfdabd4E16266186/92909939652c5153.png!q70.jpg",
+                "expo": "6978_31#1#3_6_242_____376837_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376837,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "京东京造",
+                "hotOrder": 3,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/37422/5/3686/5249/5cbb3ba9E32c8c786/b4e75e9725134559.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 242,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "jdreactcommon",
+                  "params": {
+                    "modulename": "JDReactJingZaoHome",
+                    "appname": "JDReactJingZaoHome",
+                    "needLogin": "0"
+                  },
+                  "srv": "6978_2_CMSSH376837_0__0_1_1____________{\"position\":\"31#1#3\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"242\",\"moduleid\":\"376837\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/37007/18/3394/31642/5cb83d82E344eb78b/8eddcba760cb0df8.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#4_6_105_____376838_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376838,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "家装城",
+                "hotOrder": 4,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/47209/28/375/5917/5cd5516dE3ccbc01a/9efda400a158c316.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 105,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://pro.m.jd.com/mall/active/387eAn8NbK2b52rdJyJSGA3xpQdT/index.html?collectionId=105"
+                  },
+                  "srv": "6978_3_CMSSH376838_0__0_1_1____________{\"position\":\"31#1#4\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"105\",\"moduleid\":\"376838\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/10852/21/12909/48720/5c7df122E2addd38e/b2d37ae099893d3f.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#5_6_249_____376839_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376839,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "吃货心选",
+                "hotOrder": 5,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/35238/19/4302/4747/5cbb30aaEe2398d9f/338a3112fd446932.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 249,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://pro.m.jd.com/mall/active/43tTmWFv8cBQM6YNtJpq1gCFmCfv/index.html?collectionId=249"
+                  },
+                  "srv": "6978_4_CMSSH376839_0__0_1_1____________{\"position\":\"31#1#5\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"249\",\"moduleid\":\"376839\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/30658/17/4880/9263/5c80ebc4E4750b31d/1b46e95d5839a626.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#6_6_289_____376840_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376840,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "女装馆",
+                "hotOrder": 6,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/56017/13/224/6325/5cd3a137Eb4590a48/827242e5de597968.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 289,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://pro.m.jd.com/mall/active/DpSh7ma8JV7QAxSE2gJNro8Q2h9/index.html?collectionId=289"
+                  },
+                  "srv": "6978_5_CMSSH376840_0__0_1_1____________{\"position\":\"31#1#6\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"289\",\"moduleid\":\"376840\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t14395/289/2136829370/16427/6a19832c/5a6ee63aN2c6e1432.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#7_6_92_____376841_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376841,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "京东图书",
+                "hotOrder": 7,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/41517/11/4418/3536/5cd3a085Eab787770/2b8a43b5df30fcf4.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 92,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://pro.m.jd.com/mall/active/3u1Q7ZjCfQKrRb52c623WNf3Cjz5/index.html?collectionId=92"
+                  },
+                  "srv": "6978_6_CMSSH376841_0__0_1_1____________{\"position\":\"31#1#7\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"92\",\"moduleid\":\"376841\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/36547/35/9316/25200/5ccfe4caEf67fe4a6/d5a0b8ff066cb93a.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#8_6_268_____376842_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376842,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "企业采购",
+                "hotOrder": 8,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/67317/11/279/16706/5ce79abaEf465714d/371864dd4e77b5af.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 268,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://pro.m.jd.com/mall/active/2X5rUNyyuotyCWaf7THoGGyoCMNk/index.html?collectionId=268"
+                  },
+                  "srv": "6978_7_CMSSH376842_0__0_1_1____________{\"position\":\"31#1#8\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"268\",\"moduleid\":\"376842\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t18283/235/148322532/34257/4af080d1/5a603945N8009b0e9.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#9_6_96_____376843_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376843,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "美妆馆",
+                "hotOrder": 9,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/39487/8/179/5170/5cb887fbE46fdb397/9e53779b34c8edc8.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 96,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://pro.m.jd.com/mall/active/2kmaPNrGDNYo1LKwYtRoaSmsgbj6/index.html?collectionId=96"
+                  },
+                  "srv": "6978_8_CMSSH376843_0__0_1_1____________{\"position\":\"31#1#9\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"96\",\"moduleid\":\"376843\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              },
+              {
+                "labelColor": "",
+                "img": "https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/28699/21/10552/48954/5c88e2a6E56ef4a30/fd6a6f25afb143df.jpg!q70.jpg.dpg.webp",
+                "expo": "6978_31#1#10_6_323_____376844_06071_0#--",
+                "sloganColor": "",
+                "hasMaskImg": 0,
+                "rightCorner": "",
+                "maintitleColor": "",
+                "id": 376844,
+                "slogan": "",
+                "mAnimation": 0,
+                "showName": "白条",
+                "hotOrder": 10,
+                "channelLogo": "https://m.360buyimg.com/mobilecms/jfs/t1/35379/25/4261/5064/5cbb397dE03f9105f/4901a2167bf22f09.png",
+                "moduleTitleColor": "",
+                "subtitleColor": "#666666",
+                "labelAnimation": "",
+                "labelWords": "",
+                "channelId": 323,
+                "followText": "推荐",
+                "fontBold": 1,
+                "fontSize": 1,
+                "jump": {
+                  "des": "guanzhu",
+                  "params": {
+                    "url": "https://bt.jd.com/v3/mobile/rGuide_initGuideMobile?source=JD_H5&channelName=21&collectionId=323"
+                  },
+                  "srv": "6978_9_CMSSH376844_0__0_1_1____________{\"position\":\"31#1#10\",\"directid\":\"0#--\",\"channelType\":\"0\",\"style\":\"06071\",\"sourceid\":\"323\",\"moduleid\":\"376844\",\"sourcetype\":\"6\",\"floorid\":\"6978\"}"
+                },
+                "content": {},
+                "imageType": 1,
+                "channelFollow": 0,
+                "subtitle": "女神范",
+                "labelWordsColor": "",
+                "isHide": 0
+              }
+            ],
+            "tpl": "06071"
+          }
+        ],
+        "subFloorNum": 1
+      },
+      "innnerInterval": 1,
+      "rightCornerColor": "",
+      "marginColor": "",
+      "floorId": 6978,
+      "showName": "我的频道",
+      "verticalInterval": 0,
+      "floorOrder": 31,
+      "head": 1,
+      "bottomColor": "",
+      "rightCornerImg": "https://m.360buyimg.com/mobilecms/s39x39_jfs/t1/18200/29/10725/2430/5c88df48E36946291/a282acd8ae1d2b4d.png!q70.jpg"
+    },
+    {
+      "curve": 0,
+      "logoImage": "",
+      "cornerDegree": "12,12,12,12",
+      "param": "dataFrom=2",
+      "shareAvatar": "",
+      "shareTitle": "",
+      "img": "https://m.360buyimg.com/mobilecms/jfs/t4354/119/1137735522/221187/d4ab06e5/58be83ccN8e831a11.png!q70.jpg",
+      "marginHorizontal": 21,
+      "type": "recommend",
+      "expo": "6868_497#1#1_0_375862_____375862_21_",
+      "rightCorner": "",
+      "shareContent": "",
+      "jumpTo": "",
+      "jumpType": 2,
+      "floorId": 6868,
+      "showName": "为你推荐",
+      "floorOrder": 497,
+      "functionId": "indexRecommend",
+      "head": 0,
+      "rightCornerImg": "",
+      "bottomMargin": 10,
+      "sourceValue": "6868_0_CMSSH375862_1563699199_98",
+      "textColor": "",
+      "marginTop": 0,
+      "bottomMarginWidth": 4,
+      "headType": 0,
+      "bottomMarginColor": "#f5f5f5",
+      "url": "",
+      "jump": {
+        "params": {},
+        "srv": "6868_0_CMSSH375862_0_895191_0_1_1____________{\"position\":\"497#1#1\",\"style\":\"21\",\"sourceid\":\"375862\",\"moduleid\":\"375862\",\"sourcetype\":\"0\",\"floorid\":\"6868\"}"
+      },
+      "marginColor": "",
+      "rightCornerColor": "",
+      "innnerInterval": 1,
+      "shareUrl": "",
+      "verticalInterval": 1,
+      "isShare": 1,
+      "bottomColor": ""
+    }
+  ],
+  "toBottomBtnImg": "https://m.360buyimg.com/mobilecms/jfs/t16720/255/2479122300/6254/38f4b86d/5af962b4Nfc69fa66.png",
+  "cycNum": 1,
+  "use_new_brands": 1,
+  "alignedCurrentTime": 1563699199000,
+  "cycFirstTimeStamp": "1563699199480",
+  "searchBgImg": "",
+  "code": "0",
+  "appCenterAnimations": 1,
+  "skinSwitch": 0,
+  "lottieCartoonList": [],
+  "topIconText": 1,
+  "useComponentImg": 2,
+  "topBgImgBigColor": "",
+  "appCenterCartoonSwitch": 0,
+  "topBgImg": "",
+  "recommendAB": "B",
+  "lazy": 60,
+  "webViewFloorList": [
+    {
+      "curve": 0,
+      "showTimes": -1,
+      "logoImage": "",
+      "cornerDegree": "",
+      "passthrough": 0,
+      "marginHorizontal": 0,
+      "type": "webView",
+      "rightCorner": "",
+      "floorId": 6754,
+      "showName": "默认",
+      "moduleFunction": 1,
+      "floorOrder": 495,
+      "head": 0,
+      "resultHeight": 350,
+      "rightCornerImg": "",
+      "bottomMargin": 0,
+      "sourceValue": "CMSSH380794_0",
+      "textColor": "",
+      "marginTop": 0,
+      "bottomMarginWidth": 2,
+      "headType": 0,
+      "bottomMarginColor": "",
+      "jump": {
+        "params": {},
+        "srv": 6754
+      },
+      "marginColor": "",
+      "rightCornerColor": "",
+      "innnerInterval": 1,
+      "webViewList": [
+        {
+          "img": "https://m.360buyimg.com/mobilecms/jfs/t1/73425/26/4918/81333/5d2fe4a1Eabc8df89/d5093cfd31984f13.jpg",
+          "expo": "6754_495#1#1_0_380794_____380794_27_",
+          "wordsColor": "",
+          "jump": {
+            "des": "m",
+            "shareInfo": {},
+            "params": {
+              "needLogin": "0",
+              "url": "https://eco.m.jd.com/content/video/jump/index.html?app_home_xview=1"
+            },
+            "srv": 6754
+          }
+        }
+      ],
+      "refreshHeight": 130,
+      "verticalInterval": 1,
+      "animationTime": 0,
+      "tips": "0",
+      "bottomColor": ""
+    }
+  ]
+}
