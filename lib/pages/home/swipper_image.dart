@@ -12,15 +12,22 @@ class SwipperOptions {
 class SwipperImage extends StatelessWidget {
   final double height;
   final double width;
-  final String backgroundImageUrl;
+  final ImageProvider<dynamic> backgroundImage;
   final List<SwipperOptions> swipperOptionsList;
-  SwipperImage({ Key key, @required this.swipperOptionsList, this.height = 180, this.width = 100, this.backgroundImageUrl = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564260778041&di=035a5d4a7d370268e316035730a25a58&imgtype=0&src=http%3A%2F%2Fcdn.lizhi.fm%2Fradio_cover%2F2014%2F06%2F18%2F12383567000424964.jpg'}): super(key: key);
+  SwipperImage({ Key key, @required this.swipperOptionsList, this.height = 180, this.width = 100, this.backgroundImage}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: this.height,
       width: this.width,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: backgroundImage == null ? NetworkImage("") : backgroundImage,
+          fit: BoxFit.fitWidth,
+          alignment: Alignment.bottomCenter,
+        ),
+      ),
       child: Swiper(
         scrollDirection: Axis.horizontal,
         itemCount: this.swipperOptionsList.length,
