@@ -24,7 +24,7 @@ class ItemState extends State<Item> {
           children: <Widget>[
             Container(
               child: Image.network(
-                widget.item.itemType == 34
+                widget.item.itemType == 32
                     ? widget.item.subWareList[0].imageUrl
                     : widget.item.imageurl,
                 fit: BoxFit.fitHeight,

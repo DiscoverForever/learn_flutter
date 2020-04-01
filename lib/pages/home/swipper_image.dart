@@ -21,9 +21,9 @@ class SwipperImage extends StatelessWidget {
     return Container(
       height: this.height,
       width: this.width,
-      decoration: BoxDecoration(
+      decoration: backgroundImage == null ? null : BoxDecoration(
         image: DecorationImage(
-          image: backgroundImage == null ? NetworkImage("") : backgroundImage,
+          image: backgroundImage,
           fit: BoxFit.fitWidth,
           alignment: Alignment.bottomCenter,
         ),
@@ -33,7 +33,7 @@ class SwipperImage extends StatelessWidget {
         itemCount: this.swipperOptionsList.length,
         autoplay: true,
         // layout: SwiperLayout.DEFAULT,
-        loop: true,
+        loop: false,
         itemHeight: this.height,
         itemWidth: this.width,
         itemBuilder: (BuildContext context, int index) {

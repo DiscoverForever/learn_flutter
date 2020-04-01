@@ -15,7 +15,6 @@ import 'package:learn_flutter/utils/request_util.dart';
 import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
 import 'package:learn_flutter/bean/entity_factory.dart';
 import 'package:learn_flutter/api/api.dart';
-import 'ad.dart';
 import 'item.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -28,13 +27,20 @@ class MyHomePageState extends State<MyHomePage> {
   List<FloorModelResultContentData> floorList = [];
   List<SwipperOptions> swipperOptionsList = [];
   List<WareInfo> itemList = [];
-  String swipperBgImageUrl = "";
+  String swipperBgImageUrl;
+  bool loading = true;
   @override
   initState() {
     super.initState();
-    this.getFloorList();
-    this.getInitData();
-    this.getRecommendItemList();
+    init();
+  }
+
+  init() async {
+    loading = true;
+    await this.getFloorList();
+    await this.getInitData();
+    await this.getRecommendItemList();
+    loading = false;
   }
 
   getFloorList() async {
@@ -61,8 +67,8 @@ class MyHomePageState extends State<MyHomePage> {
             imageUrl: val['horizontalImag'],
             jumpUrl: val['jump']['params']['url']);
       });
-      this.swipperBgImageUrl = data.topBgImgBig;
-      this.swipperOptionsList = list.toList();
+      swipperBgImageUrl = data.topBgImgBig;
+      swipperOptionsList = list.toList();
     });
   }
 
@@ -70,8 +76,6 @@ class MyHomePageState extends State<MyHomePage> {
   getRecommendItemList() async {
     var res = await RequestUtil.getInstance().post(Api.recommendItemList);
     var data = EntityFactory.generateOBJ<RecommendItemResponse>(res.data);
-    print("data.wareInfoList");
-    print(data.wareInfoList);
     this.setState(() {
       this.itemList = data.wareInfoList;
     });
@@ -80,7 +84,7 @@ class MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: loading ? Center(child: CircularProgressIndicator()) : Column(
         children: <Widget>[
           Expanded(
             child: CustomScrollView(
