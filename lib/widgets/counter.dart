@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/utils/color_util.dart';
 
 class Counter extends StatefulWidget {
@@ -61,7 +60,6 @@ class _CounterState extends State<Counter> {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: ColorUtil.hexToColor("#F2F2F2"),
-                contentPadding: EdgeInsets.all(2),
                 border: InputBorder.none,
                 counterText: "",
               ),
