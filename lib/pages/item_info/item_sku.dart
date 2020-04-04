@@ -4,8 +4,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
 import 'package:learn_flutter/pages/item_info/cholice_chip_select.dart';
 import 'package:learn_flutter/utils/color_util.dart';
+import 'package:learn_flutter/widgets/counter.dart';
 
-import 'counter.dart';
 
 class ItemSku extends StatefulWidget {
   final ItemInfoResponseFloorsData item;
