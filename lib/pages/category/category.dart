@@ -1,16 +1,18 @@
+import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/pages/category/master_category.dart';
 import 'package:learn_flutter/pages/category/subcategory.dart';
-import 'package:learn_flutter/pages/category/subcategory_item.dart';
 import 'package:learn_flutter/service/category_service.dart';
-
+import 'package:flutter/services.dart';
 class Category extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => CategoryState();
 }
 
 class CategoryState extends State<Category> {
+  String barcode = "";
   @override
   void initState() {
     super.initState();
@@ -32,7 +34,10 @@ class CategoryState extends State<Category> {
             Icons.crop_free,
             color: Color(0xFF787878),
           ),
-          onPressed: () {},
+          onPressed: () {
+            Fluttertoast.showToast(msg: "test");
+            scanQRCode();
+          },
         ),
         title: Container(
           height: 40,
@@ -75,5 +80,28 @@ class CategoryState extends State<Category> {
         ],
       ),
     );
+  }
+
+  /*
+   * 扫描二维码
+   */
+  scanQRCode() async {
+    try {
+      String barcode = await BarcodeScanner.scan();
+      Fluttertoast.showToast(msg: barcode);
+      setState(() => this.barcode = barcode);
+    } on PlatformException catch (e) {
+      if (e.code == BarcodeScanner.CameraAccessDenied) {
+        setState(() {
+          this.barcode = 'The user did not grant the camera permission!';
+        });
+      } else {
+        setState(() => this.barcode = 'Unknown error: $e');
+      }
+    } on FormatException{
+      setState(() => this.barcode = 'null (User returned using the "back"-button before scanning anything. Result)');
+    } catch (e) {
+      setState(() => this.barcode = 'Unknown error: $e');
+    }
   }
 }
