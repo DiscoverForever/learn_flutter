@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/bean/shopcart/shopcart_response_entity.dart';
-import 'package:learn_flutter/pages/item_info/counter.dart';
 import 'package:learn_flutter/widgets/countdown.dart';
+import 'package:learn_flutter/widgets/counter.dart';
 import 'package:learn_flutter/widgets/round_checkbox.dart';
 import 'package:learn_flutter/widgets/tag.dart';
 
@@ -46,35 +46,10 @@ class _ShopcartCardState extends State<ShopcartCard> {
    * 商品 
    */
   product(ShopcartResponseCartinfoVendorsSorted sorted, { ShopcartResponseCartinfoVendorsSorted otherData }) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Column(
       children: <Widget>[
-        Container(
-          alignment: Alignment.centerLeft,
-          margin: EdgeInsets.only(top: 80),
-          width: 30,
-          child: RoundCheckbox(
-            value: isCheck,
-            backgroundColor: Colors.white,
-            activeColor: Color(0xFFE23C29),
-            checkColor: Colors.white,
-            activeBorderColor: Color(0xFFE23C29),
-            onChanged: (status) {
-              setState(() {
-                isCheck = status;
-              });
-            },
-          ),
-        ),
-        Expanded(
-          flex: 1,
-          child: Column(
-            children: <Widget>[
-              cardSubheader(sorted, otherData: otherData),
-              cardBody(sorted),
-            ],
-          ),
-        ),
+        cardSubheader(sorted, otherData: otherData),
+        cardBody(sorted),
       ],
     );
   }
@@ -124,16 +99,19 @@ class _ShopcartCardState extends State<ShopcartCard> {
   }
 
   cardSubheader(ShopcartResponseCartinfoVendorsSorted item, { ShopcartResponseCartinfoVendorsSorted otherData }) {
-    return Column(children: <Widget>[
-      Offstage(
-        offstage: item?.item?.secKillEndCountdown == null,
-        child: secKill(item?.item?.secKillEndCountdown),
-      ),
-      Offstage(
-        offstage: otherData?.item?.sType != 16,
-        child: redemption(otherData?.item),
-      ),
-    ]);
+    return Container(
+      margin: EdgeInsets.only(left: 30),
+      child: Column(children: <Widget>[
+        Offstage(
+          offstage: item?.item?.secKillEndCountdown == null,
+          child: secKill(item?.item?.secKillEndCountdown),
+        ),
+        Offstage(
+          offstage: otherData?.item?.sType != 16,
+          child: redemption(otherData?.item),
+        ),
+      ]),
+    );
   }
 
   /*
@@ -146,15 +124,15 @@ class _ShopcartCardState extends State<ShopcartCard> {
       child: Row(
         children: <Widget>[
           Tag(
-            height: 14,
+            height: 12,
             padding: EdgeInsets.only(left: 1, right: 1),
             margin: EdgeInsets.only(right: 5),
             text: Text(
               item?.suitLabel == null ? "" : item?.suitLabel,
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 10,
-                height: 0.95,
+                fontSize: 8,
+                height: 1.1,
               ),
             ),
             color: Colors.red,
@@ -205,11 +183,12 @@ class _ShopcartCardState extends State<ShopcartCard> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(left: 5),
+                margin: EdgeInsets.only(left: 5, right: 5),
                 child: Text(
                   " 距离活动结束时间结束还剩",
                   style: TextStyle(
                     fontSize: 12,
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -230,20 +209,43 @@ class _ShopcartCardState extends State<ShopcartCard> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
+            alignment: Alignment.centerLeft,
+            width: 30,
+            height: 100,
+            child: RoundCheckbox(
+              value: isCheck,
+              backgroundColor: Colors.white,
+              activeColor: Color(0xFFE23C29),
+              checkColor: Colors.white,
+              activeBorderColor: Color(0xFFE23C29),
+              onChanged: (status) {
+                setState(() {
+                  isCheck = status;
+                });
+              },
+            ),
+          ),
+          Container(
             alignment: Alignment.topCenter,
             margin: EdgeInsets.only(left: 0, right: 10),
+            width: 100,
+            height: 100,
             decoration: BoxDecoration(
               color: Colors.white,
+              borderRadius: BorderRadius.circular(5),
               boxShadow: <BoxShadow>[
                 BoxShadow(
-                    color: Colors.black12, blurRadius: 10, spreadRadius: 1),
+                    color: Color(0xFFF2F2F2), blurRadius: 10, spreadRadius: 1),
               ],
             ),
-            child: Image.network(
-              "https://img30.360buyimg.com/test/${item?.item?.imgUrl}",
-              width: 85,
-              height: 85,
-            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(5),
+              child: Image.network(
+                "https://img30.360buyimg.com/test/${item?.item?.imgUrl}",
+                width: 100,
+                height: 100,
+              ),
+            )
           ),
           Expanded(
             flex: 1,
@@ -253,7 +255,7 @@ class _ShopcartCardState extends State<ShopcartCard> {
                 Row(
                   children: <Widget>[
                     Container(
-                      width: MediaQuery.of(context).size.width - 80 - 30 - 50,
+                      width: MediaQuery.of(context).size.width - 80 - 30 - 60,
                       child: Text(
                         item?.item?.name,
                         maxLines: 2,
