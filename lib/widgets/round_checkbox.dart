@@ -67,7 +67,7 @@ class _RoundCheckboxState extends State<RoundCheckbox> {
             ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black12,
+                color: Color(0xFFF2F2F2),
                 offset: Offset(0, 0), //阴影xy轴偏移量
                 blurRadius: 10.0, //阴影模糊程度
                 spreadRadius: widget.elevation, //阴影扩散程度
