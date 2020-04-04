@@ -5,10 +5,12 @@ import 'package:flutter/material.dart';
 class Countdown extends StatefulWidget {
   final int timeLeft;
   final DateTime endTime;
+  final double height;
   Countdown({
     Key key,
     this.timeLeft = 0,
     this.endTime,
+    this.height = 14,
   }) : super(key: key);
   @override
   _CountdownState createState() => _CountdownState();
@@ -40,19 +42,19 @@ class _CountdownState extends State<Countdown> {
     var minute = ((time % 3600) ~/ 60).toString();
     var second = (time % 60).toString();
     return Container(
-      width: 100,
-      height: 14,
+      height: widget.height,
+      alignment: Alignment.center,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
-            height: 14,
             width: 20,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.black26,
+                width: 1,
               ),
               borderRadius: BorderRadius.circular(2),
             ),
@@ -60,23 +62,23 @@ class _CountdownState extends State<Countdown> {
               hour.length == 2 ? hour : "0$hour",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 12,
-                height: 0.8,
+                fontSize: 10,
                 fontWeight: FontWeight.bold,
+                height: 1,
               ),
             ),
           ),
           Text(
             ":",
-            style: TextStyle(height: 0.6),
+            style: TextStyle(height: 1, fontSize: 12),
           ),
           Container(
-            height: 14,
             width: 20,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.black26,
+                width: 1,
               ),
               borderRadius: BorderRadius.circular(2),
             ),
@@ -84,23 +86,23 @@ class _CountdownState extends State<Countdown> {
               minute.length == 2 ? minute : "0$minute",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 12,
-                height: 0.8,
+                fontSize: 10,
                 fontWeight: FontWeight.bold,
+                height: 1,
               ),
             ),
           ),
           Text(
             ":",
-            style: TextStyle(height: 0.6),
+            style: TextStyle(height: 1, fontSize: 12),
           ),
           Container(
-            height: 14,
             width: 20,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.black26,
+                width: 1,
               ),
               borderRadius: BorderRadius.circular(2),
             ),
@@ -108,9 +110,9 @@ class _CountdownState extends State<Countdown> {
               second.length == 2 ? second : "0$second",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 12,
-                height: 0.8,
+                fontSize: 10,
                 fontWeight: FontWeight.bold,
+                height: 1,
               ),
             ),
           ),
