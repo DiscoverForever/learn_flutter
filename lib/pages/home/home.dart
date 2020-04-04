@@ -37,13 +37,11 @@ class MyHomePageState extends State<MyHomePage> {
 
   init() async {
     loading = true;
-    await this.getFloorList();
-    await this.getInitData();
-    await this.getRecommendItemList();
+    await Future.wait(<Future>[getFloorList(), getInitData(), getRecommendItemList()]);
     loading = false;
   }
 
-  getFloorList() async {
+  Future getFloorList() async {
     try {
       var response = await RequestUtil.getInstance().post(Api.appCenterInfo);
       this.setState(() {
@@ -56,7 +54,7 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   /// 获取初始化数据
-  getInitData() async {
+  Future getInitData() async {
     var response = await RequestUtil.getInstance().post(Api.home);
     var data = EntityFactory.generateOBJ<WelcomeHome>(response.data);
     this.setState(() {
@@ -73,7 +71,7 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   /// 获取商品推荐列表
-  getRecommendItemList() async {
+  Future getRecommendItemList() async {
     var res = await RequestUtil.getInstance().post(Api.recommendItemList);
     var data = EntityFactory.generateOBJ<RecommendItemResponse>(res.data);
     this.setState(() {
