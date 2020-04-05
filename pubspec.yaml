@@ -26,7 +26,7 @@ dependencies:
   # 轮播插件
   flutter_swiper: ^1.1.6
   # toast
-  fluttertoast: ^2.1.1
+  fluttertoast: ^4.0.1
   # 网络请求
   dio: ^2.1.13
   # webview
@@ -35,7 +35,7 @@ dependencies:
   webview_flutter: ^0.3.19
   json_annotation: ^2.0.0
   # 城市选择器
-  city_pickers: ^0.0.1
+  city_pickers: ^0.1.30
   # 扫描插件
   barcode_scan: ^2.0.1
 dev_dependencies:
