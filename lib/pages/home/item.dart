@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/bean/item/recommend_item_response.dart';
+import 'package:learn_flutter/pages/item_info/index.dart';
 
 class Item extends StatefulWidget {
   final WareInfo item;
@@ -9,11 +11,20 @@ class Item extends StatefulWidget {
 }
 
 class ItemState extends State<Item> {
+//  Widget buildTransitions(BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation, Widget child) {
+//    final PageTransitionsTheme theme = Theme.of(context).pageTransitionsTheme;
+//    return theme.buildTransitions<T>(this, context, animation, secondaryAnimation, child);
+//  }
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushNamed("/item_info", arguments: widget.item.wareId);
+        Navigator.push(context, CupertinoPageRoute(
+          builder: (context) {
+            return ItemInfo();
+          }
+        ));
+//        Navigator.of(context).pushNamed("/item_info", arguments: widget.item.wareId);
       },
       child: Container(
         decoration: BoxDecoration(

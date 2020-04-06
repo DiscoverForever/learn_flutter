@@ -47,6 +47,12 @@ class _WebViewPageState extends State<WebViewPage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
+        leading: GestureDetector(
+          child: Icon(Icons.navigate_before),
+          onTap: () {
+            Navigator.of(context).pop();
+          },
+        ),
         title: Text(title, style: TextStyle(color: Colors.black)),
         centerTitle: true,
         // This drop down menu demonstrates that Flutter widgets can be shown over the web view.

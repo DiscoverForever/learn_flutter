@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/api/api.dart';
 import 'package:learn_flutter/bean/entity_factory.dart';
 import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
@@ -10,7 +9,6 @@ import 'package:learn_flutter/pages/item_info/swipper_item.dart' as SW;
 import 'package:learn_flutter/pages/item_info/swipper_item.dart';
 import 'package:learn_flutter/utils/color_util.dart';
 import 'package:learn_flutter/utils/request_util.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 import 'item_order.dart';
 import 'item_rank.dart';
@@ -94,12 +92,13 @@ class _ItemInfoState extends State<ItemInfo> with TickerProviderStateMixin {
                           // 商品详情
                           Container(
                             width: MediaQuery.of(context).size.width,
-                            height: 10800,
-                            child: WebView(
-                              javascriptMode: JavascriptMode.unrestricted,
-                              initialUrl:
-                                  "https://in.m.jd.com/product/detail/100009177424.html",
-                            ),
+                            // TODO Android 超过5500高度会黑屏崩溃
+                            height: 5500,
+//                            child: WebView(
+//                              javascriptMode: JavascriptMode.unrestricted,
+//                              initialUrl:
+//                                  "https://in.m.jd.com/product/detail/100009177424.html",
+//                            ),
                           ),
                         ],
                       ),
