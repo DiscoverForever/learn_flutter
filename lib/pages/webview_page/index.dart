@@ -43,6 +43,8 @@ class _WebViewPageState extends State<WebViewPage> {
 
   @override
   Widget build(BuildContext context) {
+    print('url=====');
+    print(ModalRoute.of(context).settings.arguments);
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(

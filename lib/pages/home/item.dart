@@ -19,12 +19,7 @@ class ItemState extends State<Item> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, CupertinoPageRoute(
-          builder: (context) {
-            return ItemInfo();
-          }
-        ));
-//        Navigator.of(context).pushNamed("/item_info", arguments: widget.item.wareId);
+       Navigator.of(context).pushNamed("/item_info", arguments: widget.item.wareId);
       },
       child: Container(
         decoration: BoxDecoration(
