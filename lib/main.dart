@@ -2,11 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:leancloud_storage/leancloud.dart';
+import 'package:learn_flutter/leancloud_config.dart';
 import 'package:learn_flutter/pages/home/index.dart';
 import 'package:learn_flutter/pages/item_info/index.dart';
 import 'package:learn_flutter/pages/login/login.dart';
 import 'package:learn_flutter/pages/mine/index.dart';
 import 'package:learn_flutter/pages/movie/movie.dart';
+import 'package:learn_flutter/pages/settings/settings.dart';
 import 'package:learn_flutter/pages/webview_page/index.dart';
 
 void main() {
@@ -14,8 +16,9 @@ void main() {
   return runApp(MyApp());
 }
 
+/// 初始化LeanCloud
 initLeancloud() {
-  LeanCloud.initialize();
+  LeanCloud.initialize(LeanCloudConfig.APP_ID, LeanCloudConfig.APP_KEY, server: LeanCloudConfig.SERVER);
 }
 
 class MyApp extends StatelessWidget {
@@ -25,6 +28,7 @@ class MyApp extends StatelessWidget {
     '/movie': (context, settings) => Movie(),
     '/mine': (context, settings) => Mine(),
     '/item_info': (context, settings) => ItemInfo(),
+    '/settings': (context, settings) => Settings(),
     '/webview': (context, settings) =>
         WebViewPage(url: (settings.arguments as Map<String, String>)['url'])
   };

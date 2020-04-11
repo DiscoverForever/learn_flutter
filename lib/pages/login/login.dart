@@ -23,6 +23,9 @@ class LoginState extends State<Login> {
         iconTheme: IconThemeData(color: Colors.black54),
         leading: GestureDetector(
           child: Icon(Icons.close),
+          onTap: () {
+            Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
+          },
         ),
         actions: <Widget>[
           Container(
