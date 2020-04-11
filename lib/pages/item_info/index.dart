@@ -45,16 +45,18 @@ class _ItemInfoState extends State<ItemInfo> with TickerProviderStateMixin {
               children: <Widget>[
                 NotificationListener<ScrollNotification>(
                   onNotification: (ScrollNotification notification) {
-                    var scrollY = notification.metrics.pixels;
-                    if (scrollY > 0) {
-                      var opacity = scrollY / 230;
-                      setState(() {
-                        appBarOpacity = opacity <= 1 ? opacity : 1;
-                      });
-                    } else if (scrollY < 0) {
-                      setState(() {
-                        appBarOpacity = 0;
-                      });
+                    if (notification.metrics.axis == Axis.vertical) {
+                      var scrollY = notification.metrics.pixels;
+                      if (scrollY > 0) {
+                        var opacity = scrollY / 230;
+                        setState(() {
+                          appBarOpacity = opacity <= 1 ? opacity : 1;
+                        });
+                      } else if (scrollY < 0) {
+                        setState(() {
+                          appBarOpacity = 0;
+                        });
+                      }
                     }
                     return false;
                   },
