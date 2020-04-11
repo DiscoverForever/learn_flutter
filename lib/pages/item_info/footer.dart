@@ -11,14 +11,12 @@ class Footer extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border(
-          top: BorderSide(
-            color: ColorUtil.hexToColor("#999"),
-            width: 0.2,
-          )
-        ),
+            top: BorderSide(
+          color: ColorUtil.hexToColor("#999"),
+          width: 0.2,
+        )),
       ),
-      child: Flex(
-        direction: Axis.horizontal,
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
@@ -66,43 +64,38 @@ class Footer extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Container(
-              alignment: Alignment.centerRight,
               margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                    child: FlatButton(
-                      color: Colors.red,
-                      highlightColor: Colors.blue[700],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0)),
-                      child: Text(
-                        "加入购物车",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                      onPressed: () {},
-                    ),
+              child: FlatButton(
+                color: Colors.red,
+                highlightColor: Colors.blue[700],
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0)),
+                child: Text(
+                  "加入购物车",
+                  style: TextStyle(
+                    color: Colors.white,
                   ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                    child: FlatButton(
-                      color: Colors.orange,
-                      highlightColor: Colors.blue[700],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0)),
-                      child: Text(
-                        "立即购买",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                      onPressed: () {},
-                    ),
+                ),
+                onPressed: () {},
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+              child: FlatButton(
+                color: Colors.orange,
+                highlightColor: Colors.blue[700],
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0)),
+                child: Text(
+                  "立即购买",
+                  style: TextStyle(
+                    color: Colors.white,
                   ),
-                ],
+                ),
+                onPressed: () {},
               ),
             ),
           ),
