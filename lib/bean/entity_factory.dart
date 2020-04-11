@@ -7,6 +7,7 @@ import 'package:learn_flutter/bean/category/category_entity.dart';
 import 'package:learn_flutter/bean/floor/floor_model_entity.dart';
 import 'package:learn_flutter/bean/item/recommend_item_response.dart';
 import 'package:learn_flutter/bean/item_info/item_info_response_entity.dart';
+import 'package:learn_flutter/bean/settings/settings_response_entity.dart';
 import 'package:learn_flutter/bean/shopcart/shopcart_response_entity.dart';
 import 'package:learn_flutter/bean/user/user_info_response_entity.dart';
 
@@ -33,6 +34,8 @@ class EntityFactory {
       return ItemInfoResponseEntity.fromJson(json) as T;
     } else if (T.toString() == "CategoryResponseEntity") {
       return CategoryResponseEntity.fromJson(json) as T;
+    } else if (T.toString() == "SettingsResponseEntity") {
+      return SettingsResponseEntity().fromJson(json) as T;
     } else if (T.toString() == "ShopcartResponseEntity") {
       return ShopcartResponseEntity.fromJson(json) as T;
     } else {

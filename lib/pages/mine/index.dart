@@ -111,15 +111,20 @@ class _State extends State<Mine> with TickerProviderStateMixin {
                     )
                   : Container(),
               actions: <Widget>[
-                Container(
-                  alignment: Alignment.center,
-                  child: Text(
-                    "设置",
-                    style: TextStyle(
-                      color: appBarOpacity == 1 ? Colors.black : Colors.white,
-                      fontSize: 14,
+                GestureDetector(
+                  child: Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "设置",
+                      style: TextStyle(
+                        color: appBarOpacity == 1 ? Colors.black : Colors.white,
+                        fontSize: 14,
+                      ),
                     ),
                   ),
+                  onTap: () {
+                    Navigator.of(context).pushNamed('/settings');
+                  },
                 ),
                 IconButton(
                   icon: Icon(
