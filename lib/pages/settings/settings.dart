@@ -32,6 +32,7 @@ class _SettingsState extends State<Settings> {
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
+        brightness: Brightness.light,
         elevation: 0,
       ),
       body: settings == null
@@ -48,7 +49,13 @@ class _SettingsState extends State<Settings> {
                             'settingsUserInfo_flo_388',
                             'settingsFloors_flo_389'
                           ].contains(item.bId))
-                      .map((item) => _settingCard(item.data.nodes))
+                      .map(
+                        (item) => _settingCard(
+                          item.data.nodes,
+                          onTap: (item) => Navigator.of(context)
+                              .pushNamed('/general_settings'),
+                        ),
+                      )
                       .toList(),
                   GestureDetector(
                     child: Container(
@@ -93,7 +100,7 @@ class _SettingsState extends State<Settings> {
                   'https://storage.360buyimg.com/i.imageUpload/494dccc6eedad0a1b1a631353834363036343330373230_big.jpg',
                   scale: 1.8),
             ),
-            title: Text('Flutter Admin'),
+            title: Text('Flutter Admin', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
             subtitle: Text('用户名: Flutter Admin'),
             trailing: Icon(Icons.navigate_next),
           ),
@@ -102,7 +109,7 @@ class _SettingsState extends State<Settings> {
             child: ListTile(
               title: Text(address.nodes.first != null
                   ? address.nodes.first.title.value
-                  : ''),
+                  : '', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
               trailing: Icon(Icons.navigate_next),
             ),
           ),
@@ -111,23 +118,26 @@ class _SettingsState extends State<Settings> {
     );
   }
 
-  _settingCard(List<SettingsResponseFloorsDataNode> nodes) {
+  _settingCard(List<SettingsResponseFloorsDataNode> nodes,
+      {void Function(SettingsResponseFloorsDataNode) onTap}) {
     return Container(
       margin: EdgeInsets.only(top: 15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
       ),
-      child: ListView.builder(
+      child: ListView.separated(
+        separatorBuilder: (context, index) => Divider(height: 1,),
         physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         itemCount: nodes.length,
         padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text(nodes[index].title.value),
+            title: Text(nodes[index].title.value, style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold, fontFamily: 'PingFang', color: Colors.black)),
             subtitle: Text(nodes[index].subtitle.value),
             trailing: Icon(Icons.navigate_next),
+            onTap: () => onTap(nodes[index]),
           );
         },
       ),
