@@ -18,6 +18,10 @@ class GeneralSettings extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(children: <Widget>[
             ListTile(
+              title: Text('夜间模式', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+              trailing: Switch(value: true, activeColor: Colors.red, onChanged: (status) {}),
+            ),
+            ListTile(
               title: Text('消息推送设置', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
               trailing: Icon(Icons.navigate_next),
             ),
