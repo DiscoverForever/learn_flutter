@@ -42,6 +42,8 @@ dependencies:
   leancloud_storage: ^0.2.3
   # 官方缓存插件
   shared_preferences: ^0.5.6
+  # provide
+  provide: ^1.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
