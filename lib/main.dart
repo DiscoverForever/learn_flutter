@@ -10,15 +10,28 @@ import 'package:learn_flutter/pages/mine/index.dart';
 import 'package:learn_flutter/pages/movie/movie.dart';
 import 'package:learn_flutter/pages/settings/settings.dart';
 import 'package:learn_flutter/pages/webview_page/index.dart';
+import 'package:provide/provide.dart';
+
+import 'model/counter.dart';
 
 void main() {
+  var counter = Counter(0);
+  final providers = Providers()..provide(Provider<Counter>.value(counter));
+  // 级联操作符 等同于
+  // var providers = Providers();
+  // providers.provide(Provider<Counter>.value(counter));
+
   initLeancloud();
-  return runApp(MyApp());
+  return runApp(ProviderNode(
+    child: MyApp(),
+    providers: providers,
+  ));
 }
 
 /// 初始化LeanCloud
 initLeancloud() {
-  LeanCloud.initialize(LeanCloudConfig.APP_ID, LeanCloudConfig.APP_KEY, server: LeanCloudConfig.SERVER);
+  LeanCloud.initialize(LeanCloudConfig.APP_ID, LeanCloudConfig.APP_KEY,
+      server: LeanCloudConfig.SERVER);
 }
 
 class MyApp extends StatelessWidget {

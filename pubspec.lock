@@ -394,6 +394,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.4.0"
+  provide:
+    dependency: "direct main"
+    description:
+      name: provide
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.2"
   pub_semver:
     dependency: transitive
     description:
@@ -416,7 +423,7 @@ packages:
     source: hosted
     version: "2.0.5"
   shared_preferences:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: shared_preferences
       url: "https://pub.flutter-io.cn"
