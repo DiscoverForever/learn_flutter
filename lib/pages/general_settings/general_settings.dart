@@ -8,11 +8,9 @@ class GeneralSettings extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFFF6F6F6),
       appBar: AppBar(
-        title: Text('通用', style: TextStyle(color: Colors.black)),
+        title: Text('通用'),
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.black),
-        backgroundColor: Colors.white,
-        brightness: Brightness.light,
         elevation: 0,
       ),
       body: Container(

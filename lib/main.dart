@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:leancloud_storage/leancloud.dart';
 import 'package:learn_flutter/leancloud_config.dart';
+import 'package:learn_flutter/model/counter.dart';
+import 'package:learn_flutter/model/global.dart';
 import 'package:learn_flutter/pages/general_settings/general_settings.dart';
 import 'package:learn_flutter/pages/home/index.dart';
 import 'package:learn_flutter/pages/item_info/index.dart';
@@ -12,11 +14,12 @@ import 'package:learn_flutter/pages/settings/settings.dart';
 import 'package:learn_flutter/pages/webview_page/index.dart';
 import 'package:provide/provide.dart';
 
-import 'model/counter.dart';
 
 void main() {
   var counter = Counter(0);
-  final providers = Providers()..provide(Provider<Counter>.value(counter));
+  final providers = Providers()
+    ..provide(Provider<Counter>.value(counter))
+    ..provide(Provider<Global>.value(Global()));
   // 级联操作符 等同于
   // var providers = Providers();
   // providers.provide(Provider<Counter>.value(counter));
@@ -49,15 +52,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return Provide<Global>(
+      builder: (context, child, global) => MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'PingFang',
-      ),
+      theme: global.themeData,
       home: Index(),
+      themeMode: ThemeMode.dark,
       onGenerateRoute: _onGenerateRoute,
+    ),
     );
+    // return MaterialApp(
+    //   title: 'Flutter Demo',
+    //   theme: ThemeData(
+    //     primarySwatch: Colors.blue,
+    //     fontFamily: 'PingFang',
+    //   ),
+    //   home: Index(),
+    //   onGenerateRoute: _onGenerateRoute,
+    // );
   }
 
   Route<dynamic> _onGenerateRoute(RouteSettings settings) {
