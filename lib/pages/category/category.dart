@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/pages/category/master_category.dart';
+import 'package:learn_flutter/pages/category/search_delegate.dart';
 import 'package:learn_flutter/pages/category/subcategory.dart';
 import 'package:learn_flutter/service/category_service.dart';
 import 'package:flutter/services.dart';
+
 class Category extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => CategoryState();
@@ -45,6 +47,9 @@ class CategoryState extends State<Category> {
               borderRadius: BorderRadius.all(Radius.circular(50)),
               color: Color(0xFFf8f8f8)),
           child: TextField(
+            onTap: () {
+              showSearch(context: context, delegate: SearchBarDelegate());
+            },
             decoration: InputDecoration(
               hintText: '遇见更好的自己',
               hintStyle: TextStyle(
@@ -98,10 +103,12 @@ class CategoryState extends State<Category> {
       } else {
         setState(() => this.barcode = 'Unknown error: $e');
       }
-    } on FormatException{
-      setState(() => this.barcode = 'null (User returned using the "back"-button before scanning anything. Result)');
+    } on FormatException {
+      setState(() => this.barcode =
+          'null (User returned using the "back"-button before scanning anything. Result)');
     } catch (e) {
       setState(() => this.barcode = 'Unknown error: $e');
     }
   }
 }
+
