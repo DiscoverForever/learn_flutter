@@ -10,6 +10,7 @@ import 'package:learn_flutter/pages/item_info/index.dart';
 import 'package:learn_flutter/pages/login/login.dart';
 import 'package:learn_flutter/pages/mine/index.dart';
 import 'package:learn_flutter/pages/movie/movie.dart';
+import 'package:learn_flutter/pages/order_list/order_list.dart';
 import 'package:learn_flutter/pages/settings/settings.dart';
 import 'package:learn_flutter/pages/webview_page/index.dart';
 import 'package:provide/provide.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
     '/item_info': (context, settings) => ItemInfo(),
     '/settings': (context, settings) => Settings(),
     '/general_settings': (context, settings) => GeneralSettings(),
+    '/order_list': (context, settings) => OrderList(),
     '/webview': (context, settings) =>
         WebViewPage(url: (settings.arguments as Map<String, String>)['url'])
   };
