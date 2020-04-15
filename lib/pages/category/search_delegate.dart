@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/widgets/tag.dart';
 
 class SearchBarDelegate extends SearchDelegate<String> {
   var searchList = [
@@ -12,12 +13,10 @@ class SearchBarDelegate extends SearchDelegate<String> {
   ];
 
   var recentList = [
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
+    "2",
+    "3",
+    "4",
+    "5",
     "1",
   ];
 
@@ -70,30 +69,30 @@ class SearchBarDelegate extends SearchDelegate<String> {
   // 输入时的推荐及搜索结果
   @override
   Widget buildSuggestions(BuildContext context) {
-    final suggestionList = query.isEmpty
-        ? recentList
-        : searchList.where((input) => input.startsWith(query)).toList();
-    return ListView.builder(
-      itemCount: suggestionList.length,
-      itemBuilder: (context, index) {
-        // 创建一个富文本，匹配的内容特别显示
-        return ListTile(
-          title: RichText(
-              text: TextSpan(
-            text: suggestionList[index].substring(0, query.length),
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-            children: [
-              TextSpan(
-                  text: suggestionList[index].substring(query.length),
-                  style: TextStyle(color: Colors.grey))
-            ],
-          )),
-          onTap: () {
-            query = suggestionList[index];
-            Scaffold.of(context).showSnackBar(SnackBar(content: Text(query)));
-          },
-        );
-      },
+    
+    return Container(
+      margin: EdgeInsets.all(10),
+      child: GridView.count(
+      crossAxisCount: 5,
+      childAspectRatio: 3,
+      mainAxisSpacing: 5,
+      crossAxisSpacing: 5,
+      children: <Widget>[
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+        Tag(text: Text('iphone'), borderColor: Colors.transparent, color: Colors.grey,),
+      ],
+    ),
     );
+  }
+
+  @override
+  ThemeData appBarTheme(BuildContext context) {
+    return super.appBarTheme(context);
   }
 }
