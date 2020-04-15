@@ -23,10 +23,13 @@ class OrderCard extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: Text(
-                    'xxxxx旗舰店',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
+                  child: Row(children: <Widget>[
+                    Text(
+                      'xxxxx旗舰店',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Icon(Icons.navigate_next, size: 16,)
+                  ]),
                 ),
                 Container(
                   width: 60,
@@ -61,8 +64,10 @@ class OrderCard extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       child: Image.network(
-                        'https://m.360buyimg.com/mobilecms/s800x800_jfs/t1/86172/23/15312/132452/5e6e1185E709e5398/0f1eff851a27b570.jpg!q70.dpg.webp'),
-                        margin: index == 4 ? EdgeInsets.only(right: 80) : EdgeInsets.zero,
+                          'https://m.360buyimg.com/mobilecms/s800x800_jfs/t1/86172/23/15312/132452/5e6e1185E709e5398/0f1eff851a27b570.jpg!q70.dpg.webp'),
+                      margin: index == 4
+                          ? EdgeInsets.only(right: 80)
+                          : EdgeInsets.zero,
                     );
                   },
                 ),
@@ -74,11 +79,13 @@ class OrderCard extends StatelessWidget {
                   width: 0,
                   height: 80,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: <BoxShadow>[
-                      BoxShadow(color: Colors.black, spreadRadius: 1, blurRadius: 10)
-                    ]
-                  ),
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: <BoxShadow>[
+                        BoxShadow(
+                            color: Colors.black,
+                            spreadRadius: 1,
+                            blurRadius: 10)
+                      ]),
                 ),
               ),
               Positioned(

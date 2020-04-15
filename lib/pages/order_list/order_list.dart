@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/pages/order_list/order_card.dart';
 
@@ -15,6 +16,21 @@ class _OrderListState extends State<OrderList> with TickerProviderStateMixin {
       appBar: AppBar(
         title: Text('我的订单'),
         elevation: 0,
+        actions: <Widget>[
+          Container(
+            margin: EdgeInsets.only(left: 5, right: 5),
+            child: Icon(Icons.view_quilt, color: Colors.black),
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 5, right: 5),
+            child: Icon(Icons.search, color: Colors.black),
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 5, right: 5),
+            child: Icon(Icons.message, color: Colors.black),
+          ),
+        ],
+        centerTitle: true,
         bottom: TabBar(
           indicatorSize: TabBarIndicatorSize.label,
           indicator: UnderlineTabIndicator(
