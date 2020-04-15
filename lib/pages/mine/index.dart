@@ -63,6 +63,9 @@ class _State extends State<Mine> with TickerProviderStateMixin {
                           ),
                           UserOrder(
                             orderList: snapshot.data.floors[0]?.data?.orderList,
+                            onTap: () {
+                              Navigator.of(context).pushNamed('/order_list');
+                            },
                           ),
                           UserWallet(
                             walletList:

@@ -68,6 +68,20 @@ class OrderCard extends StatelessWidget {
                 ),
               ),
               Positioned(
+                top: 10,
+                right: 80,
+                child: Container(
+                  width: 0,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: <BoxShadow>[
+                      BoxShadow(color: Colors.black, spreadRadius: 1, blurRadius: 10)
+                    ]
+                  ),
+                ),
+              ),
+              Positioned(
                 right: 0,
                 top: 0,
                 child: Container(
@@ -76,11 +90,11 @@ class OrderCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Color.fromRGBO(255, 255, 255, 0.96),
+                        Color.fromRGBO(255, 255, 255, 0.98),
                         Color.fromRGBO(255, 255, 255, 1)
                       ],
-                      // begin: Alignment.centerLeft,
-                      // end: Alignment.centerRight,
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
                     ),
                   ),
                   child: Column(

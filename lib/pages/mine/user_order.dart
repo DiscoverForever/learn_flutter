@@ -4,7 +4,8 @@ import 'package:learn_flutter/utils/color_util.dart';
 
 class UserOrder extends StatelessWidget {
   final List<UserInfoResponseFloorsDataOrderlist> orderList;
-  UserOrder({Key key, this.orderList}) : super(key: key);
+  final void Function() onTap;
+  UserOrder({Key key, this.orderList, this.onTap}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,26 +23,29 @@ class UserOrder extends StatelessWidget {
           ...orderList?.map((order) {
             return Expanded(
               flex: 1,
-              child: Container(
-                height: 60,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Image.network(
-                      order.safeImage,
-                      width: 35,
-                    ),
-                    Text(
-                      order?.title?.value,
-                      style: TextStyle(
-                        color: order?.title?.color == null
-                            ? ColorUtil.hexToColor(order?.title?.color)
-                            : Color(0xFF2e2e2e),
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold,
+              child: GestureDetector(
+                onTap: onTap,
+                child: Container(
+                  height: 60,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Image.network(
+                        order.safeImage,
+                        width: 35,
                       ),
-                    )
-                  ],
+                      Text(
+                        order?.title?.value,
+                        style: TextStyle(
+                          color: order?.title?.color == null
+                              ? ColorUtil.hexToColor(order?.title?.color)
+                              : Color(0xFF2e2e2e),
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             );
