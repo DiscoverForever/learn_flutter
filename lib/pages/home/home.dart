@@ -1,14 +1,8 @@
-import 'dart:convert';
-
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:learn_flutter/bean/home/welcome_home.dart';
 import 'package:learn_flutter/bean/item/recommend_item_response.dart';
 import 'package:learn_flutter/pages/home/floor.dart';
-import 'package:learn_flutter/pages/home/header.dart';
-import 'package:learn_flutter/pages/home/item_list.dart';
 import 'package:learn_flutter/pages/home/sliver_header.dart';
 import 'package:learn_flutter/pages/home/swipper_image.dart';
 import 'package:learn_flutter/utils/request_util.dart';
@@ -37,21 +31,21 @@ class MyHomePageState extends State<MyHomePage> {
 
   init() async {
     loading = true;
-    await Future.wait(<Future>[getFloorList(), getInitData(), getRecommendItemList()]);
+    await Future.wait(<Future>[getInitData(), getRecommendItemList()]);
     loading = false;
   }
 
-  Future getFloorList() async {
-    try {
-      var response = await RequestUtil.getInstance().post(Api.appCenterInfo);
-      this.setState(() {
-        var res = EntityFactory.generateOBJ<FloorModelEntity>(response.data);
-        floorList = res.result.content.data;
-      });
-    } catch (e) {
-      Fluttertoast.showToast(msg: e.toString());
-    }
-  }
+  // Future getFloorList() async {
+  //   try {
+  //     var response = await RequestUtil.getInstance().post(Api.appCenterInfo);
+  //     this.setState(() {
+  //       var res = EntityFactory.generateOBJ<FloorModelEntity>(response.data);
+  //       floorList = res.result.content.data;
+  //     });
+  //   } catch (e) {
+  //     Fluttertoast.showToast(msg: e.toString());
+  //   }
+  // }
 
   /// 获取初始化数据
   Future getInitData() async {
@@ -67,6 +61,10 @@ class MyHomePageState extends State<MyHomePage> {
       });
       swipperBgImageUrl = data.topBgImgBig;
       swipperOptionsList = list.toList();
+      var appCenter = data.floorList.firstWhere((FloorList floor) => floor.type == 'appcenter');
+      floorList = (appCenter.content['data'] as List<dynamic>).map((dynamic item) {
+        return FloorModelResultContentData(name: item['name'], icon: item['icon']);
+      }).toList();
     });
   }
 
