@@ -122,12 +122,21 @@ class LoginState extends State<Login> {
             ),
             Container(
               height: 50.0,
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 0),
+              width: double.infinity,
+              margin: EdgeInsets.fromLTRB(0, 40, 0, 10),
               child: RaisedButton(
                 color: Colors.blue,
+                disabledColor: Color(0xFFEEB4B8),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25),
+                ),
                 child: Text(
                   '注册',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                  ),
                 ),
                 onPressed: () async {
                   try {
