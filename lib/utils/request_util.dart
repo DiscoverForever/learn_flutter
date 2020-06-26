@@ -28,6 +28,7 @@ class RequestUtil {
         print('response:${response.data}');
         return response;
       }, onError: (DioError e) {
+        print('Error url:${e.request.uri}');
         return e;
       }));
     }
