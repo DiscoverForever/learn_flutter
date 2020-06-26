@@ -1,5 +1,6 @@
 class Api {
-  static final String baseUrl = 'http://yapi.demo.qunar.com/mock/89510/';
+  static final String baseUrl = 'http://localhost:3000/';
+  // static final String baseUrl = 'http://yapi.demo.qunar.com/mock/89510/';
   static final String action = 'client.action';
   static final String appCenterInfo = 'client.action?functionId=newAppCenterInfo';
   static final String home = 'client.action?functionId=welcomeHome';
