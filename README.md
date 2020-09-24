@@ -67,6 +67,8 @@ Server端：
 ### [https://github.com/DiscoverForever/flutter_mock_server](https://github.com/DiscoverForever/flutter_mock_server)
 #### [👏欢迎PR 觉得不错的可以给个star✨](https://github.com/DiscoverForever/learn_flutter)
 
+### ⚠️⚠️⚠️ *警告：真机运行 lib/api/api.dart中的baseUrl需要修改为你的本机IP* ⚠️⚠️⚠️
+
 # 项目目录结构
 ![image.png](https://upload-images.jianshu.io/upload_images/11287122-f05d9c3aecaa1242.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
 
